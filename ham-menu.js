@@ -16,19 +16,19 @@ let cerrarModal = document.querySelector(".boton-modal");
 let productImageInfor = document.querySelector(
 	".product-detail-left > img:nth-child(2)"
 );
+
 let labelPriceInfo = document.querySelector(
 	".product-info-left p:nth-child(1)"
 );
+
 let labelNameInfo = document.querySelector(".product-info-left p:nth-child(2)");
 let labelInforInfo = document.querySelector(
 	".product-info-left p:nth-child(3)"
 );
+
 let buttonInfo = document.querySelector(".add-to-cart-button");
 let productosEnCarrito = [];
 let productoACarrito = [];
-
-countCarrito.innerText = document.querySelectorAll(".shopping-cart").length;
-totalCarrito.innerText = "$0.00";
 
 emailMenu.addEventListener("click", toggleMenu);
 iconMenuMobile.addEventListener("click", toggleMenuMobile);
@@ -36,10 +36,6 @@ iconShopping.addEventListener("click", toggleAsideShopping);
 productDetailClose.addEventListener("click", closeProductDetail);
 buttonInfo.addEventListener("click", butonClick);
 cerrarModal.addEventListener("click", closeModal);
-
-function butonClick() {
-	agregarCarrito(productoACarrito);
-}
 
 function toggleMenu() {
 	productDetailLeft.classList.add("inactive");
@@ -53,12 +49,9 @@ function toggleMenuMobile() {
 	mobileMenu.classList.toggle("inactive");
 }
 
-
-
 function closeModal() {
 	modal.style.display = "none";
 }
-
 
 function renderListProduct(productList) {
 	for (const product of productList) {
@@ -75,8 +68,6 @@ function renderListProduct(productList) {
 		divproductinfo.classList.add("product-info");
 		pprice.innerText = "$" + product.price;
 		pname.innerText = product.name;
-		imgproductinfo.setAttribute("src", "./icons/bt_add_to_cart.svg");		
+		imgproductinfo.setAttribute("src", "./icons/bt_add_to_cart.svg");
 	}
 }
-
-// Ham-menu - Inicio
