@@ -382,13 +382,20 @@ h3 {
   padding: 10px;
 }
 
-p {
-  color : #eee;
+.col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+
+p {
+  color: #eee;
   margin-top: 15px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  font-size: 1.1em;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  text-shadow: none;
 }
 
 td {
@@ -445,6 +452,8 @@ a {
 
 .etiquetas {
   margin-bottom: 20px;
+  padding-bottom: 40px;
+  text-decoration: none;
 }
 
 .etiquetas ul {
@@ -468,6 +477,10 @@ a {
   display: block;
   text-align: center;
   font-size: 14px;
+}
+
+#span {
+	  text-decoration: none;
 }
 
 footer {
@@ -532,6 +545,35 @@ footer .menu li a:hover {
   color: #fff;
 }
 
+
+.article-snippet {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+.article-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  padding: 20px 0;
+}
+
+.article-card {
+  width: 300px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.article-card:hover {
+  transform: translateX(-10px);
+}
+
+
 /*wave and animation*/
 footer .wave {
   position: absolute;
@@ -556,7 +598,6 @@ footer .wave#wave2 {
   bottom: 10px;
   animation: animateWave_02 4s linear infinite;
 }
-
 footer .wave#wave3 {
   z-index: 1000;
   opacity: 0.2;
@@ -569,6 +610,63 @@ footer .wave#wave4 {
   opacity: 0.7;
   bottom: 20px;
   animation: animateWave_02 3s linear infinite;
+}
+
+
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff;
+  text-align: center;
+}
+
+.intro-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.intro-container.show {
+  opacity: 1;
+}
+
+.intro-text {
+  margin-right: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.intro-image {
+  width: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+}
+
+.intro-container.show .intro-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.intro-container.show .intro-image {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 @media (max-width: 640px) {
