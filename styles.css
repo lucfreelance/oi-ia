@@ -450,6 +450,18 @@ a {
   background-color: rgb(5, 181, 230);
 }  
 
+.content {
+  display: none;
+}
+
+.contenido-enlace {
+  display: none;
+}
+
+#toggle-button {
+  justify-content: center;
+}
+
 .etiquetas {
   margin-bottom: 20px;
   padding-bottom: 40px;
