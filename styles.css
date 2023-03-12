@@ -448,18 +448,33 @@ a {
 
 .table-board td:hover {
   background-color: rgb(5, 181, 230);
-}  
-
-.content {
-  display: none;
 }
 
+.contenido {
+  display: none;
+}
+/* 
 .contenido-enlace {
   display: none;
-}
+} */
 
 #toggle-button {
   justify-content: center;
+}
+
+
+.article-card {
+text-align: center;
+}
+
+.toggle-container {
+margin-bottom: 10px;
+}
+
+#toggle-button-1,
+#toggle-button-2,
+#toggle-button-3 {
+justify-content: center;
 }
 
 .etiquetas {
@@ -586,6 +601,21 @@ footer .menu li a:hover {
 }
 
 
+.article-card {
+text-align: center;
+}
+
+.toggle-container {
+margin-bottom: 10px;
+}
+
+#toggle-button-1,
+#toggle-button-2,
+#toggle-button-3 {
+justify-content: center;
+}
+
+
 /*wave and animation*/
 footer .wave {
   position: absolute;
@@ -623,8 +653,6 @@ footer .wave#wave4 {
   bottom: 20px;
   animation: animateWave_02 3s linear infinite;
 }
-
-
 
 .intro-section {
   display: flex;

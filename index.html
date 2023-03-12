@@ -5,9 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-		<link rel="stylesheet" href="./styles.css" />
-		
+		<link rel="stylesheet" href="./styles.css" />		
 	</head>
 	<body>
 		<nav>
@@ -89,31 +87,40 @@
       <p>Explora ilimitadamente y encuentra oportunidades en digital</p>
       <p>Genera contenido con buenos prompts e impulsa tu negocio </p>
     </div>
-    <div class="col-md-6">
-      <img src="https://cdn.pixabay.com/photo/2016/08/05/09/28/hand-1571852_960_720.jpg" alt="Imagen de mano de hombre apuntando con dedo índice al indice de la mano humanoide de un robot como en el fresco La Creación de Adán por Miguel Ángel" class="img-fluid"> 
-    </div>
   </div>
 </section>
-<br>
-	<main>
-		 <section>
+    <div class="col-md-6">
+      <img src="https://cdn.pixabay.com/photo/2016/08/05/09/28/hand-1571852_960_720.jpg" alt="Imagen de mano de hombre apuntando con dedo índice al indice de la mano humanoide de un robot como en el fresco La Creación de Adán por Miguel Ángel" class="img-fluid"> 
+    </div><br>
+					  	 <section>							
+					<p class="table-board">Este es un listado de IAs por categoría. 
+					Explora y descubre las que más te gusten, integralas a tu rutina de vida y trabajo. <br><br>
+					Te sugerimos dejar preguntas y comentarios sobre las aplicaciones que has probado, para que el resto de la comunidad tenga participe y acerque el contenido a otras personas.</p>
+						 </section>
+
+						 <main>
+      <section>
             <div class="table-board">
-                <table>
-					<span>
-					<h1>Este es un listado de IAs por categoría. </h1>
-					<h3>Explora y descubre las que más te gusten, integralas a tu rutina de vida y trabajo.</h3>
-					<p>Te sugerimos dejar preguntas y comentarios sobre las aplicaciones que has probado, para que el resto de la comunidad tenga participe y acerque el contenido a otras personas.</p>
-					</span>
-					<ul>
-						<tr>
-		<td><a href="#" class="enlace" data-contenido="<h2>Contenido de la celda 1</h2><p>Este es el contenido de la celda 1.</p>">Celda 1</a></td>
-      	<td><a href="#" class="enlace" data-contenido="<h2>Contenido de la celda 2</h2><p>Este es el contenido de la celda 2.</p>">Celda 2</a></td>
-     	<td><a href="#" class="enlace" data-contenido="<h2>Contenido de la celda 3</h2><p>Este es el contenido de la celda 3.</p>">Celda 3</a></td>
-	  	<td><a href="#" class="enlace" data-contenido="<h2>Contenido de la celda 4</h2><p>Este es el contenido de la celda 4.</p>">Celda 4</a></td>
-      	<td><a href="#" class="enlace" data-contenido="<h2>Contenido de la celda 5</h2><p>Este es el contenido de la celda 5.</p>">Celda 5</a></td>
-      	<td><a href="#" class="enlace" data-contenido="<h2>Contenido de la celda 6</h2><p>Este es el contenido de la celda 6.</p>">Celda 6</a></td>
-						</tr>
-					</ul>
+  <table>
+  <ul>
+    <tr>
+      <td><a href="#" class="enlace" data-contenido="<h2>Contenido de la celda 1</h2><p>Este es el contenido de la celda 1.</p>">Celda 1</a></td>
+      <td><a href="#" class="enlace" data-contenido="<h2>Contenido de la celda 2</h2><p>Este es el contenido de la celda 2.</p>">Celda 2</a></td>
+      <td><a href="#" class="enlace" data-contenido="<h2>Contenido de la celda 3</h2><p>Este es el contenido de la celda 3.</p>">Celda 3</a></td>
+      <td><a href="#" class="enlace" data-contenido="<h2>Contenido de la celda 4</h2><p>Este es el contenido de la celda 4.</p>">Celda 4</a></td>
+      <td><a href="#" class="enlace" data-contenido="<h2>Contenido de la celda 5</h2><p>Este es el contenido de la celda 5.</p>">Celda 5</a></td>
+      <td><a href="#" class="enlace" data-contenido="<h2>Contenido de la celda 6</h2><p>Este es el contenido de la celda 6.</p>">Celda 6</a></td>
+    </tr>
+	      </ul>
+  </table>
+              </div>  
+        </section>
+            <div id="contenido">
+    <!-- El contenido se actualizará aquí -->
+  </div>
+  
+  <script src="table-board.js"></script>
+  </main>
       <!-- <tr>
 		<td><a href="#" data-enlace="enlace0">Enlace 0</a></td>
         <td><a href="#" class="enlace" data-enlace="1">Asistente publicitario</a></td>
@@ -140,20 +147,14 @@
         <td><a href="#" class="enlace" data-enlace="22">Sublimación</a></td>
         <td><a href="#" class="enlace" data-enlace="23">Foto Editor</a></td>
 	</tr> -->
-            </div>
-				 <div class="contenido">
-    <!-- Agrega el contenido que deseas mostrar debajo de la tabla aquí -->
-  				</div>
-				    
-    </table>
 
 			 
-  <span>
-  </main>
-<div>
-<button id="toggle-button">Mostrar más</button>
-				<nav>
+  <!-- <span>
+	<div>
+		<button id="toggle-button">Mostrar más</button>
+	<nav>
 </div>
+</span> -->
 
 <section class="article-snippet">
   <h2>Últimos artículos</h2>
@@ -161,14 +162,23 @@
     <div class="article-card">
       <h3>Artículo 1</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac feugiat enim.</p>
+      <div class="toggle-container">
+        <button id="toggle-button-1">Mostrar más...</button>
+      </div>
     </div>
     <div class="article-card">
       <h3>Artículo 2</h3>
       <p>Maecenas eget leo nec dolor laoreet interdum id id leo. Fusce suscipit urna in leo aliquet, sit amet sodales neque bibendum.</p>
+      <div class="toggle-container">
+        <button id="toggle-button-2">Mostrar más...</button>
+      </div>
     </div>
     <div class="article-card">
       <h3>Artículo 3</h3>
       <p>Integer vitae augue tincidunt, pharetra nisi at, ultricies neque. Suspendisse nec tortor eu magna consequat dictum.</p>
+      <div class="toggle-container">
+        <button id="toggle-button-3">Mostrar más...</button>
+      </div>
     </div>
   </div>
 </section>
@@ -259,6 +269,7 @@
           </div>
         </section>
 
+
       <footer>
   <div class="waves">
     <div class="wave" id="wave1"></div>
@@ -282,14 +293,14 @@
   <p>&copy2023 Oportunidades Ilimitadas</p>
 </footer>
 
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
       <!-- Además, es importante que también agregue el archivo JavaScript de Bootstrap si desea utilizar componentes de JavaScript de Bootstrap, como modales, carruseles, etc. Puede hacerlo agregando la siguiente línea de código justo antes de cerrar la etiqueta </body>   
       Después de agregar Bootstrap, puede utilizar las clases y componentes provistos por Bootstrap para crear un diseño responsive y adaptable. Recuerde también revisar el archivo de estilos que se le proporciono y ajustarlo según sus necesidades.    -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <script src="main.js"></script>
-		<script defer src="./ham-menu.js"></script>	
-	</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+<script src="main.js"></script>
+<script defer src="./ham-menu.js"></script>	
+</body>
 </html>
