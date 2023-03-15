@@ -28,21 +28,8 @@ for (var i = 0; i < enlaces.length; i++) {
     contenido.innerHTML = this.getAttribute("data-contenido"); // Actualiza el contenido
   });
 }
-// //
-// const toggleButton = document.querySelector('#toggle-button');
-// const content = document.querySelector('.content');
 
-// toggleButton.addEventListener('click', function() {
-//   if (content.style.display === 'none') {
-//     content.style.display = 'block';
-//     toggleButton.textContent = 'Mostrar menos';
-//   } else {
-//     content.style.display = 'none';
-//     toggleButton.textContent = 'Mostrar más';
-//   }
-});
-
-// función que devuelve el contenido correspondiente al id de enlace
+// // función que devuelve el contenido correspondiente al id de enlace
 // function obtenerContenido(enlaceId) {
 //   switch (enlaceId) {
 //     case 'enlace0':
@@ -96,7 +83,6 @@ for (var i = 0; i < enlaces.length; i++) {
 // 	    }
 // }
 
-
 // //
 // function obtenerContenido(id) {
 //   switch (id) {
@@ -118,38 +104,3 @@ for (var i = 0; i < enlaces.length; i++) {
 //     // ... y así sucesivamente para las demás opciones del switch
 //   }
 // }
-
-// //
-// function actualizarContenido(contenidoHTML, elemento) {
-//   elemento.innerHTML = contenidoHTML;
-// }
-
-// //  obtiene todos los elementos con la clase "enlace"
-// const enlaces = document.querySelectorAll('a[data-enlace]');
-// // const contenido = document.getElementById('contenido');
-
-
-// const contenido = obtenerContenido('enlace0');
-// const titulo = contenido.titulo;
-// const contenidoHtml = contenido.contenido;
-
-// // Mostrar el título y el contenido donde sea necesario
-// document.getElementById('titulo').innerHTML = titulo;
-// document.getElementById('contenido').innerHTML = contenidoHtml;
-
-// // agrega un evento de clic a cada enlace
-// enlaces.forEach(enlace => {
-//   enlace.addEventListener('click', e => {
-//     e.preventDefault(); // previene la acción predeterminada del enlace
-    
-//     // obtiene el valor del atributo "data-enlace" del enlace clicado
-//     const enlaceId = e.target.getAttribute('data-enlace');
-    
-//     // llama a la función obtenerContenido() para obtener el contenido correspondiente
-//     const contenido = obtenerContenido(enlaceId);
-    
-//     // agrega el contenido al elemento con la clase "content"
-//     const content = document.querySelector('.content');
-//     actualizarContenido(contenido, content);
-//   });
-// });
