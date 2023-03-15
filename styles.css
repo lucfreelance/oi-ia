@@ -481,12 +481,9 @@ a {
   grid-area: imagen;
 }
 
-.h2 {
-  grid-area: titulo;
-}
-
 .p {
   grid-area: contenido;
+  padding-right: 25px;
 }
 
 #toggle-button {
@@ -498,6 +495,12 @@ a {
   justify-content: center;
 }
 
+.contenido-adicional {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  grid-area: titulo;
+}
 
 .article-card {
 text-align: center;

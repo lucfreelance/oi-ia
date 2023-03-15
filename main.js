@@ -42,3 +42,20 @@ boton.addEventListener('click', function() {
   // oculta el botón "Mostrar más"
   boton.style.display = 'none';
 });
+
+// 
+var enlaces = document.getElementsByClassName("enlace");
+
+for (var i = 0; i < enlaces.length; i++) {
+  enlaces[i].addEventListener("click", function(event) {
+    event.preventDefault(); // Evita que el enlace siga el enlace
+
+    // Crea un nuevo div para el contenido adicional
+    var nuevoContenido = document.createElement("div");
+    nuevoContenido.classList.add("contenido-adicional");
+    nuevoContenido.innerHTML = this.getAttribute("data-contenido");
+
+    // Agrega el nuevo contenido después del enlace actual
+    this.insertAdjacentElement("afterend", nuevoContenido);
+  });
+}
