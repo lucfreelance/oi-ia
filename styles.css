@@ -488,10 +488,6 @@ a {
 
 #toggle-button {
   grid-area: boton;
-}
-
-#toggle-button {
-  justify-content: center;
   justify-content: center;
 }
 
