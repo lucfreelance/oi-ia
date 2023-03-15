@@ -15,5 +15,5 @@
 		"files.trimFinalNewlines": true, // Text Editor - Files
 		"files.insertFinalNewline": true, // Text Editor - Files
 		"prettier.useTabs": true, // Text Editor - Tabs Allowed
-		"liveServer.settings.multiRootWorkspaceName": "opilod" // Short project name
+		"liveServer.settings.multiRootWorkspaceName": "opoili" // Short project name
 	}
