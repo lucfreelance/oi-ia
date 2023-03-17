@@ -59,3 +59,31 @@ for (var i = 0; i < enlaces.length; i++) {
     this.insertAdjacentElement("afterend", nuevoContenido);
   });
 }
+
+
+
+
+// const articleContainer = document.querySelector('.article-container');
+const articleExpandedContainer = document.querySelector('.article-expanded-container');
+const toggleButton = document.querySelector('#toggle-button');
+
+toggleButton.addEventListener('click', () => {
+  if (articleContainer.style.display !== 'none') {
+    articleContainer.style.display = 'none';
+    articleExpandedContainer.style.display = 'block';
+  } else {
+    articleContainer.style.display = 'block';
+    articleExpandedContainer.style.display = 'none';
+  }
+});
+
+
+
+
+const toggleButtons = document.querySelectorAll('[id^="toggle-button-"]');
+toggleButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    const articleCard = button.parentNode;
+    articleCard.classList.toggle('expanded');
+  });
+});
