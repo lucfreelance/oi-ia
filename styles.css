@@ -302,16 +302,65 @@ nav {
 	font-size: var(--sm);
 }
 
-.desktop-menu ul li a {
+.desktop-menu ul li a {	
 	color: var(--back);
 	text-decoration: none;
 	margin-bottom: 20px;
 	display: inline-block;
 }
-  
+
+  .title {
+  text-align: center;
+  margin: 50px 0;
+  animation: title-color 10s infinite;
+}
+
+@keyframes title-color {
+  0% {
+    color: #00C9FF;
+  }
+  25% {
+    color: #00C9FF;
+  }
+  50% {
+    color: #00C9FF;
+  }
+  75% {
+    color: #47ABAE;
+  }
+  100% {
+    color: #47ABAE;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  margin: 50px 0;
+  animation: subtitle-color 20s infinite;
+}
+
+@keyframes subtitle-color {
+  20% {
+    color: #F0FF00;
+  }
+  40% {
+    color: #8EFF00;
+  }
+  60% {
+    color: #00FFA6;
+  }
+  80% {
+    color: #00C9FF;
+  }
+  100% {
+    color: #0080ff;
+  }
+}
+
 .intro {
   width: 100%;
   object-fit: cover;
+	margin-bottom: 20px;
 }
   
 .intro p {
