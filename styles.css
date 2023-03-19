@@ -381,6 +381,12 @@ nav {
   align-items: center;
   height: 100%;
 }
+
+.centrado img {
+  max-width: 100%; /* La imagen no superará el ancho del contenedor */
+  width: 350px; /* Ancho fijo máximo permitido para la imagen */
+  height: auto; /* La altura se ajustará automáticamente */
+}
   
 .h1 {
   text-align: center;
@@ -436,7 +442,7 @@ td {
   width: auto;
   margin: 10px;
   padding: 10px;
-  background-color: #66B9FF;
+  background-color: #a8d6fc;
   border-radius: 5px;
   font-size: 1.6rem;
   font-family: "Verdana";
@@ -455,7 +461,7 @@ a {
 
 .table-board {
   padding: 20px;
-  background-color: #0077c2;
+  background-color: #47a1d9;
   font-size: 1.6rem;
   border-collapse: collapse;
   font-family: "Verdana", cursive, sans-serif;
@@ -487,6 +493,9 @@ a {
   display: none;
     color: black;
 	margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .enlace {
