@@ -29,7 +29,6 @@ for (var i = 0; i < enlaces.length; i++) {
   });
 }
 
-
 // selecciona el botón "Mostrar más" y el contenedor adicional
 var boton = document.getElementById('toggle-button');
 var contenido = document.getElementById('contenido-adicional');
@@ -60,9 +59,6 @@ for (var i = 0; i < enlaces.length; i++) {
   });
 }
 
-
-
-
 // const articleContainer = document.querySelector('.article-container');
 const articleExpandedContainer = document.querySelector('.article-expanded-container');
 const toggleButton = document.querySelector('#toggle-button');
@@ -77,9 +73,7 @@ toggleButton.addEventListener('click', () => {
   }
 });
 
-
-
-
+//
 const toggleButtons = document.querySelectorAll('[id^="toggle-button-"]');
 toggleButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
@@ -87,3 +81,5 @@ toggleButtons.forEach((button, index) => {
     articleCard.classList.toggle('expanded');
   });
 });
+
+//
