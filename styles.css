@@ -436,8 +436,8 @@ nav {
 .intro-carousel-container {
   display: inline-block;
   white-space: nowrap;
-  animation: marquee 50s linear infinite;
-  animation-delay: 2s; /* Delay para esperar que los elementos se carguen */
+  animation: marquee 40s linear infinite;
+  animation-delay: 0.4s; /* Delay para esperar que los elementos se carguen */
 }
 
 .intro-carousel:hover .intro-carousel-container {
@@ -922,6 +922,41 @@ footer .wave#wave4 {
   opacity: 0.7;
   bottom: 20px;
   animation: animateWave_02 3s linear infinite;
+}
+
+.encabezado-categorias, .encabezado2-categorias {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.encabezado-icono {
+  margin-right: 20px;
+}
+
+.encabezado2-icono {
+  margin-left: 20px;
+}
+
+.encabezado2-categorias img {
+  display: block;
+}
+
+.encabezado-texto, .encabezado2-texto {
+  flex: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .encabezado-categorias,.encabezado2-categorias {
+    flex-direction: column;
+  }
+  
+  .encabezado-icono, .encabezado2-icono {
+	  display: block;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 640px) {

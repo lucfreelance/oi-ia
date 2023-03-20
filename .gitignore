@@ -128,3 +128,6 @@ dist
 
 # Workspace file
 .store.code-workspace
+
+# AIdea
+aidea*
