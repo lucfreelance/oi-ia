@@ -311,7 +311,7 @@ nav {
 
   .title {
   text-align: center;
-  margin: 25px 0;
+  margin: 20px 0;
   animation: title-color 10s infinite;
 }
 
@@ -335,7 +335,7 @@ nav {
 
 .subtitle {
   text-align: center;
-  margin: 25px 0;
+  margin: 5px 0;
   animation: subtitle-color 20s infinite;
 }
 
@@ -490,22 +490,25 @@ p {
   text-shadow: none;
 }
 
-.col-md-6 {
+.headpic {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  width: 100%;
 }
 
-.col-md-6 img {
+.headpic img {
+  width: 100%;
   max-width: 100%;
-  height: auto;
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
 }
 
 td {
@@ -522,13 +525,6 @@ td {
   color: var(--black);
   box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   transition: all 0.4s ease;
-}
-
-a {
-  display: block;
-  width: 100%;
-  text-decoration: none;
-  color: inherit;
 }
 
 .table-board {
@@ -579,6 +575,26 @@ a {
     "titulo"
     "contenido"
     "boton";
+	 align-items: start; /* Alinea todos los elementos en la parte superior */
+}
+/* .enlace es una clase que se aplica a un elemento <a> en tu código HTML. Con las propiedades CSS que se aplican a esta clase, se define un sistema de rejilla utilizando la función grid de CSS, donde se establecen cuatro filas (grid-template-rows: auto auto auto auto;) y una sola columna (grid-template-columns: 1fr;), y se asigna un área a cada uno de los elementos del contenido del <a> a través de la propiedad grid-template-areas.
+
+La propiedad align-items: start; se utiliza para alinear todos los elementos del contenido del <a> en la parte superior de su área asignada. Es decir, todo el contenido del <a> estará alineado en la parte superior de cada una de sus filas.
+
+Por otra parte, la regla .enlace h2 se aplica específicamente a la etiqueta <h2> que se encuentra dentro del <a> que tiene la clase .enlace. Con la propiedad align-self: start;, se alinea la etiqueta <h2> en la parte superior del área asignada a ella dentro de la rejilla definida por .enlace.
+
+Finalmente, con la propiedad margin-top: 0; se elimina el margen superior por defecto que se aplica a la etiqueta <h2> en algunos navegadores, para que quede alineada correctamente en la parte superior del área que le corresponde.
+
+Espero que esta explicación te haya sido útil. Si tienes más preguntas, no dudes en hacerlas. */
+
+.enlace h2 {
+  align-self: start; /* Alinea la etiqueta h2 en la parte superior */
+   margin-top: 0;
+}
+  
+.centrado h2 {
+  align-self: start; /* Alinea la etiqueta h2 en la parte superior */
+   margin-top: 0;
 }
 
 .centrado {
@@ -593,6 +609,10 @@ a {
   height: auto; /* La altura se ajustará automáticamente */
   max-height: 300px;
   margin: 10px 0;
+}
+
+.titulo-fijo {
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -633,7 +653,9 @@ a {
 .imagen-destacada {
   max-width: 100%; /* La imagen no superará el ancho del contenedor */
   height: auto; /* La altura se ajustará automáticamente */
-  width: auto; /* El ancho se ajustará automáticamente */
+  max-height: 300px;
+  margin: 10px 0;
+  align-self: start;
 }
 
 .etiquetas {
