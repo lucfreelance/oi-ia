@@ -429,9 +429,6 @@ nav {
   opacity: 1;
 }
 
-
-
-
 .intro-carousel {
   overflow: hidden;
 }
@@ -463,24 +460,6 @@ nav {
   }
 }
 
-
-
-
-
-
-.centrado {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.centrado img {
-  max-width: 100%; /* La imagen no superará el ancho del contenedor */
-  width: 350px; /* Ancho fijo máximo permitido para la imagen */
-  height: auto; /* La altura se ajustará automáticamente */
-}
-  
 .h1 {
   text-align: center;
   color: #FFA600; /* color amarillo */
@@ -503,7 +482,7 @@ h3 {
 p {
   grid-area: contenido;
   padding-right: 25px;
-  color: #grey;
+  color: #666;
   margin-top: 15px;
   margin-bottom: 15px;
 	margin-left: 20px;
@@ -602,15 +581,59 @@ a {
     "boton";
 }
 
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.centrado img {
+  max-width: 100%; /* La imagen no superará el ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente */
+  max-height: 300px;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .centrado img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.toggle-container {
+  margin-bottom: 10px;
+}
+
+.toggle-button {
+  grid-area: boton;
+  justify-content: center;
+}
+
+#toggle-button-1,
+#toggle-button-2,
+#toggle-button-3,
+#toggle-button-4 {
+  justify-content: center;
+}
+
+.contenido-adicional {
+  display: none;
+}
+
+.expanded .contenido-adicional {
+  display: block;
+}
+
 .imagen {
   grid-area: imagen;
 }
 
-.contenido-adicional {
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  grid-area: titulo;
+.imagen-destacada {
+  max-width: 100%; /* La imagen no superará el ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente */
+  width: auto; /* El ancho se ajustará automáticamente */
 }
 
 .etiquetas {
@@ -710,24 +733,6 @@ a {
 .article-card.expanded .more-content {
   display: block;
 }
-
-.toggle-container {
-margin-bottom: 10px;
-}
-
-#toggle-button {
-  grid-area: boton;
-  justify-content: center;
-}
-
-#toggle-button-1,
-#toggle-button-2,
-#toggle-button-3,
-#toggle-button-4 {
-justify-content: center;
-}
-
-
 
 footer {
   margin-top: 50px;

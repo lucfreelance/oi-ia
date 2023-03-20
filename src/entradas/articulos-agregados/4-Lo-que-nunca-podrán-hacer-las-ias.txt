@@ -1,0 +1,6 @@
+<div class="article-card" id="articulo-4">
+      <img src="./src/imagenes/destacada-articulo/imagen4.gif" alt="Imagen destacada del artículo 'Lo que nunca podrán hacer las IAs'">
+      <h3>Lo que nunca podrán hacer las IAs</h3>
+      <p>La inteligencia artificial (IA) ha avanzado mucho en los últimos años y es capaz de realizar muchas tareas que antes eran exclusivas de los humanos. Sin embargo, todavía hay algunas cosas que las IAs nunca podrán hacer. En este artículo, exploraremos algunas de las limitaciones actuales de la IA y discutiremos por qué hay ciertas tareas que siempre requerirán la intervención humana.</p>
+ 	<button id="toggle-button-4">Mostrar más...</button>
+    </div>
