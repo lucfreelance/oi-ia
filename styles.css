@@ -577,15 +577,6 @@ td {
     "boton";
 	 align-items: start; /* Alinea todos los elementos en la parte superior */
 }
-/* .enlace es una clase que se aplica a un elemento <a> en tu código HTML. Con las propiedades CSS que se aplican a esta clase, se define un sistema de rejilla utilizando la función grid de CSS, donde se establecen cuatro filas (grid-template-rows: auto auto auto auto;) y una sola columna (grid-template-columns: 1fr;), y se asigna un área a cada uno de los elementos del contenido del <a> a través de la propiedad grid-template-areas.
-
-La propiedad align-items: start; se utiliza para alinear todos los elementos del contenido del <a> en la parte superior de su área asignada. Es decir, todo el contenido del <a> estará alineado en la parte superior de cada una de sus filas.
-
-Por otra parte, la regla .enlace h2 se aplica específicamente a la etiqueta <h2> que se encuentra dentro del <a> que tiene la clase .enlace. Con la propiedad align-self: start;, se alinea la etiqueta <h2> en la parte superior del área asignada a ella dentro de la rejilla definida por .enlace.
-
-Finalmente, con la propiedad margin-top: 0; se elimina el margen superior por defecto que se aplica a la etiqueta <h2> en algunos navegadores, para que quede alineada correctamente en la parte superior del área que le corresponde.
-
-Espero que esta explicación te haya sido útil. Si tienes más preguntas, no dudes en hacerlas. */
 
 .enlace h2 {
   align-self: start; /* Alinea la etiqueta h2 en la parte superior */
@@ -656,44 +647,6 @@ Espero que esta explicación te haya sido útil. Si tienes más preguntas, no du
   max-height: 300px;
   margin: 10px 0;
   align-self: start;
-}
-
-.etiquetas {
-  padding-top: 5px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  text-decoration: none;
-  text-align: center; 
-}
-
-.etiquetas2 {
-  margin-bottom: 20px;
-  padding-top: 10px;
-  text-decoration: none;
-  text-align: center; 
-}
-
-.etiquetas ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.etiquetas ul li {
-  width: 20%;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.etiquetas ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-.etiquetas ul li span {
-  display: block;
-  text-align: center;
-  font-size: 14px;
 }
 
 #span {
@@ -924,11 +877,17 @@ footer .wave#wave4 {
   animation: animateWave_02 3s linear infinite;
 }
 
-.encabezado-categorias, .encabezado2-categorias {
+.encabezado-categorias {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 20px 0;
+}
+
+.encabezado2-categorias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .encabezado-icono {
@@ -943,7 +902,13 @@ footer .wave#wave4 {
   display: block;
 }
 
-.encabezado-texto, .encabezado2-texto {
+.encabezado-texto {
+	text-align: right;
+  flex: 1;
+} 
+
+.encabezado2-texto {
+  text-align: left;
   flex: 1;
 }
 
@@ -977,6 +942,18 @@ footer .wave#wave4 {
 	.mobile-menu {
 		display: none;
 	}
+}
+
+@media (max-width: 768px) {
+  .encabezado2-categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .encabezado2-icono {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 @keyframes animateWave {
