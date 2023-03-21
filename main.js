@@ -82,4 +82,15 @@ toggleButtons.forEach((button, index) => {
   });
 });
 
-//
+ // Obtener todos los botones "Saber más"
+  var botones = document.querySelectorAll("#table-board .enlace");
+
+  // Recorrer todos los botones y agregar el evento click
+  botones.forEach(function(boton) {
+    boton.addEventListener("click", function(event) {
+      event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
+      var contenido = boton.dataset.contenido; // Obtener el contenido del atributo data-contenido
+      var contenedor = document.querySelector("#contenido"); // Obtener el contenedor donde se mostrará el contenido
+      contenedor.innerHTML = contenido; // Agregar el contenido al contenedor
+    });
+  });

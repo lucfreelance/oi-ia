@@ -582,17 +582,17 @@ td {
   align-self: start; /* Alinea la etiqueta h2 en la parte superior */
    margin-top: 0;
 }
-  
-.centrado h2 {
-  align-self: start; /* Alinea la etiqueta h2 en la parte superior */
-   margin-top: 0;
-}
 
 .centrado {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+  
+.centrado h2 {
+  align-self: start; /* Alinea la etiqueta h2 en la parte superior */
+   margin-top: 0;
 }
 
 .centrado img {
