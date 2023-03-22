@@ -95,9 +95,8 @@ toggleButtons.forEach((button, index) => {
     });
   });
 
-  <script>
+
   const cerrarBtn = document.getElementById('toggle-button');
   cerrarBtn.addEventListener('click', () => {
     // Agrega aquí la función para traer la lista de aplicaciones de IA para la categoría correspondiente
   });
-</script>

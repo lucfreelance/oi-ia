@@ -689,6 +689,25 @@ td {
   margin: 10px 0;
 }
 
+.subcentrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+  
+.subcentrado h2 {
+  align-self: start; /* Alinea la etiqueta h2 en la parte superior */
+   margin-top: 0;
+}
+
+.subcentrado img {
+  max-width: 100%; /* La imagen no superará el ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente */
+  max-height: 300px;
+  margin: 10px 0;
+}
+
 .titulo-fijo {
   margin-top: 0;
 }
