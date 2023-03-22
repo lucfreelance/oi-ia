@@ -95,7 +95,7 @@ toggleButtons.forEach((button, index) => {
     });
   });
 
-
+// Cerrar botón de la sección de categorías
   const cerrarBtn = document.getElementById('toggle-button');
   cerrarBtn.addEventListener('click', () => {
     // Agrega aquí la función para traer la lista de aplicaciones de IA para la categoría correspondiente

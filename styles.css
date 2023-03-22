@@ -130,6 +130,27 @@ nav {
 	display: none;
 }
 
+.navbar-left {
+	display: flex;
+}
+
+.navbar-home {
+    display: inline-block;
+    padding: 30px;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+	padding-left: 10px;
+}
+
+.navbar-home img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
 .navbar-left ul,
 .navbar-right ul {
 	list-style: none;
@@ -138,10 +159,7 @@ nav {
 	display: flex;
 	align-items: center;
 	height: 60px;
-}
-
-.navbar-left {
-	display: flex;
+	justify-content: space-between;
 }
 
 .navbar-left ul li a,
@@ -159,14 +177,6 @@ nav {
 	color: var(--hospital-green);
 }
 
-.navbar-left ul li a {
-	text-decoration: none;
-	color: var(--very-light-pink);
-	border: 1px solid var(--white);
-	padding: 8px;
-	border-radius: 8px;
-}
-
 .navbar-left ul {
 	margin-left: 12px;
 	list-style: none;
@@ -176,15 +186,16 @@ nav {
 	align-items: center;
 	height: 60px;
 	margin-left: 12px;
+    margin-top: 10px;
 }
 
-.navbar-left {
-	display: flex;
+.navbar-left ul li {
+    padding-right: 15px;
+    margin-bottom: 10px;
 }
 
-.navbar-left ul li a:hover {
-	border: 1px solid var(--hospital-green);
-	color: var(--hospital-green);
+#top {
+margin-right: 25px;
 }
 
 .desktop-menu {
@@ -482,12 +493,16 @@ h3 {
 p {
   grid-area: contenido;
   padding-right: 25px;
-  color: #E6E6E6;
+  color: #CCCCCC;
   margin-top: 15px;
   margin-bottom: 15px;
 	margin-left: 20px;
   font-size: 1.6em;
   text-shadow: none;
+}
+
+.darky {
+	color:#333;
 }
 
 .headpic {
@@ -961,16 +976,16 @@ footer .menu li a:hover {
 }
 
 .footer-interno {
-  margin-top: 100px;
+  margin-top: 20px;
   width: 100%;
   min-height: 100px;
-  padding: 10px; /* Modificado */
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #3586ff;
- position: fixed;
+ position: relative;
 bottom: 0;
 }
 
@@ -1081,6 +1096,7 @@ footer .wave#wave4 {
 .encabezado-texto {
 	text-align: right;
   flex: 1;
+      color:  #333;
 } 
 
 .encabezado2-texto {

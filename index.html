@@ -9,17 +9,16 @@
   <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css" integrity="sha384-JoJHOHvL//D71gf/kJSKn18HHj5Sp5mQlF9XGdJlK48fapEV1xHgNnJcchN4Fb4/" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="./styles.css" />		
+		<link rel="stylesheet" href="./styles.css" />
 	</head>
 
 	<body>
 		<nav>
-			<img src="./src/imagenes/complemento-pic/ham_menu.svg" alt="menu" class="menu" />
-
 			<div class="mobile-menu inactive">
 				<ul>
 					<li>
 						 <a href="./src/categorias/asistentes.html">ASISTENTES</a>
+						 </li>
 						 <ul>
 					<li><a href="#">Asistente Código</a></li>
 					<li><a href="#">Asistente Copy</a></li>
@@ -37,7 +36,7 @@
 					</ul>
 								</li>
 					<li>
-						<a href="../src/categorias/editores.html">EDITORES</a>
+						<a href="./src/categorias/editores.html">EDITORES</a>
 						<ul>
 					<li><a href="#">Editor Imagen</a></li>
 					<li><a href="#">Diseño Logo</a></li>
@@ -51,13 +50,16 @@
 			<div class="navbar-left">
 				<ul>
 					<li>
+						<a href="./index.html" class="navbar-home"><i class="fas fa-home"></i>inicio</a>
+					</li>
+					<li>
 						 <a href="./src/categorias/asistentes.html">ASISTENTES</a>
 					</li>
 					<li>
 						<a href="./src/categorias/generativos.html">GENERATIVOS</a>
 					</li>
 					<li>
-						<a href="../src/categorias/editores.html">EDITORES</a>
+						<a href="./src/categorias/editores.html">EDITORES</a>
 					</li>
 				</ul>
 			</div>
@@ -88,21 +90,23 @@
 				<img src="./icons/icon_close.png" alt="close" />
 			</div>
 		</aside>    
-	</nav> 
+	</nav>
 
 <div class="headpic">
   <img src="https://cdn.pixabay.com/photo/2016/08/05/09/28/hand-1571852_960_720.jpg" alt="Imagen de mano de hombre apuntando con dedo índice al indice de la mano humanoide de un robot como en el fresco La Creación de Adán por Miguel Ángel"> 
-</div><br>	
-		
+</div>
+
+<span>
 <h1 class="title">Bienvenida a Oportunidades Ilimitadas!</h1>
-<h2 class="subtitle">Tu Table-Board de inteligencias artificiales</h2>	
+<h2 class="subtitle">Tu Table-Board de inteligencias artificiales</h2>
+</span>
 
 <section class="encabezado-categorias">
   <div class="encabezado-icono">
     <img src="./src/imagenes/complemento-pic/icono1.png" alt="icono IA" width="50" height="50">
   </div> 
   <div class="encabezado-texto">
-	 <p>Este es un listado de IAs por categoría. Explora y descubre las que más te gusten, intégralas a tu rutina de vida y trabajo.</p>
+	 <p class="darky">Este es un listado de IAs por categoría. Explora y descubre las que más te gusten, intégralas a tu rutina de vida y trabajo.</p>
   </div>
 </section>
 
@@ -257,7 +261,7 @@ Los editores de fotos e imágenes siempre han sido una herramienta popular para 
 </td>
 </td>
 </tr>
-  </table>
+</table>
 </main>
 
 <span>
@@ -269,7 +273,7 @@ Los editores de fotos e imágenes siempre han sido una herramienta popular para 
 
 <section class="encabezado2-categorias">
   <div class="encabezado2-texto">
-    <p>Comparte las apps que has probado para que el resto de la comunidad participe y conozca mejores herramientas.</p>
+ <p class="darky">Comparte las apps que has probado para que el resto de la comunidad participe y conozca mejores herramientas.</p>
   </div>
   <div class="encabezado2-icono">
     <img src="./src/imagenes/complemento-pic/icono2.png" alt="icono2 IA" width="50" height="50">
@@ -292,7 +296,7 @@ Los editores de fotos e imágenes siempre han sido una herramienta popular para 
 </section>
 
 <section>
-  <h2>Artículos de interés</h2>
+  <h2>Empieza por aquí:</h2>
   <div class="article-container">
     <div class="article-card" id="articulo-1">
       <img src="./src/imagenes/premisa-destacada/1.gif" alt="Imagen destacada del artículo 'Gana dinero con Inteligencia Artificial'">
@@ -335,7 +339,7 @@ Los editores de fotos e imágenes siempre han sido una herramienta popular para 
     <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
   </ul>  
   <ul class="menu">
-    <li><a href="#">Inicio</a></li>
+    <li><a href="#top">Inicio</a></li>
     <li><a href="#">Quienes somos</a></li>
     <li><a href="#">Aspecto legal</a></li>
     <li><a href="#">Correo</a></li>
@@ -343,15 +347,11 @@ Los editores de fotos e imágenes siempre han sido una herramienta popular para 
   <p>&copy2023 Oportunidades Ilimitadas</p>
 </footer>
 
-<!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      <!-- Además, es importante que también agregue el archivo JavaScript de Bootstrap si desea utilizar componentes de JavaScript de Bootstrap, como modales, carruseles, etc. Puede hacerlo agregando la siguiente línea de código justo antes de cerrar la etiqueta </body>   
-      Después de agregar Bootstrap, puede utilizar las clases y componentes provistos por Bootstrap para crear un diseño responsive y adaptable. Recuerde también revisar el archivo de estilos que se le proporciono y ajustarlo según sus necesidades.    -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 <script defer src="./ham-menu.js"></script>
 <script src="main.js"></script>
 </body>
