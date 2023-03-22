@@ -1,6 +1,0 @@
-<div class="article-card" id="articulo-3">
-      <img src="./src/imagenes/destacada-articulo/imagen3.gif" alt="Imagen destacada del artículo 'Cómo adaptarse al mercado laboral en un mundo post-IA'">
-      <h3>Cómo adaptarse al mercado laboral en un mundo post-IA</h3>
-      <p>A medida que la inteligencia artificial (IA) se vuelve más avanzada y omnipresente en nuestra vida cotidiana, también está cambiando la forma en que trabajamos. Muchos trabajos que antes requerían habilidades humanas, como la toma de decisiones y el análisis de datos, están siendo automatizados por la IA. En este artículo, exploraremos las formas en que la IA está cambiando el mercado laboral y cómo puedes adaptarte para mantener una carrera exitosa en un mundo post-IA.</p>
-      <button id="toggle-button-3">Mostrar más...</button>
-    </div>

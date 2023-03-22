@@ -94,3 +94,10 @@ toggleButtons.forEach((button, index) => {
       contenedor.innerHTML = contenido; // Agregar el contenido al contenedor
     });
   });
+
+  <script>
+  const cerrarBtn = document.getElementById('toggle-button');
+  cerrarBtn.addEventListener('click', () => {
+    // Agrega aquí la función para traer la lista de aplicaciones de IA para la categoría correspondiente
+  });
+</script>

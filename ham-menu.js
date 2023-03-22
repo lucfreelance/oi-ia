@@ -17,9 +17,7 @@ let productImageInfor = document.querySelector(
 	".product-detail-left > img:nth-child(2)"
 );
 
-let labelPriceInfo = document.querySelector(
-	".product-info-left p:nth-child(1)"
-);
+
 
 let labelNameInfo = document.querySelector(".product-info-left p:nth-child(2)");
 let labelInforInfo = document.querySelector(

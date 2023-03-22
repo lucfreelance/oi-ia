@@ -1,0 +1,73 @@
+/* Estilos para el subcontenido */
+#subcontenido {
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: none;
+z-index: 1;
+transition: all 0.5s ease; / Efecto de transición
+}
+
+#subcontenido.mostrar {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#subcontenido .centrado {
+max-width: 500px;
+margin: 0 auto;
+text-align: center;
+}
+
+#subcontenido img.subimagen-destacada {
+max-width: 100%;
+height: auto;
+margin-bottom: 20px;
+}
+
+#subcontenido button#toggle-button {
+margin-top: 10px;
+}
+
+/* Estilos para los subenlaces  */
+.subenlace {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto auto auto auto;
+grid-template-areas:
+"imagen"
+"titulo"
+"contenido"
+"boton";
+align-items: start; / Alinea todos los elementos en la parte superior
+border-bottom: 1px solid #eee;
+padding: 20px;
+}
+
+.subenlace:hover {
+background-color: #f9f9f9;
+}
+
+.subenlace h2 {
+align-self: start; /* Alinea la etiqueta h2 en la parte superior */
+margin-top: 0;
+}
+
+.subenlace img.subimagen-destacada {
+grid-area: imagen;
+margin-right: 20px;
+}
+
+.subenlace h2 {
+grid-area: titulo;
+}
+
+.subenlace p {
+grid-area: contenido;
+}
+
+.subenlace button#toggle-button {
+grid-area: boton;
+}
