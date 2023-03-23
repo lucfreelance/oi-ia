@@ -457,7 +457,7 @@ td {
 }
 
 .enlace {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
@@ -474,27 +474,6 @@ td {
 }
 
 .enlace #h2 {
- text-align: left;
-}
-
-.subenlace {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas:
-    "imagen"
-    "credito"
-	"titulo"
-    "contenido"
-    "boton";
-	 align-items: start;
-	 position: relative; 
-    color: #333;
-    font-size: 21px;
-    text-decoration: none;
-}
-
-.subenlace #h2 {
  text-align: left;
 }
 
@@ -570,6 +549,27 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.subenlace {
+  display: flex;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "imagen"
+    "credito"
+	"titulo"
+    "contenido"
+    "boton";
+	 align-items: start;
+	 position: relative; 
+    color: #333;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+.subenlace #h2 {
+ text-align: left;
 }
 
 #subcontenido {
@@ -991,6 +991,112 @@ footer .wave#wave4 {
     margin-bottom: 20px;
   }
 }
+
+
+
+
+
+
+
+.enlace {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #333;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+.enlace .centrado {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.enlace .left-col {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.enlace .left-col img {
+  max-width: 100%;
+  height: auto;
+}
+
+.enlace .right-col {
+  flex: 1 1 auto;
+}
+
+.enlace #toggle-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+
+
+
+.nueva-clase {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #333;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+.nueva-clase .centrado {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nueva-clase .left-col {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.nueva-clase .left-col img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nueva-clase .right-col {
+  flex: 1 1 auto;
+}
+
+.nueva-clase #toggle-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 640px) {
 	.menu {
