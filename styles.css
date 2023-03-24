@@ -104,12 +104,11 @@ span {
 }
 
 h2 {
-margin: 0 auto 40px; /* margen superior e inferior de 40px y centrado horizontalmente */
+margin: 0 auto; /* margen superior e inferior de 40px y centrado horizontalmente */
   max-width: 800px; /* ancho máximo del elemento */
   text-align: center;
   display: block;
   font-size: 24px; /* tamaño de fuente reducido */
-  padding: 20px 0;
 }
 
 h3 {
@@ -522,11 +521,11 @@ td {
   flex: 1 1 auto;
 }
 
-.enlace #toggle-button {
+/* .enlace #toggle-button {
   position: absolute;
   top: 0;
   right: 0;
-}
+} */
 
 .enlace {
   display: flex;
@@ -1046,13 +1045,21 @@ footer .wave#wave4 {
 }
 
 .cerrar-btn {
-    background-color: #333;
-    color: #fff;
+  bottom: 0;
+  right: 0;
     border-radius: 5px;
     border: none;
     padding: 5px 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border: none;
+  background-color: transparent;
+  color: #999;
+  font-size: 20px;
+  cursor: pointer;
   }
 
   // si cierro esta etiqueta mi archivo se vuelve un infierno...
@@ -1098,12 +1105,12 @@ footer .wave#wave4 {
 .nueva-clase .right-col {
   flex: 1 1 auto;
 }
-
+/* 
 .nueva-clase #toggle-button {
   position: absolute;
   top: 0;
   right: 0;
-}
+} */
 
 footer {
   position: relative;
