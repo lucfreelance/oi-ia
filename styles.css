@@ -118,10 +118,11 @@ h3 {
 }
 
 p {
-  grid-area: contenido;
-  padding-right: 25px;
-  color: #666;
+  color : #666;
+  text-align: right;
   margin-top: 15px;
+  font-size: 1.1em;
+  grid-area: contenido;
   margin-bottom: 15px;
 	margin-left: 20px;
   font-size: 1.5em;
@@ -1102,7 +1103,9 @@ footer .wave#wave4 {
   position: absolute;
   top: 0;
   right: 0;
-}footer {
+}
+
+footer {
   position: relative;
   width: 100%;
   background: #3586ff;
@@ -1149,13 +1152,6 @@ footer .menu li a {
 footer .menu li a:hover {
   opacity: 1;
   color: #fff;
-}
-p {
-  color : #eee;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-size: 1.1em;
 }
 
 /*wave and animation*/
