@@ -100,3 +100,8 @@ toggleButtons.forEach((button, index) => {
   cerrarBtn.addEventListener('click', () => {
     // Agrega aquí la función para traer la lista de aplicaciones de IA para la categoría correspondiente
   });
+
+  // 
+  $('.imagen-principal').click(function() {
+  $('#modal-imagen').modal('show');
+});

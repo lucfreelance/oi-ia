@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
-	/* box-sizing: border-box; */
+	box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -82,18 +85,31 @@ header ul li a {
 	overflow: visible;
 }
 
+span {
+  max-width: 1000px; /* ancho máximo */
+  margin: 0 auto; /* centrar */
+  display: flex; /* para centrar verticalmente */
+  align-items: center; /* centrar verticalmente */
+	  text-decoration: none;
+	  justify-content: space-between;
+}
+
 .h1 {
   text-align: center;
-  color: #5dbd5b; /* color amarillo */
+  color: #5dbd5b;
   text-shadow: 1px 1px  #fff(0, 0, 0, 1);
-  margin: 20px 0;
+   margin: 40px 0 20px;
+  display: inline-block;
+  font-size: 36px;
 }
 
 h2 {
-  margin-left: 20px;    
-  padding: 20px;
+margin: 0 auto 40px; /* margen superior e inferior de 40px y centrado horizontalmente */
+  max-width: 800px; /* ancho máximo del elemento */
   text-align: center;
   display: block;
+  font-size: 24px; /* tamaño de fuente reducido */
+  padding: 20px 0;
 }
 
 h3 {
@@ -233,10 +249,7 @@ margin-right: 25px;
     color: #00C9FF;
   }
   25% {
-    color: #00C9FF;
-  }
-  50% {
-    color: #00C9FF;
+    color: #1f5260;
   }
   75% {
     color: #47ABAE;
@@ -254,13 +267,10 @@ margin-right: 25px;
 
 @keyframes subtitle-color {
   20% {
-    color: #449e23;
-  }
-  40% {
-    color: #8EFF00;
+    color: #82c869;
   }
   60% {
-    color: #00FFA6;
+    color: #67bea0;
   }
   80% {
     color: #00C9FF;
@@ -268,6 +278,40 @@ margin-right: 25px;
   100% {
     color: #8b71d2;
   }
+}
+
+.sombreado {
+  background-color: rgba(151, 243, 228, 0.205);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sombreado-interno {
+  background-color: rgba(151, 243, 228, 0.205);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center; 
+}
+
+.sombreado-interno h1, 
+.sombreado-interno h2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.sombreado-interno h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.sombreado-interno h2 {
+  font-size: 1.2rem;
+  text-align: right;
 }
 
 .intro {
@@ -456,6 +500,33 @@ td {
     color: inherit;
 }
 
+.enlace .centrado {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.enlace .left-col {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.enlace .left-col img {
+  max-width: 100%;
+  height: auto;
+}
+
+.enlace .right-col {
+  flex: 1 1 auto;
+}
+
+.enlace #toggle-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .enlace {
   display: flex;
   grid-template-columns: 1fr;
@@ -482,6 +553,7 @@ td {
   justify-content: center;
 	align-items: start; 
   height: 100%;
+  padding: 10px;
 }
 
 .centrado img {
@@ -668,8 +740,14 @@ td {
   align-self: start;
 }
 
-#span {
-	  text-decoration: none;
+
+.imagen-principal {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .logo-carousel {
@@ -932,26 +1010,26 @@ footer .wave#wave4 {
 }
 
 .encabezado-icono {
-  margin-right: 20px;
-}
-
-.encabezado2-icono {
   margin-left: 20px;
 }
 
-.encabezado2-categorias img {
-  display: block;
+.encabezado2-icono {
+  margin-right: 20px;
 }
 
 .encabezado-texto {
-	text-align: right;
+  text-align: left;
   flex: 1;
       color:  #333;
 } 
 
 .encabezado2-texto {
-  text-align: left;
+	text-align: right;
   flex: 1;
+}
+
+.encabezado2-categorias img {
+  display: block;
 }
 
 .image-wrapper {
@@ -966,7 +1044,6 @@ footer .wave#wave4 {
   color: #777;
 }
 
-
 .cerrar-btn {
     background-color: #333;
     color: #fff;
@@ -977,6 +1054,7 @@ footer .wave#wave4 {
     cursor: pointer;
   }
 
+  // si cierro esta etiqueta mi archivo se vuelve un infierno...
   .cerrar-btn:hover {
     background-color: #444;
 
@@ -984,62 +1062,13 @@ footer .wave#wave4 {
   .encabezado-categorias,.encabezado2-categorias {
     flex-direction: column;
   }
+}
   
-  .encabezado-icono, .encabezado2-icono {
+.encabezado-icono, .encabezado2-icono {
 	  display: block;
     margin-right: 0;
     margin-bottom: 20px;
-  }
-}
-
-
-
-
-
-
-
-.enlace {
-  display: flex;
-  align-items: center;
-  position: relative;
-  color: #333;
-  font-size: 21px;
-  text-decoration: none;
-}
-
-.enlace .centrado {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.enlace .left-col {
-  flex: 0 0 auto;
-  margin-right: 20px;
-}
-
-.enlace .left-col img {
-  max-width: 100%;
-  height: auto;
-}
-
-.enlace .right-col {
-  flex: 1 1 auto;
-}
-
-.enlace #toggle-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-
-
-
-
-
-.nueva-clase {
+  }.nueva-clase {
   display: flex;
   align-items: center;
   position: relative;
@@ -1073,29 +1102,88 @@ footer .wave#wave4 {
   position: absolute;
   top: 0;
   right: 0;
+}footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+footer .social_icon, footer .menu {
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin: 10px 0;
+}
 
+footer .social_icon li, footer .menu li {
+  list-style: none;
+}
+footer .social_icon li a {
+  font-size: 2em;
+  color: #ccc;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .social_icon li a:hover {
+  transform: translateY(-15px);
+  color: blue;
+}
 
+footer .menu li a {
+  font-size: 1.2em;
+  color: #ccc;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+footer .menu li a:hover {
+  opacity: 1;
+  color: #fff;
+}
+p {
+  color : #eee;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
 
+/*wave and animation*/
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://i.ibb.co/rZt4Nhg/wave.png);
+  background-size: 1000px 100px;
 
+@keyframes animateWave {
+  0%{
+    background-position-x: 1000px; 
+  }
+  100%{
+    background-position-x: 0px; 
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes animateWave_02 {
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: 1000px; 
+  }
 
 
 @media (max-width: 640px) {
@@ -1128,4 +1216,6 @@ footer .wave#wave4 {
     margin-right: 0;
     margin-bottom: 20px;
   }
+}
+}
 }
