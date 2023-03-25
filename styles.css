@@ -309,11 +309,14 @@ margin-right: 25px;
   font-size: 2rem;
   font-weight: bold;
   margin-right: auto;
+  margin-left: 0;
 }
 
 .sombreado-interno h2 {
   font-size: 1.2rem;
   text-align: right;
+  margin-right: auto;
+  margin-right: 0;
 }
 
 .intro {
