@@ -154,6 +154,41 @@ a {
   color: inherit;
 }
 
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav li {
+    list-style: none;
+    margin: 0;
+}
+
+.main-nav a {
+    display: block;
+    padding: 8px;
+    margin: 0 10px;
+    border: 1px solid var(--white);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--very-light-pink);
+}
+
+.main-nav a:hover {
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+}
+
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -166,9 +201,9 @@ nav {
 	display: none;
 }
 
-.menu {
+/* .menu {
 	display: none;
-}
+} */
 
 .navbar-home {
     display: inline-block;
@@ -187,61 +222,53 @@ nav {
     margin-right: 5px;
 }
 
-.navbar-left {
-	display: flex;
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 
-.navbar-left ul,
-.navbar-right ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center;
-	height: 60px;
-	justify-content: space-between;
+.nav-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-.navbar-left ul li a,
-.navbar-right ul li a {
-	text-decoration: none;
-	color: var(--very-light-pink);
-	border: 1px solid var(--white);
-	padding: 8px;
-	border-radius: 8px;
+.nav-right {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-.navbar-left ul li a:hover,
-.navbar-right ul li a:hover {
-	border: 1px solid var(--hospital-green);
-	color: var(--hospital-green);
+.nav-left ul,
+.nav-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-.navbar-left ul {
-	margin-left: 12px;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center;
-	height: 60px;
-	margin-left: 12px;
-    margin-top: 10px;
+.nav-left ul li,
+.nav-right ul li {
+  margin-right: 1rem;
 }
 
-.navbar-left ul li {
-    padding-right: 15px;
-    margin-bottom: 10px;
+.nav-left ul li:last-of-type,
+.nav-right ul li:last-of-type {
+  margin-right: 0;
 }
 
 #top {
 margin-right: 25px;
 }
 
-  .title {
-  text-align: center;
-  margin: 20px 0;
-  animation: title-color 10s infinite;
+.title {
+	text-align: center;
+	margin: 20px 0;
+	animation: title-color 10s infinite;
 }
 
 @keyframes title-color {
@@ -280,7 +307,7 @@ margin-right: 25px;
   }
 }
 
-.sombreado {
+.encabezado {
   background-color: rgba(151, 243, 228, 0.205);
   padding: 10px;
   border-radius: 5px;
@@ -289,7 +316,7 @@ margin-right: 25px;
   max-width: 100%;
 }
 
-.sombreado-interno {
+.encabezado-interno {
   background-color: rgba(151, 243, 228, 0.205);
   padding: 10px;
   border-radius: 5px;
@@ -298,21 +325,22 @@ margin-right: 25px;
   align-items: center;
 }
 
-.sombreado-interno h1, 
-.sombreado-interno h2 {
+.encabezado-interno h1, 
+.encabezado-interno h2 {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
 }
 
-.sombreado-interno h1 {
+.encabezado-interno h1 {
   font-size: 2rem;
+  text-align: left;
   font-weight: bold;
   margin-right: auto;
   margin-left: 0;
 }
 
-.sombreado-interno h2 {
+.encabezado-interno h2 {
   font-size: 1.2rem;
   text-align: right;
   margin-right: auto;
@@ -539,7 +567,7 @@ td {
   grid-template-areas:
     "imagen"
     "credito"
-	"titulo"
+	  "titulo"
     "contenido"
     "boton";
 	align-items: start; 
@@ -635,7 +663,7 @@ td {
   grid-template-areas:
     "imagen"
     "credito"
-	"titulo"
+	  "titulo"
     "contenido"
     "boton";
 	 align-items: start;
@@ -1057,14 +1085,14 @@ footer .wave#wave4 {
     padding: 5px 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-  position: relative;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  border: none;
-  background-color: transparent;
-  color: #999;
-  font-size: 20px;
-  cursor: pointer;
+    position: relative;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+    color: #999;
+    font-size: 20px;
+    cursor: pointer;
   }
 
   // si cierro esta etiqueta mi archivo se vuelve un infierno...
@@ -1076,19 +1104,15 @@ footer .wave#wave4 {
     flex-direction: column;
   }
 }
-  
-.encabezado-icono, .encabezado2-icono {
-	  display: block;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }.nueva-clase {
+
+.nueva-clase {
   display: flex;
   align-items: center;
   position: relative;
   color: #333;
   font-size: 21px;
   text-decoration: none;
-}
+  }  
 
 .nueva-clase .centrado {
   display: flex;
@@ -1110,6 +1134,27 @@ footer .wave#wave4 {
 .nueva-clase .right-col {
   flex: 1 1 auto;
 }
+  
+  .encabezado-icono,
+  .encabezado2-icono {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
+  }
+  
+/* .encabezado-icono, .encabezado2-icono {
+	  display: block;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }.nueva-clase {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #333;
+  font-size: 21px;
+  text-decoration: none;
+} */
+
 /* 
 .nueva-clase #toggle-button {
   position: absolute;
