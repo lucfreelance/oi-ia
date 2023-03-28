@@ -15,21 +15,21 @@
 	<body>
 		<section>
 	<nav class="main-nav">
-		<div class="navbar-left navbar-section">
-			<ul>
-				<li>
-					<a href="./index.html" class="navbar-home"><i class="fas fa-home"></i>inicio</a>
-				</li>
-				<li>
-					 <a href="./src/categorias/asistentes.html">ASISTENTES</a>
-				</li>
-				<li>
-					<a href="./src/categorias/generativos.html">GENERATIVOS</a>
-				</li>
-				<li>
-					<a href="./src/categorias/editores.html">EDITORES</a>
-				</li>
-			</ul>
+		<div class="navbar-left">
+		<ul>
+			<li>
+			<a href="./index.html" class="navbar-home"><i class="fas fa-home"></i>inicio</a>
+			</li>
+			<li>
+			<a href="#asistentes">ASISTENTES</a>
+			</li>
+			<li>
+			<a href="#generativos">GENERATIVOS</a>
+			</li>
+			<li>
+			<a href="#editores">EDITORES</a>
+			</li>
+		</ul>
 		</div>
 		<div class="navbar-right navbar-section">
 			<ul>
@@ -49,10 +49,12 @@
   <img src="https://cdn.pixabay.com/photo/2016/08/05/09/28/hand-1571852_960_720.jpg" alt="Imagen de mano de hombre apuntando con dedo índice al indice de la mano humanoide de un robot como en el fresco La Creación de Adán por Miguel Ángel"> 
 </div>
 
-<span class="encabezado">
-<h1 class="title">Bienvenida a Oportunidades Ilimitadas!</h1>
-<h2 class="subtitle">Tu Table-Board de inteligencias artificiales</h2>
-</span>
+<div class="encabezado">
+  <div class="encabezado-interno">
+    <h1 class="title">Bienvenida a Oportunidades Ilimitadas!</h1>
+    <h2 class="subtitle">Tu Table-Board de inteligencias artificiales</h2>
+  </div>
+</div>
 
 <section class="encabezado-categorias">
   <div class="encabezado-icono">
@@ -64,23 +66,10 @@
 </section>
 
 <main>
+	
   <div class="table-board">
   <table>
 <tr>
-	<td id="mi-td" style="cursor: pointer;">
-		<a href="#" class="enlace nueva-clase" data-contenido="
-    <div class='centrado'>
-      <div class='left-col'>
-        <img src='../../dbase/oportunidades_ilimitadas/aimco/0.jpg' class='imagen-principal'>
-        <p id='credito'>Bing Images</p>
-      </div>
-      <div class='right-col'>
-        <h2>Prueba</h2>
-        <p>En esta categoría hablaremos sobre los editores de imagen que utilizan inteligencias artificiales para mejorar y retocar imágenes de forma automática automática automática automática automática automática automática.
-			</p>
-      </div>>
-    </div>">Prueba</a>
-	</td>
 <td>
   <a href="#" class="enlace" data-contenido="
     <div class='centrado'>
@@ -244,10 +233,7 @@
 </main>
 
 <section>
-<div id="contenido-adicional"></div>
-</span>
-<span>
-<div id="contenido"></div>
+  <div id="contenido"></div>
 </section>
 
 <section class="encabezado2-categorias">
@@ -274,8 +260,150 @@
   </div>
 </section>
 
+<section style="display: flex; flex-wrap: wrap;">
+<div id="asistentes" class="subtable-board" style="max-width: 33%; padding: 0 10px;">
+  <table>
+    <tr>
+      <td>
+        <a href="#" class="subenlace" data-contenido="...">
+          Asistente Código
+        </a> 
+      </td>
+      <td>
+        <a href="#" class="subenlace" data-contenido="...">
+          Asistente Copy
+        </a>
+      </td>
+      <td>
+        <a href="#" class="subenlace" data-contenido="...">
+          Asistente Sonido
+        </a>
+      </td>
+      <td>
+        <a href="#" class="subenlace" data-contenido="...">
+          Asistente Oficina
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="generativos" class="subtable-board" style="max-width: 33%; padding: 0 10px;">
+  <table>
+    <tr>
+      <td>
+        <a href="#" class="subenlace" data-contenido="...">
+          Texto a Sonido
+        </a> 
+      </td>
+      <td>
+        <a href="#" class="subenlace" data-contenido="...">
+          Texto a Imagen
+        </a>
+      </td>
+      <td>
+        <a href="#" class="subenlace" data-contenido="...">
+          Texto a Vídeo
+        </a>
+      </td>
+      <td>
+        <a href="#" class="subenlace" data-contenido="...">
+          Buscador Web
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="editores" class="subtable-board" style="max-width: 33%; padding: 0 10px;">
+  <table>
+    <tr>
+      <td>
+        <a href="#" class="subenlace" data-contenido="...">
+          Editor Imagen
+        </a> 
+      </td>
+      <td>
+        <a href="#" class="subenlace" data-contenido="...">
+          Diseño Logo
+        </a>
+      </td>
+      <td>
+        <a href="#" class="subenlace" data-contenido="...">
+          Editor Vídeo
+        </a>
+      </td>
+      <td>
+        <a href="#" class="subenlace" data-contenido="...">
+          Generador CV
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+</section>
+
+<!-- <section>
+  <div class="subtable-board">
+  <table>
+<tr>
+<td>
+		<a href="#" class="subenlace" data-contenido="
+    <div class='centrado'>
+      <div class='left-col'>
+        <img src='../../../../dbase/oportunidades_ilimitadas/aimco/0.jpg' class='imagen-principal'>
+      </div>
+      <div class='right-col'>
+        <p id='credito'>Bing Images</p>
+                  <h2>Asistente Código</h2>
+      <p>Este asistente utiliza la inteligencia artificial para ayudarte a escribir código más rápido y sin errores. Puede sugerir cambios y correcciones automáticamente, ahorrando tiempo y mejorando la calidad del código.</p>
+<button id='toggle-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
+                </div>"
+				>Asistente Código</a>	
+            </td>
+            <td>
+              <a href="#" class="subenlace" data-contenido="
+                <div class='subcentrado'>
+                  <img src='../imagenes/imagen-destacada/2/05-asistente-copy.jpeg'  class='subimagen-destacada'><br>
+	  <p id='credito'>Bing Images</p><br>
+                  <h2>Asistente Copy</h2>
+      <p>Con este asistente puedes mejorar la calidad de tu contenido y redacciones. Te ayuda a encontrar sinónimos, mejorar la estructura de las oraciones, y ofrece recomendaciones para hacer que tu contenido sea más legible.</p><br>
+      <button id='toggle-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
+                </div>"
+              >Asistente Copy</a>
+            </td>
+            <td>
+              <a href="#" class="subenlace" data-contenido="
+                <div class='subcentrado'>
+                  <img src='../imagenes/imagen-destacada/2/08-asistente-sonido.jpeg' class='subimagen-destacada'><br>
+	  <p id='credito'>Bing Images</p><br>
+                 <h2>Asistente Sonido</h2>
+      <p>Este asistente te permite crear sonidos y efectos de manera fácil y rápida. Ofrece una amplia variedad de herramientas para personalizar tus sonidos, incluyendo mezcladores y filtros.</p><br>
+      <button id='toggle-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
+                </div>"
+              >Asistente Sonido</a>
+            </td>
+            <td>
+              <a href="#" class="subenlace" data-contenido="
+                <div class='subcentrado'>
+                  <img src='../imagenes/imagen-destacada/2/02-asistente-oficina.png'  class='subimagen-destacada'><br>
+	  <p id='credito'>Dall-e</p><br>
+                   <h2>Asistente Oficina</h2>
+      <p>Con este asistente puedes automatizar tareas repetitivas en tu trabajo de oficina, como programar reuniones, enviar correos electrónicos y crear informes. Ahorrarás tiempo y te permitirá centrarte en tareas más importantes.</p><br>
+      <button id='toggle-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
+                </div>"
+				>Asistente Oficina</a>
+</td>
+</tr>
+</table>
+</div>
+</section> -->
+
+<span>
+<div id="subcontenido"></div>
+</span>
+</main>
+
 <section>
-  <h2>Empieza por aquí:</h2>
+  <h2>Artículos agregados</h2>
   <div class="article-container">
     <div class="article-card" id="articulo-1">
       <img src="./src/imagenes/premisa-destacada/1.gif" alt="Imagen destacada del artículo 'Gana dinero con Inteligencia Artificial'">
@@ -305,12 +433,6 @@
 </section>
 
 <footer>
-  <div class="waves">
-    <div class="wave" id="wave1"></div>
-    <div class="wave" id="wave2"></div>
-    <div class="wave" id="wave3"></div>
-    <div class="wave" id="wave4"></div>
-  </div>
   <ul class="social_icon">
     <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
     <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>

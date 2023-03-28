@@ -31,7 +31,7 @@ for (var i = 0; i < enlaces.length; i++) {
 
 // selecciona el botón "Mostrar más" y el contenedor adicional
 var boton = document.getElementById('toggle-button');
-var contenido = document.getElementById('contenido-adicional');
+var contenido = document.getElementById('contenido');
 
 // agrega un evento de clic al botón que muestra el contenido adicional
 boton.addEventListener('click', function() {
@@ -51,7 +51,7 @@ for (var i = 0; i < enlaces.length; i++) {
 
     // Crea un nuevo div para el contenido adicional
     var nuevoContenido = document.createElement("div");
-    nuevoContenido.classList.add("contenido-adicional");
+    nuevoContenido.classList.add("contenido");
     nuevoContenido.innerHTML = this.getAttribute("data-contenido");
 
     // Agrega el nuevo contenido después del enlace actual
@@ -104,4 +104,35 @@ toggleButtons.forEach((button, index) => {
   // 
   $('.imagen-principal').click(function() {
   $('#modal-imagen').modal('show');
+});
+
+// 
+// Selecciona los elementos con la clase .subenlace dentro de la sección
+const subenlaces = document.querySelectorAll('section .subenlace');
+
+// Añade un evento click a cada enlace
+subenlaces.forEach(subenlace => {
+subenlace.addEventListener('click', e => {
+e.preventDefault();
+const contenido = subenlace.getAttribute('data-contenido');
+const subContenido = document.querySelector("#subcontenido");
+subContenido.innerHTML = contenido;
+subContenido.classList.add("mostrar");
+});
+});
+
+// Selecciona el elemento con el id #subcontenido
+const subContenido = document.querySelector("#subcontenido");
+
+// Añade un evento click al #subcontenido para cerrarlo
+subContenido.addEventListener("click", () => {
+subContenido.classList.remove("mostrar");
+});
+
+
+$(document).ready(function(){
+    $("#subtabla td").click(function(){
+        var contenido = $(this).find(".contenido").html();
+        $("#subcontenido").html(contenido);
+    });
 });
