@@ -943,6 +943,25 @@ td {
   }
 }
 
+//
+.subcategorias {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.subtable-board {
+	max-width: 33%;
+	padding: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+.subtable-board {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+}
+
+
 @media (max-width: 640px) {
 	.menu {
 		display: block;
