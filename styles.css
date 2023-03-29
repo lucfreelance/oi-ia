@@ -709,9 +709,12 @@ td {
   justify-content: center;
 }
 
-#toggle-button-1,
+#toggle-button-0,
+#toggle-button-3 
 #toggle-button-2,
-#toggle-button-3 {
+#toggle-button-3,
+#toggle-button-4,
+#toggle-button-5{
   justify-content: center;
 }
 
@@ -826,6 +829,8 @@ td {
 }
 
 .article-card {
+  max-height: 500px;
+  overflow: auto;
   justify-content: center;
   width: 300px;
   margin-right: 20px;
@@ -847,16 +852,8 @@ td {
   justify-content: space-between;
 }
 
-.article-card:hover {
-  transform: translateX(-10px);
-}
-
-.article-card .more-content {
-  display: none;
-}
-
-.article-card.expanded .more-content {
-  display: block;
+.article-card img {
+  height: 200px;
 }
 
 .nueva-clase {
