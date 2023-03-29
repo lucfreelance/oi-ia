@@ -35,29 +35,12 @@ var contenido = document.getElementById('contenido');
 
 // agrega un evento de clic al botón que muestra el contenido adicional
 boton.addEventListener('click', function() {
-// inserta el contenido adicional después del contenedor existente
 contenido.insertAdjacentHTML('afterend', boton.dataset.contenido);
+// inserta el contenido adicional después del contenedor existente
 
 // oculta el botón "Mostrar más"
 boton.style.display = 'none';
 });
-
-//
-var enlaces = document.getElementsByClassName("enlace");
-
-for (var i = 0; i < enlaces.length; i++) {
-enlaces[i].addEventListener("click", function(event) {
-event.preventDefault(); // Evita que el enlace siga el enlace
-
-// Crea un nuevo div para el contenido adicional
-var nuevoContenido = document.createElement("div");
-nuevoContenido.classList.add("contenido");
-nuevoContenido.innerHTML = this.getAttribute("data-contenido");
-
-// Agrega el nuevo contenido después del enlace actual
-this.insertAdjacentElement("afterend", nuevoContenido);
-});
-}
 
 // const articleContainer = document.querySelector('.article-container');
 const articleExpandedContainer = document.querySelector('.article-expanded-container');
@@ -82,9 +65,6 @@ articleCard.classList.toggle('expanded');
 });
 });
 
-// Obtener todos los botones "Saber más"
-var botones = document.querySelectorAll("#table-board .enlace");
-
 // Recorrer todos los botones y agregar el evento click
 botones.forEach(function(boton) {
 boton.addEventListener("click", function(event) {
@@ -95,7 +75,7 @@ boton.addEventListener("click", function(event) {
 });
 });
 
-  // 
+// 
   $('.imagen-principal').click(function() {
   $('#modal-imagen').modal('show');
 });
@@ -131,21 +111,6 @@ $("#subtabla td").click(function(){
 });
 });
 
-// 
-var enlaces = document.querySelectorAll('.subenlace');
-enlaces.forEach(function(enlace) {
-enlace.addEventListener('click', function(e) {
-	e.preventDefault();
-	var contenido = this.getAttribute('data-contenido');
-	var subtabla = document.getElementById(subcontenido);
-	var subtablas = document.querySelectorAll('.subtable-board');
-	subtablas.forEach(function(tabla) {
-	tabla.classList.remove('activo');
-	});
-	subtabla.classList.add('activo');
-});
-});
-
 // "subir al top" NO FUNCIONA
 window.addEventListener("scroll", function() {
   var scrollToTopButton = document.getElementById("scrollToTopButton");
@@ -162,3 +127,38 @@ document.getElementById("scrollToTopButton").addEventListener("click", function(
     behavior: "smooth"
   });
 });
+
+// //
+// var enlaces = document.getElementsByClassName("enlace");
+
+// for (var i = 0; i < enlaces.length; i++) {
+// enlaces[i].addEventListener("click", function(event) {
+// event.preventDefault(); // Evita que el enlace siga el enlace
+
+// // Crea un nuevo div para el contenido adicional
+// var nuevoContenido = document.createElement("div");
+// nuevoContenido.classList.add("contenido");
+// nuevoContenido.innerHTML = this.getAttribute("data-contenido");
+
+// // Agrega el nuevo contenido después del enlace actual
+// this.insertAdjacentElement("afterend", nuevoContenido);
+// });
+// }
+
+// // 
+// var enlaces = document.querySelectorAll('.subenlace');
+// enlaces.forEach(function(enlace) {
+// enlace.addEventListener('click', function(e) {
+// 	e.preventDefault();
+// 	var contenido = this.getAttribute('data-contenido');
+// 	var subtabla = document.getElementById(subcontenido);
+// 	var subtablas = document.querySelectorAll('.subtable-board');
+// 	subtablas.forEach(function(tabla) {
+// 	tabla.classList.remove('activo');
+// 	});
+// 	subtabla.classList.add('activo');
+// });
+// });
+
+// // Obtener todos los botones "Saber más"
+// var botones = document.querySelectorAll("#table-board .enlace");
