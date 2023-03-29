@@ -154,6 +154,10 @@ a {
 }
 
 .main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -188,27 +192,6 @@ a {
     color: var(--hospital-green);
 }
 
-// 
-
-nav {
-	display: flex;
-	justify-content: space-between;
-  	align-items: center;
-	padding: 0 24px;
-	border-bottom: 1px solid var(--very-light-pink);
-}
-
-.inactive {
-	display: none;
-}
-
-.main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-}
-
 .navbar-home {
     display: inline-block;
     background-color: #007bff;
@@ -216,8 +199,15 @@ nav {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-    padding-left: 10px;
+    padding: 10px;
     border-right: 5px solid transparent; /* Añade un borde derecho transparente */
+    margin-right: 5px; /* Reduce el margen derecho */
+    margin-left: 5px; /* Agrega un margen izquierdo */
+}
+
+.navbar-home i {
+    margin-right: 5px;
+    margin-left: 10px;
 }
 
 .navbar-home img {
@@ -243,6 +233,27 @@ nav {
 .nav-left ul li:last-of-type,
 .nav-right ul li:last-of-type {
   margin-right: 0;
+}
+
+.navbar-right {
+    margin-right: 10px;
+}
+
+.navbar-oportunidades {
+    flex-shrink: 0;
+}
+
+// 
+nav {
+	display: flex;
+	justify-content: space-between;
+  	align-items: center;
+	padding: 0 24px;
+	border-bottom: 1px solid var(--very-light-pink);
+}
+
+.inactive {
+	display: none;
 }
 
 @media only screen and (max-width: 374px) {
