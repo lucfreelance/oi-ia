@@ -104,7 +104,7 @@ span {
 }
 
 h2 {
-margin: 0 auto; /* margen superior e inferior de 40px y centrado horizontalmente */
+margin: 15px; /* margen superior e inferior de 40px y centrado horizontalmente */
   max-width: 800px; /* ancho máximo del elemento */
   text-align: center;
   display: block;
@@ -120,11 +120,10 @@ p {
   color : #666;
   text-align: right;
   margin-top: 15px;
-  font-size: 1.1em;
+  font-size: 1.2em;
   grid-area: contenido;
   margin-bottom: 15px;
   margin-left: 20px;
-  font-size: 1.5em;
   text-shadow: none;
 }
 
@@ -332,6 +331,8 @@ nav {
 .intro {
 	width: 100%;
 	object-fit: cover;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
   
 .intro p {
@@ -431,6 +432,50 @@ nav {
     transform: translateX(-100%);
   }
 }
+.encabezado-categorias {
+  background-color: #faa63e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.encabezado-categorias .encabezado-icono img {
+  margin-right: 20px;
+  border-radius: 50%;
+  padding-left: 5px;
+}
+
+.encabezado-categorias .encabezado-texto p {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.encabezado2-categorias {
+  background-color: #ec73ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.encabezado2-categorias .encabezado2-icono img {
+  margin-left: 20px;
+  border-radius: 50%;
+  padding-right: 5px;
+}
+
+.encabezado2-categorias .encabezado2-texto p {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+  
+  .encabezado-icono,
+  .encabezado2-icono {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
+  }
 
 td {
   display: inline-block;    
@@ -560,7 +605,7 @@ td {
 .centrado {
   display: flex;
   justify-content: center;
-	align-items: start; 
+  align-items: flex-start;
   height: 100%;
   padding: 10px;
 }
@@ -570,6 +615,7 @@ td {
   height: auto;
   max-height: 300px;
   margin: 10px 0;
+  align-items: center;
 }
   
 .centrado h2 {
@@ -578,12 +624,13 @@ td {
 }
 
 .centrado #credito {
-  left: 0;
   font-size: 14px;
   color: #333;
   background-color: white;
-  align-self: start;
-     margin-top: 20;
+     margin: 20;
+	 vertical-align: top;
+	 display: inline-block;
+	 vertical-align: top;
 }
 
 .centrado #contenido {
@@ -734,7 +781,7 @@ td {
 }
 
 .imagen-destacada {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
   max-height: 300px;
   margin: 10px 0;
@@ -742,7 +789,7 @@ td {
 }
 
 .subimagen-destacada {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
   max-height: 300px;
   margin: 10px 0;
@@ -817,7 +864,7 @@ td {
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #98DBC6;
+  background-color: #37dfa7e4;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -885,13 +932,6 @@ td {
 .nueva-clase .right-col {
   flex: 1 1 auto;
 }
-  
-  .encabezado-icono,
-  .encabezado2-icono {
-  display: block;
-  margin-right: 0;
-  margin-bottom: 20px;
-  }
 
 // si cierro esta etiqueta mi archivo se vuelve un infierno…
   .cerrar-btn:hover {
