@@ -34,6 +34,23 @@ body {
 	font-family: "Quicksand", sans-serif;
 }
 
+/* "Subir al top" NO FUNCIONA
+#scrollToTopButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+} */
+
 header {
   width: 100%;
   margin-bottom: 20px;
@@ -104,7 +121,7 @@ span {
 }
 
 h2 {
-margin: 15px; /* margen superior e inferior de 40px y centrado horizontalmente */
+margin: 20px; /* margen superior e inferior de 40px y centrado horizontalmente */
   max-width: 800px; /* ancho máximo del elemento */
   text-align: center;
   display: block;
@@ -342,8 +359,8 @@ nav {
 .intro {
 	width: 100%;
 	object-fit: cover;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
   
 .intro p {
@@ -452,7 +469,7 @@ nav {
 }
 
 .encabezado-categorias .encabezado-icono img {
-  margin-right: 20px;
+  /* margin-right: 20px; */
   border-radius: 50%;
   padding-left: 5px;
 }
@@ -460,6 +477,7 @@ nav {
 .encabezado-categorias .encabezado-texto p {
   font-size: 18px;
   color: #FFFFFF;
+  margin-right: 5px
 }
 
 .encabezado2-categorias {
@@ -819,7 +837,7 @@ td {
   scroll-snap-type: x mandatory;
   flex-direction: column;
   align-items: stretch;
-  width: 100%;
+  width: 98%;
   flex-wrap: wrap;
   justify-content: center;
   background-color: #37dfa7e4;
@@ -829,7 +847,7 @@ td {
 }
 
 .article-card {
-  max-height: 500px;
+  max-height: 600px;
   overflow: auto;
   justify-content: center;
   width: 300px;
