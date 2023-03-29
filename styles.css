@@ -545,7 +545,6 @@ td {
 .subtable-board td {
   border-radius: 5px;
   transition: all 0.4s ease;
-  padding: 5px;
 }
 
 .subtable-board td:hover {
@@ -602,6 +601,10 @@ td {
  text-align: left;
 }
 
+.enlace a {
+	    color: #333;
+}
+
 .centrado {
   display: flex;
   justify-content: center;
@@ -640,64 +643,6 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.subcentrado {
-  display: flex;
-  justify-content: center;
-	align-items: start; 
-  height: 100%;
-}
-
-.subcentrado img {
-  max-width: 100%;
-  height: auto;
-  max-height: 300px;
-  margin: 10px 0;
-}
-  
-.subcentrado h2 {
-  align-self: start;
-  margin-top: 0;
-}
-
-.subcentrado #credito {
-  left: 0;
-  font-size: 14px;
-  color: #222;
-  background-color: white;
-  align-self: start;
-  margin-top: 20;
-}
-  
-.subcentrado #contenido {
-  display: none;
-  color: #f2f2f2;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.subenlace {
-  display: flex;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas:
-    "imagen"
-    "credito"
-	"titulo"
-    "contenido"
-    "boton";
-	align-items: start;
-	position: relative; 
-    color: #333;
-    font-size: 21px;
-    text-decoration: none;
-}
-
-.subenlace #h2 {
- text-align: left;
 }
 
 #subcontenido {
@@ -755,8 +700,7 @@ td {
 
 #toggle-button-1,
 #toggle-button-2,
-#toggle-button-3,
-#toggle-button-4 {
+#toggle-button-3 {
   justify-content: center;
 }
 
@@ -866,6 +810,7 @@ td {
   justify-content: center;
   background-color: #37dfa7e4;
   padding: 20px;
+  padding-bottom: 90px;
   box-sizing: border-box;
 }
 
@@ -931,6 +876,117 @@ td {
 
 .nueva-clase .right-col {
   flex: 1 1 auto;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social_icon, footer .menu {
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin: 10px 0;
+}
+
+footer .social_icon li, footer .menu li {
+  list-style: none;
+}
+footer .social_icon li a {
+  font-size: 2em;
+  color: #ccc;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .social_icon li a:hover {
+  transform: translateY(-15px);
+  color: blue;
+}
+
+footer .menu li a {
+  font-size: 1.2em;
+  color: #ccc;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+footer .menu li a:hover {
+  opacity: 1;
+  color: #fff;
+}
+/* p {
+  color : #eee;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+} */
+
+/*wave and animation*/
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://i.ibb.co/rZt4Nhg/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 12s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 10s linear infinite;
+}
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 0;
+  animation: animateWave 8s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 6s linear infinite;
+}
+
+@keyframes animateWave {
+  0%{
+    background-position-x: 1000px; 
+  }
+  100%{
+    background-position-x: 0px; 
+  }
+}
+
+@keyframes animateWave_02 {
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: 1000px; 
+  }
 }
 
 // si cierro esta etiqueta mi archivo se vuelve un infierno…
