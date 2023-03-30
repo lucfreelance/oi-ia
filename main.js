@@ -128,37 +128,3 @@ document.getElementById("scrollToTopButton").addEventListener("click", function(
   });
 });
 
-// //
-// var enlaces = document.getElementsByClassName("enlace");
-
-// for (var i = 0; i < enlaces.length; i++) {
-// enlaces[i].addEventListener("click", function(event) {
-// event.preventDefault(); // Evita que el enlace siga el enlace
-
-// // Crea un nuevo div para el contenido adicional
-// var nuevoContenido = document.createElement("div");
-// nuevoContenido.classList.add("contenido");
-// nuevoContenido.innerHTML = this.getAttribute("data-contenido");
-
-// // Agrega el nuevo contenido después del enlace actual
-// this.insertAdjacentElement("afterend", nuevoContenido);
-// });
-// }
-
-// // 
-// var enlaces = document.querySelectorAll('.subenlace');
-// enlaces.forEach(function(enlace) {
-// enlace.addEventListener('click', function(e) {
-// 	e.preventDefault();
-// 	var contenido = this.getAttribute('data-contenido');
-// 	var subtabla = document.getElementById(subcontenido);
-// 	var subtablas = document.querySelectorAll('.subtable-board');
-// 	subtablas.forEach(function(tabla) {
-// 	tabla.classList.remove('activo');
-// 	});
-// 	subtabla.classList.add('activo');
-// });
-// });
-
-// // Obtener todos los botones "Saber más"
-// var botones = document.querySelectorAll("#table-board .enlace");

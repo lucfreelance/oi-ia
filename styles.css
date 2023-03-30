@@ -34,7 +34,7 @@ body {
 	font-family: "Quicksand", sans-serif;
 }
 
-/* "Subir al top" NO FUNCIONA */
+/* "Subir al top" NO FUNCIONA
 #scrollToTopButton {
   display: none;
   position: fixed;
@@ -49,7 +49,7 @@ body {
   cursor: pointer;
   padding: 15px;
   border-radius: 50%;
-}
+} */
 
 header {
   width: 100%;
@@ -174,10 +174,54 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  background-color: #292929;
+  padding: 1rem;
+}
+
+
+.navbar-left ul {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.navbar-left a {
+font-size: 1.2rem;
+color: #fff;
+text-decoration: none;
+margin-left: 2rem;
+}
+
+.navbar-left a:hover {
+color: #ff6363;
+}
+
+.navbar-right img {
+height: 50px;
+}
+
+.oi_ia-nav {
+color: #ff6363;
+}
+
+.navbar-oportunidades {
+background-color: #ff6363;
+padding: 0.5rem;
+border-radius: 10px;
+margin-left: 2rem;
+}
+
+.navbar-oportunidades a {
+color: #fff;
+text-decoration: none;
+}
+
+.navbar-oportunidades {
+    flex-shrink: 0;
+}
+
+.navbar-oportunidades a:hover {
+color: #292929;
 }
 
 .main-nav ul {
@@ -254,10 +298,6 @@ a {
 
 .navbar-right {
     margin-right: 10px;
-}
-
-.navbar-oportunidades {
-    flex-shrink: 0;
 }
 
 // 
@@ -659,7 +699,6 @@ td {
   font-size: 14px;
   color: #333;
   background-color: white;
-     margin: 20;
 	 vertical-align: top;
 	 display: inline-block;
 	 vertical-align: top;
@@ -762,6 +801,7 @@ td {
   max-height: 300px;
   margin: 10px 0;
   align-self: start;
+  margin-top: 15px;
 }
 
 .subimagen-destacada {
@@ -837,7 +877,7 @@ td {
   scroll-snap-type: x mandatory;
   flex-direction: column;
   align-items: stretch;
-  width: 98%;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   background-color: #37dfa7e4;
