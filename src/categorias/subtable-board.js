@@ -1,4 +1,4 @@
-// Selecciona los elementos con la clase .subenlace dentro de la sección
+	// Selecciona los elementos con la clase .subenlace dentro de la sección
 const subenlaces = document.querySelectorAll('section .subenlace');
 
 // Añade un evento click a cada enlace

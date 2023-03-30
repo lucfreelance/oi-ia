@@ -127,4 +127,3 @@ document.getElementById("scrollToTopButton").addEventListener("click", function(
     behavior: "smooth"
   });
 });
-
