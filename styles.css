@@ -985,6 +985,29 @@ position: relative;
   justify-content: center;
 }
 
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.copyright-message {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.image-container:hover .copyright-message {
+  visibility: visible;
+  opacity: 1;
+}
+
 .nueva-clase {
   display: flex;
   align-items: center;
@@ -1176,7 +1199,6 @@ footer .wave#wave4 {
 }
 }
 
-
 @media (max-width: 640px) {
 	.menu {
 		display: block;
@@ -1209,15 +1231,7 @@ footer .wave#wave4 {
   }
 }
 
-
-
-/* .enlace a {
-	    color: #333;
 }
-.enlace:hover {
-  /* Cambiar el color del fondo o cualquier otro estilo */
-}
-
 .enlace:hover .negro {
   color: white;
 }
