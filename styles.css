@@ -562,6 +562,12 @@ td {
   transition: all 0.4s ease;
 }
 
+ul {
+  padding: 0 20px;
+    margin-bottom: 20px;
+	 padding: 0 20px;
+}
+
 .table-board {
   padding: 20px;
   background-color: #47a1d9;
@@ -833,6 +839,48 @@ position: relative;
   display: block;
 }
 
+.sinopsis {
+	text-align: justify;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+
+
+.contenido-enlaces {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.cerrar-app-btn {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.cerrar-app-btn button {
+  border: none;
+  background-color: transparent;
+  color: #555;
+  cursor: pointer;
+}
+
+.cerrar-app-btn button:hover {
+  color: #000;
+}
+
+.cerrar-app-contenedor {
+  display: flex;
+  justify-content: center;
+}
+
 .subcontenido {
   display: none;
 }
@@ -846,12 +894,13 @@ position: relative;
 }
 
 .imagen-destacada {
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
   max-height: 300px;
-  margin: 10px 0;
+  margin: 10px auto;
   align-self: start;
   margin-top: 15px;
+  padding-top: 20px;
 }
 
 .subimagen-destacada {

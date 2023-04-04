@@ -127,3 +127,24 @@ document.getElementById("scrollToTopButton").addEventListener("click", function(
     behavior: "smooth"
   });
 });
+
+//
+$(document).ready(function() {
+  $('.enlace').on('click', function(e) {
+    e.preventDefault();
+    var contenido = $(this).data('contenido');
+    $('#modal .modal-body').html(contenido);
+    $('#modal').modal('show');
+  });
+});
+
+// //
+// $(document).ready(function() {
+//   $('.enlace').click(function() {
+//     $(this).siblings('.contenido-enlaces').fadeIn('fast');
+//   });
+  
+//   $('.cerrar-app-btn button').click(function() {
+//     $(this).closest('.contenido-enlaces').fadeOut('fast');
+//   });
+// });
