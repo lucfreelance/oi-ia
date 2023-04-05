@@ -692,11 +692,11 @@ position: relative;
 	"titulo"
     "contenido"
     "boton";
-	align-items: start; 
-	 position: relative; 
-    color: #333;
-    font-size: 21px;
-    text-decoration: none;
+align-items: start; 
+	position: relative; 
+color: #333;
+font-size: 21px;
+text-decoration: none;
 }
 
 .enlace .left-col {
@@ -719,6 +719,66 @@ position: relative;
 
 .enlace a {
 	    color: #333;
+}
+
+.enlace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 21px;
+  position: relative;
+}
+
+.enlace .titulo {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.enlace .contenido {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contenido {
+  position: relative;
+}
+
+.cerrar-app-contenedor {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cerrar-app-btn {
+  background: transparent;
+  border: none;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.cerrar-app-btn:focus {
+  outline: none;
+}
+
+.cerrar-app-btn i {
+  color: #444;
+  font-size: 20px;
+}
+
+.snippet-content {
+  display: none;
+}
+
+.snippet-container.active .snippet-content {
+  display: block;
 }
 
 .titulo-fijo {

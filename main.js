@@ -40,26 +40,3 @@ boton.addEventListener("click", function(event) {
 });
 
 // 
-$(document).ready(function(){
-$("#subtabla td").click(function(){
-	var contenido = $(this).find(".contenido").html();
-	$("#subcontenido").html(contenido);
-});
-});
-
-// "subir al top" NO FUNCIONA
-window.addEventListener("scroll", function() {
-  var scrollToTopButton = document.getElementById("scrollToTopButton");
-  if (window.scrollY > 0) {
-    scrollToTopButton.style.display = "block";
-  } else {
-    scrollToTopButton.style.display = "none";
-  }
-});
-
-document.getElementById("scrollToTopButton").addEventListener("click", function() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
