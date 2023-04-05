@@ -10,16 +10,16 @@
 <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css" integrity="sha384-JoJHOHvL//D71gf/kJSKn18HHj5Sp5mQlF9XGdJlK48fapEV1xHgNnJcchN4Fb4/" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="./styles.css" />
 	</head>
 
 	<body>
+    <section>
 <button id="scrollToTopBtn" aria-label="Ir arriba">
 <i class="fas fa-chevron-up"></i>
 </button>
-<!-- "subir al top" NO FUNCIONA -->
-<button id="scrollToTopButton">Subir al top</button> 
+<button id="scrollToTopButton">Subir al top</button>
+</section>
 
 <div class="headpic">
   <img src="https://cdn.pixabay.com/photo/2016/08/05/09/28/hand-1571852_960_720.jpg" alt="Imagen de mano de hombre apuntando con dedo índice al indice de la mano humanoide de un robot como en el fresco La Creación de Adán por Miguel Ángel"> 
@@ -75,10 +75,11 @@
 </section>
 <div class="table-board">
   <table>
-<tr> 
+<tr>
+  
   <td>
-    <a href="#" class="enlace enlazado" data-contenido="
-      <div class='contenido'>
+    <a href="#" class="enlace" data-contenido="
+      <div class='listaCategoria'>
         <img src='./src/imagenes/imagen-destacada/1/01-editor-imagen.jpg' class='imagen-destacada' style='display: block; margin: 0 auto;'>
         <p id='credito' style='text-align: center; font-size: 13px;'>Bing Images</p>
         <p class='sinopsis'>Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría.</p>
@@ -111,127 +112,12 @@
         </div>        
       </div>
     ">
-      <div class="titulo">Título</div>
-      <div class="contenido-enlace">Contenido de enlace</div>
-    </a>
-  </td>
-  <td>
-    <a href="#" class="enlace" data-contenido="
-      <div class='contenido'>
-        <img src='./src/imagenes/imagen-destacada/1/01-editor-imagen.jpg' class='imagen-destacada' style='display: block; margin: 0 auto;'>
-        <p id='credito' style='text-align: center; font-size: 13px;'>Bing Images</p><p id='credito'>
-        <p class='sinopsis'>Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría.</p>
-        <ul>
-          <li>
-            <a href='https://ejemplo1.com' class='external-link'>
-              <img src='../src/imagenes/complemento-pic/icono1' alt='Logo 1'>
-              <h4>Nombre de la app 1</h4>
-              <p>Breve descripción de la app 1</p>
-            </a>
-          </li>
-          <li>
-            <a href='https://ejemplo2.com' class='external-link'>
-              <img src='ruta-al-logo2' alt='Logo 2'>
-              <h4>Nombre de la app 2</h4>
-              <p>Breve descripción de la app 2</p>
-            </a>
-          </li>
-          <li>
-            <a href='https://ejemplo3.com' class='external-link'>
-              <img src='ruta-al-logo3' alt='Logo 3'>
-              <h4>Nombre de la app 3</h4>
-              <p>Breve descripción de la app 3</p>
-            </a>
-          </li>
-        </ul>
-        <h3>Categoría</h3>
-        <div class='cerrar-app-contenedor'>
-          <button class='cerrar-app-btn'><i class='fas fa-times'></i></button>
-        </div>        
-      </div>
-    ">
-      Categoría
-    </a>
-  </td>
-  <td>
-    <a href="#" class="enlace" data-contenido="
-      <div class='contenido'>
-        <img src='./src/imagenes/imagen-destacada/1/01-editor-imagen.jpg' class='imagen-destacada' style='display: block; margin: 0 auto;'>
-        <p id='credito' style='text-align: center; font-size: 13px;'>Bing Images</p><p id='credito'>
-        <p class='sinopsis'>Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría.</p>
-        <ul>
-          <li>
-            <a href='https://ejemplo1.com' class='external-link'>
-              <img src='../src/imagenes/complemento-pic/icono1' alt='Logo 1'>
-              <h4>Nombre de la app 1</h4>
-              <p>Breve descripción de la app 1</p>
-            </a>
-          </li>
-          <li>
-            <a href='https://ejemplo2.com' class='external-link'>
-              <img src='ruta-al-logo2' alt='Logo 2'>
-              <h4>Nombre de la app 2</h4>
-              <p>Breve descripción de la app 2</p>
-            </a>
-          </li>
-          <li>
-            <a href='https://ejemplo3.com' class='external-link'>
-              <img src='ruta-al-logo3' alt='Logo 3'>
-              <h4>Nombre de la app 3</h4>
-              <p>Breve descripción de la app 3</p>
-            </a>
-          </li>
-        </ul>
-        <h3>Categoría</h3>
-        <div class='cerrar-app-contenedor'>
-          <button class='cerrar-app-btn'><i class='fas fa-times'></i></button>
-        </div>        
-      </div>
-    ">
-      Categoría
-    </a>
-  </td>
-  <td>
-    <a href="#" class="enlace" data-contenido="
-      <div class='contenido'>
-        <img src='./src/imagenes/imagen-destacada/1/01-editor-imagen.jpg' class='imagen-destacada' style='display: block; margin: 0 auto;'>
-        <p id='credito' style='text-align: center; font-size: 13px;'>Bing Images</p><p id='credito'>
-        <p class='sinopsis'>Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría.</p>
-        <ul>
-          <li>
-            <a href='https://ejemplo1.com' class='external-link'>
-              <img src='../src/imagenes/complemento-pic/icono1' alt='Logo 1'>
-              <h4>Nombre de la app 1</h4>
-              <p>Breve descripción de la app 1</p>
-            </a>
-          </li>
-          <li>
-            <a href='https://ejemplo2.com' class='external-link'>
-              <img src='ruta-al-logo2' alt='Logo 2'>
-              <h4>Nombre de la app 2</h4>
-              <p>Breve descripción de la app 2</p>
-            </a>
-          </li>
-          <li>
-            <a href='https://ejemplo3.com' class='external-link'>
-              <img src='ruta-al-logo3' alt='Logo 3'>
-              <h4>Nombre de la app 3</h4>
-              <p>Breve descripción de la app 3</p>
-            </a>
-          </li>
-        </ul>
-        <h3>Categoría</h3>
-        <div class='cerrar-app-contenedor'>
-          <button class='cerrar-app-btn'><i class='fas fa-times'></i></button>
-        </div>        
-      </div>
-    ">
       Categoría
     </a>
   </td>
 <td>
   <a href="#" class="enlace" id="enlace-proof" data-contenido="
-  <div class='contenido' style='text-align: center;'>
+  <div class='listaCategoria' style='text-align: center;'>
     <img src='./src/imagenes/imagen-destacada/1/01-editor-imagen.jpg' class='imagen-destacada'>
     <div style='float:right;'>
       <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
@@ -247,7 +133,7 @@
 </td>
 	<td>
  <a href="#" class="enlace" id="enlace-proof" data-contenido="
-    <div class='contenido' style='text-align: center;'>
+    <div class='listaCategoria' style='text-align: center;'>
       <img src='./src/imagenes/imagen-destacada/1/02-asistente-oficina.jpg' class='imagen-destacada'>
       <div style='float:right;'>
         <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
@@ -263,7 +149,7 @@
 </td>
 <td>
   <a href="#" class="enlace" id="enlace-proof" data-contenido="
-           <div class='contenido' style='text-align: center;'>
+           <div class='listaCategoria' style='text-align: center;'>
        <img src='./src/imagenes/imagen-destacada/1/03-diseno-logo.png' class='imagen-destacada'>
        <div style='float:right;'>
            <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
@@ -279,7 +165,7 @@
  </td>
 <td>
   <a href="#" class="enlace" id="enlace-proof" data-contenido="
-  <div class='contenido' style='text-align: center;'>
+  <div class='listaCategoria' style='text-align: center;'>
       <img src='./src/imagenes/imagen-destacada/1/04-texto-a-sonido.png' class='imagen-destacada'>
       <div style='float:right;'>
         <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
@@ -295,7 +181,7 @@
 </td>
 <td>
   <a href="#" class="enlace" id="enlace-proof" data-contenido="
-      <div class='contenido' style='text-align: center;'>
+      <div class='listaCategoria' style='text-align: center;'>
       <img src='./src/imagenes/imagen-destacada/1/05-asistente-copy.png'  class='imagen-destacada'>
       <div style='float:right;'>
       <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
@@ -303,7 +189,7 @@
        <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p><p id='credito'>
       <div class='right-col'>
       <p>La escritura / redacción / copy es una tarea que requiere habilidad y creatividad, y puede ser un desafío para muchas personas. Afortunadamente, la Inteligencia Artificial ha desarrollado una solución: El Asistente de Copy</p>
-		<p>Este servicio está diseñado para ayudar a los usuarios a crear contenido de alta calidad y de manera eficiente, utilizando técnicas avanzadas de procesamiento de lenguaje natural y aprendizaje automático.</p>
+		<p>Este servicio está diseñado para ayudar a los usuarios a crear listaCategoria de alta calidad y de manera eficiente, utilizando técnicas avanzadas de procesamiento de lenguaje natural y aprendizaje automático.</p>
       <h2>Asistente Copy</h2>
     </div>"
   >Asistente Copy
@@ -311,7 +197,7 @@
 </td>
 <td>
   <a href="#" class="enlace" id="enlace-proof" data-contenido="
-      <div class='contenido' style='text-align: center;'>
+      <div class='listaCategoria' style='text-align: center;'>
       <img src='./src/imagenes/imagen-destacada/2/06-editor-video.jpeg'  class='imagen-destacada'>
       <div style='float:right;'>
       <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
@@ -327,7 +213,7 @@
 </td>
 <td>
  <a href="#" class="enlace" data-contenido="
-      <div class='contenido' style='text-align: center;'>
+      <div class='listaCategoria' style='text-align: center;'>
       <img src='./src/imagenes/imagen-destacada/1/07-editor-cv.png' class='imagen-destacada'>
       <div style='float:right;'>
         <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
@@ -343,7 +229,7 @@
 </td>
 <td>
  <a href="#" class="enlace" data-contenido="
-      <div class='contenido' style='text-align: center;'>
+      <div class='listaCategoria' style='text-align: center;'>
       <img src='./src/imagenes/imagen-destacada/1/08-asistente-sonido.png' class='imagen-destacada'>
       <div style='float:right;'>
       <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
@@ -359,7 +245,7 @@
 </td>
 <td>
  <a href="#" class="enlace" data-contenido="
-      <div class='contenido' style='text-align: center;'>
+      <div class='listaCategoria' style='text-align: center;'>
       <img src='./src/imagenes/imagen-destacada/1/09-texto-a-imagen.png'  class='imagen-destacada'>
       <div style='float:right;'>
       <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
@@ -375,7 +261,7 @@
 </td>
             <td>
               <a href="#" class="enlace" data-contenido="
-      <div class='contenido' style='text-align: center;'>
+      <div class='listaCategoria' style='text-align: center;'>
 <img src='./src/imagenes/imagen-destacada/1/10-texto-a-video.png'  class='imagen-destacada'>
 <div style='float:right;'>
   <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
@@ -391,7 +277,7 @@
             </td>
 <td>
  <a href="#" class="enlace" data-contenido="
-      <div class='contenido' style='text-align: center;'>
+      <div class='listaCategoria' style='text-align: center;'>
       <img src='./src/imagenes/imagen-destacada/1/11-asistente-codigo.png' class='imagen-destacada'>
       <div style='float:right;'>
         <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
@@ -407,7 +293,7 @@
             </td>
 <td>
  <a href="#" class="enlace" data-contenido="
-      <div class='contenido' style='text-align: center;'>
+      <div class='listaCategoria' style='text-align: center;'>
       <img src='./src/imagenes/imagen-destacada/2/12-buscador-web.png'  class='imagen-destacada'>
       <div style='float:right;'>
         <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
@@ -419,27 +305,6 @@
       <h2>Buscador Web</h2>
     </div>">
   Buscador web
-</a>
-</td>
-<td>
-<a href="#" class="enlace" data-contenido="
-<div class='contenido' style='text-align: center;'>
-<img src='./src/imagenes/imagen-destacada/2/12-buscador-web.png'  class='imagen-destacada'>
-<div style='float:right;'>
-<button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
-</div>
-<p id='credito' style='text-align: center; font-size: 13px;'>Bing Images</p>
-<div class='servicios-externos'>
-<a href='https://www.google.com'>Google</a>
-<a href='https://www.yahoo.com'>Yahoo</a>
-<a href='https://www.bing.com'>Bing</a>
-</div>
-<div class='right-col'>
-<h2>Categoría</h2>
-<p>Los buscadores web son herramientas esenciales para encontrar información en línea. Desde la búsqueda de noticias y artículos hasta la búsqueda de productos y servicios, los buscadores web ayudan a los usuarios a encontrar lo que necesitan en la vasta cantidad de información disponible en Internet.</p>
-<p>En los últimos años, la inteligencia artificial (AI) ha transformado la forma en que funcionan los buscadores web, permitiendo a los usuarios encontrar información más relevante y personalizada a sus necesidades y preferencias.</p>
-</div>">
-Categoría
 </a>
 </td>
 </tr>
@@ -490,21 +355,21 @@ Categoría
     <table>
       <tr>
         <td>
-       <a href="#" class="subenlace" data-contenido="...">
+       <a href="#" class="subenlace" data-subcontenido="...">
             Asistente Código</a>
         </td>
         <td>
-          <a href="#" class="subenlace" data-contenido="...">
+          <a href="#" class="subenlace" data-subcontenido="...">
             Asistente Copy
           </a>
         </td>
         <td>
-          <a href="#" class="subenlace" data-contenido="...">
+          <a href="#" class="subenlace" data-subcontenido="...">
             Asistente Sonido
           </a>
         </td>
         <td>
-          <a href="#" class="subenlace" data-contenido="...">
+          <a href="#" class="subenlace" data-subcontenido="...">
             Asistente Oficina
           </a>
         </td>
@@ -516,22 +381,22 @@ Categoría
     <table>
       <tr>
         <td>
-          <a href="#" class="subenlace" data-contenido="...">
+          <a href="#" class="subenlace" data-subcontenido="...">
             Texto a Sonido
           </a> 
         </td>
         <td>
-          <a href="#" class="subenlace" data-contenido="...">
+          <a href="#" class="subenlace" data-subcontenido="...">
             Texto a Imagen
           </a>
         </td>
         <td>
-          <a href="#" class="subenlace" data-contenido="...">
+          <a href="#" class="subenlace" data-subcontenido="...">
             Texto a Vídeo
           </a>
         </td>
         <td>
-          <a href="#" class="subenlace" data-contenido="...">
+          <a href="#" class="subenlace" data-subcontenido="...">
             Buscador Web
           </a>
         </td>
@@ -543,22 +408,22 @@ Categoría
     <table>
       <tr>
         <td>
-          <a href="#" class="subenlace" data-contenido="...">
+          <a href="#" class="subenlace" data-subcontenido="...">
             Editor Imagen
           </a> 
         </td>
         <td>
-          <a href="#" class="subenlace" data-contenido="...">
+          <a href="#" class="subenlace" data-subcontenido="...">
             Diseño Logo
           </a>
         </td>
         <td>
-          <a href="#" class="subenlace" data-contenido="...">
+          <a href="#" class="subenlace" data-subcontenido="...">
             Editor Vídeo
           </a>
         </td>
         <td>
-          <a href="#" class="subenlace" data-contenido="...">
+          <a href="#" class="subenlace" data-subcontenido="...">
             Editor CV
           </a>
         </td>
@@ -668,9 +533,7 @@ Categoría
   </ul>
   <p>&copy2023 Oportunidades Ilimitadas</p>
 </footer>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="./ham-menu.js"></script>
 	<script src="./main.js"></script>
 </body>
 </html>
