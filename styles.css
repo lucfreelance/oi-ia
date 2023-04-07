@@ -552,7 +552,7 @@ button:active, a:active, input[type="submit"]:active {
 
 .table-board {
   padding: 20px;
-  background-color: #47a1d9;
+  background-color: #37dfa7e4;
   font-size: 1.6rem;
   border-collapse: collapse;
   font-family: "Verdana", cursive, sans-serif;
@@ -648,43 +648,92 @@ button:active, a:active, input[type="submit"]:active {
   background-color: #d54b3c;
 }
 
-.atencion-titulo {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
-	font-weight: bold;
-	line-height: 1.2;
-	margin-bottom: 15px;
-	color: #7be921;
+.cerrar-btn {
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0.2rem;
+  color: red;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: 2rem;
+  margin: 0.6rem;
 }
 
-.atencion2-titulo {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 1.2;
-	margin-bottom: 15px;
-	color: #dd4d3d;
+.contenedor {
+  position: relative;
+  background: linear-gradient(to bottom, #fff 0%, #cf7fd8 100%);
 }
+
+.contenedor a {	
+	text-decoration: none;
+}
+
+.atencion-contenedor {
+  background-image: url('./src/imagenes/complemento-pic/backy.jpg');
+  background-size: cover;
+  background-position: center center;
+  }
+
+  .atencion-titulo {
+    font-size: 28px;
+    margin: 0 0 20px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .atencion2-titulo {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.2;
+  }
 
 .flecha {
-  width: 100%;
-  height: auto;
 position: relative;
-  margin: 0, -0.5s, 0, 0;
+  /* margin: 0, -0.5s, 0, 0; */
   display: flex;
-  justify-content: left;
   align-items: center;
-}
-
-.flecha img {
   width: 200px;
   height: 200px;
-  position: relative;
   animation-name: pulsar;
   animation-duration: 0.5s;
   margin-left: 30px;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  margin-top: 30px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.flecha img {
+  height: 200px;
+  filter: invert(28%) sepia(61%) saturate(394%) hue-rotate(200deg) brightness(89%) contrast(92%);
+}
+
+.flecha:hover::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 20px;
+  height: 20px;
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+
+.flecha:hover::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 20px;
+  height: 20px;
+  border-left: 2px solid #333;
+  border-top: 2px solid #333;
 }
 
 @keyframes pulsar {
@@ -695,12 +744,6 @@ position: relative;
     top: 30px;
   }
 }
-
-.titulo {
-    font-family: "Arial Black", sans-serif;
-    font-size: 28px;
-    color: #333;
-  }
 
   .atencion h2 {
   font-size: 28px;
@@ -1051,9 +1094,6 @@ footer .wave#wave4 {
   }
 }
 
-/* si cierro esta etiqueta mi archivo se vuelve un infierno… */
-  .cerrar-btn:hover {
-    background-color: #444;
 
 @media only screen and (max-width: 768px) {
   .encabezado-categorias, .encabezado2-categorias {
@@ -1100,7 +1140,6 @@ footer .wave#wave4 {
   }
 }
 
-}
 .enlace:hover .negro {
   color: white;
 }
@@ -1114,20 +1153,4 @@ footer .wave#wave4 {
 } */
 
 
-
-/* Estilos para el botón cerrar */
-.cerrar-app-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: transparent;
-  border: none;
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.cerrar-app-btn:hover {
-  color: #f00;
-}
 
