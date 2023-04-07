@@ -454,8 +454,9 @@ nav {
     transform: translateX(-100%);
   }
 }
+
 .encabezado-categorias {
-  background-color: #faa63e;
+  background-color: #fcc969eb;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -482,7 +483,7 @@ nav {
   }
 
 .encabezado2-categorias {
-  background-color: #ec73ec;
+  background-color: #de98de;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -877,7 +878,7 @@ text-decoration: none;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #37dfa7e4;
+  background-color: hsla(194, 90%, 69%, 0.894);
   padding: 20px;
   padding-bottom: 90px;
   box-sizing: border-box;
@@ -1151,6 +1152,3 @@ footer .wave#wave4 {
 .enlace:hover .negrita {
   font-weight: normal;
 } */
-
-
-
