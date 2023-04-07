@@ -29,12 +29,6 @@ for (var i = 0; i < enlaces.length; i++) {
   });
 }
 
-
-
-
-
-
-
 // Selecciona los elementos con la clase .subenlace dentro de la sección
 const subenlaces = document.querySelectorAll('section .subenlace');
 
