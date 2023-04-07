@@ -7,19 +7,14 @@
   <title>Oportunidades Ilimitadas te da la bienvenida - oi_ai - Tu Table-Board de inteligencias artificiales!
   </title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css" integrity="sha384-JoJHOHvL//D71gf/kJSKn18HHj5Sp5mQlF9XGdJlK48fapEV1xHgNnJcchN4Fb4/" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css" integrity="sha384-JoJHOHvL//D71gf/kJSKn18HHj5Sp5mQlF9XGdJlK48fapEV1xHgNnJcchN4Fb4/" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./styles.css" />
 	</head>
 
 	<body>
-    <section>
-<button id="scrollToTopBtn" aria-label="Ir arriba">
-<i class="fas fa-chevron-up"></i>
-</button>
-<button id="scrollToTopButton">Subir al top</button>
-</section>
 
 <div class="headpic">
   <img src="https://cdn.pixabay.com/photo/2016/08/05/09/28/hand-1571852_960_720.jpg" alt="Imagen de mano de hombre apuntando con dedo índice al indice de la mano humanoide de un robot como en el fresco La Creación de Adán por Miguel Ángel"> 
@@ -65,258 +60,48 @@
     <img src="./src/imagenes/complemento-pic/icono1.png" alt="icono IA" width="50" height="50">
   </div> 
   <div class="encabezado-texto">
-	 <p class="darky">Este es un listado de IAs por categorías. Explora y descubre las que más te gusten e intégralas a tu vida y trabajo.</p>
+	 <p class="darky">Este es un listado de IAs por categorías. Explora, descubre y lo que te guste intégralo a tu vida.</p>
   </div>
 </section>
 
 <main>
+  <span>
+  <div id="subcontenido"></div>
+</span>
 <section>
-  <div id="contenidos"></div>
+  <div class="table-board">
+    <table>
+      <tr>
+        <td>
+          <a href="#" class="subenlace" data-contenido="
+            <img src='./img/complemento-pic/home-main.png' class='imagen-destacada'>
+            <p id='credito'>By</p>
+            <h2>1</h2>
+            <p>1.</p>
+            <button id='toggle-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
+            </div>"
+          >1</a>
+        </td>
+        <td>
+          <a href="#" class="subenlace" data-contenido="
+            <img src='./img/complemento-pic/home-main.png' class='imagen-destacada'>
+            <p id='credito'>By</p>
+            <h2>2</h2>
+            <p>2.</p>
+            <button id='toggle-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
+            </div>"
+          >2</a>
+        </td>
+      </tr>
+    </table>
+  </div>
 </section>
-<div class="table-board">
-  <table>
-<tr>
-  
-  <td>
-    <a href="#" class="enlace" data-contenido="
-      <div class='listaCategoria'>
-        <img src='./src/imagenes/imagen-destacada/1/01-editor-imagen.jpg' class='imagen-destacada' style='display: block; margin: 0 auto;'>
-        <p id='credito' style='text-align: center; font-size: 13px;'>Bing Images</p>
-        <p class='sinopsis'>Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría Sinopsis de categoría.</p>
-        <ul>
-          <li>
-            <a href='https://ejemplo1.com' class='external-link'>
-              <img src='../src/imagenes/complemento-pic/icono1' alt='Logo 1'>
-              <h4>Nombre de la app 1</h4>
-              <p>Breve descripción de la app 1</p>
-            </a>
-          </li>
-          <li>
-            <a href='https://ejemplo2.com' class='external-link'>
-              <img src='ruta-al-logo2' alt='Logo 2'>
-              <h4>Nombre de la app 2</h4>
-              <p>Breve descripción de la app 2</p>
-            </a>
-          </li>
-          <li>
-            <a href='https://ejemplo3.com' class='external-link'>
-              <img src='ruta-al-logo3' alt='Logo 3'>
-              <h4>Nombre de la app 3</h4>
-              <p>Breve descripción de la app 3</p>
-            </a>
-          </li>
-        </ul>
-        <h3>Categoría</h3>
-        <div class='cerrar-app-contenedor'>
-          <button class='cerrar-app-btn'><i class='fas fa-times'></i></button>
-        </div>        
-      </div>
-    ">
-      Categoría
-    </a>
-  </td>
-<td>
-  <a href="#" class="enlace" id="enlace-proof" data-contenido="
-  <div class='listaCategoria' style='text-align: center;'>
-    <img src='./src/imagenes/imagen-destacada/1/01-editor-imagen.jpg' class='imagen-destacada'>
-    <div style='float:right;'>
-      <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
-    </div>
-    <p id='credito' style='text-align: center; font-size: 13px;'>Bing Images</p><p id='credito'>
-      <div class='right-col'>
-        <p>En esta categoría hablaremos sobre los editores de imagen que utilizan inteligencias artificiales para mejorar y retocar imágenes de forma automática.</p>
-        <p>Los editores de fotos e imágenes siempre han sido una herramienta popular para mejorar la calidad de las imágenes, ya sea para uso personal o profesional. Sin embargo, el proceso de edición puede ser complejo y requiere habilidades en diseño gráfico y conocimientos técnicos. Es aquí donde entran en juego los editores gráficos impulsados por inteligencia artificial.</p>
-        <h2>Editor Imagen</h2>
-      </div>"
-      >Editor Imagen
-  </a>
-</td>
-	<td>
- <a href="#" class="enlace" id="enlace-proof" data-contenido="
-    <div class='listaCategoria' style='text-align: center;'>
-      <img src='./src/imagenes/imagen-destacada/1/02-asistente-oficina.jpg' class='imagen-destacada'>
-      <div style='float:right;'>
-        <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
-      </div>
-      <p id='credito' style='text-align: center; font-size: 13px;'>Bing Images</p><p id='credito'>
-        <div class='right-col'>
-          <p>Con el avance de la tecnología y la automatización de procesos, cada vez son más comunes los asistentes de oficina basados en inteligencia artificial. Estos sistemas permiten a usuarios realiza	r tareas de manera más eficiente y efectiva, al tiempo que disminuyen el riesgo de errores humanos.</p>
-		<p>Además, estos asistentes pueden proporcionar información en tiempo real y análisis de datos que pueden ayudar a mejorar el rendimiento empresarial. Exploraremos asistentes de oficina basados en IAs. Discutiremos las funciones y características de estos sistemas, así como su impacto en el lugar de trabajo.</p>
-      <h2>Asistente Oficina</h2>
-    </div>">
-  Asistente Oficina
-</a>
-</td>
-<td>
-  <a href="#" class="enlace" id="enlace-proof" data-contenido="
-           <div class='listaCategoria' style='text-align: center;'>
-       <img src='./src/imagenes/imagen-destacada/1/03-diseno-logo.png' class='imagen-destacada'>
-       <div style='float:right;'>
-           <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
-         </div>
-         <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p>
-           <div class='right-col'>
-       <p>El diseño de logos es una parte fundamental del branding de una empresa. El logo es la representación visual de la identidad de una empresa y debe ser capaz de comunicar su mensaje de manera efectiva.</p>
-   <p>Con el avance de la tecnología, han surgido herramientas de diseño de logos que utilizan Inteligencias Artificiales (IA) para ayudar a los diseñadores a crear logotipos personalizados con mayor facilidad y rapidez.</p>
-       <h2>Diseño Logo</h2>
-    </div>">
-     Diseño Logo
- </a>
- </td>
-<td>
-  <a href="#" class="enlace" id="enlace-proof" data-contenido="
-  <div class='listaCategoria' style='text-align: center;'>
-      <img src='./src/imagenes/imagen-destacada/1/04-texto-a-sonido.png' class='imagen-destacada'>
-      <div style='float:right;'>
-        <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
-      </div>
-      <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p><p id='credito'>
-        <div class='right-col'>
-      <p>La categoría de Texto a Audio / Sonido impulsada por Inteligencia Artificial ha cambiado la forma en que las personas acceden y consumen información. Los sistemas IA permiten la conversión automática de texto en discurso, lo que ha mejorado la accesibilidad para personas con discapacidades visuales y ha permitido a los usuarios consumir información de manera más conveniente mientras realizan otras tareas.</p>
-      <p>Además, la tecnología de texto a sonido ha creado nuevas oportunidades para la generación masiva de contenido de audio como audiolibros y podcasts, lo que ha impulsado la industria de contenido sonoro.</p>
-      <h2>Texto a Sonido</h2>
-    </div>"
-  >Texto a Sonido
-</a>
-</td>
-<td>
-  <a href="#" class="enlace" id="enlace-proof" data-contenido="
-      <div class='listaCategoria' style='text-align: center;'>
-      <img src='./src/imagenes/imagen-destacada/1/05-asistente-copy.png'  class='imagen-destacada'>
-      <div style='float:right;'>
-      <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
-    </div>  
-       <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p><p id='credito'>
-      <div class='right-col'>
-      <p>La escritura / redacción / copy es una tarea que requiere habilidad y creatividad, y puede ser un desafío para muchas personas. Afortunadamente, la Inteligencia Artificial ha desarrollado una solución: El Asistente de Copy</p>
-		<p>Este servicio está diseñado para ayudar a los usuarios a crear listaCategoria de alta calidad y de manera eficiente, utilizando técnicas avanzadas de procesamiento de lenguaje natural y aprendizaje automático.</p>
-      <h2>Asistente Copy</h2>
-    </div>"
-  >Asistente Copy
-</a>
-</td>
-<td>
-  <a href="#" class="enlace" id="enlace-proof" data-contenido="
-      <div class='listaCategoria' style='text-align: center;'>
-      <img src='./src/imagenes/imagen-destacada/2/06-editor-video.jpeg'  class='imagen-destacada'>
-      <div style='float:right;'>
-      <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
-    </div>
-      <p id='credito' style='text-align: center; font-size: 13px;'>Bing Images</p><p id='credito'>
-      <div class='right-col'>
-      <p>La categoría de Vídeo Editor impulsada por la inteligencia artificial ha cambiado radicalmente la forma en que se editan y se crean videos. Los sistemas de inteligencia artificial permiten automatizar muchas de las tareas manuales asociadas con la edición de video, lo que ha reducido el tiempo y el costo de producción y ha permitido a los profesionales centrarse en la creatividad y la narrativa.</p>
-	<p>Esta tecnología ha revolucionado la forma en que se crea contenido de video, y se espera que su impacto siga creciendo en los próximos años.</p>
-      <h2>Editor Vídeo</h2>
-    </div>">
-  Editor Vídeo
-</a>
-</td>
-<td>
- <a href="#" class="enlace" data-contenido="
-      <div class='listaCategoria' style='text-align: center;'>
-      <img src='./src/imagenes/imagen-destacada/1/07-editor-cv.png' class='imagen-destacada'>
-      <div style='float:right;'>
-        <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
-      </div>
-      <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p><p id='credito'>
-      <div class='right-col'>
-      <p>La búsqueda de empleo es una tarea cada vez más competitiva y exigente en la actualidad. La elaboración de un currículum vítae (CV) efectivo es clave para llamar la atención de los empleadores y conseguir una entrevista. Pero no todo el mundo cuenta con las habilidades o la experiencia necesaria para elaborar un CV exitoso.</p>
-		<p>Es aquí donde entra en juego el hacedor de currículo basado en inteligencia artificial (AI), una tecnología que permite crear currículums personalizados y de alta calidad sin la necesidad de contar con conocimientos en diseño o redacción.</p>
-      <h2>Editor CV</h2>
-    </div>">
-  Editor CV
-</a>
-</td>
-<td>
- <a href="#" class="enlace" data-contenido="
-      <div class='listaCategoria' style='text-align: center;'>
-      <img src='./src/imagenes/imagen-destacada/1/08-asistente-sonido.png' class='imagen-destacada'>
-      <div style='float:right;'>
-      <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
-    </div>
-      <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p><p id='credito'>
-      <div class='right-col'>
-      <p>La categoría de Audio Asistente o Asistente de Sonido impulsada por la inteligencia artificial se refiere a la capacidad de los sistemas de inteligencia artificial para responder a preguntas y realizar tareas utilizando voz y audio. Los asistentes de voz, como Siri, Alexa y Google Assistant, han sido muy populares en los últimos años y han demostrado el valor y la utilidad de la tecnología de audio asistente impulsada por la inteligencia artificial.
-		</p><p>Los sistemas de audio asistente pueden mejorar la productividad y la eficiencia de las personas, permitiéndoles realizar tareas de manera más rápida y fácil.</p>
-      <h2>Asistente Sonido</h2>
-    </div>"
-  >Asistente Sonido
-</a>
-</td>
-<td>
- <a href="#" class="enlace" data-contenido="
-      <div class='listaCategoria' style='text-align: center;'>
-      <img src='./src/imagenes/imagen-destacada/1/09-texto-a-imagen.png'  class='imagen-destacada'>
-      <div style='float:right;'>
-      <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
-      </div>
-      <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p><p id='credito'>
-      <div class='right-col'>
-      <p>Los generadores de imágenes impulsados por inteligencia artificial son herramientas increíblemente útiles que permiten crear imágenes realistas a partir de un texto descriptivo. Estas imágenes pueden ser utilizadas en una variedad de aplicaciones, desde la creación de imágenes publicitarias hasta la generación de imágenes de personajes de videojuegos.</p>
-		<p>En esta entrada, hablaremos de cómo funcionan estos generadores de imágenes, sus aplicaciones y algunas de las tecnologías detrás de ellos. ¡Comencemos!</p>
-      <h2>Texto a Imagen</h2>
-    </div>">
-  Texto a Imagen
-</a>
-</td>
-            <td>
-              <a href="#" class="enlace" data-contenido="
-      <div class='listaCategoria' style='text-align: center;'>
-<img src='./src/imagenes/imagen-destacada/1/10-texto-a-video.png'  class='imagen-destacada'>
-<div style='float:right;'>
-  <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
-</div>
-<p id='credito' style='text-align: center; font-size: 13px;'>Bing Images</p><p id='credito'>
-      <div class='right-col'>
-<p>La categoría de Texto a Vídeo es una de las más fascinantes dentro del campo de la inteligencia artificial. Esta tecnología permite convertir texto en contenido audiovisual, lo que ha revolucionado la forma en que se crea y comparte información.</p>
-		<p>La inteligencia artificial ha logrado avances significativos en la creación de vídeos, lo que ha permitido la automatización de tareas como la producción de contenidos audiovisuales, la publicidad, la formación y la educación.</p>
-                 <h2>Texto a Vídeo</h2>
-                </div>">
-              Texto a Vídeo
-			</a>
-            </td>
-<td>
- <a href="#" class="enlace" data-contenido="
-      <div class='listaCategoria' style='text-align: center;'>
-      <img src='./src/imagenes/imagen-destacada/1/11-asistente-codigo.png' class='imagen-destacada'>
-      <div style='float:right;'>
-        <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
-      </div>
-      <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p><p id='credito'>
-      <div class='right-col'>
-      <p>La programación es una habilidad cada vez más importante en la sociedad actual, ya que muchas industrias están adoptando tecnologías digitales en sus procesos de negocio. Sin embargo, la programación puede ser un proceso largo y complejo, especialmente para aquellos que recién comienzan en el campo.</p>		
-		<p>Es aquí donde entra en juego el asistente de código basado en inteligencia artificial (AI), una tecnología que permite a los programadores crear código de manera más eficiente y rápida mediante la automatización de ciertas tareas y la generación de sugerencias útiles.</p>
-    <h2>Asistente Código</h2>
-    </div>">
-				Asistente Código
-			</a>	
-            </td>
-<td>
- <a href="#" class="enlace" data-contenido="
-      <div class='listaCategoria' style='text-align: center;'>
-      <img src='./src/imagenes/imagen-destacada/2/12-buscador-web.png'  class='imagen-destacada'>
-      <div style='float:right;'>
-        <button id='toggler-button' class='cerrar-btn'><i class='fas fa-times'></i></button>
-      </div>
-      <p id='credito' style='text-align: center; font-size: 13px;'>Bing Images</p><p id='credito'>
-      <div class='right-col'>
-      <p>Los buscadores web son herramientas esenciales para encontrar información en línea. Desde la búsqueda de noticias y artículos hasta la búsqueda de productos y servicios, los buscadores web ayudan a los usuarios a encontrar lo que necesitan en la vasta cantidad de información disponible en Internet.</p>
-		<p>En los últimos años, la inteligencia artificial (AI) ha transformado la forma en que funcionan los buscadores web, permitiendo a los usuarios encontrar información más relevante y personalizada a sus necesidades y preferencias.</p>
-      <h2>Buscador Web</h2>
-    </div>">
-  Buscador web
-</a>
-</td>
-</tr>
-</table>
-</div>
 </main>
-
 
 <section class="encabezado2-categorias">
   <div class="encabezado2-texto">
- <p class="darky">Comparte feedback de las apps que has probado para que el resto de la comunidad las conozca.</p>
-  </div>  
+ <p class="darky">Retroalimenta sobre las apps que manejes para que toda de la comunidad las conozca.</p>
+  </div>
   <div class="encabezado2-icono">
     <img src="./src/imagenes/complemento-pic/icono2.png" alt="icono2 IA" width="50" height="50">
   </div> 
@@ -533,7 +318,6 @@
   </ul>
   <p>&copy2023 Oportunidades Ilimitadas</p>
 </footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="./main.js"></script>
+    	<script src="./main.js"></script>
 </body>
 </html>

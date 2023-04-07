@@ -79,10 +79,10 @@ span {
 
 h2 {
 margin: 20px; /* margen superior e inferior de 40px y centrado horizontalmente */
-  max-width: 800px; /* ancho máximo del elemento */
+  max-width: 800px;
   text-align: center;
   display: block;
-  font-size: 24px; /* tamaño de fuente reducido */
+  font-size: 24px;
 }
 
 h3 {
@@ -522,6 +522,34 @@ ul {
 	 padding: 0 20px;
 }
 
+/* Estilo de los botones */
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Regla CSS para efecto de "feedback háptico" o "efecto háptico" */
+button, a, input[type="submit"] {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+button:hover, a:hover, input[type="submit"]:hover {
+  background-color: #f0e5a5;
+}
+button:active, a:active, input[type="submit"]:active {
+  background-color: #a9e42a;
+}
+
 .table-board {
   padding: 20px;
   background-color: #47a1d9;
@@ -589,6 +617,35 @@ ul {
     height: 100%;
     text-decoration: none;
     color: inherit;
+}
+
+#subcontenido {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8); /* Fondo semitransparente */
+  display: none;
+  transition: all 0.5s ease;
+}
+
+#subcontenido.mostrar {
+  display: block;
+}
+
+#subcontenido .imagen-destacada {
+  max-width: 400%;
+  max-height: 300px;
+  height: auto;
+  display: block; /* para que el margin: auto; funcione */
+  margin: auto; /* para centrar horizontalmente */
+  text-align: center; /* para centrar verticalmente */
+  padding: 15px;
+}
+
+/* Cambia el color del botón de cerrar al hacer hover */
+#subcontenido .cerrar-btn:hover {
+  background-color: #d54b3c;
 }
 
 .atencion-titulo {
@@ -850,36 +907,6 @@ justify-content: space-between;
   opacity: 1;
 }
 
-.nueva-clase {
-  display: flex;
-  align-items: center;
-  position: relative;
-  color: #333;
-  font-size: 21px;
-  text-decoration: none;
-  }  
-
-.nueva-clase .centrado {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.nueva-clase .left-col {
-  flex: 0 0 auto;
-  margin-right: 20px;
-}
-
-.nueva-clase .left-col img {
-  max-width: 100%;
-  height: auto;
-}
-
-.nueva-clase .right-col {
-  flex: 1 1 auto;
-}
-
 .atencion .flecha {
   position: absolute;
   bottom: -10px;
@@ -1085,3 +1112,22 @@ footer .wave#wave4 {
 .enlace:hover .negrita {
   font-weight: normal;
 } */
+
+
+
+/* Estilos para el botón cerrar */
+.cerrar-app-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cerrar-app-btn:hover {
+  color: #f00;
+}
+

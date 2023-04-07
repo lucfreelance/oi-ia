@@ -28,3 +28,30 @@ for (var i = 0; i < enlaces.length; i++) {
     contenido.innerHTML = this.getAttribute("data-contenido"); // Actualiza el contenido
   });
 }
+
+
+
+
+
+
+
+// Selecciona los elementos con la clase .subenlace dentro de la sección
+const subenlaces = document.querySelectorAll('section .subenlace');
+
+// Añade un evento click a cada enlace
+subenlaces.forEach(subenlace => {
+  subenlace.addEventListener('click', e => {
+    e.preventDefault();
+
+    const ficha = subenlace.getAttribute('data-contenido');
+    const subContenido = document.querySelector("#subcontenido");
+    subContenido.innerHTML = ficha;
+    subContenido.classList.add("mostrar");
+    
+    // Busca el botón cerrar dentro del contenido desplegado y añade un evento click
+    const cerrarBtn = subContenido.querySelector('.cerrar-btn');
+    cerrarBtn.addEventListener('click', () => {
+      subContenido.classList.remove('mostrar');
+    });
+  });
+});
