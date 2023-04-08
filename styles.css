@@ -217,15 +217,15 @@ color: #292929;
 
 .navbar-home {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #3b97f9;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
     padding: 10px;
-    border-right: 5px solid transparent; /* Añade un borde derecho transparente */
-    margin-right: 5px; /* Reduce el margen derecho */
-    margin-left: 5px; /* Agrega un margen izquierdo */
+    border-right: 5px solid transparent;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .navbar-home i {
@@ -547,6 +547,30 @@ button:active, a:active, input[type="submit"]:active {
 	padding-top: 20px;
 }
 
+/* Estilos para las flechas */
+span i {
+  font-size: 60px; /* Tamaño de la flecha */
+  display: inline-block; /* Para que aparezcan al lado del título */
+  margin: 0 10px; /* Espacio entre la flecha y el título */
+}
+
+/* Estilos para la flecha de "Artículos recientes" */
+span .fa-chevron-up {
+  transform: none; /* Gira la flecha 180 grados */
+}
+
+/* Estilos para la flecha de "Artículos agregados" */
+span .fa-chevron-down {
+  transform: none; /* No es necesario aplicar una transformación, la flecha ya apunta hacia abajo */
+}
+
+span.icon {
+  display: inline-block; /* para poder ajustar el margen */
+  margin-left: 10px; /* ajusta el margen a la izquierda */
+  margin-right: 10px; /* ajusta el margen a la derecha */
+  vertical-align: middle; /* alinea verticalmente la flecha con el texto */
+}
+
 #subcontenido {
   top: 0;
   left: 0;
@@ -603,12 +627,15 @@ button:active, a:active, input[type="submit"]:active {
   background-position: center center;
   }
 
-  .atencion-titulo {
-    font-size: 28px;
-    margin: 0 0 20px;
-    font-weight: bold;
-    line-height: 1.2;
-  }
+.atencion-titulo {
+  color: #00ffea;
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
   
   .atencion2-titulo {
     font-size: 24px;
@@ -622,8 +649,8 @@ position: relative;
   /* margin: 0, -0.5s, 0, 0; */
   display: flex;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   animation-name: pulsar;
   animation-duration: 0.5s;
   margin-left: 30px;
@@ -636,7 +663,7 @@ position: relative;
 }
 
 .flecha img {
-  height: 200px;
+  height: 150px;
   filter: invert(28%) sepia(61%) saturate(394%) hue-rotate(200deg) brightness(89%) contrast(92%);
 }
 
@@ -790,7 +817,7 @@ justify-content: space-between;
   justify-content: center;
 }
 
-#leer-8, #leer-7, #leer-6, #leer-5, #leer-4, #leer-3, #leer-2, #leer-1, #leer-0 {
+#leer-4, #leer-3, #leer-2, #leer-1 {
   justify-content: center;
 }
 
