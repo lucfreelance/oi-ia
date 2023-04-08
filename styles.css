@@ -543,6 +543,10 @@ button:active, a:active, input[type="submit"]:active {
     color: inherit;
 }
 
+.articulos-recientes {
+	padding-top: 20px;
+}
+
 #subcontenido {
   top: 0;
   left: 0;
