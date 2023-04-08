@@ -485,7 +485,7 @@ button:active, a:active, input[type="submit"]:active {
   text-align: center;
   border: 2px solid black;
   margin: 0 auto;
-  min-width: 150px; /* Establece un ancho mínimo de 150px */
+  min-width: 150px;
 }
 
 .table-board:hover {
@@ -508,7 +508,7 @@ button:active, a:active, input[type="submit"]:active {
   padding: 20px;
 	max-width: 30%;
 	padding: 0 10px;
-  background-color: #47a1d9;
+  background-color: #00ffea;
   font-size: 1.6rem;
   border-collapse: collapse;
   font-family: "Verdana", cursive, sans-serif;
@@ -545,6 +545,10 @@ button:active, a:active, input[type="submit"]:active {
 
 .articulos-recientes {
 	padding-top: 20px;
+}
+
+.table-board th, .table-board td, .table-board tr {
+  text-align: center;
 }
 
 /* Estilos para las flechas */
@@ -652,7 +656,7 @@ position: relative;
   width: 150px;
   height: 150px;
   animation-name: pulsar;
-  animation-duration: 0.5s;
+  animation-duration: 2.5s;
   margin-left: 30px;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -1076,3 +1080,19 @@ justify-content: space-between;
     margin-bottom: 20px;
   }
 }
+
+ .table-header {
+    animation: pulse 8s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
