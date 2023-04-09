@@ -90,9 +90,14 @@ h2 {
   font-size: 1.6rem;
 }
 
-h3 {
+.cuarenta-up-px {
+padding-top: 40px; 
   text-align: center;
-    /* padding-bottom: 40px; */
+}
+
+.cuarenta-px {
+padding-bottom: 40px; 
+  text-align: center;
 }
 
 h4 {
@@ -329,17 +334,52 @@ nav {
     max-width: 100%;
   }
 
-.title {
-	font-size: 2rem;
-	font-weight: bold;
-	text-align: left;
-	margin: 0;
+
+.encabezado-titular {
+  background-color: #cfca3b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 
-.subtitle {
-	font-size: 1.2rem;
-	text-align: right;
-	margin: 0;
+.encabezado-titular .encabezado-icono img {
+  /* margin-right: 20px; */
+  border-radius: 50%;
+  padding-left: 5px;
+}
+
+.encabezado-titular .encabezado-texto p {
+  font-size: 20px;
+  color: #164df2;
+  margin-right: 5px;
+ font-weight: 600;
+}
+  
+  .encabezado-icono,
+  .encabezado2-icono {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
+  }
+
+.encabezado2-titular {
+  background-color: #164df2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ font-weight: 600;
+}
+
+.encabezado2-titular .encabezado2-icono img {
+  margin-left: 20px;
+  border-radius: 50%;
+  padding-right: 5px;
+}
+
+.encabezado2-titular .encabezado2-texto p {
+  font-size: 20px;
+    color: #cfca3b;
 }
 
 .encabezados {
@@ -378,52 +418,6 @@ nav {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.encabezado-categorias {
-  background-color: #fcc969eb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-}
-
-.encabezado-categorias .encabezado-icono img {
-  /* margin-right: 20px; */
-  border-radius: 50%;
-  padding-left: 5px;
-}
-
-.encabezado-categorias .encabezado-texto p {
-  font-size: 20px;
-  color: #FFFFFF;
-  margin-right: 5px
-}
-  
-  .encabezado-icono,
-  .encabezado2-icono {
-  display: block;
-  margin-right: 0;
-  margin-bottom: 20px;
-  }
-
-.encabezado2-categorias {
-  background-color: #de98de;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-}
-
-.encabezado2-categorias .encabezado2-icono img {
-  margin-left: 20px;
-  border-radius: 50%;
-  padding-right: 5px;
-}
-
-.encabezado2-categorias .encabezado2-texto p {
-  font-size: 20px;
-  color: #FFFFFF;
-}
-
 td {
   display: inline-block;    
   text-align: center;
@@ -438,6 +432,19 @@ td {
   color: var(--black);
   box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   transition: all 0.4s ease;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: left;
+	margin: 0;
+}
+
+.subtitle {
+	font-size: 1.2rem;
+	text-align: right;
+	margin: 0;
 }
 
 ul {
@@ -476,7 +483,7 @@ button:active, a:active, input[type="submit"]:active {
 
 .table-board {
   padding: 20px;
-  background-color: #37dfa7e4;
+  background-color: #d08dc8;
   font-size: 1.6rem;
   border-collapse: collapse;
   font-family: "Verdana", cursive, sans-serif;
@@ -508,7 +515,7 @@ button:active, a:active, input[type="submit"]:active {
   padding: 20px;
 	max-width: 30%;
 	padding: 0 10px;
-  background-color: #00ffea;
+  background-color: #01645c;
   font-size: 1.6rem;
   border-collapse: collapse;
   font-family: "Verdana", cursive, sans-serif;
@@ -606,13 +613,13 @@ span.icon {
 
 .cerrar-btn {
   position: absolute;
-  bottom: 0.6rem;
+  bottom: 0.3rem;
   right: 0.2rem;
   color: red;
   border: none;
   padding: 0;
   background-color: transparent;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0.6rem;
 }
 
@@ -634,18 +641,49 @@ span.icon {
 .atencion-titulo {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1.5px;
   line-height: 1.2;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   padding-top: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 0; /* Establece el margen inferior a cero */
+}
+
+.atencion-titulo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  line-height: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 0; /* Establece el margen inferior a cero */
+}
+
+.atencion2-titulo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 799.5;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  margin-top: 0px;
+  margin-left: 20px;
+  color: #20d636;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .flecha {
 position: relative;
   margin: 0, -1.5s, 0, 0;
   display: flex;
-  align-items: center;
   width: 150px;
   height: 150px;
   animation-name: pulsar;
@@ -654,14 +692,20 @@ position: relative;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   margin-top: 30px;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+}
+
+@keyframes pulsar {
+  from {
+    top: 0;
+  }
+  to {
+    top: 30px;
+  }
 }
 
 .flecha img {
   height: 150px;
-  filter: invert(28%) sepia(61%) saturate(394%) hue-rotate(200deg) brightness(89%) contrast(92%);
+  filter: invert(98%) sepia(1%) saturate(94%) hue-rotate(200deg) brightness(89%) contrast(100%);
 }
 
 .flecha:hover::before {
@@ -686,15 +730,6 @@ position: relative;
   height: 20px;
   border-left: 2px solid #333;
   border-top: 2px solid #333;
-}
-
-@keyframes pulsar {
-  from {
-    top: 0;
-  }
-  to {
-    top: 30px;
-  }
 }
 
 .titulo-fijo {
@@ -809,10 +844,10 @@ justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.toggle-button {
+/* .toggle-button {
   grid-area: boton;
   justify-content: center;
-}
+} */
 
 #leer-4, #leer-3, #leer-2, #leer-1 {
   justify-content: center;
@@ -1020,7 +1055,7 @@ justify-content: space-between;
 }
 
 @media only screen and (max-width: 768px) {
-  .encabezado-categorias, .encabezado2-categorias {
+  .encabezado-titular, .encabezado2-titular {
     flex-direction: column;
   }
 }
@@ -1053,7 +1088,7 @@ justify-content: space-between;
 }
 
 @media (max-width: 768px) {
-  .encabezado2-categorias {
+  .encabezado2-titular {
     flex-direction: column;
     align-items: center;
   }  
