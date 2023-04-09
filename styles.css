@@ -92,7 +92,7 @@ h2 {
 
 h3 {
   text-align: center;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
 }
 
 h4 {
@@ -432,7 +432,7 @@ td {
   padding: 10px;
   background-color: #3187ce;
   border-radius: 5px;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-family: "Verdana";
   letter-spacing: 0.5px;
   color: var(--black);
@@ -632,31 +632,24 @@ span.icon {
   }
 
 .atencion-titulo {
-  color: #00ffea;
   font-family: "Open Sans", sans-serif;
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: 1.5px;
   line-height: 1.2;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
 }
-  
-  .atencion2-titulo {
-    font-size: 24px;
-    margin: 0;
-    font-weight: bold;
-    line-height: 1.2;
-  }
 
 .flecha {
 position: relative;
-  /* margin: 0, -0.5s, 0, 0; */
+  margin: 0, -1.5s, 0, 0;
   display: flex;
   align-items: center;
   width: 150px;
   height: 150px;
   animation-name: pulsar;
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
   margin-left: 30px;
   animation-iteration-count: infinite;
   animation-direction: alternate;
