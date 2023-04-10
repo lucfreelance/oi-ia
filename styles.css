@@ -345,10 +345,15 @@ nav {
   padding-left: 5px;
 }
 
+.encabezado-titular .encabezado-texto p {
+  color: #030308;
+  font-size: 20px;
+ font-weight: 600;
+}
+
 .encabezado2-titular .encabezado2-texto p {
   color: #030308;
   font-size: 20px;
-  margin-right: 5px;
  font-weight: 600;
 }
   
@@ -599,7 +604,6 @@ span.icon {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 960px;
   width: 100%;
 }
 
@@ -961,44 +965,35 @@ justify-content: space-between;
   }
 }
 
+@media screen and (max-width: 640px) {
+  .menu {
+    display: block;
+  }
+  .navbar-left ul {
+    display: none;
+  }
+  .desktop-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .encabezado-titular, .encabezado2-titular {
     flex-direction: column;
   }
-}
-
-@media screen and (max-width: 768px) {
-.subtable-board {
-	max-width: 100%;
-	margin-bottom: 10px;
-}
-}
-
-@media (max-width: 640px) {
-	.menu {
-		display: block;
-	}
-
-	.navbar-left ul {
-		display: none;
-	}
-
-	.desktop-menu {
-		display: none;
-	}	
-}
-
-@media (min-width: 641px) {
-	.mobile-menu {
-		display: none;
-	}
-}
-
-@media (max-width: 768px) {
+  .subtable-board {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
   .encabezado2-titular {
-    flex-direction: column;
     align-items: center;
-  }  
+  }
   .encabezado2-icono {
     margin-right: 0;
     margin-bottom: 20px;
@@ -1013,5 +1008,4 @@ justify-content: space-between;
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
-  }
-}
+  }/* Es importante tener en cuenta que el orden de los media queries es importante, ya que las declaraciones de estilos en los media queries más específicos sobrescriben las declaraciones de los media queries más generales que se aplican a la misma pantalla. Por lo tanto, se debe asegurar que los media queries se apliquen en el orden correcto para evitar conflictos en la visualización de la página. */
