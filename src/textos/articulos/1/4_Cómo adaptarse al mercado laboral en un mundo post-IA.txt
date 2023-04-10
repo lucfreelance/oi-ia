@@ -1,0 +1,6 @@
+<div class="article-card" id="articulo-4">
+      <img src="./src/imagenes/premisa-destacada/4.gif" alt="Meme-gif de Bob Esponja parodeando 'meic america greit aguein' y la industria estadounidense en declive">
+      <h3>Cómo adaptarse al mercado laboral en un mundo post-IA</h3>
+      <p>A medida que la inteligencia artificial (IA) se vuelve más avanzada y omnipresente en nuestra vida cotidiana, también está cambiando la forma en que trabajamos. Muchos trabajos que antes requerían habilidades humanas, como la toma de decisiones y el análisis de datos, están siendo automatizados por la IA. En este artículo, exploraremos las formas en que la IA está cambiando el mercado laboral y cómo puedes adaptarte para mantener una carrera exitosa en un mundo post-IA.</p>
+      <button id="leer-4">Mostrar…</button>
+    </div>

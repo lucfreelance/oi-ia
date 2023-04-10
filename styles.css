@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
-
 * {
 	margin: 0;
 	padding: 0;
@@ -30,13 +29,8 @@
 }
 
 body {
-	margin: 0;
-  padding: 0;
-	font-family: "Quicksand", sans-serif;
-}
-
-main {
-  margin-top: 100px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 #page-wrap {
@@ -638,30 +632,18 @@ span.icon {
 
 .atencion-titulo {
   font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 28px;
   font-weight: 500;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.4px;
   line-height: 1.2;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  padding-top: 20px;
-  margin-top: 20px;
+  margin: 15px;
   margin-left: 20px;
+  margin-top: 20px;
   line-height: 1.5;
   position: relative;
   margin-bottom: 0;
 } 
-
-.atencion2-titulo {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
-  font-weight: 799.5;
-  letter-spacing: 1.5px;
-  line-height: 1.2;
-  margin-top: 0px;
-  margin-left: 20px;
-  color: #20d636;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
 
 .titulo-fijo {
   margin-top: 0;
@@ -675,9 +657,9 @@ span.icon {
 	padding-right: 30px;
 }
 
-.imagen {
+/* .imagen {
   grid-area: imagen;
-}
+} */
 
 .imagen-destacada {
   max-width: 100%;
@@ -752,10 +734,10 @@ span.icon {
 max-height: 600px;
 overflow: auto;
 width: 100%;
-max-width: 400px;
+max-width: 350px;
 border-radius: 5px;
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-padding: 20px;
+padding: 10px;
 transition: transform 0.3s ease-in-out;
 text-align: center;
 background-color: #fff;
@@ -810,7 +792,7 @@ justify-content: space-between;
   margin-top: 20px;
 }
 
-.articulos-agregados {
+.articulos-anteriores {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -849,7 +831,6 @@ justify-content: space-between;
 .aside-derecho .articulo {
   margin-bottom: 20px;
 }
-
 
 .footer {
   position: relative;
