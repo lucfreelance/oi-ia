@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -65,7 +65,7 @@ main {
 }
 
 span {
-	max-width: 1000px; /* ancho máximo */
+	max-width: 1000px;
 	margin: 0 auto; /* centrar */
 	display: flex; /* para centrar verticalmente */
 	align-items: center; /* centrar verticalmente */
@@ -389,8 +389,7 @@ margin-bottom: 20px;
   font-size: 1.6rem;
   margin-bottom: 2rem;
   text-align: center;
-  padding-bottom: 25px;
-  
+  padding-bottom: 25px;  
 }
 
 .encabezados-carousel {
@@ -450,7 +449,6 @@ ul {
 	 padding: 0 20px;
 }
 
-/* Estilo de los botones */
 .button {
   background-color: var(--primary-color);
   color: white;
@@ -458,9 +456,8 @@ ul {
   border: none;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
+}/* Estilo de los botones */
 
-/* Regla CSS para efecto de "feedback háptico" o "efecto háptico" */
 button, a, input[type="submit"] {
   background-color: #f0f0f0;
   border: none;
@@ -476,7 +473,7 @@ button:hover, a:hover, input[type="submit"]:hover {
 }
 button:active, a:active, input[type="submit"]:active {
   background-color: #a9e42a;
-}
+}/* Regla CSS para efecto de "feedback háptico" o "efecto háptico" */
 
 .table-board {
   padding: 20px;
@@ -555,22 +552,19 @@ button:active, a:active, input[type="submit"]:active {
   text-align: center;
 }
 
-/* Estilos para las flechas */
 span i {
   font-size: 60px; /* Tamaño de la flecha */
   display: inline-block; /* Para que aparezcan al lado del título */
   margin: 0 10px; /* Espacio entre la flecha y el título */
-}
+}/* Estilos para las flechas */
 
-/* Estilos para la flecha de "Artículos recientes" */
 span .fa-chevron-up {
   transform: none; /* Gira la flecha 180 grados */
-}
+}/* Estilos para la flecha de "Artículos recientes" */
 
-/* Estilos para la flecha de "Artículos agregados" */
 span .fa-chevron-down {
   transform: none; /* No es necesario aplicar una transformación, la flecha ya apunta hacia abajo */
-}
+}/* Estilos para la flecha de "Artículos agregados" */
 
 span.icon {
   display: inline-block; /* para poder ajustar el margen */
@@ -603,10 +597,9 @@ span.icon {
   padding: 15px;
 }
 
-/* Cambia el color del botón de cerrar al hacer hover */
 #subcontenido .cerrar-btn:hover {
   background-color: #d54b3c;
-}
+}/* Cambia el color del botón de cerrar al hacer hover */
 
 .contenedor-dos-columnas {
   display: flex;
@@ -626,6 +619,7 @@ span.icon {
 
 .atencion-contenedor {
   position: relative; 
+  background-color: white;
 }
 
 .atencion-contenedor img {
@@ -781,11 +775,6 @@ justify-content: space-between;
   margin-bottom: 10px;
 }
 
-/* .toggle-button {
-  grid-area: boton;
-  justify-content: center;
-} */
-
 #leer-4, #leer-3, #leer-2, #leer-1 {
   justify-content: center;
 }
@@ -861,7 +850,7 @@ justify-content: space-between;
   margin-bottom: 20px;
 }
 
-/*Footer with waves*/
+
 .footer {
   position: relative;
   background: #05b3a4;
@@ -872,7 +861,7 @@ justify-content: space-between;
   align-items: center;
   flex-direction: column;
   margin-top: 35%;
-}
+}/*Footer with waves*/
 
 .social-icon,
 .footer-menu {
@@ -1045,19 +1034,3 @@ justify-content: space-between;
     margin-bottom: 20px;
   }
 }
-
- /* .table-header {
-    animation: pulse 8s infinite;
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  } */
