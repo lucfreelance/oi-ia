@@ -49,3 +49,11 @@ subenlaces.forEach(subenlace => {
     });
   });
 });
+
+// 
+var botonLeerMas = document.getElementById("leer-mas");
+  var posicionBotonLeerMas = botonLeerMas.getBoundingClientRect().top + window.scrollY;
+  
+  function volver() {
+    window.scrollTo(0, posicionBotonLeerMas);
+  }
