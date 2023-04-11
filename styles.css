@@ -106,11 +106,6 @@ p {
   text-shadow: none;
 }
 
-.darky {
-	color:#333;
-  font-size: 1.1em;
-}
-
 .cuarenta-up-px {
   padding-top: 40px; 
   text-align: center;
@@ -125,7 +120,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   box-sizing: border-box;
   width: 100%;
 }
@@ -166,23 +160,6 @@ height: 50px;
 
 .oi_ia-nav {
 color: #ff6363;
-}
-
-.navbar-oportunidades {
-background-color: #ff6363;
-padding: 0.5rem;
-border-radius: 10px;
-margin-left: 2rem;
-    flex-shrink: 0;
-}
-
-.navbar-oportunidades a {
-color: #fff;
-text-decoration: none;
-}
-
-.navbar-oportunidades a:hover {
-color: #292929;
 }
 
 .main-nav ul {
@@ -261,14 +238,6 @@ color: #292929;
     margin-right: 10px;
 }
 
-nav {
-	display: flex;
-	justify-content: space-between;
-  	align-items: center;
-	padding: 0 24px;
-	border-bottom: 1px solid var(--very-light-pink);
-}
-
 .inactive {
 	display: none;
 }
@@ -329,13 +298,12 @@ nav {
 }
 
 .encabezado-titular {
-  background-color: #164df2;
+  background-color: hsl(225, 92%, 60%);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
   font-size: 20px;
-  color: #164df2;
   margin-right: 5px;
   font-weight: 600;
 }
@@ -345,18 +313,12 @@ nav {
   padding-left: 5px;
 }
 
-.encabezado-titular .encabezado-texto p {
+.encabezado-titular .encabezado-texto p, .encabezado2-titular .encabezado2-texto p {
   color: #030308;
   font-size: 20px;
  font-weight: 600;
 }
 
-.encabezado2-titular .encabezado2-texto p {
-  color: #030308;
-  font-size: 20px;
- font-weight: 600;
-}
-  
 .encabezado-icono,
 .encabezado2-icono {
 display: block;
@@ -440,12 +402,6 @@ td {
 	font-size: 1.2rem;
 	text-align: right;
 	margin: 0;
-}
-
-ul {
-  padding: 0 20px;
-    margin-bottom: 20px;
-	 padding: 0 20px;
 }
 
 .button {
@@ -661,10 +617,6 @@ span.icon {
 	padding-right: 30px;
 }
 
-/* .imagen {
-  grid-area: imagen;
-} */
-
 .imagen-destacada {
   max-width: 100%;
   height: auto;
@@ -729,7 +681,7 @@ span.icon {
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: hsla(194, 90%, 69%, 0.894);
+  background-color: #05b3a4;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -791,7 +743,7 @@ justify-content: space-between;
 .subcategorias {
   display: flex;
   flex-wrap: wrap;
-  border-top: 3px solid #7be921;
+  border-top: 3px solid #05b3a4;
   padding-top: 20px;
   margin-top: 20px;
 }
@@ -1009,3 +961,4 @@ justify-content: space-between;
     margin-right: 0;
     margin-bottom: 20px;
   }/* Es importante tener en cuenta que el orden de los media queries es importante, ya que las declaraciones de estilos en los media queries más específicos sobrescriben las declaraciones de los media queries más generales que se aplican a la misma pantalla. Por lo tanto, se debe asegurar que los media queries se apliquen en el orden correcto para evitar conflictos en la visualización de la página. */
+}
