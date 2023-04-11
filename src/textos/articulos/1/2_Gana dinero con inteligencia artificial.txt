@@ -1,6 +1,0 @@
-    <div class="article-card" id="articulo-2">
-      <img src="./src/imagenes/premisa-destacada/2.gif" alt="Masculino oriental joven haciendo un truco de magia desapareciendo un billete de dolar y aspecto gracioso">
-      <h3>Gana dinero con Inteligencia Artificial</h3>
-      <p>La inteligencia artificial (IA) es una de las tecnologías emergentes más emocionantes del momento y ofrece oportunidades significativas para ganar dinero. Desde el desarrollo de nuevas aplicaciones de IA hasta la automatización de procesos empresariales, la IA está transformando la forma en que hacemos negocios. En este artículo, exploraremos algunas formas en las que puedes ganar dinero con la IA, tanto si eres un desarrollador de software experimentado como si eres un emprendedor que busca nuevas oportunidades.</p>
-      <button id="leer-2">Mostrar…</button>
-    </div>

@@ -1,0 +1,6 @@
+    <div class="article-card" id="articulo-3">
+      <img src="./src/imagenes/premisa-destacada/3.gif" alt="Robot de aspecto femenino haciendo gestos de sorpresa, enfado y desazón">
+      <h3>¿Son las IAs una amenaza?</h3>
+      <p>En los últimos años, hemos visto un aumento significativo en la utilización de inteligencia artificial (IA) en diversos campos, desde la atención médica hasta la conducción autónoma. A medida que la IA se vuelve más avanzada y omnipresente en nuestras vidas, también surge la pregunta de si representa una amenaza para la humanidad. En este artículo, exploraremos las preocupaciones que existen sobre el uso de la IA, los posibles riesgos asociados con su creciente uso y las medidas que se están tomando para mitigar estos riesgos.</p>
+      <button id="leer-3">Mostrar…</button>
+    </div>

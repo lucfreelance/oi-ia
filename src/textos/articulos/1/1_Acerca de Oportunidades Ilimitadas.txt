@@ -1,7 +1,0 @@
-    <div class="article-card" id="articulo-1">
-      <img src="./src/imagenes/premisa-destacada/1.gif" alt="Acerca de y Quienes Somos - artículo">
-      <h3>Acerca de Oportunidades Ilimitadas</h3>
-      <p>Oportunidades Ilimitadas es una empresa dedicada a brindar soluciones innovadoras para el desarrollo de negocios en línea. Con un enfoque en la tecnología y la creatividad, buscamos ayudar a nuestros clientes a alcanzar el éxito en sus emprendimientos digitales. Nuestro equipo está compuesto por expertos en diseño web, desarrollo de software, marketing digital y estrategia de negocios. Juntos, trabajamos para crear soluciones personalizadas y eficaces que ayuden a nuestros clientes a destacar en un mercado en constante evolución.</p>
-      <p>En Oportunidades Ilimitadas creemos en la importancia de la colaboración y la comunicación abierta. Por eso, trabajamos estrechamente con nuestros clientes para entender sus necesidades y objetivos, y así poder brindarles soluciones que se adapten a sus requisitos específicos.</p>
-      <button id="leer-1">Mostrar…</button>
-    </div> -->
