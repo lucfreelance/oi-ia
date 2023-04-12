@@ -78,3 +78,9 @@ var botonLeerMas = document.getElementById("leer-mas");
   buttons.forEach(button => {
     button.addEventListener('click', hideNewsletter);
   });
+
+  // Crear una regla que cuando se refresque la pagina con se ponga a la altura de #table-board-top
+  window.addEventListener("load", function() {
+    window.scrollTo(0, document.querySelector("main #table-board-top").offsetTop);
+  });
+  
