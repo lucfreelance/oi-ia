@@ -17,35 +17,47 @@
   <img src="https://cdn.pixabay.com/photo/2016/08/05/09/28/hand-1571852_960_720.jpg" alt="Imagen de mano de hombre apuntando con dedo índice al indice de la mano humanoide de un robot como en el fresco La Creación de Adán por Miguel Ángel"> 
 </div>
 
-<nav class="main-nav oi_ia-nav">
-  <div class="navbar-left">
-  <ul>
-    <li>
-    <a href="./index.html" class="navbar-home"><i class="fas fa-home"></i>inicio</a>
-    </li>
-    <li>
-    <a href="#asistentes">ASISTENTES</a>
-    </li>
-    <li>
-    <a href="#generadores">GENERADORES</a>
-    </li>
-    <li>
-    <a href="#editores">EDITORES</a>
-    </li>
-    <li>
-    <a href="./src/blog/blog.html">BLOG</a>
-    </li>
-  </ul>
-  </div>
-  <div class="navbar-right navbar-section">
-    <ul>
-      <li class="navbar-oportunidades">
-        <a href="./index.html" class="navbar-oportunidades-link">
-          <img src="./src/imagenes/complemento-pic/home-main.png" alt="logo de Oportunidades Ilimitadas">
-        </a>
-      </li>
-    </ul>
-  </div>
+<ul class="main-menu">
+  <li>
+    <a href="./index.html" class="menu-item active" data-target="home"><i class="fas fa-home"></i>Inicio</a>
+  </li>
+  <li class="menu-dropdown">
+    <a href="#" class="menu-item" data-target="asistentes">Asistentes</a>
+    <div class="dropdown-content">
+      <a href="#">Asistente 1</a>
+      <a href="#">Asistente 2</a>
+      <a href="#">Asistente 3</a>
+    </div>
+  </li>
+  <li class="menu-dropdown">
+    <a href="#" class="menu-item" data-target="generadores">Generadores</a>
+    <div class="dropdown-content">
+      <a href="#">Generador 1</a>
+      <a href="#">Generador 2</a>
+      <a href="#">Generador 3</a>
+    </div>
+  </li>
+  <li class="menu-dropdown">
+    <a href="#" class="menu-item" data-target="editores">Editores</a>
+    <div class="dropdown-content">
+      <a href="#">Editor 1</a>
+      <a href="#">Editor 2</a>
+      <a href="#">Editor 3</a>
+    </div>
+  </li>
+  <li class="menu-dropdown">
+    <a href="#" class="menu-item" data-target="comunidad"><i class="fas fa-users"></i>Comunidad</a>
+    <div class="dropdown-content">
+      <a href="#">Foros</a>
+      <a href="#">Eventos</a>
+      <a href="#">Colaboradores</a>
+    </div>
+  </li>
+  <li>
+    <a href="./src/blog/blog.html" class="menu-item"><i class="fas fa-newspaper"></i>Blog</a>
+  </li>
+</ul>
+
 </nav>
 
 <div class="encabezado">
@@ -59,7 +71,7 @@
     <img src="./src/imagenes/complemento-pic/icono1.png" alt="icono IA" width="50" height="50">
   </div> 
   <div class="encabezado-texto">
-	 <p class="darky">Checa reseñas de las IA más potentes<br>de Editores,  Asistentes,  Generadores...</p>
+	 <p class="darky">Checa esta table-Board con IAs de<br>Editores,  Asistentes,  Generadores...</p>
   </div>
 </section>
 
@@ -75,13 +87,8 @@
 <main>
   <section id="table-board-top">
   <div class="table-board">
-    <table>
-      <thead>
-        <tr>
-<h2 class="table-header" style="color: #333; text-align: center;">IA tiene soluciones para todo lo que necesites.</h2>
-<h2 class="table-header2" style="color: #15c8b9; text-align: center;">Herramientas que ahorran tiempo y energía.</h2>
-        </tr>
-      </thead>
+    <table><thead>
+          <h2 class="table-header" style="color: #333; text-align: center;">IA tiene soluciones para todo lo que necesites.</h2>        
       <tbody><tr>
         <td>
           <a href="#" class="subenlace" data-contenido="
@@ -631,8 +638,11 @@
         </td>
       </tr>
       <tr>
-      </tr>
+      </tr></tbody>
     </table>
+    <tfoot>
+      <h2 class="table-header2" style="color: #15c8b9; text-align: center;">Herramientas que ahorran tiempo y energía.</h2>
+    </tfoot>
   </div>
 </section>
   <span>
@@ -741,12 +751,6 @@
 <section class="articulos-recientes">
   <h2 class="h2">Artículos recientes sobre Inteligencia Artificial</h2>
   <div class="article-container">
-    <!-- <div class="article-card" id="articulo-0">
-      <img src="./src/imagenes/premisa-destacada/0.gif" alt="Imagen de ">
-      <h3>""</h3>
-      <p>""</p>
-      <button id="leer-0">Ver en el blog…</button>
-    </div> -->
     <div class="article-card" id="articulo-4">
       <img src="./src/imagenes/premisa-destacada/2/8.jpg" alt="señal simbólica de 'prohibido chat' con una bandera de italia de fondo de aspecto tenebroso">
       <h3>Italia prohíbe ChatGPT por violación de reglas: UE</h3>

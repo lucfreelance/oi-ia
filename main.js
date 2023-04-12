@@ -66,3 +66,15 @@ var botonLeerMas = document.getElementById("leer-mas");
     // Cambia la posición de la página al top de la sección table-board
     document.getElementById("table-board-top").scrollIntoView({ behavior: "smooth" });
   }
+
+  // 
+  const buttons = document.querySelectorAll('table td button');
+  const newsletter = document.querySelector('#newsletter');
+
+  function hideNewsletter() {
+    newsletter.classList.add('hide');
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener('click', hideNewsletter);
+  });
