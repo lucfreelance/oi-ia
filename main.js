@@ -57,3 +57,12 @@ var botonLeerMas = document.getElementById("leer-mas");
   function volver() {
     window.scrollTo(0, posicionBotonLeerMas);
   }
+
+  //
+  function cerrarContenido() {
+    // Oculta el contenido que se va a cerrar
+    // ...
+  
+    // Cambia la posición de la página al top de la sección table-board
+    document.getElementById("table-board-top").scrollIntoView({ behavior: "smooth" });
+  }
