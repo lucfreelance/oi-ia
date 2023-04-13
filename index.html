@@ -93,7 +93,7 @@
       <tbody>
 		<tr>
       <td>
-        <a href="#" class="subenlace" data-contenido="
+        <a href="#" class="subenlace" id="saltador-link" data-contenido="
           <div class='contenedor'>
             <img src='./src/imagenes/imagen-destacada/1/04-texto-a-sonido.png' class='imagen-destacada' style='display: block; margin: 0 auto;'>
             <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p>
@@ -108,9 +108,9 @@
                 </a>
               </li>
             </ul>
-            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()'>
-            <i class='fas fa-times'></i>
-          </button>
+            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para volver a la table-board.'>
+              <i class='fas fa-times'></i>
+            </button>
           </div>
           <h3 class='cuarenta-px'>Texto a Audio</h3>
         ">
@@ -118,7 +118,7 @@
         </a>
       </td>
           <td>
-            <a href="#" class="subenlace"data-contenido="
+            <a href="#" class="subenlace" data-contenido="
               <div class='contenedor'>
                 <img src='./src/imagenes/imagen-destacada/2/07-editor-cv.jpeg' class='imagen-destacada' style='display: block; margin: 0 auto;'>
                 <p id='credito' style='text-align: center; font-size: 13px;'>Bing</p>
@@ -133,9 +133,9 @@
                     </a>
                   </li>
                 </ul>
-                <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()'>
-                <i class='fas fa-times'></i>
-              </button>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
+  <i class='fas fa-times'></i>
+</button>
               </div>
               <h3 class='cuarenta-px'>Editor CV</h3>
             ">
@@ -193,9 +193,9 @@
                 </a>
               </li>
             </ul>
-            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()'>
-            <i class='fas fa-times'></i>
-          </button>
+            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
+              <i class='fas fa-times'></i>
+            </button>
           </div>
           <h3 class='cuarenta-px'>Editor Imagen</h3>
         ">
@@ -267,9 +267,9 @@
                 </a>
               </li>
             </ul>
-            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()'>
-            <i class='fas fa-times'></i>
-          </button>
+            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
+              <i class='fas fa-times'></i>
+            </button>
           </div>
           <h3 class='cuarenta-px'>Editor Vídeo</h3>
         ">
@@ -286,7 +286,7 @@
             <ul>
               <li>
                 <a href='http://chinchillachat.com/' class='external-link' target='_blank'>
-                  <img src='data:image/png;base64,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' class='logo-destacado' alt='Logo de Chinchilla Chat'>
+                  <img src='https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-ipage-v1-0-2%2F642%2F1574642%2FbXGszYn2%2F2bd6c8b1d41c4912aa1c433fe93ddd52&methods=resize%2C500%2C5000' class='logo-destacado' alt='Logo de Chinchilla Chat'>
                   <h4>Chinchilla Chat</h4>
                   <p>Descripción de Chinchilla Chat</p>                    
                 </a>
@@ -327,9 +327,9 @@
                 </a>
               </li>
             </ul>
-            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()'>
-            <i class='fas fa-times'></i>
-          </button>
+            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
+              <i class='fas fa-times'></i>
+            </button>
           </div>
           <h3 class='cuarenta-px'>Asistente Digital/h3>
         ">
@@ -360,9 +360,9 @@
                 </a>
               </li>
             </ul>
-            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()'>
-            <i class='fas fa-times'></i>
-          </button>
+            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
+              <i class='fas fa-times'></i>
+            </button>
           </div>
           <h3 class='cuarenta-px'>Diseño Logo</h3>
         ">
@@ -405,7 +405,7 @@
                     </a>
                     </li>
                     </ul>
-                    <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()'>
+                    <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
                       <i class='fas fa-times'></i>
                     </button>
                     </div>
@@ -521,9 +521,9 @@
                   </a>
                 </li>
               </ul>
-              <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()'>
-              <i class='fas fa-times'></i>
-            </button>
+              <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
+                <i class='fas fa-times'></i>
+              </button>
             </div>
             <h3 class='cuarenta-px'>Asistente Copy</h3>
           ">
@@ -531,7 +531,7 @@
           </a>
         </td>      
         <td>
-          <a href="#" class="subenlace" id="saltador-link" data-contenido="
+          <a href="#" class="subenlace" data-contenido="
             <div class='contenedor'>
               <img src='./src/imagenes/imagen-destacada/1/11-asistente-dev.png' class='imagen-destacada' style='display: block; margin: 0 auto;'>
               <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p>
@@ -565,9 +565,9 @@
                   </a>
                 </li>
               </ul>
-              <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()'>
-              <i class='fas fa-times'></i>
-            </button>
+              <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
+                <i class='fas fa-times'></i>
+              </button>
             </div>
             <h3 class='cuarenta-px'>Asistente Dev</h3>
           ">
@@ -575,7 +575,7 @@
           </a>
         </td>
         <td>
-          <a href="#" class="subenlace" id="saltador-link"  data-contenido="
+          <a href="#" class="subenlace" data-contenido="
             <div class='contenedor'>
               <img src='./src/imagenes/imagen-destacada/2/10-texto-a-video.png' class='imagen-destacada' style='display: block; margin: 0 auto;'>
               <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p>
@@ -597,9 +597,9 @@
                   </a>
                 </li>
               </ul>
-              <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()'>
-              <i class='fas fa-times'></i>
-            </button>
+              <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
+                <i class='fas fa-times'></i>
+              </button>
             </div>
             <h3 class='cuarenta-px'>Texto a Vídeo</h3>
           ">
@@ -637,9 +637,9 @@
                     </a>
                   </li>
                 </ul>
-                <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()'>
-                <i class='fas fa-times'></i>
-              </button>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
+  <i class='fas fa-times'></i>
+</button>
               </div>
               <h3 class='cuarenta-px'>Asistente Audio</h3>
             ">
@@ -711,9 +711,9 @@
                     </a>
                   </li>
                 </ul>
-                <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()'>
-                <i class='fas fa-times'></i>
-              </button>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
+  <i class='fas fa-times'></i>
+</button>
               </div>
               <h3 class='cuarenta-px'>Texto a Imagen</h3>
             ">
@@ -889,19 +889,6 @@
   </div>
 </section>
 
-<section class="encabezados"> 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 my-auto">
-        <div class="encabezados-carousel">
-          <div class="encabezados-carousel-container">
-            <p><a href="./src/blog/2/italia-prohibe-chatgpt-por-violar-la-privacidad-de-los-usuarios.html">Italia prohíbe ChatGPT por violar la privacidad de los usuarios: ¿Es necesario regular la inteligencia artificial?</a></p>
-            <p><a href="./src/blog/2/peticion-de-elon-musk-a-openai-de-frenar-desarrollo-de-gpt-5.html">Petición de Elon Musk a OpenAI de frenar desarrollo de GPT-5</a></p>
-            <p><a href="./src/blog/2/las-limitaciones-de-las-ias.html">Las limitaciones de las IAs</a></p>
-            <p><a href="./src/blog/2/inteligencia-artificial-y-etica-algoritmos-tomen-decisiones-justas.html">Inteligencia artificial y ética: ¿Cómo asegurarnos de que los algoritmos tomen decisiones justas?</a></p>
-          </div>
-        </div>
-      </div>
 <span>
   <h2 class="h2">Artículos recientes</h2>
   <span class="icon"><i class="fas fa-chevron-up"></i></span>
@@ -957,6 +944,20 @@
     </div>
   </div>
 </section>
+
+<section class="encabezados"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 my-auto">
+        <div class="encabezados-carousel">
+          <div class="encabezados-carousel-container">
+            <p><a href="./src/blog/2/italia-prohibe-chatgpt-por-violar-la-privacidad-de-los-usuarios.html">Italia prohíbe ChatGPT por violar la privacidad de los usuarios: ¿Es necesario regular la inteligencia artificial?</a></p>
+            <p><a href="./src/blog/2/peticion-de-elon-musk-a-openai-de-frenar-desarrollo-de-gpt-5.html">Petición de Elon Musk a OpenAI de frenar desarrollo de GPT-5</a></p>
+            <p><a href="./src/blog/2/las-limitaciones-de-las-ias.html">Las limitaciones de las IAs</a></p>
+            <p><a href="./src/blog/2/inteligencia-artificial-y-etica-algoritmos-tomen-decisiones-justas.html">Inteligencia artificial y ética: ¿Cómo asegurarnos de que los algoritmos tomen decisiones justas?</a></p>
+          </div>
+        </div>
+      </div>
 
 <footer class="footer" >
   <div class="waves">

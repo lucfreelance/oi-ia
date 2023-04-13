@@ -174,20 +174,6 @@ p {
   padding: 0;
 }
 
-/* .menu-item {
-  margin-right: 1rem;
-  position: relative;
-}
-
-.menu-item a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.menu-item a:hover {
-  color: #ff6363; 
-}*/
-
 /* Estilos para los submenús */
 .menu-dropdown .dropdown-content {
   display: none;
@@ -627,22 +613,6 @@ th {
 label {
   display: block;
   margin-bottom: 6px;
-}
-
-input[type="text"], input[type="email"] {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button[type="submit"] {
-  background-color: #15c8b9;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 #confirmation-message {

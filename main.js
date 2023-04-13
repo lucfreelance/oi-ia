@@ -83,27 +83,6 @@ var botonLeerMas = document.getElementById("leer-mas");
   window.addEventListener("load", function() {
     window.scrollTo(0, document.querySelector("main #table-board-top").offsetTop);
   });
-  
-//     // 
-// document.getElementById("saltador-link").addEventListener("click", function(event) {
-//   event.preventDefault(); // Evita que el enlace se comporte como un enlace normal
-//   var contenido = document.getElementById("subcontenido");
-//   contenido.innerHTML = this.getAttribute("data-contenido"); // Muestra el contenido correspondiente en el contenedor
-//   window.scrollTo(0, contenido.offsetTop); // Hace el salto al contenedor
-// });
-
-// 
-// const saltadorLink = document.getElementById("saltador-link");
-
-// saltadorLink.addEventListener("click", (event) => {
-//   event.preventDefault(); // Evita que el enlace se comporte como un enlace normal
-
-//   const subContenido = document.getElementById("subcontenido");
-//   const contenido = saltadorLink.getAttribute("data-contenido");
-
-//   subContenido.innerHTML = contenido; // Muestra el contenido correspondiente en el contenedor
-//   window.scrollTo(0, subContenido.offsetTop); // Hace el salto al contenedor
-// });
 
 // Funcion con variables renombradas a nombres menos genericos pero es la misma funcional a los 2 bloques comentados arriba
 const saltadorLink = document.getElementById("saltador-link");
