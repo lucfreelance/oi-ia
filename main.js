@@ -79,8 +79,15 @@ var botonLeerMas = document.getElementById("leer-mas");
     button.addEventListener('click', hideNewsletter);
   });
 
-  // Crear una regla que cuando se refresque la pagina con se ponga a la altura de #table-board-top
+  // Crea una regla que cuando se cierre el contenido desplegado la pagina se pone a la altura de #table-board-top
   window.addEventListener("load", function() {
     window.scrollTo(0, document.querySelector("main #table-board-top").offsetTop);
   });
   
+    // 
+document.getElementById("saltador-link").addEventListener("click", function(event) {
+  event.preventDefault(); // Evita que el enlace se comporte como un enlace normal
+  var contenido = document.getElementById("subcontenido");
+  contenido.innerHTML = this.getAttribute("data-contenido"); // Muestra el contenido correspondiente en el contenedor
+  window.scrollTo(0, contenido.offsetTop); // Hace el salto al contenedor
+});
