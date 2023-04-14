@@ -533,6 +533,9 @@ button:active, a:active, input[type="submit"]:active {
   border: 2px solid black;
   margin: 0 auto;
   min-width: 150px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  /* border-bottom: 3px solid #05b3a4; */
 }
 
 .table-board:hover {

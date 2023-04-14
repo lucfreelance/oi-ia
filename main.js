@@ -84,15 +84,30 @@ var botonLeerMas = document.getElementById("leer-mas");
     window.scrollTo(0, document.querySelector("main #table-board-top").offsetTop);
   });
 
-// Funcion con variables renombradas a nombres menos genericos pero es la misma funcional a los 2 bloques comentados arriba
-const saltadorLink = document.getElementById("saltador-link");
+  // 
+  const saltadorLinks = document.querySelectorAll(".saltador-link");
 
-saltadorLink.addEventListener("click", (event) => {
-  event.preventDefault(); // Evita que el enlace se comporte como un enlace normal
+  saltadorLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+    
+      const miSubContenido = document.getElementById("subcontenido");
+      const miContenido = link.getAttribute("data-contenido");
+    
+      miSubContenido.innerHTML = miContenido;
+      window.scrollTo(0, miSubContenido.offsetTop);
+    });
+  });
 
-  const miSubContenido = document.getElementById("subcontenido");
-  const miContenido = saltadorLink.getAttribute("data-contenido");
+// // Funcion con variables renombradas a nombres menos genericos pero es la misma funcional a los 2 bloques comentados arriba
+// const saltadorLink = document.getElementById("saltador-link");
 
-  miSubContenido.innerHTML = miContenido; // Muestra el contenido correspondiente en el contenedor
-  window.scrollTo(0, miSubContenido.offsetTop); // Hace el salto al contenedor
-});
+// saltadorLink.addEventListener("click", (event) => {
+//   event.preventDefault(); // Evita que el enlace se comporte como un enlace normal
+
+//   const miSubContenido = document.getElementById("subcontenido");
+//   const miContenido = saltadorLink.getAttribute("data-contenido");
+
+//   miSubContenido.innerHTML = miContenido; // Muestra el contenido correspondiente en el contenedor
+//   window.scrollTo(0, miSubContenido.offsetTop); // Hace el salto al contenedor
+// });
