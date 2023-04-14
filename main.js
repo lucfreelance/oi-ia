@@ -46,26 +46,25 @@ subenlaces.forEach(subenlace => {
     const cerrarBtn = subContenido.querySelector('.cerrar-btn');
     cerrarBtn.addEventListener('click', () => {
       subContenido.classList.remove('mostrar');
+      setTimeout(() => {
+        // Hace scroll al elemento target
+        const target = cerrarBtn.getAttribute('data-target');
+        document.getElementById(target).scrollIntoView({behavior: 'smooth'});
+      }, 500); // Espera 500ms (tiempo de transición) antes de hacer el scroll
     });
   });
 });
 
-// 
-var botonLeerMas = document.getElementById("leer-mas");
-  var posicionBotonLeerMas = botonLeerMas.getBoundingClientRect().top + window.scrollY;
-  
-  function volver() {
-    window.scrollTo(0, posicionBotonLeerMas);
-  }
+function cerrarContenido() {
+  const subContenido = document.querySelector("#subcontenido");
+  const target = document.getElementById("toggle-button").getAttribute("data-target");
 
-  //
-  function cerrarContenido() {
-    // Oculta el contenido que se va a cerrar
-    // ...
-  
-    // Cambia la posición de la página al top de la sección table-board
-    document.getElementById("table-board-top").scrollIntoView({ behavior: "smooth" });
-  }
+  subContenido.classList.remove("mostrar");
+
+  setTimeout(() => {
+    document.getElementById(target).scrollIntoView({ behavior: "smooth" });
+  }, 500);
+}
 
   // 
   const buttons = document.querySelectorAll('table td button');
@@ -99,46 +98,15 @@ var botonLeerMas = document.getElementById("leer-mas");
     });
   });
 
-// // Funcion con variables renombradas a nombres menos genericos pero es la misma funcional a los 2 bloques comentados arriba
-// const saltadorLink = document.getElementById("saltador-link");
-
-// saltadorLink.addEventListener("click", (event) => {
-//   event.preventDefault(); // Evita que el enlace se comporte como un enlace normal
-
-//   const miSubContenido = document.getElementById("subcontenido");
-//   const miContenido = saltadorLink.getAttribute("data-contenido");
-
-//   miSubContenido.innerHTML = miContenido; // Muestra el contenido correspondiente en el contenedor
-//   window.scrollTo(0, miSubContenido.offsetTop); // Hace el salto al contenedor
-// });
-
-// // 
-// const menuToggle = document.querySelector('.menu-toggle');
-// const mainMenu = document.querySelector('.main-menu');
-
-// menuToggle.addEventListener('click', function() {
-//   mainMenu.classList.toggle('show');
-// });
-
-// 
-$(document).ready(function () {
-  // Toggle the navbar when the hamburger button is clicked
-  $(".navbar-toggler").on("click", function () {
-    $(".navbar-collapse").toggleClass("show");
+  // 
+  $(document).ready(function () {
+    // Toggle the navbar when the hamburger button is clicked
+    $(".navbar-toggler").on("click", function () {
+      $(".navbar-collapse").toggleClass("show");
+    });
+  
+    // Hide the navbar when a link is clicked (for small screens only)
+    $(".navbar-nav>li>a").on("click", function () {
+      $(".navbar-collapse").removeClass("show");
+    });
   });
-
-  // Hide the navbar when a link is clicked (for small screens only)
-  $(".navbar-nav>li>a").on("click", function () {
-    $(".navbar-collapse").removeClass("show");
-  });
-});
-
-// // 
-// function cerrarContenido() {
-//   var botonCerrar = document.getElementById("toggle-button");
-//   var contenido = botonCerrar.closest("td").querySelector(".subenlace.saltador-link");
-//   contenido.removeAttribute("data-contenido");
-// }
-
-// var botonCerrar = document.getElementById("toggle-button");
-// botonCerrar.onclick = cerrarContenido;

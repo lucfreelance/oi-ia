@@ -12,10 +12,10 @@
 	<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-    <nav>
+    <nav class="menu">
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul class="menu">
+      <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Asistentes</a></li>
         <li><a href="#">Generadores</a></li>
@@ -23,50 +23,7 @@
         <li><a href="#">Comunidad</a></li>
         <li><a href="#">Blog</a></li>
       </ul>
-    <!-- <nav>
-    <ul class="main-menu">
-      <li>
-        <a href="./index.html" class="menu-item active" data-target="home"><i class="fas fa-home"></i>Inicio</a>
-      </li>
-      <li class="menu-dropdown">
-        <a href="#" class="menu-item" data-target="asistentes">Asistentes</a>
-        <div class="dropdown-content">
-          <a href="#">Asistente 1</a>
-          <a href="#">Asistente 2</a>
-          <a href="#">Asistente 3</a>
-        </div>
-      </li>
-      <li class="menu-dropdown">
-        <a href="#" class="menu-item" data-target="generadores">Generadores</a>
-        <div class="dropdown-content">
-          <a href="#">Generador 1</a>
-          <a href="#">Generador 2</a>
-          <a href="#">Generador 3</a>
-        </div>
-      </li>
-      <li class="menu-dropdown">
-        <a href="#" class="menu-item" data-target="editores">Editores</a>
-        <div class="dropdown-content">
-          <a href="#">Editor 1</a>
-          <a href="#">Editor 2</a>
-          <a href="#">Editor 3</a>
-        </div>
-      </li>
-      <li class="menu-dropdown">
-        <a href="#" class="menu-item" data-target="comunidad"><i class="fas fa-users"></i>Comunidad</a>
-        <div class="dropdown-content">
-          <a href="#">Foros</a>
-          <a href="#">Eventos</a>
-          <a href="#">Colaboradores</a>
-        </div>
-      </li>
-      <li>
-        <a href="./src/blog/blog.html" class="menu-item"><i class="fas fa-newspaper"></i>Blog</a>
-      </li>
-    </ul>
-    </nav>  -->
-    
-    <!-- <nav>
+    </nav>
       <button class="menu-toggle" aria-label="Abrir menú">
         <span></span>
         <span></span>
@@ -147,7 +104,7 @@
       <tbody>
 		<tr>
       <td id="td1">
-        <a href="#" class="subenlace" id="saltador-link" onclick="cerrarContenido()" data-contenido="
+  <a href="#" class="subenlace saltador-link" data-contenido="
     <div class='contenedor'>
       <img src='./src/imagenes/imagen-destacada/1/04-texto-a-sonido.png' class='imagen-destacada' style='display: block; margin: 0 auto;'>
       <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p>
@@ -155,14 +112,16 @@
       <p class='sinopsis'>La tecnología de Texto a Audio y/o Texto a Sonido impulsada por la inteligencia artificial ha mejorado la accesibilidad y conveniencia para consumir información, así como impulsado la industria del contenido de audio. Los sistemas de conversión automática utilizan algoritmos de procesamiento de lenguaje natural y síntesis de voz para leer el texto en voz alta en diferentes idiomas y acentos. Aunque todavía hay desafíos, se espera que la tecnología continúe evolucionando y mejorando en el futuro.</p>
       <ul>
         <li>
-          <a href="#saltador-link" class="subenlace" id="saltador-link" onclick="cerrarContenido()" data-contenido="...">Texto a Audio</a>
+          <a href='https://play.ht/' class='external-link' target='_blank'>
             <img src='https://play.ht/assets/img/brand/play-logo-round.png' class='logo-destacado' alt='Logo de Play.ht'>
             <h4>Play.ht</h4>
             <p>¿Te imaginas poder convertir tus textos en audios profesionales en cuestión de minutos? Con Play.ht, puedes hacer realidad esa idea y darle vida a tus contenidos de una forma única. Con su tecnología avanzada de síntesis de voz y variedad de voces en múltiples idiomas, puedes generar audios de alta calidad y personalizados. Además, Play.ht ofrece integraciones con herramientas como WordPress y Shopify, lo que facilita la creación y gestión de contenido auditivo para tu sitio web o tienda en línea. Atrévete a probarlo y sorprende a tus usuarios con una nueva experiencia auditiva.</p>
           </a>
         </li>
       </ul>
-      <button id="toggle-button" class="cerrar-btn" onclick="cerrarContenido()" alt="Cerrar contenido" title="Haz clic para cerrar el contenido y volver a la table-board."><i class="fas fa-times"></i></button>
+      <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Cierra este contenido y vuelve a la table-board.' data-target='table-board-top'>
+        <i class='fas fa-times'></i>
+      </button>
     </div>
     <h3 class='cuarenta-px'>Texto a Audio</h3>
   ">
@@ -185,7 +144,7 @@
                     </a>
                   </li>
                 </ul>
-<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cierra contenido y vuelve a table-board' title='Cierra este contenido y vuelve a la table-board.' data-target='table-board-top'>
   <i class='fas fa-times'></i>
 </button>
               </div>
@@ -246,9 +205,9 @@
                 </a>
               </li>
             </ul>
-            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
-              <i class='fas fa-times'></i>
-            </button>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cierra contenido y vuelve a table-board' title='Cierra este contenido y vuelve a la table-board.' data-target='table-board-top'>
+  <i class='fas fa-times'></i>
+</button>
           </div>
           <h3 class='cuarenta-px'>Editor Imagen</h3>
         ">
@@ -320,9 +279,9 @@
                 </a>
               </li>
             </ul>
-            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
-              <i class='fas fa-times'></i>
-            </button>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cierra contenido y vuelve a table-board' title='Cierra este contenido y vuelve a la table-board.' data-target='table-board-top'>
+  <i class='fas fa-times'></i>
+</button>
           </div>
           <h3 class='cuarenta-px'>Editor Vídeo</h3>
         ">
@@ -380,9 +339,9 @@
                 </a>
               </li>
             </ul>
-            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
-              <i class='fas fa-times'></i>
-            </button>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cierra contenido y vuelve a table-board' title='Cierra este contenido y vuelve a la table-board.' data-target='table-board-top'>
+  <i class='fas fa-times'></i>
+</button>
           </div>
           <h3 class='cuarenta-px'>Asistente Digital</h3>
         ">
@@ -413,9 +372,9 @@
                 </a>
               </li>
             </ul>
-            <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
-              <i class='fas fa-times'></i>
-            </button>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cierra contenido y vuelve a table-board' title='Cierra este contenido y vuelve a la table-board.' data-target='table-board-top'>
+  <i class='fas fa-times'></i>
+</button>
           </div>
           <h3 class='cuarenta-px'>Diseño Logo</h3>
         ">
@@ -458,9 +417,9 @@
                     </a>
                     </li>
                     </ul>
-                    <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
-                      <i class='fas fa-times'></i>
-                    </button>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cierra contenido y vuelve a table-board' title='Cierra este contenido y vuelve a la table-board.' data-target='table-board-top'>
+  <i class='fas fa-times'></i>
+</button>
                     </div>
                     <h3 class='cuarenta-px'>Buscador Web</h3>
                     ">
@@ -574,9 +533,9 @@
                   </a>
                 </li>
               </ul>
-              <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
-                <i class='fas fa-times'></i>
-              </button>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cierra contenido y vuelve a table-board' title='Cierra este contenido y vuelve a la table-board.' data-target='table-board-top'>
+  <i class='fas fa-times'></i>
+</button>
             </div>
             <h3 class='cuarenta-px'>Asistente Copy</h3>
           ">
@@ -618,9 +577,9 @@
                   </a>
                 </li>
               </ul>
-              <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
-                <i class='fas fa-times'></i>
-              </button>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cierra contenido y vuelve a table-board' title='Cierra este contenido y vuelve a la table-board.' data-target='table-board-top'>
+  <i class='fas fa-times'></i>
+</button>
             </div>
             <h3 class='cuarenta-px'>Asistente Dev</h3>
           ">
@@ -650,9 +609,9 @@
                   </a>
                 </li>
               </ul>
-              <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
-                <i class='fas fa-times'></i>
-              </button>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cierra contenido y vuelve a table-board' title='Cierra este contenido y vuelve a la table-board.' data-target='table-board-top'>
+  <i class='fas fa-times'></i>
+</button>
             </div>
             <h3 class='cuarenta-px'>Texto a Vídeo</h3>
           ">
@@ -690,7 +649,7 @@
                     </a>
                   </li>
                 </ul>
-<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cierra contenido y vuelve a table-board' title='Cierra este contenido y vuelve a la table-board.' data-target='table-board-top'>
   <i class='fas fa-times'></i>
 </button>
               </div>
@@ -764,7 +723,7 @@
                     </a>
                   </li>
                 </ul>
-<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Haz clic para cerrar el contenido y volver a la table-board.'>
+<button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cierra contenido y vuelve a table-board' title='Cierra este contenido y vuelve a la table-board.' data-target='table-board-top'>
   <i class='fas fa-times'></i>
 </button>
               </div>
