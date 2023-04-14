@@ -43,7 +43,7 @@ subenlaces.forEach(subenlace => {
         // Hace scroll al elemento target
         const target = cerrarBtn.getAttribute('data-target');
         document.getElementById(target).scrollIntoView({behavior: 'smooth'});
-      }, 500); // Espera 500ms (tiempo de transición) antes de hacer el scroll
+      }, 300); // Espera 300ms (tiempo de transición) antes de hacer el scroll
     });
   });
 });
@@ -56,7 +56,7 @@ function cerrarContenido() {
 
   setTimeout(() => {
     document.getElementById(target).scrollIntoView({ behavior: "smooth" });
-  }, 500);
+  }, 300);
 }
 
   // 
@@ -111,4 +111,21 @@ articles.addEventListener("mouseout", () => {
   });
 });
 
-// 
+//
+var dropdownMenu = document.querySelector('.menu-dropdown');
+dropdownMenu.addEventListener('click', function() {
+  this.classList.toggle('dropdown-active');
+});
+
+//
+var menuToggle = document.getElementById('menu-toggle');
+menuToggle.addEventListener('click', function() {
+  this.classList.toggle('active');
+  const mainMenu = document.querySelector('.main-menu');
+  mainMenu.classList.toggle('show');
+});
+
+var dropdownMenu = document.querySelector('.menu-dropdown');
+dropdownMenu.addEventListener('click', function() {
+  this.classList.toggle('dropdown-active');
+});
