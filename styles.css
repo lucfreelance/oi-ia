@@ -166,6 +166,8 @@ p {
     color: var(--hospital-green);
 }
 
+
+
 .menu {
   list-style: none;
   display: flex;
@@ -173,6 +175,13 @@ p {
   margin: 0;
   padding: 0;
 }
+
+/* Estilos para el botón de menú */
+.menu-toggle {
+  display: none;
+}
+
+
 
 /* Estilos para los submenús */
 .menu-dropdown .dropdown-content {
@@ -1146,4 +1155,13 @@ justify-content: space-between;
     margin-right: 0;
     margin-bottom: 20px;
   }/* Es importante tener en cuenta que el orden de los media queries es importante, ya que las declaraciones de estilos en los media queries más específicos sobrescriben las declaraciones de los media queries más generales que se aplican a la misma pantalla. Por lo tanto, se debe asegurar que los media queries se apliquen en el orden correcto para evitar conflictos en la visualización de la página. */
+}
+
+@media screen and (max-width: 768px) {
+  .main-menu {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
 }

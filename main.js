@@ -111,3 +111,34 @@ var botonLeerMas = document.getElementById("leer-mas");
 //   miSubContenido.innerHTML = miContenido; // Muestra el contenido correspondiente en el contenedor
 //   window.scrollTo(0, miSubContenido.offsetTop); // Hace el salto al contenedor
 // });
+
+// // 
+// const menuToggle = document.querySelector('.menu-toggle');
+// const mainMenu = document.querySelector('.main-menu');
+
+// menuToggle.addEventListener('click', function() {
+//   mainMenu.classList.toggle('show');
+// });
+
+// 
+$(document).ready(function () {
+  // Toggle the navbar when the hamburger button is clicked
+  $(".navbar-toggler").on("click", function () {
+    $(".navbar-collapse").toggleClass("show");
+  });
+
+  // Hide the navbar when a link is clicked (for small screens only)
+  $(".navbar-nav>li>a").on("click", function () {
+    $(".navbar-collapse").removeClass("show");
+  });
+});
+
+// // 
+// function cerrarContenido() {
+//   var botonCerrar = document.getElementById("toggle-button");
+//   var contenido = botonCerrar.closest("td").querySelector(".subenlace.saltador-link");
+//   contenido.removeAttribute("data-contenido");
+// }
+
+// var botonCerrar = document.getElementById("toggle-button");
+// botonCerrar.onclick = cerrarContenido;
