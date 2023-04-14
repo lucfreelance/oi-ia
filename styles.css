@@ -457,69 +457,86 @@ color: #ff6363;
   }
 }
 
-.subtitle {
-  text-align: right;
-  margin: 5px 0;
-  animation: subtitle-color 20s infinite;
-}
-
 .encabezado {
-	background-color: rgba(151, 243, 228, 0.205);
-	padding: 10px;
-	border-radius: 5px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-	max-width: 100%;
-}
-
-.encabezado-interno {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	max-width: 100%;
+  background-color: rgba(151, 243, 228, 0.205);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 100%;
 }
 
 .encabezado-titular {
-  background-color: hsl(225, 92%, 60%);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.encabezado-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.encabezado-arriba,
+.encabezado-abajo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  font-size: 20px;
-  margin-right: 5px;
+  background-color: hsl(225, 53%, 45%);
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.encabezado-arriba-icono img,
+.encabezado-abajo-icono img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.encabezado-arriba-icono img {
+  justify-self: end;
+}
+
+.encabezado-abajo-icono img {
+  align-self: flex-end;
+}
+
+.encabezado-arriba-texto {
+  font-size: 1.2rem;
   font-weight: 600;
+  text-align: left;
 }
 
-.encabezado-titular .encabezado-icono img {
-  border-radius: 50%;
-  padding-left: 5px;
+.encabezado-abajo-texto {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: right;
 }
 
-.encabezado-titular .encabezado-texto p, .encabezado2-titular .encabezado2-texto p {
-  color: #030308;
-  font-size: 20px;
- font-weight: 600;
-}
-
-.encabezado-icono,
-.encabezado2-icono {
-display: block;
-margin-right: 0;
-margin-bottom: 20px;
-}
-
-.encabezado2-titular {
-  background-color: #65c781;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- font-weight: 600;
-}
-
-.encabezado2-titular .encabezado2-icono img {
-  margin-left: 20px;
-  border-radius: 50%;
-  padding-right: 5px;
+@media screen and (max-width: 768px) {
+  .encabezado {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  
+  .encabezado-info {
+    grid-template-columns: 1fr;
+  }
 }
 
 .encabezados {
@@ -571,19 +588,6 @@ td {
   color: var(--black);
   box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   transition: all 0.4s ease;
-}
-
-.title {
-	font-size: 1.8rem;
-	font-weight: bold;
-	text-align: left;
-	margin: 0;
-}
-
-.subtitle {
-	font-size: 1.2rem;
-	text-align: right;
-	margin: 0;
 }
 
 .button {
@@ -1193,26 +1197,8 @@ justify-content: space-between;
   }
 }
 
-@media screen and (max-width: 640px) {
-  .menu {
-    display: block;
-  }
-  .navbar-left ul {
-    display: none;
-  }
-  .desktop-menu {
-    display: none;
-  }
-}
-
-@media (min-width: 641px) {
-  .mobile-menu {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 768px) {
-  .encabezado-titular, .encabezado2-titular {
+  .encabezado-arriba, .encabezado2-titular {
     flex-direction: column;
   }
   .subtable-board {
@@ -1226,20 +1212,6 @@ justify-content: space-between;
     margin-right: 0;
     margin-bottom: 20px;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .articulos-agregados {
-    flex-direction: column;
-  }
-  .aside-izquierdo {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }/* Es importante tener en cuenta que el orden de los media queries es importante, ya que las declaraciones de estilos en los media queries más específicos sobrescriben las declaraciones de los media queries más generales que se aplican a la misma pantalla. Por lo tanto, se debe asegurar que los media queries se apliquen en el orden correcto para evitar conflictos en la visualización de la página. */
-}
-
-@media screen and (max-width: 768px) {
   .main-menu {
     display: none;
   }

@@ -1,23 +1,16 @@
-//
-const articles = document.querySelector(".article-container");
-const articleCards = document.querySelectorAll(".article-card");
-
-articles.addEventListener("mouseover", (e) => {
-  if (e.target.classList.contains("article-card")) {
-    articleCards.forEach((card) => {
-      if (card !== e.target) {
-        card.style.transform = "translateX(10px)";
-      }
+  // 
+  $(document).ready(function () {
+    // Toggle the navbar when the hamburger button is clicked
+    $(".navbar-toggler").on("click", function () {
+      $(".navbar-collapse").toggleClass("show");
     });
-  }
-});
-
-articles.addEventListener("mouseout", () => {
-  articleCards.forEach((card) => {
-    card.style.transform = "none";
-  });
-});
-
+  
+    // Hide the navbar when a link is clicked (for small screens only)
+    $(".navbar-nav>li>a").on("click", function () {
+      $(".navbar-collapse").removeClass("show");
+    });
+  }); 
+  
 //
 var enlaces = document.getElementsByClassName("enlace");
 var contenido = document.getElementById("contenidos");
@@ -82,7 +75,7 @@ function cerrarContenido() {
   window.addEventListener("load", function() {
     window.scrollTo(0, document.querySelector("main #table-board-top").offsetTop);
   });
-
+  
   // 
   const saltadorLinks = document.querySelectorAll(".saltador-link");
 
@@ -96,17 +89,26 @@ function cerrarContenido() {
       miSubContenido.innerHTML = miContenido;
       window.scrollTo(0, miSubContenido.offsetTop);
     });
-  });
-
-  // 
-  $(document).ready(function () {
-    // Toggle the navbar when the hamburger button is clicked
-    $(".navbar-toggler").on("click", function () {
-      $(".navbar-collapse").toggleClass("show");
-    });
+  });  
   
-    // Hide the navbar when a link is clicked (for small screens only)
-    $(".navbar-nav>li>a").on("click", function () {
-      $(".navbar-collapse").removeClass("show");
+  //
+const articles = document.querySelector(".article-container");
+const articleCards = document.querySelectorAll(".article-card");
+
+articles.addEventListener("mouseover", (e) => {
+  if (e.target.classList.contains("article-card")) {
+    articleCards.forEach((card) => {
+      if (card !== e.target) {
+        card.style.transform = "translateX(10px)";
+      }
     });
+  }
+});
+
+articles.addEventListener("mouseout", () => {
+  articleCards.forEach((card) => {
+    card.style.transform = "none";
   });
+});
+
+// 

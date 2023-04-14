@@ -12,18 +12,8 @@
 	<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-    <nav class="menu">
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Asistentes</a></li>
-        <li><a href="#">Generadores</a></li>
-        <li><a href="#">Editores</a></li>
-        <li><a href="#">Comunidad</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-    </nav>
+
+    <nav>
       <button class="menu-toggle" aria-label="Abrir menú">
         <span></span>
         <span></span>
@@ -36,25 +26,28 @@
         <li class="menu-dropdown">
           <a href="#" class="menu-item" data-target="asistentes">Asistentes</a>
           <div class="dropdown-content">
-            <a href="#">Asistente 1</a>
-            <a href="#">Asistente 2</a>
-            <a href="#">Asistente 3</a>
+            <a href="#">Asistente Dev</a>
+            <a href="#">Asistente Copy</a>
+            <a href="#">Asistente Audio</a>
+            <a href="#">Asistente Digital</a>
           </div>
         </li>
         <li class="menu-dropdown">
           <a href="#" class="menu-item" data-target="generadores">Generadores</a>
           <div class="dropdown-content">
-            <a href="#">Generador 1</a>
-            <a href="#">Generador 2</a>
-            <a href="#">Generador 3</a>
+            <a href="#">Texto a Audio</a>
+            <a href="#">Texto a Imagen</a>
+            <a href="#">Texto a Video</a>
+            <a href="#">Buscador Web</a>
           </div>
         </li>
         <li class="menu-dropdown">
           <a href="#" class="menu-item" data-target="editores">Editores</a>
           <div class="dropdown-content">
-            <a href="#">Editor 1</a>
-            <a href="#">Editor 2</a>
-            <a href="#">Editor 3</a>
+            <a href="#">Editor Imagen</a>
+            <a href="#">Editor Video</a>
+            <a href="#">Editor Logo</a>
+            <a href="#">Editor CV</a>
           </div>
         </li>
         <li class="menu-dropdown">
@@ -69,33 +62,37 @@
           <a href="./src/blog/blog.html" class="menu-item"><i class="fas fa-newspaper"></i>Blog</a>
         </li>
       </ul>
-    </nav> -->
+    </nav>
 
 <div class="headpic">
   <img src="https://cdn.pixabay.com/photo/2016/08/05/09/28/hand-1571852_960_720.jpg" alt="Imagen de mano de hombre apuntando con dedo índice al indice de la mano humanoide de un robot como en el fresco La Creación de Adán por Miguel Ángel"> 
 </div>
-<div class="encabezado">
-  <div class="encabezado-interno">
+
+<header class="encabezado">
+  <div class="encabezado-titular">
     <h1 class="title">Oportunidades Ilimitadas te da la bienvenida</h1>
     <h2 class="subtitle">a tu Table-Board de inteligencias artificiales</h2>
   </div>
-</div>
-<section class="encabezado-titular">
-  <div class="encabezado-icono">
-    <img src="./src/imagenes/complemento-pic/icono1.png" alt="icono IA" width="50" height="50">
-  </div> 
-  <div class="encabezado-texto">
-	 <p class="darky">Checa esta table-Board con IAs de<br>Editores,  Asistentes,  Generadores...</p>
+  <div class="encabezado-info">
+    <div class="encabezado-arriba">
+      <div class="encabezado-arriba-icono">
+        <img src="./src/imagenes/complemento-pic/icono1.png" alt="icono IA" width="50" height="50">
+      </div> 
+      <div class="encabezado-arriba-texto">
+        <p>Checa esta Table-Board con IAs de Editores, Asistentes, Generadores...</p>
+      </div>
+    </div>
+    <div class="encabezado-abajo">
+      <div class="encabezado-abajo-texto">
+        <p>Comparte tus apps / webs favoritas para que la comunidad las conozca.</p>
+      </div>
+      <div class="encabezado-abajo-icono">
+        <img src="./src/imagenes/complemento-pic/icono2.png" alt="icono2 IA" width="50" height="50">
+      </div> 
+    </div>
   </div>
-</section>
-<section class="encabezado2-titular">
-  <div class="encabezado2-texto">
- <p class="darky">Comparte tus apps / webs favoritas<br>para que la comunidad las conozca.</p>
-  </div>
-  <div class="encabezado2-icono">
-    <img src="./src/imagenes/complemento-pic/icono2.png" alt="icono2 IA" width="50" height="50">
-  </div> 
-</section>
+</header>
+
 <main>
   <section id="table-board-top">
   <div class="table-board">
@@ -353,7 +350,7 @@
           <div class='contenedor'>
             <img src='./src/imagenes/imagen-destacada/1/03-diseno-logo.png' class='imagen-destacada' style='display: block; margin: 0 auto;'>
             <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p>
-          <h3 class='cuarenta-up-px'>Diseño Logo</h3>
+          <h3 class='cuarenta-up-px'>Editor Logo</h3>
     <p class='sinopsis'>Las herramientas de diseño de logos basadas en inteligencia artificial están revolucionando la forma en que se crea el branding empresarial. Utilizan algoritmos avanzados de aprendizaje automático para crear logos personalizados a partir de la información proporcionada por el usuario. Además, ofrecen opciones personalizables que permiten crear diseños de logos únicos y adaptados a las necesidades de cada empresa. Estas herramientas reducen significativamente el tiempo y el costo de producción y son ideales para pequeñas empresas y startups con un presupuesto limitado.
 </p>
             <ul>
@@ -376,9 +373,9 @@
   <i class='fas fa-times'></i>
 </button>
           </div>
-          <h3 class='cuarenta-px'>Diseño Logo</h3>
+          <h3 class='cuarenta-px'>Editor Logo</h3>
         ">
-          Diseño Logo
+          Editor Logo
         </a>
       </td>
       <td id="td7">
@@ -755,7 +752,9 @@
     </div>
   </div>
 </div>
-<div class="subcategorias">
+
+
+<!-- <div class="subcategorias">
 <section style="display: flex; flex-wrap: wrap;">
   <div id="asistentes" class="subtable-board" style="max-width: 33%; padding: 0 10px; background-color: hsl(225, 92%, 60%);">
     <h2 style="text-align: center; font-size: 1.5rem; margin-top: 5;">Asistentes IA</h2>
@@ -787,10 +786,30 @@
     <h2 style="text-align: center; font-size: 1.5rem; margin-top: 5;">Generadores IA</h2>
     <table>
       <tr>
-        <td>
-          <a href="#" class="subenlace2" data-subcontenido="...">
+        <td id="td1">
+          <a href="#" class="subenlace saltador-link" data-contenido="
+            <div class='contenedor'>
+              <img src='./src/imagenes/imagen-destacada/1/04-texto-a-sonido.png' class='imagen-destacada' style='display: block; margin: 0 auto;'>
+              <p id='credito' style='text-align: center; font-size: 13px;'>Dall-e</p>
+              <h3 class='cuarenta-up-px'>Texto a Audio</h3>
+              <p class='sinopsis'>La tecnología de Texto a Audio y/o Texto a Sonido impulsada por la inteligencia artificial ha mejorado la accesibilidad y conveniencia para consumir información, así como impulsado la industria del contenido de audio. Los sistemas de conversión automática utilizan algoritmos de procesamiento de lenguaje natural y síntesis de voz para leer el texto en voz alta en diferentes idiomas y acentos. Aunque todavía hay desafíos, se espera que la tecnología continúe evolucionando y mejorando en el futuro.</p>
+              <ul>
+                <li>
+                  <a href='https://play.ht/' class='external-link' target='_blank'>
+                    <img src='https://play.ht/assets/img/brand/play-logo-round.png' class='logo-destacado' alt='Logo de Play.ht'>
+                    <h4>Play.ht</h4>
+                    <p>¿Te imaginas poder convertir tus textos en audios profesionales en cuestión de minutos? Con Play.ht, puedes hacer realidad esa idea y darle vida a tus contenidos de una forma única. Con su tecnología avanzada de síntesis de voz y variedad de voces en múltiples idiomas, puedes generar audios de alta calidad y personalizados. Además, Play.ht ofrece integraciones con herramientas como WordPress y Shopify, lo que facilita la creación y gestión de contenido auditivo para tu sitio web o tienda en línea. Atrévete a probarlo y sorprende a tus usuarios con una nueva experiencia auditiva.</p>
+                  </a>
+                </li>
+              </ul>
+              <button id='toggle-button' class='cerrar-btn' onclick='cerrarContenido()' alt='Cerrar contenido' title='Cierra este contenido y vuelve a la table-board.' data-target='table-board-top'>
+                <i class='fas fa-times'></i>
+              </button>
+            </div>
+            <h3 class='cuarenta-px'>Texto a Audio</h3>
+          ">
             Texto a Audio
-          </a> 
+          </a>
         </td>
         <td>
           <a href="#" class="subenlace2" data-subcontenido="...">
@@ -821,12 +840,12 @@
         </td>
         <td>
           <a href="#" class="subenlace2" data-subcontenido="...">
-            Diseño Logo
+            Editor Vídeo
           </a>
         </td>
         <td>
           <a href="#" class="subenlace2" data-subcontenido="...">
-            Editor Vídeo
+            Editor Logo
           </a>
         </td>
         <td>
@@ -837,7 +856,9 @@
       </tr>
     </table>
   </div>
-</section>
+</section> -->
+
+
 </div>
 <section class="articulos-recientes">
   <h2 class="h2">Artículos recientes sobre Inteligencia Artificial</h2>
@@ -902,7 +923,7 @@
   <span class="icon"><i class="fas fa-chevron-up"></i></span>
   <span class="icon"><i class="fas fa-chevron-down"></i></span>
   <h2 class="h2">Artículos anteriores</h2>
-</span>  <!-- </div></section> -->
+</span>
 <section class="articulos-anteriores">
   <div class="aside-izquierdo">
     <ul>
