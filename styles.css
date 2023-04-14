@@ -306,6 +306,14 @@ p {
   text-decoration: none;
 }
 
+.blog-item {
+  display: inline-block;
+  color: #fff;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .menu-item:hover {
   background-color: #4CAF50;
 }
@@ -442,21 +450,6 @@ color: #ff6363;
   }
 }
 
-@keyframes subtitle-color {
-  20% {
-    color: #82c869;
-  }
-  60% {
-    color: #67bea0;
-  }
-  80% {
-    color: #00C9FF;
-  }
-  100% {
-    color: #8b71d2;
-  }
-}
-
 .encabezado {
   background-color: rgba(151, 243, 228, 0.205);
   padding: 20px;
@@ -480,9 +473,27 @@ color: #ff6363;
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0;
+  animation: color-change 10s infinite;
 }
+  @keyframes color-change {
+    0% {
+      color: #22ffae;
+    }
+    25% {
+      color: #060e41;
+    }
+    50% {
+      color: #4caf50;
+    }
+    75% {
+      color: #2196f3;
+    }
+    100% {
+      color: #671b74;
+    }
+  }
 
 .encabezado-info {
   display: grid;
@@ -520,12 +531,14 @@ color: #ff6363;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: left;
+  color: #fff;
 }
 
 .encabezado-abajo-texto {
   font-size: 1.2rem;
   font-weight: 600;
   text-align: right;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -630,7 +643,6 @@ button:active, a:active, input[type="submit"]:active {
   min-width: 150px;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  /* border-bottom: 3px solid #05b3a4; */
 }
 
 .table-board:hover {
@@ -649,7 +661,7 @@ button:active, a:active, input[type="submit"]:active {
     color: #ccc;
 }
 
-.subtable-board {
+/* .subtable-board {
   padding: 20px;
 	max-width: 30%;
 	padding: 0 10px;
@@ -662,8 +674,8 @@ button:active, a:active, input[type="submit"]:active {
   text-align: center;
   border: 2px solid black;
   margin: 0 auto;
-  min-width: 150px; /* Establece un ancho mínimo de 150px */
-}
+  min-width: 150px; /* Establece un ancho mínimo de 150px
+} 
 
 .subtable-board td {
   font-size: 1.1rem;
@@ -686,7 +698,7 @@ button:active, a:active, input[type="submit"]:active {
     height: 100%;
     text-decoration: none;
     color: inherit;
-}
+} */
 
 tfoot {
   background-color: #f2f2f2;
@@ -996,13 +1008,13 @@ justify-content: space-between;
   opacity: 1;
 }
 
-.subcategorias {
+/* .subcategorias {
   display: flex;
   flex-wrap: wrap;
   border-top: 3px solid #05b3a4;
   padding-top: 20px;
   margin-top: 20px;
-}
+} */
 
 .articulos-anteriores {
   display: flex;
