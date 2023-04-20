@@ -118,3 +118,7 @@ dropdownMenu.addEventListener('click', function() {
 });
 
 //
+document.getElementById("td1").addEventListener("click", function(event) {
+  event.preventDefault();
+  document.getElementById("subcontenido").innerHTML = document.getElementById("texto-audio").innerHTML;
+});
