@@ -118,14 +118,3 @@ dropdownMenu.addEventListener('click', function() {
 });
 
 //
-var menuToggle = document.getElementById('menu-toggle');
-menuToggle.addEventListener('click', function() {
-  this.classList.toggle('active');
-  const mainMenu = document.querySelector('.main-menu');
-  mainMenu.classList.toggle('show');
-});
-
-var dropdownMenu = document.querySelector('.menu-dropdown');
-dropdownMenu.addEventListener('click', function() {
-  this.classList.toggle('dropdown-active');
-});
