@@ -122,3 +122,23 @@ document.getElementById("td1").addEventListener("click", function(event) {
   event.preventDefault();
   document.getElementById("subcontenido").innerHTML = document.getElementById("texto-audio").innerHTML;
 });
+
+// 
+const btnBackToTop = document.querySelector('#btn-back-to-top');
+
+btnBackToTop.addEventListener('click', function(e) {
+e.preventDefault();
+window.scroll({
+top: 0,
+left: 0,
+behavior: 'smooth'
+});
+});
+
+window.addEventListener('scroll', function() {
+if (window.scrollY > 200) {
+btnBackToTop.style.display = 'block';
+} else {
+btnBackToTop.style.display = 'none';
+}
+})
