@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Oportunidades Ilimitadas Blog
+title: Oportunidades Ilimitadas - Blog
 email: ilimitadasoportunidades@gmail.com
-description: "Bienvenidos al sitio web de la mejor tienda de electrónica en línea. Ofrecemos una amplia selección de productos electrónicos de alta calidad a precios accesibles. ¡Compra con nosotros hoy y disfruta de la mejor experiencia de compra en línea!"
-baseurl: "" # the subpath of your site, e.g. /blog
+description: "Oportunidades Ilimitadas es un sitio web de información especializada en Inteligencia Artificial (IA). Nuestra misión es mantenernos a la vanguardia de las últimas tendencias y desarrollos en el mundo post IA. Ofrecemos información actualizada y relevante en nuestros blogs, además de un directorio web / app completo. Si deseas contribuir,m¡ enviarnos un cable, un leak, o incluso una donación no dudes en usar paypal.me/lucfreelance o contactarnos."
+baseurl: "/blogs" # the subpath of your site
 url: "" # http://oportunidadesilimitadas.com 
-twitter_username: lucfreelance
+twitter_username: o_ilimitadas
 github_username:  lucfreelance
 
 # Build settings
