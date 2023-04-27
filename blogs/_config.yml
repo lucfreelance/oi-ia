@@ -25,9 +25,9 @@ future: true
 #     output: true
 #     permalink: /posts/:title
 
-title: Blogs para todos! | Novedades de Inteligencia Artificial, en su mayoría contenido en Español
+title: Blogs de Oportunidades Ilimitadas
 description: "Oportunidades Ilimitadas es un sitio web de información especializada en Inteligencia Artificial (IA). Nuestra misión es mantenernos a la vanguardia de las últimas tendencias y desarrollos en el mundo post IA. Ofrecemos información actualizada y relevante en nuestros blogs, además de un directorio web / app completo. Si deseas contribuir, enviarnos un 'leak', e incluso hacer una donación via Paypal en paypal.me/lucfreelance o contactanos."
-baseurl:
+baseurl: ""./""
 email: ilimitadasoportunidades@gmail.com
 url: "https://oportunidadesilimitadas.com"
 twitter_username: o_ilimitadas
