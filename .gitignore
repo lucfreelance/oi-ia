@@ -129,5 +129,8 @@ dist
 # Workspace file
 .store.code-workspace
 
+# Drafts
+_draft
+
 # AIdea
 aidea*
