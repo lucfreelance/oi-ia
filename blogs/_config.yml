@@ -12,27 +12,45 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
-# Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
+# Site settings
+future: true
+# collections:
+#   posts:
+#     output: true
+#     permalink: /posts/:title
+
+title: Blogs para todos! | Novedades de Inteligencia Artificial, en su mayoría contenido en Español
+description: "Oportunidades Ilimitadas es un sitio web de información especializada en Inteligencia Artificial (IA). Nuestra misión es mantenernos a la vanguardia de las últimas tendencias y desarrollos en el mundo post IA. Ofrecemos información actualizada y relevante en nuestros blogs, además de un directorio web / app completo. Si deseas contribuir, enviarnos un 'leak', e incluso hacer una donación via Paypal en paypal.me/lucfreelance o contactanos."
+baseurl:
+email: ilimitadasoportunidades@gmail.com
+url: "https://oportunidadesilimitadas.com"
+twitter_username: o_ilimitadas
+github_username:  lucfreelance
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+external_url: http://oportunidadesilimitadas.com/
+
+# Carpeta de activos
+assets_dir: ./assets
+
+# Meta tags for SEO
+meta_description: "Blogs es un proyecto de Oportunidades Ilimitadas para difundir noticias y bovedades relacionadas con Inteligencia Artificial y Machine Learning. Pásate por aquí cada tanto y encontrarás adelantos, recuentos y hasta predicciones de los extraordinarios avances que día a día la IA impacta al mundo permanentemente. En definitiva la IA vino para quedarse, y en Blogs de Oportunidades Ilimitadas encontrarás mucha información al respecto."
+og_description: "Descubre el fascinante mundo de la Inteligencia Artificial y el Machine Learning en Blogs de Oportunidades Ilimitadas. Adelantos, recuentos y predicciones de los extraordinarios avances que están transformando nuestro mundo día a día. La IA vino para quedarse y aquí encontrarás toda la información al respecto."
+canonical_url: "https://oportunidadesilimitadas.com/blogs"
+og_url: "https://oportunidadesilimitadas.com/blogs"
+og_site_name: "Blogs de Oportunidades Ilimitadas - Noticias y novedades de IA y Machine Learning"
+og_type: "blog"
+twitter_card: "summary"
+twitter_title: "Blogs x Oportunidades Ilimitadas"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

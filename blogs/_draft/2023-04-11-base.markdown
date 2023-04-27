@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Base"
+date:   2023-04-11 16:02:47 -0500
+categories: control
+---
+Hoy nació la segunda versión de OPortunidades Ilimitadas, y tendrá como complemento el proyecto editorial Blogs de Oportunidades Ilimitadas.
