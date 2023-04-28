@@ -18,6 +18,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Blogs de Oportunidades Ilimitadas
+baseurl: "/blogs"
 description: "Oportunidades Ilimitadas es un sitio web de información especializada en Inteligencia Artificial (IA). Nuestra misión es mantenernos a la vanguardia de las últimas tendencias y desarrollos en el mundo post IA. Ofrecemos información actualizada y relevante en nuestros blogs, además de un directorio web / app completo. Si deseas contribuir, enviarnos un 'leak', e incluso hacer una donación via Paypal en paypal.me/lucfreelance o contactanos."
 email: ilimitadasoportunidades@gmail.com
 url: "https://oportunidadesilimitadas.com/blogs/_site/index.html"
