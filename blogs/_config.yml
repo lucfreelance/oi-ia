@@ -36,10 +36,10 @@ future: true
 theme: minima
 plugins:
   - jekyll-feed
-external_url: https://oportunidadesilimitadas.com/blogs/_site/index.html
+external_url: https://oportunidadesilimitadas.com/blogs
 
 # Carpeta de activos
-assets_dir: ./assets
+assets_dir: /blogs/assets
 
 # Meta tags for SEO
 meta_description: "Blogs es un proyecto de Oportunidades Ilimitadas para difundir noticias y bovedades relacionadas con Inteligencia Artificial y Machine Learning. Pásate por aquí cada tanto y encontrarás adelantos, recuentos y hasta predicciones de los extraordinarios avances que día a día la IA impacta al mundo permanentemente. En definitiva la IA vino para quedarse, y en Blogs de Oportunidades Ilimitadas encontrarás mucha información al respecto."
