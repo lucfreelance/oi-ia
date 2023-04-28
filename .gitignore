@@ -127,10 +127,10 @@ dist
 .pnp.*
 
 # Workspace file
-.store.code-workspace
+.code-workspace*
 
 # Drafts
-_draft
+draft*
 
-# AIdea
-aidea*
+# VSCode
+.vscode
