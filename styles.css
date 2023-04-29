@@ -58,25 +58,6 @@ body {
 	overflow: visible;
 }
 
-#btn-back-to-top{
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  font-size: 18px;
-  background: #555;
-  color: #fff;
-  padding: 10px;
-  border-radius: 3px;
-}
-
-#btn-back-to-top:hover{
-  background: #333;
-  color: #fff;
-  text-decoration: none;
-}
-/* boton subir al top con desplazamiento vertical */
-
 span {
 	max-width: 1000px;
 	margin: 0 auto; /* centrar */
@@ -84,6 +65,13 @@ span {
 	align-items: center; /* centrar verticalmente */
 	text-decoration: none;
 	justify-content: space-between;
+}
+
+a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
 }
 
 .h1 {
@@ -103,16 +91,14 @@ h2 {
   font-size: 1.6rem;
 }
 
+h3 {
+  color: #f9fafb;
+  margin: 0;
+}
+
 .h4 {
   text-align: center;
   font-size: 1.2rem;
-}
-
-a {
-  display: block;
-  width: 100%;
-  text-decoration: none;
-  color: inherit;
 }
 
 p {
@@ -580,6 +566,11 @@ button:active, a:active, input[type="submit"]:active {
   background-color: #a9e42a;
 }/* Regla CSS para efecto de "feedback háptico" o "efecto háptico" */
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
 .table-board {
   padding: 20px;
   background: linear-gradient(to bottom, #5555e8, #11ecda);
@@ -612,14 +603,13 @@ button:active, a:active, input[type="submit"]:active {
     color: #ccc;
 }
 
+.table-board th, .table-board td, .table-board tr {
+  text-align: center;
+}
+
 tfoot {
   background-color: #f2f2f2;
   font-size: 16px;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
 }
 
 th, td {
@@ -677,10 +667,6 @@ label {
 
 .btn:hover {
   background-color: #12918b;
-}
-
-.table-board th, .table-board td, .table-board tr {
-  text-align: center;
 }
 
 span i {
@@ -882,69 +868,78 @@ span.icon {
   margin-right: 10px;
 }
 
+/* Footer styles */
 .footer {
-  position: relative;
-  background: #05b3a4;
-  min-height: 100px;
-  padding: 20px 50px;
+  background-color: #1e1e1e;
+  padding: 30px 0;
+}
+
+.container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 35%;
-}/*Footer with waves*/
-
-.footer-menu__link {
-  font-size: 1.2rem;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-  text-decoration: none;
-  opacity: 0.75;
-  font-weight: 300;
-}
-.footer-menu__link:hover{
-  color: white;
-}
-
-.footer-menu__link:hover {
-  opacity: 1;
-}
-
-.footer p {
-  color: #fff;
-  margin: 15px 0 10px 0;
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-.social-icon,
-.footer-menu {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.social-icon__item,
-.footer-menu__item {
-  list-style: none;
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.author-container {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.author-container p {
+  color: #f9fafb;
+  opacity: 0.75;
   margin: 0;
+  font-size: 14px;
+  border-top: 1px solid #4d4d4d;
+  padding-top: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 12px; /* letra más pequeña */
+  margin-left: 20px; /* margen diferente */
+  border-radius: 5px; /* border radius */
+  background-color: #292929; /* color de fondo */
 }
 
-.social-icon__link {
-  font-size: 2rem;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-  text-decoration: none;
+.author-container {
+  float: right;
 }
-.social-icon__link:hover {
-  transform: translateY(-10px);
+
+.author-container p {
+  color: #f9fafb;
+  opacity: 0.75;
+  margin: 0;
+  font-size: 12px; /* letra más pequeña */
+  margin-left: 10px; /* margen diferente */
+  border-radius: 5px; /* border radius */
+  padding: 5px 10px; /* menos padding */
+  background-color: #c8bebe; /* color de fondo */
+  display: inline-block;
+}
+
+.footer-menu .menu__link {
+  color: #96bfe9;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #292929;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-menu .menu__link:hover {
+  background-color: #4d4d4d;
 }
 
 @keyframes marquee {
