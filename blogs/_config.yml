@@ -17,14 +17,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Blogs de Oportunidades Ilimitadas
-baseurl: "/blogs"
-description: "Oportunidades Ilimitadas es un sitio web de información especializada en Inteligencia Artificial (IA). Nuestra misión es mantenernos a la vanguardia de las últimas tendencias y desarrollos en el mundo post IA. Ofrecemos información actualizada y relevante en nuestros blogs, además de un directorio web / app completo. Si deseas contribuir, enviarnos un 'leak', e incluso hacer una donación via Paypal en paypal.me/lucfreelance o contactanos."
-email: ilimitadasoportunidades@gmail.com
-url: "https://oportunidadesilimitadas.com/blogs/_site/index.html"
-twitter_username: o_ilimitadas
-github_username:  lucfreelance
-
 # Site settings
 future: true
 # collections:
@@ -32,13 +24,21 @@ future: true
 #     output: true
 #     permalink: /posts/:title
 
+# Blogs labels
+title: Blogs de Oportunidades Ilimitadas
+description: "Oportunidades Ilimitadas es un sitio web de información especializada en Inteligencia Artificial (IA). Nuestra misión es mantenernos a la vanguardia de las últimas tendencias y desarrollos en el mundo post IA. Ofrecemos información actualizada y relevante en nuestros blogs, además de un directorio web / app completo. Si deseas contribuir, enviarnos un 'leak', e incluso hacer una donación via Paypal en paypal.me/lucfreelance o contactanos."
+email: ilimitadasoportunidades@gmail.com
+url: "https://oportunidadesilimitadas.com/blogs/_site/index.html"
+twitter_username: o_ilimitadas
+github_username:  lucfreelance
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
 external_url: https://oportunidadesilimitadas.com/blogs
 
-# Carpeta de activos
+# Assets folder
 assets_dir: /blogs/assets
 
 # Meta tags for SEO

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Acerca de Blogs de Oportunidades Ilimitadas"
+title:  "Bienvenida a Blogs de Oportunidades Ilimitadas"
 date:   2023-04-26 06:02:47 -0500
 categories: editorial
 featured_image: https://images.pexels.com/photos/7793247/pexels-photo-7793247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
