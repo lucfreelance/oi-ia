@@ -7,6 +7,7 @@
   <title>Table-Board de Oportunidades Ilimitadas - oportunidadesilimitadas.com - oi_ia - #InteligenciaArtificial 
   </title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./styles.css" />
@@ -16,7 +17,7 @@
     <nav>
       <ul class="main-menu">
         <li>
-          <a href="#" class="menu-item active"><i class="fas fa-home"></i>Inicio</a>
+          <a href="#" class="menu-item active"><i class="fas fa-home"></i></a>
         </li>
         <li class="menu-dropdown">
           <a href="#" class="menu-item">Asistentes</a>
@@ -747,27 +748,37 @@
   </div>
 </div>
 
-<footer style="background-color: #6cc4bd; padding: 30px 0;">
+<footer style="background-color: #6cc4bd; padding: 30px 0;" class="bottom" id="home-bottom">
   <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
     <ul class="footer-menu" style="list-style: none; display: flex; flex-wrap: wrap; margin: 0;">
-      <li class="menu__item" style="margin-right: 20px;"><a class="menu__link" href="#" style="color: #f9fafb; text-decoration: none;">Inicio</a></li>
+      <li class="menu__item" style="margin-right: 20px;"><a class="menu__link" href="#bottom" style="color: #f9fafb; text-decoration: none;">Inicio</a></li>
       <li class="menu__item" style="margin-right: 20px;"><a class="menu__link" href="./blogs/about/index.html#acerca-de" style="color: #f9fafb; text-decoration: none;">Acerca de</a></li>
       <li class="menu__item" style="margin-right: 20px;"><a class="menu__link" href="./blogs/about/index.html#faq" style="color: #f9fafb; text-decoration: none;">FAQ</a></li>
       <li class="menu__item" style="margin-right: 20px;"><a class="menu__link" href="./blogs/about/index.html#retroalimentacion" style="color: #f9fafb; text-decoration: none;">Retroalimentación</a></li>
       <li class="menu__item" style="margin-right: 20px;"><a class="menu__link" href="./blogs/_site/index.html" style="color: #f9fafb; text-decoration: none;">Blogs</a></li>
     </ul>
+
+    <p style="background-color: #FFF;"><small>2023 © oportunidadesilimitadas.com</small></p>
+
+    <span class="author-container" style="display: flex; align-items: center; margin-left: auto; margin-right: 20px;">
+      <a href="https://github.com/lucfreelance" target="_blank" style="background-color: #005ea8; color: #FFF; padding: 5px 10px; border-radius: 5px; text-decoration: none;"><small>@lucfreelance</small></a>
+    </span>
   </div>
-  <span class="author-container">
-    <p><a href="https://github.com/lucfreelance" target="_blank">@lucfreelance</a></p>
-  </span>
+
   <style>
     .footer-menu li:first-child {
       margin-left: 10px;
     }
+    
+    .container {
+      justify-content: space-between;
+    }
+    
+    .footer-menu li a {
+      color: #FFF;
+    }
   </style>
 </footer>
-
-
 
     	<script src="./main.js"></script>
 </body>

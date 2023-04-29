@@ -122,6 +122,10 @@ p {
   text-align: center;
 }
 
+.about {
+  padding-left: 20px;
+}
+
 .bannerpic {
   display: flex;
   justify-content: center;
@@ -724,6 +728,18 @@ span.icon {
   grid-gap: 20px;
   justify-content: center; /* Centra horizontalmente los elementos */
   align-items: center; /* Centra verticalmente los elementos */
+  margin-bottom: 60px;
+}
+
+.atencion-titulo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  line-height: 1.5;
+  margin: 20px;
+  position: relative;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .columna-derecha img {
@@ -771,21 +787,6 @@ span.icon {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.atencion-titulo {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 500;
-  letter-spacing: 1.4px;
-  line-height: 1.2;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  margin: 15px;
-  margin-left: 20px;
-  margin-top: 20px;
-  line-height: 1.5;
-  position: relative;
-  margin-bottom: 0;
-} 
 
 .titulo-fijo {
   margin-top: 0;
