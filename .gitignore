@@ -130,7 +130,9 @@ dist
 .code-workspace*
 
 # Drafts
+_draft
 draft*
+
 
 # VSCode
 .vscode

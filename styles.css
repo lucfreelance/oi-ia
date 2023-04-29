@@ -582,7 +582,7 @@ button:active, a:active, input[type="submit"]:active {
 
 .table-board {
   padding: 20px;
-  background-color: rgba(115, 237, 217, 0.205);
+  background: linear-gradient(to bottom, #5555e8, #11ecda);
   font-size: 1.6rem;
   border-collapse: collapse;
   font-family: "Verdana", cursive, sans-serif;
