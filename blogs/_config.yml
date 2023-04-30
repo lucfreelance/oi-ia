@@ -26,7 +26,7 @@ future: true
 
 # Blogs labels
 title: Blogs de Oportunidades Ilimitadas
-description: "Oportunidades Ilimitadas es un sitio web de información especializada en Inteligencia Artificial (IA). Nuestra misión es mantenernos a la vanguardia de las últimas tendencias y desarrollos en el mundo post IA. Ofrecemos información actualizada y relevante en nuestros blogs, además de un directorio web / app completo. Si deseas contribuir, enviarnos un 'leak', e incluso hacer una donación via Paypal en paypal.me/lucfreelance o contactanos."
+excerpt: "Blogs es el feed de Oportunidades Ilimitadas con información actualizada en Inteligencia Artificial General (IAG). Nos mantenemos al frente de las últimas tendencias y desarrollos en la materia. Además te invitamos a explorar el directorio de IAs por categorías más completo en Español table-board. Si deseas contribuir, enviarnos un mensaje, incluso hacer una donación via Paypal, contáctanos WhatsApp de oi_ia"
 email: ilimitadasoportunidades@gmail.com
 url: "https://oportunidadesilimitadas.com/blogs/_site/index.html"
 twitter_username: o_ilimitadas
@@ -42,7 +42,7 @@ external_url: https://oportunidadesilimitadas.com/blogs
 assets_dir: /blogs/assets
 
 # Meta tags for SEO
-meta_description: "Blogs es un proyecto de Oportunidades Ilimitadas para difundir noticias y bovedades relacionadas con Inteligencia Artificial y Machine Learning. Pásate por aquí cada tanto y encontrarás adelantos, recuentos y hasta predicciones de los extraordinarios avances que día a día la IA impacta al mundo permanentemente. En definitiva la IA vino para quedarse, y en Blogs de Oportunidades Ilimitadas encontrarás mucha información al respecto."
+meta_description: "Blogs es un proyecto de Oportunidades Ilimitadas para difundir noticias y novedades relacionadas con Inteligencia Artificial y Machine Learning."
 og_description: "Descubre el fascinante mundo de la Inteligencia Artificial y el Machine Learning en Blogs de Oportunidades Ilimitadas. Adelantos, recuentos y predicciones de los extraordinarios avances que están transformando nuestro mundo día a día. La IA vino para quedarse y aquí encontrarás toda la información al respecto."
 canonical_url: "https://oportunidadesilimitadas.com/blogs/_site/index.html"
 og_url: "https://oportunidadesilimitadas.com/blogs/_site/index.html"
