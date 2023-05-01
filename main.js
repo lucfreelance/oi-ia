@@ -11,14 +11,15 @@
     });
   }); 
 
-  // 
-  const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('nav ul');
-
-menuToggle.addEventListener('click', () => {
-  menuToggle.classList.toggle('active');
-  menu.classList.toggle('active)');
+  // Menu Nav desplegable 
+  const menuToggleTop = document.querySelector('.menu-toggle-top');
+  const menu = document.querySelector('nav ul');
   
+  menuToggleTop.addEventListener('click', () => {
+    menuToggleTop.classList.toggle('active');
+    menu.classList.toggle('active');
+  });
+
 //
 var enlaces = document.getElementsByClassName("enlace");
 var contenido = document.getElementById("contenidos");
@@ -132,21 +133,3 @@ document.getElementById("td1").addEventListener("click", function(event) {
 });
 
 // 
-const btnBackToTop = document.querySelector('#btn-back-to-top');
-
-btnBackToTop.addEventListener('click', function(e) {
-e.preventDefault();
-window.scroll({
-top: 0,
-left: 0,
-behavior: 'smooth'
-});
-});
-
-window.addEventListener('scroll', function() {
-if (window.scrollY > 200) {
-btnBackToTop.style.display = 'block';
-} else {
-btnBackToTop.style.display = 'none';
-}
-})

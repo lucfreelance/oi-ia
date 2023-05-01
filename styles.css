@@ -720,7 +720,7 @@ span.icon {
 /* Footer styles */
 .footer {
   background-color: #1e1e1e;
-  padding: 30px 0;
+  /* padding: 30px 0; */
 }
 
 .container {
@@ -773,18 +773,19 @@ span.icon {
 }
 
 .blog-link a {
-  font-size: 12px;
+  font-size: 1.8rem;
+  font-family: 'Merriweather', serif; /* Fuente serif clásica */
   margin: 0 20px 0 10px;
   padding: 8px 15px;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #292929;
   color: #f9fafb;
   text-decoration: none;
-  transition: background-color 0.3s ease;
 }
 
 .blog-link a:hover {
-  background-color: #4CAF50;
+  background-color: #015c04;
+  color: #fff;
 }
 
 .footer-menu .menu__link {
@@ -799,6 +800,12 @@ span.icon {
 .footer-menu .menu__link:hover {
   background-color: #4d4d4d;
 }
+
+.bottom {
+  padding-bottom: 20px; /* reduce el padding inferior del footer a 20px */
+  margin-bottom: 10px; /* reduce el margen inferior del footer a 10px */
+}
+
 
 .image-container {
   max-height: 400px;
