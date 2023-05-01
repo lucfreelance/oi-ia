@@ -5,8 +5,8 @@
 	box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
   :root {
+    font-size: 16px; /* Establece el tamaño base */
   --white: #ffffff;
   --black: #000000;
   --very-light-pink: #c7c7c7;
@@ -26,11 +26,13 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  }
-  
+  }  
   body {
   max-width: 800px;
   margin: 0 auto;
+  background-color: Canvas;
+  color: CanvasText;
+  color-scheme: light dark;
   }
 
 #page-wrap {
@@ -421,7 +423,7 @@ td {
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }/* Estilo de los botones */
 
@@ -440,7 +442,7 @@ button:hover, a:hover, input[type="submit"]:hover {
 }
 button:active, a:active, input[type="submit"]:active {
   background-color: #a9e42a;
-}/* Regla CSS para efecto de "feedback háptico" o "efecto háptico" */
+}Regla CSS para efecto de "feedback háptico" o "efecto háptico"
 
 table {
   border-collapse: collapse;
@@ -695,11 +697,6 @@ span.icon {
   transform: translateX(100%);
 }
 
-/* .logo-carousel:hover .logo-item {
-  transform: translateX(0%);
-  transition: transform 2s ease-in-out;
-} */
-
 .logo-item:last-of-type {
   margin-right: 0;
 }
@@ -832,8 +829,8 @@ span.icon {
   position: relative;
   display: inline-block;
   margin-bottom: 40px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 
 }
 
@@ -866,3 +863,9 @@ span.icon {
   }
   }
 
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: black;
+      color: white;
+    }
+  }
