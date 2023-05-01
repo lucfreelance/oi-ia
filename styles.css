@@ -119,8 +119,6 @@ nav {
   font-size: 16px;
 }
 
-
-
 .menu-item {
   font-size: 1.2rem;
   font-weight: 500;
@@ -226,7 +224,6 @@ nav .menu-toggle {
   }
 }
 
-
 .cuarenta-up-px {
   padding-top: 40px; 
   text-align: center;
@@ -253,8 +250,6 @@ nav .menu-toggle {
   width: 100%;
   max-width: 100%;
 }
-
-
 
 .fa {
   margin-right: 5px;
@@ -327,24 +322,24 @@ nav .menu-toggle {
 .subtitle {
   font-size: 1.3rem;
   margin: 0;
-  animation: color-change 10s infinite;
+  animation: color-change 8s infinite;
 }
 
   @keyframes color-change {
     0% {
-      color: #22ffae;
-    }
-    25% {
       color: #132390;
     }
+    25% {
+      color: #22ffae;
+    }
     50% {
-      color: #4caf50;
+      color: #671b74;
     }
     75% {
-      color: #2196f3;
+      color: #4caf50;
     }
     100% {
-      color: #671b74;
+      color: #2196f3;
     }
   }
 
@@ -361,7 +356,7 @@ nav .menu-toggle {
   justify-content: center;
   align-items: center;
   background-color: hsl(225, 53%, 45%);
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
   color: #fff;
 }
@@ -700,10 +695,10 @@ span.icon {
   transform: translateX(100%);
 }
 
-.logo-carousel:hover .logo-item {
+/* .logo-carousel:hover .logo-item {
   transform: translateX(0%);
   transition: transform 2s ease-in-out;
-}
+} */
 
 .logo-item:last-of-type {
   margin-right: 0;
@@ -727,9 +722,9 @@ span.icon {
   }
 }
 
-.logo-carousel {
+/* .logo-carousel {
   animation: carousel 20s linear infinite;
-}
+} */
 
 .logo-destacado {
   display: block;
@@ -740,12 +735,6 @@ span.icon {
   padding-bottom: 10px;
   float: left;
   margin-right: 10px;
-}
-
-/* Footer styles */
-.footer {
-  background-color: #1e1e1e;
-  padding: 30px 0;
 }
 
 .container {
@@ -813,6 +802,11 @@ span.icon {
   color: #fff;
 }
 
+.footer {
+  background-color: #1e1e1e;
+  padding: 30px 0;
+} /* Footer styles */
+
 .footer-menu .menu__link {
   color: #96bfe9;
   text-decoration: none;
@@ -831,22 +825,20 @@ span.icon {
   margin-bottom: 10px; /* reduce el margen inferior del footer a 10px */
 }
 
-
-.image-container {          
-  background-color: #0f1016;                                                                                                          
+.image-container {                                                                                                          
   max-height: 400px;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
   display: inline-block;
   margin-bottom: 40px;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding: 20px; /* Agrega un espacio interno para que el color de fondo sea visible */
+  margin-left: 25px;
+  margin-right: 25px;
 
 }
 
 .image-container img {
+  background-color: #0f1016;          
   width: 100%;
   height: auto;
   display: block;
