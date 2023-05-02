@@ -126,14 +126,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# Workspace file
-.code-workspace*
-
-# Drafts
-_draft
-draft*
-
-
 # VSCode
 .vscode
 
@@ -142,3 +134,13 @@ draft*
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Workspace file
+.code-workspace*
+
+# Drafts
+_draft
+draft*
+
+# Fonts, Sources
+...oportunidades_ilimitadas

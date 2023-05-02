@@ -104,7 +104,7 @@ h3 {
 }
 
 p {
-  color : #666;
+  color : #bd8b8be1;
   text-align: right;
   margin-top: 15px;
   font-size: 1em;
@@ -227,12 +227,12 @@ nav .menu-toggle {
 }
 
 .cuarenta-up-px {
-  padding-top: 40px; 
+  padding-top: 30px; 
   text-align: center;
 }
 
 .cuarenta-px {
-  padding-bottom: 40px; 
+  padding-bottom: 30px; 
   text-align: center;
 }
 
@@ -389,6 +389,7 @@ nav .menu-toggle {
   font-weight: 500px;
   text-align: right;
   color: #ffffff;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -427,23 +428,6 @@ td {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }/* Estilo de los botones */
 
-button, a, input[type="submit"] {
-  background-color: #f0f0f0;
-  border: none;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-}
-.button:hover {
-  background-color: var(--secondary-color);
-  cursor: pointer;
-}
-button:hover, a:hover, input[type="submit"]:hover {
-  background-color: #f0e5a5;
-}
-button:active, a:active, input[type="submit"]:active {
-  background-color: #a9e42a;
-}Regla CSS para efecto de "feedback háptico" o "efecto háptico"
-
 table {
   border-collapse: collapse;
   width: 100%;
@@ -461,8 +445,6 @@ table {
   border: 2px solid black;
   margin: 0 auto;
   min-width: 150px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
 }
 
 .table-board:hover {
@@ -529,6 +511,23 @@ label {
 .table-footer p {
   margin-bottom: 20px;
 }
+
+button, a, input[type="submit"] {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+button:hover, a:hover, input[type="submit"]:hover {
+  background-color: #f0e5a5;
+}
+button:active, a:active, input[type="submit"]:active {
+  background-color: #a9e42a;
+}/* Regla CSS para efecto de "feedback háptico" o "efecto háptico" */
 
 .btn {
   display: inline-block;
@@ -610,9 +609,9 @@ span.icon {
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
-  letter-spacing: 1.4px;
+  letter-spacing: 0.9px;
   line-height: 1.5;
-  margin: 20px;
+  margin: 21px;
   position: relative;
   color: var(--blue);
 }
@@ -624,7 +623,7 @@ span.icon {
 
 .columna-derecha .atencion-contenedor {
   margin: 0 auto;
-  max-width: 350px;
+  /* max-width: 350px; */
 }
   
 @media screen and (max-width: 768px) {
@@ -670,7 +669,7 @@ span.icon {
 .sinopsis {
 	text-align: justify;
 	padding-top: 10px;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 30px;
 }
@@ -685,20 +684,32 @@ span.icon {
   padding-top: 20px;
 }
 
-.logo-carousel {
-  display: flex;
-  justify-content: flex-start;
-  overflow: hidden;
+.boton-td {
+  position: relative;
 }
 
-.logo-item {
-  margin-left: 20px;
-  transition: transform 1s ease-in-out;
-  transform: translateX(100%);
+.boton-td::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.logo-item:last-of-type {
-  margin-right: 0;
+.boton-td a {
+  position: relative;
+  z-index: 2;
 }
 
 @keyframes scroll {
@@ -718,10 +729,6 @@ span.icon {
     transform: translateX(-100%);
   }
 }
-
-/* .logo-carousel {
-  animation: carousel 20s linear infinite;
-} */
 
 .logo-destacado {
   display: block;
