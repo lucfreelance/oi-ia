@@ -150,3 +150,111 @@ btnBackToTop.style.display = 'block';
 btnBackToTop.style.display = 'none';
 }
 })
+
+// 
+// function intercambiarTarjetas() {
+//   var encabezadoInfo = document.querySelector('.encabezado-info');
+//   var encabezadoArriba = document.querySelector('.encabezado-arriba');
+//   var encabezadoAbajo = document.querySelector('.encabezado-abajo');
+  
+//   // Guardar la posición de la tarjeta superior
+//   var arribaPosicion = encabezadoArriba.style.order;
+  
+//   // Intercambiar las posiciones de las tarjetas
+//   encabezadoInfo.insertBefore(encabezadoAbajo, encabezadoArriba);
+  
+//   // Restaurar la posición de la tarjeta superior
+//   encabezadoArriba.style.order = arribaPosicion;
+// }
+
+// // 
+// function intercambiarTarjetas() {
+//   var encabezadoInfo = document.querySelector('.encabezado-info');
+//   var tarjeta1 = document.querySelector('.tarjeta-1');
+//   var tarjeta2 = document.querySelector('.tarjeta-2');
+  
+//   // Intercambiar las posiciones de las tarjetas
+//   encabezadoInfo.insertBefore(tarjeta2, tarjeta1);
+// }
+
+// // 
+// function intercambiarTarjetas() {
+//   var encabezadoInfo = document.querySelector('.encabezado-info');
+//   var encabezadoArriba = document.querySelector('.encabezado-arriba');
+//   var encabezadoAbajo = document.querySelector('.encabezado-abajo');
+  
+//   // Guardar la posición de la tarjeta superior
+//   var arribaPosicion = encabezadoArriba.style.order;
+  
+//   // Intercambiar las posiciones de las tarjetas
+//   encabezadoInfo.insertBefore(encabezadoAbajo, encabezadoArriba);
+  
+//   // Restaurar la posición de la tarjeta superior
+//   encabezadoArriba.style.order = arribaPosicion;
+// }
+
+// setInterval(intercambiarTarjetas, 2000);
+
+// // 
+// function intercambiarTarjetas() {
+//   var encabezadoInfo = document.querySelector('.encabezado-info');
+//   var encabezadoArriba = document.querySelector('.encabezado-arriba');
+//   var encabezadoAbajo = document.querySelector('.encabezado-abajo');
+
+//   // Intercambiar las posiciones de las tarjetas
+//   encabezadoInfo.insertBefore(encabezadoAbajo, encabezadoArriba);
+// }
+
+// // 
+// // Obtener las dos tarjetas
+// var tarjeta1 = document.querySelector('.tarjeta-1');
+// var tarjeta2 = document.querySelector('.tarjeta-2');
+
+// // Agregar event listeners a ambas tarjetas
+// tarjeta1.addEventListener('click', intercambiarTarjetas);
+// tarjeta2.addEventListener('click', intercambiarTarjetas);
+
+// function intercambiarTarjetas() {
+//   var encabezadoInfo = document.querySelector('.encabezado-info');
+//   var encabezadoArriba = document.querySelector('.encabezado-arriba');
+//   var encabezadoAbajo = document.querySelector('.encabezado-abajo');
+
+//   // Guardar la posición de la tarjeta superior
+//   var arribaPosicion = encabezadoArriba.style.order;
+
+//   // Intercambiar las posiciones de las tarjetas
+//   encabezadoInfo.insertBefore(encabezadoAbajo, encabezadoArriba);
+
+//   // Restaurar la posición de la tarjeta superior
+//   encabezadoArriba.style.order = arribaPosicion;
+// }
+
+
+// // Esta funciona perfectamente!
+var tarjeta1 = document.querySelector('.tarjeta-1');
+var tarjeta2 = document.querySelector('.tarjeta-2');
+var posicionOriginal = 1;
+
+function intercambiarTarjetas() {
+  var encabezadoInfo = document.querySelector('.encabezado-info');
+  var encabezadoArriba = document.querySelector('.encabezado-arriba');
+  var encabezadoAbajo = document.querySelector('.encabezado-abajo');
+  
+  if (posicionOriginal == 1) {
+    encabezadoInfo.insertBefore(encabezadoAbajo, encabezadoArriba);
+    posicionOriginal = 2;
+  } else {
+    encabezadoInfo.insertBefore(encabezadoArriba, encabezadoAbajo);
+    posicionOriginal = 1;
+  }
+}
+
+// Menu desplegable con submenus que funcione tanto en movil como en web
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show-menu');
+});
+
+

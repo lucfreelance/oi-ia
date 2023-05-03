@@ -114,142 +114,6 @@ p {
   text-shadow: none;
 }
 
-nav {
-  font-family: "Helvetica Neue", sans-serif;
-  background-color: #333;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-}
-
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  position: relative;
-  padding: 0 1rem;
-  flex: 1;
-  text-align: center;
-}
-
-nav .dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-}
-
-nav .menu-dropdown:hover .dropdown-content {
-  display: block;
-}
-
-nav .menu-toggle {
-  display: none;
-}
-
-.nav-left ul,
-.nav-right ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-.nav-left ul li,
-.nav-right ul li {
-  margin-right: 1rem;
-}
-
-.nav-left ul li:last-of-type,
-.nav-right ul li:last-of-type {
-  margin-right: 0;
-}
-
-.navbar-right {
-  margin-right: 10px;
-}
-
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav li {
-    padding: 0;
-    flex: none;
-    width: 100%;
-    text-align: left;
-  }
-
-  nav .menu-dropdown {
-    position: static;
-  }
-
-  nav .menu-dropdown:hover .dropdown-content {
-    display: none;
-  }
-
-  nav .menu-toggle {
-    display: block;
-  }
-
-  nav .menu-icon {
-    display: block;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-
-  nav .dropdown-content {
-    position: static;
-    display: none;
-  }
-
-  nav .menu-toggle.active ~ ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-
-  nav .menu-toggle.active ~ ul li {
-    padding: 0.5rem;
-    border-bottom: 1px solid #ccc;
-    width: 100%;
-  }
-
-  nav .menu-toggle.active ~ ul li:last-of-type {
-    border-bottom: none;
-  }
-
-  nav .menu-toggle.active ~ ul .menu-dropdown:hover .dropdown-content {
-    display: block;
-  }
-}
-
-.menu-item {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #32a164;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-.menu-dropdown .dropdown-content a {
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-}
-
 .cuarenta-up-px {
   padding-top: 20px; 
   text-align: center;
@@ -260,9 +124,125 @@ nav .menu-toggle {
   text-align: center;
 }
 
-.about {
-  padding-left: 20px;
+
+
+
+/* Estilos para pantallas grandes */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  font-size: 1.2rem;
 }
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  color: #333;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background-color: #ddd;
+}
+
+.menu-dropdown {
+  position: relative;
+}
+
+.menu-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0.5rem 0;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 1rem;
+  }
+  
+  .icon-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 2px;
+  }
+  
+  .menu-toggle:focus + .menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-item {
+    border-top: 1px solid #ddd;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .menu-item:first-child {
+    border-top: none;
+  }
+}
+
+
+
+
+
+
 
 .bannerpic {
   display: flex;
@@ -280,20 +260,6 @@ nav .menu-toggle {
 .fa {
   margin-right: 5px;
 }/* Estilos para los iconos */
-
-.has-dropdown:hover .sub-menu {
-  opacity: 1;
-  visibility: visible;
-}
-
-.has-dropdown a {
-  display: flex;
-  align-items: center;
-}
-
-.has-dropdown a i {
-  margin-left: 0.5rem;
-}
 
 .inactive {
 	display: none;
@@ -313,18 +279,6 @@ nav .menu-toggle {
 .encabezado-titular {
   text-align: center;
   margin-bottom: 20px;
-}
-
-.main-title {
-  font-size: 1.95rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-.subtitle {
-  font-size: 1.3rem;
-  margin: 0;
-  animation: color-change 8s infinite;
 }
 
   @keyframes color-change {
@@ -401,6 +355,18 @@ nav .menu-toggle {
   .encabezado-info {
     grid-template-columns: 1fr;
   }
+}
+
+.main-title {
+  font-size: 1.95rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin: 0;
+  animation: color-change 8s infinite;
 }
 
 td {
@@ -673,6 +639,7 @@ span.icon {
 .atencion-contenedor {
   position: relative; 
   background-color: #73dd6be3;
+  border: 4px solid #73dd6be3;
 }
 
 .atencion-contenedor img {
@@ -709,24 +676,6 @@ span.icon {
   align-self: start;
   margin-top: 15px;
   padding-top: 20px;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes carousel {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }
 
 .logo-destacado {
@@ -805,11 +754,6 @@ span.icon {
   color: #fff;
 }
 
-.footer {
-  background-color: #1e1e1e;
-  padding: 30px 0;
-} /* Footer styles */
-
 .footer-menu .menu__link {
   color: #96bfe9;
   text-decoration: none;
@@ -824,7 +768,6 @@ span.icon {
 }
 
 .bottom {
-  padding-bottom: 20px; /* reduce el padding inferior del footer a 20px */
   margin-bottom: 10px; /* reduce el margen inferior del footer a 10px */
 }
 
