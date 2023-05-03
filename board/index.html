@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="lista">
-        <section class="elemento">
-          <header class="elemento__titulo">Título</header>
-          <article class="elemento__descripcion">Descripción del elemento</article>
-          <ul class="elemento__atributos">
-            <li>Tipo de registro: [sign up con redes sociales, con email y telefono]</li>
-            <li>Gratis o no: [freemium, paywall]</li>
-            <li>Nivel de dificultad: [fácil, intermedio, avanzado]</li>
-            <li>Español: [SI, NO]</li>
-            <li>Breve sinopsis: [breve descripción del producto]</li>
-            <li>Enlace directo a la página de registro: [enlace URL]</li>
-            <!-- Añade aquí otros atributos similares si es necesario -->
+    <title>Board de Oportunidades Ilimitadas</title>
+    <link rel="stylesheet" href="./assets/custom.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li><a href="#home-footer">Inicio</a></li>
+          <li><a href="#about">Acerca de</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="card">
+        <img src="imagen.jpg" alt="Imagen de la tarjeta">
+        <div class="card-body">
+          <h5 class="card-title">Título de la tarjeta</h5>
+          <p class="card-text">Sinopsis de la tarjeta</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Categoría: <span class="badge badge-primary">Categoría de la tarjeta</span></li>
+            <li class="list-group-item">Precio: <span class="badge badge-secondary">$10.00</span></li>
+            <li class="list-group-item">Calificación: <span class="badge badge-success">4.5/5</span></li>
           </ul>
-          <footer class="elemento__info">Autor, fecha, etc.</footer>
-        </section>
+          <a href="#" class="btn btn-primary">Enlace a la tarjeta</a>
+          <button class="btn btn-secondary">Calificar</button>
+          <button class="btn btn-secondary">Compartir</button>
+        </div>
       </div>
-</body>
+      
+      </main>
+    <footer id="home-footer">       
+        <nav>
+            <div class="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#about">Acerca de</a></li>
+              <li><a href="#home-footer">Inicio</a></li>
+            </ul>
+          </nav>
+        
+      <p><small>© 2023 Oportunidades Ilimitadas</small></p>
+    </footer>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
