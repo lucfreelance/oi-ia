@@ -129,12 +129,6 @@ dist
 # VSCode
 .vscode
 
-# _site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
-
 # Workspace file
 .code-workspace*
 
@@ -142,5 +136,11 @@ vendor
 _draft
 draft*
 
-# Fonts, Sources
-...oportunidades_ilimitadas
+# Fonts, Sources, Backup
+...oi_ia
+
+# _site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

@@ -11,14 +11,6 @@
     });
   }); 
 
-//   // 
-//   const menuToggleTop = document.querySelector('.menu-toggle-top');
-// const menu = document.querySelector('nav ul');
-
-// menuToggleTop.addEventListener('click', () => {
-//   menuToggleTop.classList.toggle('active');
-//   menu.classList.toggle('active)');
-  
 //
 var enlaces = document.getElementsByClassName("enlace");
 var contenido = document.getElementById("contenidos");
@@ -56,6 +48,7 @@ subenlaces.forEach(subenlace => {
   });
 });
 
+//
 function cerrarContenido() {
   const subContenido = document.querySelector("#subcontenido");
   const target = document.getElementById("toggle-button").getAttribute("data-target");
@@ -119,6 +112,14 @@ articles.addEventListener("mouseout", () => {
   });
 });
 
+// Menu desplegable con submenus que funcione tanto en movil como en web
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show-menu');
+});
+
 //
 var dropdownMenu = document.querySelector('.menu-dropdown');
 dropdownMenu.addEventListener('click', function() {
@@ -131,25 +132,34 @@ document.getElementById("td1").addEventListener("click", function(event) {
   document.getElementById("subcontenido").innerHTML = document.getElementById("texto-audio").innerHTML;
 });
 
-// 
-const btnBackToTop = document.querySelector('#btn-back-to-top');
+//   // 
+//   const menuToggleTop = document.querySelector('.menu-toggle-top');
+// const menu = document.querySelector('nav ul');
 
-btnBackToTop.addEventListener('click', function(e) {
-e.preventDefault();
-window.scroll({
-top: 0,
-left: 0,
-behavior: 'smooth'
-});
-});
+// menuToggleTop.addEventListener('click', () => {
+//   menuToggleTop.classList.toggle('active');
+//   menu.classList.toggle('active)');
+  
 
-window.addEventListener('scroll', function() {
-if (window.scrollY > 200) {
-btnBackToTop.style.display = 'block';
-} else {
-btnBackToTop.style.display = 'none';
-}
-})
+// // 
+// const btnBackToTop = document.querySelector('#btn-back-to-top');
+
+// btnBackToTop.addEventListener('click', function(e) {
+// e.preventDefault();
+// window.scroll({
+// top: 0,
+// left: 0,
+// behavior: 'smooth'
+// });
+// });
+
+// window.addEventListener('scroll', function() {
+// if (window.scrollY > 200) {
+// btnBackToTop.style.display = 'block';
+// } else {
+// btnBackToTop.style.display = 'none';
+// }
+// })
 
 // 
 // function intercambiarTarjetas() {
@@ -230,7 +240,7 @@ btnBackToTop.style.display = 'none';
 // }
 
 
-// // Esta funciona perfectamente!
+// // Function intercambiarTarjetas: Esta funciona perfectamente!
 var tarjeta1 = document.querySelector('.tarjeta-1');
 var tarjeta2 = document.querySelector('.tarjeta-2');
 var posicionOriginal = 1;
@@ -248,13 +258,5 @@ function intercambiarTarjetas() {
     posicionOriginal = 1;
   }
 }
-
-// Menu desplegable con submenus que funcione tanto en movil como en web
-const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
-
-menuToggle.addEventListener('click', () => {
-  menu.classList.toggle('show-menu');
-});
 
 

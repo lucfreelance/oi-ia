@@ -13,52 +13,49 @@
 	<link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <nav>
-    <button class="menu-toggle" aria-label="Toggle menu">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <ul class="menu">
-      <li><a href="#footer-bottom" class="menu-item active" title="Inicio parte inferior"><i class="fas fa-home"></i></a></li>
-      <li class="menu-dropdown">
-        <a href="#" title="Enlaces a la table-board - Re-pulsa las categorías en la table-board principal" class="menu-item">Asistentes</a>
-        <div class="dropdown-content">
-          <a href="#td9">Asistente Dev</a>
-          <a href="#td8">Asistente Copy</a>
-          <a href="#td11">Asistente Audio</a>
-          <a href="#td5">Asistente Digital</a>
-        </div>
-      </li>
-      <li class="menu-dropdown">
-        <a href="#" title="Enlaces a la table-board - Re-pulsa las categorías en la table-board principal" class="menu-item">Generadores</a>
-        <div class="dropdown-content">
-          <a href="#td1">Texto a Audio</a>
-          <a href="#td12">Texto a Imagen</a>
-          <a href="#td10">Texto a Video</a>
-          <a href="#td7">Buscador Web</a>
-        </div>
-      </li>
-      <li class="menu-dropdown">
-        <a href="#" title="Enlaces a la table-board - Re-pulsa las categorías en la table-board principal" class="menu-item">Editores</a>
-        <div class="dropdown-content">
-          <a href="#td3">Editor Imagen</a>
-          <a href="#td4">Editor Video</a>
-          <a href="#td6">Editor Logo</a>
-          <a href="#td2">Editor CV</a>
-        </div>
-      </li>
-      <li class="menu-dropdown">
-        <a href="#" title="Enlaces a Board, Blogs y RSS feed" class="menu-item">Contenidos</a>
-        <div class="dropdown-content">
-          <a href="./board/index.html" class="blog-item"><i class="fas fa-newspaper"></i>Board</a>
-          <a href="./blogs/_site/index.html" class="blog-item"><i class="fas fa-newspaper"></i>Blogs</a>
-          <a href="./blogs/_site/feed.xml" target="_blank"><i class="fas fa-rss"></i>RSS</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
-  
+<nav>
+  <button class="menu-toggle" aria-label="Toggle menu">
+    <span class="fas fa-bars"></span>
+  </button>
+  <ul class="menu">
+    <li><a href="#footer-bottom" class="menu-item active" title="Inicio parte inferior"><i class="fas fa-home"></i></a></li>
+    <li class="menu-dropdown">
+      <a href="#" title="Enlaces a la table-board - Re-pulsa las categorías en la table-board principal" class="menu-item">Asistentes</a>
+      <div class="dropdown-content">
+        <a href="#td9">Asistente Dev</a>
+        <a href="#td8">Asistente Copy</a>
+        <a href="#td11">Asistente Audio</a>
+        <a href="#td5">Asistente Digital</a>
+      </div>
+    </li>
+    <li class="menu-dropdown">
+      <a href="#" title="Enlaces a la table-board - Re-pulsa las categorías en la table-board principal" class="menu-item">Generadores</a>
+      <div class="dropdown-content">
+        <a href="#td1">Texto a Audio</a>
+        <a href="#td12">Texto a Imagen</a>
+        <a href="#td10">Texto a Video</a>
+        <a href="#td7">Buscador Web</a>
+      </div>
+    </li>
+    <li class="menu-dropdown">
+      <a href="#" title="Enlaces a la table-board - Re-pulsa las categorías en la table-board principal" class="menu-item">Editores</a>
+      <div class="dropdown-content">
+        <a href="#td3">Editor Imagen</a>
+        <a href="#td4">Editor Video</a>
+        <a href="#td6">Editor Logo</a>
+        <a href="#td2">Editor CV</a>
+      </div>
+    </li>
+    <li class="menu-dropdown">
+      <a href="#" title="Enlaces a Board, Blogs y RSS feed" class="menu-item">Contenidos</a>
+      <div class="dropdown-content">
+        <a href="./board/index.html" class="blog-item"><i class="fas fa-newspaper"></i>Board</a>
+        <a href="./blogs/_site/index.html" class="blog-item"><i class="fas fa-newspaper"></i>Blogs</a>
+        <a href="./blogs/_site/feed.xml" target="_blank"><i class="fas fa-rss"></i>RSS</a>
+      </div>
+    </li>
+  </ul>
+</nav>  
 <header>
   <div class="encabezado">
   <div class="bannerpic">
@@ -68,43 +65,6 @@
     <h1 class="main-title">Oportunidades Ilimitadas</h1>
     <h2 class="subtitle">Da la bienvenida al mejor table-board <br>de inteligencias artificiales en Español</h2>
   </div>
-  <div class="encabezado-info">
-    <div class="encabezado-arriba tarjeta-1" onclick="intercambiarTarjetas()">
-      <div class="encabezado-arriba-icono">
-        <img src="./src/imagenes/complementopic/icono1.png" alt="icono IA" width="50" height="50">
-      </div> 
-      <div>
-        <p class="encabezado-arriba-texto">Checa actualizaciones de editores, asistentes y generadores enfocados en Inteligencia Artificial.</p>
-      </div>
-    </div>
-    <div class="encabezado-abajo tarjeta-2" onclick="intercambiarTarjetas()">
-      <div>
-        <p class="encabezado-abajo-texto">Prueba aplicaciones en móvil y escritorio hasta encontrar las que mejor se adapten a tus gustos e intereses.</p>
-      </div>
-      <div class="encabezado-abajo-icono">
-        <img src="./src/imagenes/complementopic/icono2.png" alt="icono2 IA" width="50" height="50">
-      </div> 
-    </div>
-  </div>
-  
-  <!-- <div class="encabezado-info">
-    <div class="encabezado-arriba tarjeta-1" onclick="intercambiarTarjetas()">
-      <div class="encabezado-arriba-icono">
-        <img src="./src/imagenes/complementopic/icono1.png" alt="icono IA" width="50" height="50">
-      </div> 
-      <div>
-        <p class="encabezado-arriba-texto">Checa actualizaciones de editores, asistentes y generadores enfocados en Inteligencia Artificial.</p>
-      </div>
-    </div>
-    <div class="encabezado-abajo tarjeta-2" onclick="intercambiarTarjetas()">
-      <div>
-        <p class="encabezado-abajo-texto">Prueba aplicaciones en móvil y escritorio hasta encontrar las que mejor se adapten a tus gustos e intereses.</p>
-      </div>
-      <div class="encabezado-abajo-icono">
-        <img src="./src/imagenes/complementopic/icono2.png" alt="icono2 IA" width="50" height="50">
-      </div> 
-    </div>
-  </div> -->
 </div>
 </header>
 <main>
@@ -755,6 +715,26 @@
   <div id="subcontenido"></div>
 </span>
 </main>
+<section>  
+  <div class="encabezado-info">
+    <div class="encabezado-arriba tarjeta-1" onclick="intercambiarTarjetas()">
+      <div class="encabezado-arriba-icono">
+        <img src="./src/imagenes/complementopic/icono1.png" alt="icono IA" width="50" height="50">
+      </div> 
+      <div>
+        <p class="encabezado-arriba-texto">Checa actualizaciones de editores, asistentes y generadores enfocados en Inteligencia Artificial.</p>
+      </div>
+    </div>
+    <div class="encabezado-abajo tarjeta-2" onclick="intercambiarTarjetas()">
+      <div>
+        <p class="encabezado-abajo-texto">Prueba aplicaciones en móvil y escritorio hasta encontrar las que mejor se adapten a tus gustos e intereses.</p>
+      </div>
+      <div class="encabezado-abajo-icono">
+        <img src="./src/imagenes/complementopic/icono2.png" alt="icono2 IA" width="50" height="50">
+      </div> 
+    </div>
+  </div>
+</section>
 <aside>
   <figure class="image-container">
     <img src="https://cdn.pixabay.com/photo/2017/03/26/11/33/binary-2175285_960_720.jpg" alt="Rostro de mujer mirando fíjamente el rostro de robot humanoide" title="Jóvenes estudiantes frente a un dispositivo tecnológico">
@@ -780,7 +760,6 @@
       <li class="menu__item" style="margin-right: 20px;"><a class="menu__link" href="./blogs/about/index.html#faq" style="color: #f9fafb; text-decoration: none;">FAQ</a></li>
       <li class="menu__item" style="margin-right: 20px;"><a class="menu__link" href="./blogs/about/index.html#retroalimentacion" style="color: #f9fafb; text-decoration: none;">Retroalimentación</a></li>
       <li class="menu__item" style="margin-right: 20px;"><a class="menu__link" href="./blogs/about/index.html#ingresa-una-ia" style="color: #f9fafb; text-decoration: none;">Ingresa una IA</a></li>
-      <li class="menu__item" style="margin-right: 20px;"><a class="menu__link" href="./blogs/_site/index.html" style="color: #f9fafb; text-decoration: none;">Blogs</a></li>
     </ul>
     
     <p style="background-color: #FFF;"><small>2023 © oportunidadesilimitadas.com</small></p>
