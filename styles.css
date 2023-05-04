@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
 * {
+  font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
   :root {
     font-size: 16px; /* Establece el tamaño base */
@@ -60,15 +60,6 @@
 	overflow: visible;
 }
 
-span {
-	max-width: 1000px;
-	margin: 0 auto; /* centrar */
-	display: flex; /* para centrar verticalmente */
-	align-items: center; /* centrar verticalmente */
-	text-decoration: none;
-	justify-content: space-between;
-}
-
 a {
   display: block;
   width: 100%;
@@ -114,131 +105,124 @@ p {
   text-shadow: none;
 }
 
-.cuarenta-up-px {
-  padding-top: 20px; 
-  text-align: center;
+.fa {
+  margin-right: 5px;
+}/* Estilos para los iconos */
+
+.inactive {
+	display: none;
 }
 
-.cuarenta-px {
-  padding-bottom: 20px; 
-  text-align: center;
+span {
+	max-width: 1000px;
+	margin: 0 auto; /* centrar */
+	display: flex; /* para centrar verticalmente */
+	align-items: center; /* centrar verticalmente */
+	text-decoration: none;
+	justify-content: space-between;
 }
 
+span i {
+  font-size: 60px; /* Tamaño de la flecha */
+  display: inline-block; /* Para que aparezcan al lado del título */
+  margin: 0 10px; /* Espacio entre la flecha y el título */
+}/* Estilos para las flechas */
 
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  gap: 15px;
+}
 
+.main-menu li {
+  list-style: none;
+}
 
-/* Estilos para pantallas grandes */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: #f2f2f2;
+  background-color: #333;
+  color: #fff;
   font-size: 1.2rem;
+  padding: 10px;
 }
 
-.menu {
+nav .main-menu {
   display: flex;
-  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
-  gap: 10px;
 }
 
-.menu-item {
-  color: #333;
+nav .menu-toggle {
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+nav .menu-toggle:focus {
+  outline: none;
+}
+
+nav .menu-toggle:hover {
+  color: #ccc;
+}
+
+nav .menu-item {
+  color: #fff;
   text-decoration: none;
-  padding: 1rem;
-  margin: 0 0.5rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
+  display: block;
+  padding: 10px;
 }
 
-.menu-item:hover,
-.menu-item.active {
-  background-color: #ddd;
+nav .menu-item.active {
+  background-color: #555;
 }
 
-.menu-dropdown {
+nav .menu-dropdown {
   position: relative;
 }
 
-.menu-dropdown:hover .dropdown-content {
+nav .menu-dropdown:hover .submenu {
   display: block;
 }
 
-.dropdown-content {
+nav .submenu {
   display: none;
   position: absolute;
-  z-index: 1;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 0.5rem 0;
-  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 200px;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
 }
 
-.dropdown-content a {
-  color: #333;
+nav .submenu li {
+  margin-bottom: 10px;
+}
+
+nav .submenu li:last-child {
+  margin-bottom: 0;
+}
+
+nav .submenu li a {
+  color: #fff;
   text-decoration: none;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 5px;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+nav .submenu li a:hover {
+  background-color: #555;
 }
-
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 768px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin-right: 1rem;
-  }
-  
-  .menu-toggle:focus + .menu {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu-item {
-    border-top: 1px solid #ddd;
-    margin: 0;
-    padding: 1rem;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .menu-item:first-child {
-    border-top: none;
-  }
-}
-
-/* .icon-bar {
-  display: inline-flexbox;
-  width: 20px;
-  height: 2px;
-  background-color: black;
-  margin: 5px;
-  border-radius: 2px;
-} */
 
 .bannerpic {
   display: flex;
@@ -251,14 +235,6 @@ nav {
 .bannerpic img {
   width: 100%;
   max-width: 100%;
-}
-
-.fa {
-  margin-right: 5px;
-}/* Estilos para los iconos */
-
-.inactive {
-	display: none;
 }
 
 .encabezado {
@@ -354,6 +330,16 @@ nav {
   }
 }
 
+.cuarenta-up-px {
+  padding-top: 20px; 
+  text-align: center;
+}
+
+.cuarenta-px {
+  padding-bottom: 20px; 
+  text-align: center;
+}
+
 .main-title {
   font-size: 1.95rem;
   font-weight: bold;
@@ -381,15 +367,6 @@ td {
   box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   transition: all 0.4s ease;
 }
-
-.button {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}/* Estilo de los botones */
 
 table {
   border-collapse: collapse;
@@ -475,8 +452,17 @@ label {
   margin-bottom: 20px;
 }
 
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}/* Estilo de los botones */
+
 button, a, input[type="submit"] {
-  background-color: #d7f0d5;
+  background-color: #f0d7d5;
   border: none;
   padding: 10px 20px;
   transition: background-color 0.3s ease;
@@ -537,27 +523,6 @@ button:active, a:active, input[type="submit"]:active {
   z-index: 2;
 }
 
-span i {
-  font-size: 60px; /* Tamaño de la flecha */
-  display: inline-block; /* Para que aparezcan al lado del título */
-  margin: 0 10px; /* Espacio entre la flecha y el título */
-}/* Estilos para las flechas */
-
-span .fa-chevron-up {
-  transform: none; /* Gira la flecha 180 grados */
-}/* Estilos para la flecha de "Artículos recientes" */
-
-span .fa-chevron-down {
-  transform: none; /* No es necesario aplicar una transformación, la flecha ya apunta hacia abajo */
-}/* Estilos para la flecha de "Artículos agregados" */
-
-span.icon {
-  display: inline-block; /* para poder ajustar el margen */
-  margin-left: 10px; /* ajusta el margen a la izquierda */
-  margin-right: 10px; /* ajusta el margen a la derecha */
-  vertical-align: middle; /* alinea verticalmente la flecha con el texto */
-}
-
 #subcontenido {
   top: 0;
   left: 0;
@@ -584,7 +549,7 @@ span.icon {
 
 #subcontenido .cerrar-btn:hover {
   background-color: #d54b3c;
-}/* Cambia el color del botón de cerrar al hacer hover */
+}
 
 .contenedor-grilla {
   background-color: #73dd6be3;
@@ -613,7 +578,6 @@ span.icon {
 
 .columna-derecha .atencion-contenedor {
   margin: 0 auto;
-  /* max-width: 350px; */
 }
 
 .atencion-contenedor {
@@ -734,24 +698,11 @@ span.icon {
   color: #fff;
 }
 
-.footer-menu .menu__link {
-  color: #96bfe9;
-  text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  background-color: #292929;
-  transition: all 0.3s ease-in-out;
-}
-
-.footer-menu .menu__link:hover {
-  background-color: #4d4d4d;
-}
-
 .bottom {
   margin-bottom: 10px; /* reduce el margen inferior del footer a 10px */
 }
 
-.image-container {                                                                                                          
+.image-container{                                                                                                          
   max-height: 400px;
   border-radius: 50%;
   overflow: hidden;
@@ -761,7 +712,6 @@ span.icon {
   margin-top: 20px;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
-
 }
 
 .image-container img {
@@ -817,16 +767,82 @@ span.icon {
     }
   }
 
-  @media screen and (min-width: 768px) {
-    .menu-toggle {
-      display: none;
-    }
-
-    nav ul {
-      justify-content: flex-end;
-    }
-
-    nav ul li {
-      margin: 0 0.5rem;
-    }
+/* estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
   }
+  .main-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+  }
+  .main-menu.active {
+    display: block;
+  }
+  .menu-item {
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #fff;
+  }
+  .menu-dropdown {
+    position: relative;
+  }
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    text-align: left;
+    background-color: #333;
+  }
+  .submenu.active {
+    display: block;
+  }
+  .submenu li {
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+/* estilos para dispositivos de escritorio */
+@media screen and (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+  .main-menu {
+    display: flex;
+  }
+  .menu-item {
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    border-bottom: none;
+  }
+  .menu-dropdown:hover .submenu {
+    display: block;
+  }
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    text-align: left;
+    background-color: #333;
+  }
+  .submenu li {
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    border-bottom: 1px solid #fff;
+  }
+}
