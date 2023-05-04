@@ -1,3 +1,12 @@
+/* .h2-head {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo-container {
+  padding: 15px;
+}
+
 .card {
     background-color: #fff;
     border-radius: 10px;
@@ -71,3 +80,52 @@
     color: #fff;
   }
   
+  .ingresa-ia {
+    margin: 2rem auto;
+  }
+  
+  .ingresa-ia img {
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 350px;
+  }
+
+  .tarjeta {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 2rem 0;
+    max-width: 500px;
+  }
+  
+  .tarjeta p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tarjeta label {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .tarjeta textarea {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tarjeta button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+   */

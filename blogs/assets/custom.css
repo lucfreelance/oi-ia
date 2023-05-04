@@ -648,18 +648,155 @@ table td {
 
 /*# sourceMappingURL=main.css.map */
 
+.h2-head {
+  text-align: center;
+  /* padding: 20px; */
+}
 
 .about {
   padding-left: 20px;
   padding-right: 20px;
   }
 
-
   .logo-container {
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    padding: 15px;
   }
   
   .logo-container img {
     vertical-align: middle;
   }
+  
+  .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+      width: 350px;
+      height: 500px;
+    }
+    
+    .card__image {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+    }
+    
+    .card__title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    
+    .card__synopsis {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    
+    .card__footer {
+      align-items: center;
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    
+    .card__category {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    .card__price {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .card__rating {
+      font-size: 14px;
+      margin-left: 10px;
+    }
+    
+    .card__share {
+      background-color: #e0e0e0;
+      border-radius: 50%;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      height: 40px;
+      width: 40px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .card__share:hover {
+      background-color: #333;
+      color: #fff;
+    }
+  
+    .tarjeta {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin: 2rem 0;
+      max-width: 500px;
+    }
+    
+    .tarjeta p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .tarjeta label {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    
+    .tarjeta textarea {
+      font-size: 1.1rem;
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .tarjeta button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .ingreso-ia {
+      padding-top: 20px 0;
+      margin: 1.5rem auto;
+    }
+    
+    .ingreso-ia img {
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+   
+    .colabora-ia {
+      margin: 2rem auto;
+    }
+    
+    .colabora-ia img {
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      /* padding: 20px 0; */
+      max-width: 350px;
+    }
