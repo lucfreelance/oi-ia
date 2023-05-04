@@ -64,7 +64,7 @@ a {
   display: block;
   width: 100%;
   text-decoration: none;
-  color: inherit;
+  color: #3f413f;
 }
 
 .h1 {
@@ -175,7 +175,7 @@ nav .menu-toggle:hover {
 }
 
 nav .menu-item {
-  color: #fff;
+  color: #2a1b1b;
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -214,7 +214,7 @@ nav .submenu li:last-child {
 }
 
 nav .submenu li a {
-  color: #fff;
+  color: #2a1b1b;
   text-decoration: none;
   display: block;
   padding: 5px;
@@ -454,7 +454,7 @@ label {
 
 .button {
   background-color: var(--primary-color);
-  color: white;
+  color: #a5f0ed;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
@@ -462,7 +462,7 @@ label {
 }/* Estilo de los botones */
 
 button, a, input[type="submit"] {
-  background-color: #f0d7d5;
+  background-color: #a9eed8;
   border: none;
   padding: 10px 20px;
   transition: background-color 0.3s ease;
