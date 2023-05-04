@@ -91,7 +91,7 @@ h3 {
 
 .h4 {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 p {
@@ -245,7 +245,7 @@ nav .submenu li a:hover {
 }
 
 .encabezado {
-  background-color: #73dd6be3;
+  background-color: #9ee699;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(151, 62, 62, 0.1);
@@ -291,7 +291,7 @@ nav .submenu li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsl(225, 53%, 45%);
+  background-color:#48c0ef;
   padding: 20px;
   border-radius: 5px;
   color: #fff;
@@ -365,7 +365,7 @@ td {
   width: auto;
   margin: 10px;
   padding: 10px;
-  background-color: #3187ce;
+  background-color: hsl(204, 94%, 49%);
   border-radius: 10px;
   font-size: 1.2rem;
   font-family: "Verdana";
@@ -382,7 +382,7 @@ table {
 
 .table-board {
   padding: 10px;
-  background: linear-gradient(to bottom, #5555e8, #a5d982fc);
+  background: linear-gradient(to bottom, #48c0ef, #9ee699);
   font-size: 1.5rem;
   border-collapse: collapse;
   font-family: "Verdana", cursive, sans-serif;
@@ -559,7 +559,7 @@ button:active, a:active, input[type="submit"]:active {
 }
 
 .contenedor-grilla {
-  background-color: #73dd6be3;
+  background-color: #9ee699;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
@@ -569,11 +569,11 @@ button:active, a:active, input[type="submit"]:active {
 
 .atencion-titulo {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   font-weight: 500;
-  letter-spacing: 0.9px;
+  letter-spacing: 0.8px;
   line-height: 1.5;
-  margin: 21px;
+  margin-left: 30px;
   position: relative;
   color: var(--blue);
 }
@@ -589,8 +589,8 @@ button:active, a:active, input[type="submit"]:active {
 
 .atencion-contenedor {
   position: relative; 
-  background-color: #73dd6be3;
-  border: 4px solid #73dd6be3;
+  background-color: #9ee699;
+  border: 4px solid #9ee699;
 }
 
 .atencion-contenedor img {
@@ -722,7 +722,7 @@ button:active, a:active, input[type="submit"]:active {
 }
 
 .image-container img {
-  background-color: #73dd6be3;          
+  background-color: #9ee699;          
   width: 100%;
   height: auto;
   display: block;
@@ -793,7 +793,7 @@ button:active, a:active, input[type="submit"]:active {
   .menu-item {
     display: block;
     padding: 10px;
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     border-bottom: 2px solid #fff;
   }
 
@@ -805,7 +805,7 @@ button:active, a:active, input[type="submit"]:active {
   }
 
   .menu__item {
-    font-size: 1.0rem;
+    font-size: 0.9rem;
   }
     
   .menu-dropdown {
