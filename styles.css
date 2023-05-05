@@ -30,7 +30,7 @@
   body {
   max-width: 810px;
   margin: 0 auto;
-  background-color: #9ee699;
+  background-color: #c5e6a9;
   color: CanvasText;
   color-scheme: light dark;
   border: 6px solid #51ca49;
@@ -70,7 +70,7 @@ a {
 
 .h1 {
   text-align: center;
-  color: #5dbd5b;
+  /* color: #5dbd5b; */
   text-shadow: 1px 1px  #fff(0, 0, 0, 1);
   margin: 40px 0 20px;
   display: inline-block;
@@ -122,8 +122,8 @@ p {
   position: fixed;
   width: 55px;
   height: 55px;
-  right: 33px;
-  bottom: 3.125rem;
+  right: 0px;
+  bottom: 0rem;
   background-color: #4975dc;
   border: none;
   border-radius: 50%;
@@ -163,7 +163,7 @@ span i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #51ca49;
+  background-color: none;
   padding: 10px;
   }
   
@@ -174,7 +174,7 @@ span i {
   margin: 0;
   padding: 0;
   gap: 10px;
-  }
+}
 
 .main-menu li {
   list-style: none;
@@ -182,47 +182,46 @@ span i {
 }
 
 .main-menu li a {
-display: block;
-padding: 10px;
-color: #fff;
-text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #292929;
+  text-decoration: none;
 }
 
 .main-menu li:hover > a {
-background-color: #444;
+  background-color: #444;
 }
-
 
 .menu-dropdown > .submenu {
   position: absolute;
   display: none;
   z-index: 1;
-  }
-  
-  .menu-dropdown:hover > .submenu {
+}
+
+.menu-dropdown:hover > .submenu {
   display: block;
-  }
-  
-  .submenu {
+}
+
+.submenu {
   list-style: none;
   margin: 0;
   padding: 0;
-  }
-  
-  .submenu li a {
+}
+
+.submenu li a {
   display: block;
   padding: 10px;
   color: #fff;
   text-decoration: none;
-  }
-  
-  .submenu li:hover > a {
+}
+
+.submenu li:hover > a {
   background-color: #555;
-  }
-  
-  .fa {
+}
+
+.fa {
   margin-right: 5px;
-  }
+}
 
 .menu-item {
   padding: 1rem;
@@ -231,8 +230,8 @@ background-color: #444;
 nav {
   display: flex;
   align-items: center;
-  background-color: #5dbd5b;
-  color: #5dbd5b;
+  background-color: #2c60a9;
+  color: #9b59b6
   font-size: 1.2rem;
   padding: 10px;
 }
@@ -246,10 +245,8 @@ nav .main-menu {
 
 nav .menu-toggle {
   display: block;
-  background-color: transparent;
   border: none;
   color: #fff;
-  font-size: 1.5rem;
   cursor: pointer;
   padding: 0 10px;
 }
@@ -263,14 +260,15 @@ nav .menu-toggle:hover {
 }
 
 nav .menu-item {
-  color: #2a1b1b;
+  color: blue;
   text-decoration: none;
   display: block;
   padding: 10px;
+  border-radius: 20%;
 }
 
 nav .menu-item.active {
-  background-color: #555;
+  background-color: #51ca49;
 }
 
 nav .menu-dropdown {
@@ -327,7 +325,7 @@ nav .submenu li a:hover {
 }
 
 .encabezado {
-  background-color: #9ee699;
+  background-color: #c5e6a9
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(151, 62, 62, 0.1);
   display: grid;
@@ -448,7 +446,7 @@ td {
   width: auto;
   margin: 10px;
   padding: 10px;
-  background-color: hsl(204, 94%, 49%);
+  background-color: #0794f2;
   border-radius: 10px;
   font-size: 1.2rem;
   font-family: "Verdana";
@@ -641,12 +639,41 @@ button:active, a:active, input[type="submit"]:active {
 }
 
 .contenedor-grilla {
-  background-color: #9ee699;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  justify-content: center; /* Centra horizontalmente los elementos */
-  align-items: center; /* Centra verticalmente los elementos */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.contenedor-imagen img {
+  max-width: 96%;
+  height: auto;
+  margin: 15px 15px;
+}
+
+
+.imagen-robot {
+  width: 100%;
+  height: auto;
+}
+
+.contenedor-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-principal {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #666;
+}
+
+.texto-secundario {
+  font-size: 18px;
+  text-align: center;
+  color: #666;
 }
 
 .atencion-titulo {
@@ -675,8 +702,8 @@ button:active, a:active, input[type="submit"]:active {
 
 .atencion-contenedor {
   position: relative; 
-  background-color: #9ee699;
-  border: 4px solid #9ee699;
+  background-color: #c5e6a9
+  border: 4px solid #c5e6a9
 }
 
 .atencion-contenedor img {
@@ -810,13 +837,25 @@ button:active, a:active, input[type="submit"]:active {
   margin-top: 20px;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+  text-align: center;
 }
 
 .image-container img {
-  background-color: #9ee699;          
-  width: 100%;
+  /* background-color: #c5e6a9; */
+  max-width: 100%;
   height: auto;
-  display: block;
+}
+
+.text-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
 }
 
 
@@ -831,10 +870,13 @@ button:active, a:active, input[type="submit"]:active {
   
 
 @media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }  
   .contenedor-grilla {
     grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: flex-start;
+    /* justify-content: center;
+    align-items: flex-start; */
   }  
   .columna-derecha {
     grid-row: 1 / 2;
@@ -860,12 +902,12 @@ button:active, a:active, input[type="submit"]:active {
   .main-menu {
     display: none;
     position: absolute;
-    top: 40px;
+    /* top: 40px; */
     left: 0;
     width: 100%;
     text-align: center;
-    background-color: #51ca49;
-    justify-content:space-between  
+    /* background-color: #2c60a9; */
+    justify-content:space-between;
   }  
   .main-menu.active {
     display: block;
@@ -889,9 +931,10 @@ button:active, a:active, input[type="submit"]:active {
   }
   .menu-item {
     display: block;
-    padding: 10px;
+    /* padding: 10px; */
     font-size: 0.9rem;
     border-bottom: 2px solid #fff;
+    margin-left: 0px;
   }    
   .menu-dropdown {
     position: relative;
@@ -902,7 +945,7 @@ button:active, a:active, input[type="submit"]:active {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #9ee699;
     padding: 0.5rem;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   }  
@@ -957,6 +1000,19 @@ button:active, a:active, input[type="submit"]:active {
     padding: 10px;
     font-size: 1rem;
     border-bottom: 1px solid #fff;
+  }
+  .text-container {
+    top: 30%;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .texto-principal {
+    font-size: 24px;
+  }
+  .texto-secundario {
+    font-size: 16px;
   }
 }
 
