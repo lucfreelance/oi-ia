@@ -29,6 +29,13 @@
 //   dropdownContent.classList.toggle('dropdown-content-active');
 // }
 
+// 
+function goArriba() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
 
 const menuToggle = document.querySelector('.menu-toggle');
 const menuItems = document.querySelectorAll('.menu-item');

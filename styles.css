@@ -30,9 +30,10 @@
   body {
   max-width: 800px;
   margin: 0 auto;
-  background-color: Canvas;
+  background-color: #9ee699;
   color: CanvasText;
   color-scheme: light dark;
+  border: 6px solid #51ca49;
   }
 
 #page-wrap {
@@ -92,6 +93,7 @@ h3 {
 .h4 {
   text-align: center;
   font-size: 0.8rem;
+  margin-top: 10px;
 }
 
 p {
@@ -101,8 +103,28 @@ p {
   font-size: 1em;
   grid-area: contenido;
   margin-bottom: 15px;
-  margin-left: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
   text-shadow: none;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  right: 33px;
+  bottom:  0px;
+  background-color: #4975dc;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  z-index: 9999;
+}
+
+#btn-back-to-top i {
+  /* display: block; */
+  margin: auto;
 }
 
 .fa {
@@ -134,8 +156,8 @@ span i {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* justify-content: space-between;
-  gap: 15px; */
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .main-menu li {
@@ -151,7 +173,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #333;
-  color: #fff;
+  color: #5dbd5b;
   font-size: 1.2rem;
   padding: 10px;
 }
@@ -237,6 +259,7 @@ nav .submenu li a:hover {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
+  margin-top: 10px;
 }
 
 .bannerpic img {
@@ -246,18 +269,18 @@ nav .submenu li a:hover {
 
 .encabezado {
   background-color: #9ee699;
-  padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(151, 62, 62, 0.1);
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  /* gap: 20px; */
   max-width: 100%;
 }
 
 .encabezado-titular {
+  margin-top: 60px;
   text-align: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
   @keyframes color-change {
@@ -382,14 +405,13 @@ table {
 
 .table-board {
   padding: 10px;
-  background: linear-gradient(to bottom, #48c0ef, #9ee699);
+  background: linear-gradient(to bottom, #1f7cc3, #51ca49);
   font-size: 1.5rem;
   border-collapse: collapse;
   font-family: "Verdana", cursive, sans-serif;
   letter-spacing: 0.5px;
   color: var(--black);
   text-align: center;
-  border: 2px solid black;
   margin: 0 auto;
   min-width: 150px;
 }
@@ -426,7 +448,7 @@ th, td {
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: #ddefdb;
 }
 
 label {
@@ -469,7 +491,7 @@ label {
 }/* Estilo de los botones */
 
 button, a, input[type="submit"] {
-  background-color: #a9eed8;
+  background-color: #b8ecb4;
   border: none;
   padding: 10px 20px;
   transition: background-color 0.3s ease;
@@ -645,6 +667,7 @@ button:active, a:active, input[type="submit"]:active {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .logo-container {
@@ -658,13 +681,22 @@ button:active, a:active, input[type="submit"]:active {
   margin-right: 10px;
 }
 
+.container {
+  position: relative;
+  width: 100%;
+}
+
 .author-container {
-  bottom: 0;
-  right: 0;
+  position: absolute;
+  bottom: 30px;
+  right: 0px;
   margin: 0;
-  padding: 0;
   border-radius: 0;
   text-align: right;  
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 2px;
 }
 
 .author-container a {
@@ -706,7 +738,7 @@ button:active, a:active, input[type="submit"]:active {
 }
 
 .bottom {
-  margin-bottom: 10px; /* reduce el margen inferior del footer a 10px */
+  margin-bottom: 40px; /* reduce el margen inferior del footer a 10px */
 }
 
 .image-container{                                                                                                          
@@ -768,14 +800,6 @@ button:active, a:active, input[type="submit"]:active {
     margin-bottom: 20px;
   }
   
-  .menu-toggle {
-    display: block;
-    background-color: transparent;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-  }
-  
   .main-menu {
     display: none;
     position: absolute;
@@ -788,24 +812,33 @@ button:active, a:active, input[type="submit"]:active {
   
   .main-menu.active {
     display: block;
+  }  
+  
+  .menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
   }
   
+  .menu-toggle:focus {
+    outline: none;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+
   .menu-item {
     display: block;
     padding: 10px;
     font-size: 0.9rem;
     border-bottom: 2px solid #fff;
-  }
-
-  .menu__link {
-    background-color: #333;
-    color: #f9fafb;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .menu__item {
-    font-size: 0.9rem;
   }
     
   .menu-dropdown {
@@ -818,8 +851,8 @@ button:active, a:active, input[type="submit"]:active {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
-    padding: 1rem;
+    background-color: #333;
+    padding: 0.5rem;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   }
   
@@ -841,25 +874,6 @@ button:active, a:active, input[type="submit"]:active {
     padding: 10px;
     font-size: 1rem;
     border-bottom: 1px solid #fff;
-  }
-  
-  .menu-toggle:focus {
-    outline: none;
-  }
-  
-  .menu-toggle span {
-    display: block;
-    width: 25px;
-    height: 2px;
-    background-color: #333;
-    margin: 5px 0;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-    color: white;
   }
 }
 
@@ -895,5 +909,13 @@ button:active, a:active, input[type="submit"]:active {
     padding: 10px;
     font-size: 1rem;
     border-bottom: 1px solid #fff;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
   }
 }
