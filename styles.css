@@ -989,14 +989,14 @@ margin-top: 10px;
   }
 
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
   .texto-principal {
     font-size: 24px;
   }
   .texto-secundario {
     font-size: 16px;
   }
-}
+} */
 
 
 @media (prefers-color-scheme: dark) {
