@@ -239,7 +239,7 @@ nav {
   align-items: center;
   background-color: #48c0ef;
   font-size: 1.2rem;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 nav .main-menu {
@@ -839,27 +839,27 @@ margin-top: 10px;
     min-height: 120px;
     flex-wrap: wrap;
     }
-  .main-menu-container .menu-dropdown > a {
+  /* .main-menu-container .menu-dropdown > a {
     width: 120px;
-  }
+  } */
   .encabezado {
     grid-template-columns: 1fr;
     padding: 10px;
-  }  
+  }
   .encabezado-info {
     grid-template-columns: 1fr;
     margin-right: 10px;
     margin-left: 10px;
-  }  
+  }
   .encabezado-arriba,
   .encabezado2-titular {
     flex-direction: column;
     align-items: center;
-  }  
+  }
   .encabezado2-icono {
     margin-right: 0;
     margin-bottom: 20px;
-  }  
+  }
   .contenedor-grilla {
     grid-template-columns: 1fr;
   }
@@ -869,10 +869,10 @@ margin-top: 10px;
     border: none;
     padding: 1rem;
     cursor: pointer;
-  }  
+  }
   .menu-toggle:focus {
     outline: none;
-  }  
+  }
   .menu-toggle span {
     display: block;
     width: 25px;
@@ -884,7 +884,7 @@ margin-top: 10px;
     font-size: 0.9rem;
     border-bottom: 2px solid #fff;    
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: -10px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 600;
