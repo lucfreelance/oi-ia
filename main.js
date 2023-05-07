@@ -1,34 +1,3 @@
-// Diagnóstico del nav del index principal con esta línea de registro que imprimirá en la consola un mensaje cada vez que la función se ejecute
-// function toggleDropdown() {
-//   console.log("La función toggleDropdown se ha ejecutado");
-//   dropdownMenu.classList.toggle('dropdown-active');
-// }
-// function toggleMenu() {
-//   console.log("La función toggleMenu se ha ejecutado");
-//   const menu = document.querySelector('.menu');
-//   menu.classList.toggle('menu-active');
-// }
-// function toggleIconBar() {
-//   console.log("La función toggleIconBar se ha ejecutado");
-//   const iconBar = document.querySelector('.icon-bar');
-//   iconBar.classList.toggle('icon-bar-active');
-// }
-// function toggleMenuItem() {
-//   console.log("La función toggleMenuItem se ha ejecutado");
-//   const menuItem = document.querySelector('.menu-item');
-//   menuItem.classList.toggle('menu-item-active');
-// }
-// function toggleDropdown() {
-//   console.log("La función toggleDropdown se ha ejecutado");
-//   const dropdown = document.querySelector('.menu-dropdown');
-//   dropdown.classList.toggle('dropdown-active');
-// }
-// function toggleDropdownContent() {
-//   console.log("La función toggleDropdownContent se ha ejecutado");
-//   const dropdownContent = document.querySelector('.dropdown-content');
-//   dropdownContent.classList.toggle('dropdown-content-active');
-// }
-
 // 
 function goArriba() {
   window.scrollTo({
@@ -37,6 +6,8 @@ function goArriba() {
   });
 }
 
+
+// 
 const menuToggle = document.querySelector('.menu-toggle');
 const menuItems = document.querySelectorAll('.menu-item');
 
@@ -107,10 +78,29 @@ function cerrarContenido() {
     button.addEventListener('click', hideNewsletter);
   });
 
-  // Cuando se cierra el contenido desplegado la pagina se pone a la altura de #table-board-top
-  window.addEventListener("load", function() {
-    window.scrollTo(0, document.querySelector("main #table-board-top").offsetTop);
-  });
+  // // Cuando se cierra el contenido desplegado la pagina se pone a la altura de #table-board-top
+  // window.addEventListener("load", function() {
+  //   window.scrollTo(0, document.querySelector("footer #footer-bottom").offsetTop);
+  // });
+
+// // 
+// //almacenar la posición de desplazamiento actual en el historial de navegación
+// window.addEventListener('beforeunload', () => {
+//   const scrollPosition = {
+//     x: window.scrollX,
+//     y: window.scrollY
+//   };
+//   sessionStorage.setItem('scrollPosition', JSON.stringify(scrollPosition));
+// });
+
+// restaurar la posición de desplazamiento al volver atrás
+window.addEventListener('load', () => {
+  const scrollPosition = JSON.parse(sessionStorage.getItem('scrollPosition'));
+  if (scrollPosition) {
+    window.scrollTo(scrollPosition.x, scrollPosition.y);
+    sessionStorage.removeItem('scrollPosition');
+  }
+});
   
   // 
   const saltadorLinks = document.querySelectorAll(".saltador-link");

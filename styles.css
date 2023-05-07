@@ -35,6 +35,9 @@
   color-scheme: light dark;
   border: 6px solid #51ca49;
   }
+  html, body {
+    scroll-behavior: smooth;
+  }
 
 #page-wrap {
 	position: relative;
@@ -159,6 +162,21 @@ span i {
   margin: 0 10px; /* Espacio entre la flecha y el título */
 }/* Estilos para las flechas */
 
+.scroll-to-footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.scroll-to-footer-btn span {
+  margin-right: 0.5rem;
+}
+
+
 .menu-dropdown {
   position: relative;
   display: inline-block;
@@ -182,10 +200,8 @@ span i {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 10px;
-  /* margin-left: 15px; */
+  gap: 5px;
   display: flex;
-  gap: 15px;
 }
 
 .main-menu-container {
@@ -886,8 +902,6 @@ footer {
   .footer-signatures {
     text-align: center;
   }
-}
-
 .blog-link {
   margin-top: 20px;
   margin-right: 10px;

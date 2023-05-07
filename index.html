@@ -19,7 +19,12 @@
     </button>
     <div class="main-menu-container">
       <ul class="main-menu">
-        <li><a href="#footer-bottom" class="menu-item active" title="Inicio parte inferior"><i class="fas fa-home"></i></a></li>
+        <li><a href="#footer-bottom" class="menu-item active" title="Inicio parte inferior">
+          <i class="fas fa-home"></i>
+          <button class="scroll-to-footer-btn" onclick="document.getElementById('footer-bottom').scrollIntoView({behavior: 'smooth'});">
+            <i class="fas fa-angle-double-down"></i>
+          </button>
+        </a></li>
         <li class="menu-dropdown">
           <a href="#" class="menu-item" title="Enlaces a la table-board - Re-pulsa las categorías en la table-board principal">Asistencia</a>
           <ul class="submenu">
@@ -48,14 +53,18 @@
           </ul>
         </li>
         <li class="menu-dropdown">
-          <button class="hamburger-menu" aria-label="Abrir menú">
-            <span class="hamburger-menu-icon"></span>
+          <button class="hamburger-menu" aria-label="Abrir menú" title="Sección de contenidos">
+            <span class="fas fa-book"></span>
             <!-- <span class="hamburger-menu-text"></span> -->
-          </button>
+          </button>          
+          <!-- <button class="hamburger-menu" aria-label="Abrir menú">
+            <span class="hamburger-menu-icon"></span>
+            <span class="hamburger-menu-text"></span>
+          </button> -->
           <ul class="submenu">
-            <li><a href="#" class="blog-item"><i class="fas fa-newspaper"></i>Board</a></li>
-            <li><a href="./blogs/_site/index.html" class="blog-item"><i class="fas fa-newspaper"></i>Blogs</a></li>
-            <li><a href="./blogs/_site/feed.xml"><i class="fas fa-rss"></i>RSS</a></li>
+            <li><a href="#" class="blog-item"><i class="fas fa-newspaper" title="Board - Página detallada de aplicaciones"></i>Board</a></li>
+            <li><a href="./blogs/_site/index.html" class="blog-item" title="Blogs - El blog de Oportunidades Ilimitadas"><i class="fas fa-newspaper"></i>Blogs</a></li>
+            <li><a href="./blogs/_site/feed.xml" target="_blank"><i class="fas fa-rss" title="RSS de Blogs de Oportunidades Ilimitadas"></i>RSS</a></li>
           </ul>
         </li>    
       </ul>
@@ -757,7 +766,7 @@
   </div>
 </aside>
 <footer>
-  <nav>
+  <nav id="footer-bottom">
     <div class="footer-wrapper">
       <div class="footer-buttons">
         <ul>

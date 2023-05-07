@@ -1,3 +1,4 @@
+// 
 const shareButton = document.querySelector('.card__share');
 
 shareButton.addEventListener('click', () => {
@@ -7,3 +8,4 @@ shareButton.addEventListener('click', () => {
     url: window.location.href,
   });
 });
+
