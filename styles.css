@@ -809,9 +809,9 @@ margin-top: 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin-left: 10px;
   display: flex;
   align-items: center;
+  padding-bottom: 25px;
 }
 
 .hamburger-menu:focus {
@@ -951,7 +951,7 @@ margin-top: 10px;
     margin: 5px 0;
   }  
   .menu-item {
-    font-size: 0.9rem;
+    font-size: 1rem;
     border-bottom: 2px solid #fff;    
     margin-left: 10px;
     margin-right: -10px;
@@ -1063,12 +1063,12 @@ margin-top: 10px;
   } */
 
 
-  /* @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     .author-container {
       text-align: right;
       margin-top: 10px;
     }
-  } */
+  }
 
 
 @media (prefers-color-scheme: dark) {
