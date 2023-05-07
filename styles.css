@@ -160,10 +160,22 @@ span i {
 }/* Estilos para las flechas */
 
 .menu-dropdown {
-  display: flex;
+  position: relative;
+  display: inline-block;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+  min-width: fit-content;
+}
+
+.menu-dropdown .submenu {
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.menu-dropdown:hover .submenu {
+  display: block;
 }
   
 .main-menu {
@@ -178,10 +190,10 @@ span i {
 
 .main-menu-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   background-color: none;
-  padding-right: -5px;
+  padding-right: 5px;
   padding-left: 0px;
   padding-top: 0px;
   padding-bottom: 12px;
@@ -654,7 +666,8 @@ button:active, a:active, input[type="submit"]:active {
   text-align: center;
   color: #333;
   margin-top: 15px;
-  font-family: 'Merriweather', serif;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
 }
 
 .sinopsis {
@@ -716,7 +729,7 @@ button:active, a:active, input[type="submit"]:active {
   height: auto;
 }
 
-footer {
+/* footer {
   background-color: #48c0ef;
   padding: 15px;
   display: flex;
@@ -727,11 +740,11 @@ footer {
 }
 
 .footer-wrapper {
+  background-color: #48c0ef;  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #48c0ef;
   padding: 10px;
   width: 100%;
 }
@@ -786,6 +799,93 @@ margin-top: 10px;
 .author-btn:hover {
   background-color: #0069d9;
   cursor: pointer;
+} */
+
+footer {
+  background-color: #9ee699;
+  color: #fff;
+  padding: 20px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .footer-buttons-blogs {
+  color: #fff;
+} */
+
+.footer-buttons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-buttons li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-buttons a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.footer-signatures {
+  text-align: right;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer-sign {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.footer-copyright {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.footer-text a {
+  color: #666
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-buttons {
+    margin-bottom: 20px;
+  }
+
+  .footer-buttons ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-buttons li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .footer-signatures {
+    text-align: center;
+  }
 }
 
 .blog-link {
@@ -804,6 +904,17 @@ margin-top: 10px;
   background-color: #555;
 }
 
+.main-menu-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: none;
+  padding-right: 0;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 12px;
+  margin-top: 10px;
+}
 
 .hamburger-menu {
   background-color: transparent;
@@ -823,7 +934,7 @@ margin-top: 10px;
   height: 2px;
   background-color: #fff;
   position: relative;
-  /* margin-right: 6px; */
+  margin-right: 10;
   transition: transform 0.3s;
 }
 
@@ -882,12 +993,13 @@ margin-top: 10px;
 
 .menu-dropdown:hover .submenu {
   display: block;
+  min-width: fit-content;
 }
 
 
 @media (max-width: 767px) {
   .hamburger-menu {
-    text-align: right;
+    margin-right: 0"
   }
 }
 
@@ -900,13 +1012,13 @@ margin-top: 10px;
   }
   .main-menu {
     display: flex;
+    flex-wrap: wrap;
     float: inline-end;
     position: relative;
     left: 0;
     width: 100%;
     text-align: center;
     background-color: #2496d8;
-    flex-wrap: wrap;
     align-items: center;
   } 
   .main-menu.active {
@@ -937,7 +1049,6 @@ margin-top: 10px;
     display: none;
     background-color: transparent;
     border: none;
-    /* padding: 1rem; */
     cursor: pointer;
   }
   .menu-toggle:focus {
@@ -962,6 +1073,7 @@ margin-top: 10px;
   .menu-dropdown {
     position: relative;
     margin-right: 20px;
+    min-width: fit-content;
   }  
   .menu-dropdown:hover .submenu {
     display: block;
@@ -970,7 +1082,6 @@ margin-top: 10px;
     left: 0;
     width: 100%;
     background-color: #9ee699;
-    /* padding: 0.5rem; */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   }  
   .submenu {
@@ -1015,7 +1126,6 @@ margin-top: 10px;
   .footer-wrapper {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     align-items: center;
     background-color: #2496d8;
     padding: 10px;
