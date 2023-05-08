@@ -17,13 +17,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# Site settings
-future: true
-# collections:
-#   posts:
-#     output: true
-#     permalink: /posts/:title
-
 # Blogs labels
 title: Blogs de Oportunidades Ilimitadas
 excerpt: "Blogs es el feed de Oportunidades Ilimitadas con información actualizada en Inteligencia Artificial General (IAG). Nos mantenemos al frente de las últimas tendencias y desarrollos en la materia. Además te invitamos a explorar el directorio de IAs por categorías más completo en Español table-board. Si deseas contribuir, enviarnos un mensaje, incluso hacer una donación via Paypal, contáctanos WhatsApp de oi_ia"
@@ -40,9 +33,6 @@ plugins:
 url: "https://oportunidadesilimitadas.com"
 base_url: ""
 
-# Assets folder
-assets_dir: ./blogs/assets
-
 # Meta tags for SEO
 meta_description: "Blogs es un proyecto de Oportunidades Ilimitadas para difundir noticias y novedades relacionadas con Inteligencia Artificial y Machine Learning."
 og_description: "Descubre el fascinante mundo de la Inteligencia Artificial y el Machine Learning en Blogs de Oportunidades Ilimitadas. Adelantos, recuentos y predicciones de los extraordinarios avances que están transformando nuestro mundo día a día. La IA vino para quedarse y aquí encontrarás toda la información al respecto."
@@ -53,7 +43,27 @@ og_type: "blog"
 twitter_card: "summary"
 twitter_title: "Blogs x Oportunidades Ilimitadas"
 
-# Exclude from processing.
+# Ajustes de plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-time-to-read # Agregado para calcular tiempo de lectura
+
+# Configuración de jekyll-time-to-read
+time_to_read: 
+words_per_minute: 210 # Promedio estimado de palabras leídas por minuto
+
+# Site settings
+future: true
+# collections:
+#   posts:
+#     output: true
+#     permalink: /posts/:title
+
+# # Assets folder
+# assets_dir: ./blogs/_site/assets/
+
+# Exclude from processing
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
 # the internal "default list".
