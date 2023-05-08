@@ -127,7 +127,7 @@ p {
   height: 55px;
   right: 0px;
   bottom: 0rem;
-  background-color: #4975dc;
+  background-color: #51ca49;
   border: none;
   border-radius: 50%;
   color: white;
@@ -842,16 +842,12 @@ footer {
 }
 
 .footer-wrapper {
-  max-width: 960px;
+  /* max-width: 960px; */
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-/* .footer-buttons-blogs {
-  color: #fff;
-} */
 
 .footer-buttons ul {
   list-style: none;
@@ -861,7 +857,7 @@ footer {
 
 .footer-buttons li {
   display: inline-block;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 .footer-buttons a {
@@ -878,13 +874,13 @@ footer {
 .footer-text {
   margin: 0;
   font-size: 1.2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .footer-sign {
   margin: 0;
   font-size: 0.9rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   border-radius: 15px;
 }
 
@@ -895,7 +891,7 @@ footer {
 }
 
 .footer-text a {
-  color: #666
+  color: #666;
   text-decoration: underline;
 }
 
@@ -939,11 +935,11 @@ footer {
   justify-content: flex-end;
   align-items: center;
   background-color: none;
-  padding-right: 0;
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 20px;
-  margin-top: 20px;
+  margin-right: -15px;
+  margin-left: -10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 .hamburger-menu {
@@ -1025,7 +1021,7 @@ footer {
   display: block;
   min-width: fit-content;
 }
-
+}
 
 @media (max-width: 767px) {
   .hamburger-menu {
@@ -1160,6 +1156,11 @@ footer {
     background-color: #2496d8;
     padding: 10px;
     width: 100%;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    padding-right: 0px;
   }
   .bottom {
     display: flex;
