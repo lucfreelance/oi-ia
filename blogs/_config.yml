@@ -31,7 +31,7 @@ plugins:
   - jekyll-feed
 # external_url: https://oportunidadesilimitadas.com/blogs
 url: "https://oportunidadesilimitadas.com"
-base_url: ""
+baseurl: "./blog"
 
 # Meta tags for SEO
 meta_description: "Blogs es un proyecto de Oportunidades Ilimitadas para difundir noticias y novedades relacionadas con Inteligencia Artificial y Machine Learning."
