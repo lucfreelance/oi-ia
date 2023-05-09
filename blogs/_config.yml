@@ -17,11 +17,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# Site settings
+future: true
+url: "https://oportunidadesilimitadas.com/blogs"
+# collections:
+#   posts:
+#     output: true
+#     permalink: /posts/:title
+
 # Blogs labels
 title: Blogs de Oportunidades Ilimitadas
 excerpt: "Blogs es el feed de Oportunidades Ilimitadas con información actualizada en Inteligencia Artificial General (IAG). Nos mantenemos al frente de las últimas tendencias y desarrollos en la materia. Además te invitamos a explorar el directorio de IAs por categorías más completo en Español table-board. Si deseas contribuir, enviarnos un mensaje, incluso hacer una donación via Paypal, contáctanos WhatsApp de oi_ia"
 email: ilimitadasoportunidades@gmail.com
-url: "https://oportunidadesilimitadas.com/blogs/_site/index.html"
 twitter_username: o_ilimitadas
 github_username:  lucfreelance
 
@@ -29,40 +36,41 @@ github_username:  lucfreelance
 theme: minima
 plugins:
   - jekyll-feed
-# external_url: https://oportunidadesilimitadas.com/blogs
-url: "https://oportunidadesilimitadas.com"
-baseurl: "/blog/."
-destination: "_site/."
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-time-to-read
+
+# External links
+blogs:
+  url: "https://oportunidadesilimitadas.com/blogs/_site/index.html"
 
 # Meta tags for SEO
 meta_description: "Blogs es un proyecto de Oportunidades Ilimitadas para difundir noticias y novedades relacionadas con Inteligencia Artificial y Machine Learning."
 og_description: "Descubre el fascinante mundo de la Inteligencia Artificial y el Machine Learning en Blogs de Oportunidades Ilimitadas. Adelantos, recuentos y predicciones de los extraordinarios avances que están transformando nuestro mundo día a día. La IA vino para quedarse y aquí encontrarás toda la información al respecto."
-canonical_url: "https://oportunidadesilimitadas.com/blogs/_site/index.html"
-og_url: "https://oportunidadesilimitadas.com/blogs/_site/index.html"
+canonical_url: "{{ site.blogs.url }}"
+og_url: "{{ site.blogs.url }}"
 og_site_name: "Blogs de Oportunidades Ilimitadas - Noticias y novedades de IA y Machine Learning"
 og_type: "blog"
 twitter_card: "summary"
 twitter_title: "Blogs x Oportunidades Ilimitadas"
 
-# Ajustes de plugins
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-time-to-read # Agregado para calcular tiempo de lectura
+# 
+defaults:
+  -
+    scope:
+      path: "blogs/*"
+    values:
+      layout: "blog_layout"
+      footer: true
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default_layout"
 
-# Configuración de jekyll-time-to-read
+# Setup of jekyll-time-to-read
 time_to_read: 
 words_per_minute: 210 # Promedio estimado de palabras leídas por minuto
-
-# Site settings
-future: true
-# collections:
-#   posts:
-#     output: true
-#     permalink: /posts/:title
-
-# # Assets folder
-# assets_dir: ./blogs/_site/assets/
 
 # Exclude from processing
 # The following items will not be processed, by default.

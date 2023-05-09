@@ -146,3 +146,5 @@ draft*
 vendor
 
 # Codigos
+# _includes/
+# _layouts/
