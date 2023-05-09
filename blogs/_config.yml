@@ -54,21 +54,7 @@ og_type: "blog"
 twitter_card: "summary"
 twitter_title: "Blogs x Oportunidades Ilimitadas"
 
-# 
-defaults:
-  -
-    scope:
-      path: "blogs/*"
-    values:
-      layout: "blog_layout"
-      footer: true
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default_layout"
-
-# Setup of jekyll-time-to-read
+# Configuración de jekyll-time-to-read
 time_to_read: 
 words_per_minute: 210 # Promedio estimado de palabras leídas por minuto
 
