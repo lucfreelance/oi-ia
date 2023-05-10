@@ -148,3 +148,6 @@ vendor
 # Codigos
 _includes/
 _layouts/
+
+# Production (Board de React)
+/build
