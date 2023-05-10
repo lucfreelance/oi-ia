@@ -891,7 +891,7 @@ footer .footer-wrapper {
     grid-template-columns: 1fr;
     padding: 10px;
   }
-  .encabezado2-icono {
+  .premisa2-icono {
     margin-right: 0;
     margin-bottom: 20px;
   }
@@ -901,7 +901,7 @@ footer .footer-wrapper {
     margin-left: 10px;
   }
   .premisa-arriba,
-  .encabezado2-titular {
+  .premisa2-titular {
     flex-direction: column;
     align-items: center;
   }
@@ -953,5 +953,12 @@ footer .footer-wrapper {
   body {
     background-color: white;
     color: black;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  section .premisa-info {
+    grid-template-columns: 1fr;
   }
 }

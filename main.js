@@ -78,21 +78,6 @@ function cerrarContenido() {
     button.addEventListener('click', hideNewsletter);
   });
 
-  // // Cuando se cierra el contenido desplegado la pagina se pone a la altura de #table-board-top
-  // window.addEventListener("load", function() {
-  //   window.scrollTo(0, document.querySelector("footer #footer-bottom").offsetTop);
-  // });
-
-// // 
-// //almacenar la posición de desplazamiento actual en el historial de navegación
-// window.addEventListener('beforeunload', () => {
-//   const scrollPosition = {
-//     x: window.scrollX,
-//     y: window.scrollY
-//   };
-//   sessionStorage.setItem('scrollPosition', JSON.stringify(scrollPosition));
-// });
-
 // restaurar la posición de desplazamiento al volver atrás
 window.addEventListener('load', () => {
   const scrollPosition = JSON.parse(sessionStorage.getItem('scrollPosition'));
