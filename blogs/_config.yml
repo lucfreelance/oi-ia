@@ -19,7 +19,6 @@
 
 # Site settings
 future: true
-c
 # collections:
 #   posts:
 #     output: true

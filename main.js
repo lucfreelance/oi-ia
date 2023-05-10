@@ -123,15 +123,15 @@ var tarjeta2 = document.querySelector('.tarjeta-2');
 var posicionOriginal = 1;
 
 function intercambiarTarjetas() {
-  var encabezadoInfo = document.querySelector('.encabezado-info');
-  var encabezadoArriba = document.querySelector('.encabezado-arriba');
-  var encabezadoAbajo = document.querySelector('.encabezado-abajo');
+  var premisaInfo = document.querySelector('.premisa-info');
+  var premisaArriba = document.querySelector('.premisa-arriba');
+  var premisaAbajo = document.querySelector('.premisa-abajo');
   
   if (posicionOriginal == 1) {
-    encabezadoInfo.insertBefore(encabezadoAbajo, encabezadoArriba);
+    premisaInfo.insertBefore(premisaAbajo, premisaArriba);
     posicionOriginal = 2;
   } else {
-    encabezadoInfo.insertBefore(encabezadoArriba, encabezadoAbajo);
+    premisaInfo.insertBefore(premisaArriba, premisaAbajo);
     posicionOriginal = 1;
   }
 }
