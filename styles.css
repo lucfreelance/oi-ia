@@ -822,6 +822,11 @@ footer .footer-wrapper {
     display: block;
   }
 
+  nav .home-bottom-item {    
+    margin: 5px; 
+    padding: 5px;
+  }
+
   nav .menu-item {
     padding: 1px;   
     margin: 1px; 
@@ -833,8 +838,9 @@ footer .footer-wrapper {
   }
 
   nav .menu-contenidos {
-    font-size: 12px;
-  }s
+    margin: 5px; 
+    padding: 5px;
+  }
 
   nav .menu-dropdown {
     position: relative;
