@@ -151,3 +151,6 @@ _layouts/
 
 # Production (Board de React)
 /build
+
+# Board at last
+board
