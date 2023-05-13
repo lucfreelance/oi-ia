@@ -781,12 +781,6 @@ footer .footer-wrapper {
 }
 
 
-/* @media (max-width: 768px) {
-  nav .menu-item {
-    font-size: 0.7rem;
-  }
-} */
-
 
 @media (max-width: 768px) {
   nav .menu-item {
@@ -798,12 +792,17 @@ footer .footer-wrapper {
 }
 
 
-@media screen and (max-width:570px) {
-  nav .home-bottom-item .fas.fa-home {
-    display: none;
-    gap: 1px;
+
+
+
+@media (max-width: 768px) {
+  nav .main-menu li {
+    margin-right: 1px; /* Ajusta el valor según tus necesidades */
+    margin-bottom: 1px; /* Ajusta el valor según tus necesidades */
+    padding: 1px; /* Ajusta el valor según tus necesidades */
   }
 }
+
 
 
 @media screen and (max-width: 768px) { 
@@ -827,6 +826,7 @@ footer .footer-wrapper {
     /* display: flex;
     flex-wrap: wrap; */
     background-color: #2496d8;
+    flex-wrap: wrap;
     /* justify-content: start; */
     text-align: center;
     align-items: center;
@@ -841,8 +841,9 @@ footer .footer-wrapper {
   }
 
   nav .main-menu li {
+    justify-content: space-between; 
     /* margin-left: 5px; 
-    margin-right: 5px; */
+    margin-right: 5px;*/
   }
 
   nav .main-menu.active {
@@ -851,10 +852,7 @@ footer .footer-wrapper {
 
   nav .menu-item {
     font-size: 12;
-    transform: scale(0.7);
-  }
-  nav .menu-item li {
-    /* justify-content: space-between; */
+    transform: scale(0.6);
   }
 
   nav .menu-contenidos {
@@ -870,9 +868,7 @@ footer .footer-wrapper {
   nav .menu-dropdown:hover .submenu {
     display: block;
     min-width: fit-content;
-    display: block;
-    position: absolute;
-    top: 100%;
+    /* top: 100%; */
     left: 0;
     width: 100%;
     background-color: #9ee699;
@@ -885,11 +881,14 @@ footer .footer-wrapper {
   }
 
   nav .submenu li {
-    display: block;
+    /* display: block; */
     padding: 10px;
     font-size: 0.8rem;
     border-bottom: 1px solid #fff;
   }
+
+
+
   .encabezado {
     grid-template-columns: 1fr;
     padding: 10px;
