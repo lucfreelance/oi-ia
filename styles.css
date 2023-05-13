@@ -492,6 +492,7 @@ main tfoot {
 main table {
   border-collapse: collapse;
   width: 100%;
+  /* background-color: khaki; */
 }
 
 main .table-board {
@@ -505,7 +506,12 @@ main .table-board {
   text-align: center;
   margin: 0 auto;
   min-width: 150px;
+  /* background-color: rgb(140, 140, 240); */
 }
+
+/* main .table-board table {
+  background-color: #005EA8;
+} */
 
 main .table-board:hover {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);    

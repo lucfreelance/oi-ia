@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+import oiIaSmallImage from "../images/oi_ia_small.png"
 
 const links = [
   {
@@ -32,13 +33,7 @@ const links = [
       "La tecnología de Audio Asistente impulsada por la inteligencia artificial ha mejorado la eficiencia y la accesibilidad en varios entornos. Los sistemas de asistentes de voz permiten a los usuarios interactuar de manera más natural y realizar tareas como programar reuniones, buscar información y enviar correos electrónicos sin necesidad de escribir o hacer clic. Además, la tecnología ha abierto nuevas oportunidades para personas con discapacidades visuales y motoras. En general, se espera que la tecnología de Audio Asistente siga creciendo a medida que la inteligencia artificial continúe evolucionando.",
   },
   {
-    text: "Buscador Web",
-    url: "buscador-web",
-    description:
-      "Los buscadores web con inteligencia artificial utilizan algoritmos de aprendizaje automático para analizar y clasificar el contenido de la web en función de la consulta de búsqueda del usuario. Con el uso, estos algoritmos se vuelven más precisos y eficientes. La personalización es una de las formas en que la inteligencia artificial ha mejorado los buscadores web, utilizando información previa del usuario para ofrecer resultados más relevantes. La búsqueda por voz es otra característica que permite a los usuarios buscar información de manera más rápida y eficiente. Además, el análisis de sentimiento permite a los buscadores web ofrecer resultados más precisos y relevantes. En resumen, los buscadores web con inteligencia artificial están transformando la forma en que los usuarios encuentran información en línea, ofreciendo una búsqueda más personalizada y eficiente.",
-  },
-  {
-    text: "Diseño Logo",
+    text: "Editor Logo",
     url: "diseno-web",
     description:
       "Las herramientas de diseño de logos basadas en inteligencia artificial están revolucionando la forma en que se crea el branding empresarial. Utilizan algoritmos avanzados de aprendizaje automático para crear logos personalizados a partir de la información proporcionada por el usuario. Además, ofrecen opciones personalizables que permiten crear diseños de logos únicos y adaptados a las necesidades de cada empresa. Estas herramientas reducen significativamente el tiempo y el costo de producción y son ideales para pequeñas empresas y startups con un presupuesto limitado.",
@@ -79,19 +74,24 @@ const links = [
     description:
       "La tecnología de Texto a Vídeo ha evolucionado a lo largo de los años, gracias a la aplicación de técnicas de inteligencia artificial. Actualmente, la mayoría de los sistemas de Texto a Vídeo se basan en algoritmos de aprendizaje profundo, que les permiten aprender a partir de grandes cantidades de datos y generar contenido audiovisual de alta calidad. Los sistemas de Texto a Vídeo se utilizan en una variedad de contextos. Por ejemplo, en la publicidad, se pueden utilizar para crear vídeos personalizados para cada usuario. En la educación, los sistemas de Texto a Vídeo permiten la creación de materiales de formación de alta calidad de manera más rápida y eficiente. En el mundo del entretenimiento, los sistemas de Texto a Vídeo pueden utilizarse para crear animaciones y películas de manera automatizada.",
   },
+  {
+    text: "Texto a Búsqueda - Buscador Web",
+    url: "buscador-web",
+    description:
+      "Los buscadores web con inteligencia artificial utilizan algoritmos de aprendizaje automático para analizar y clasificar el contenido de la web en función de la consulta de búsqueda del usuario. Con el uso, estos algoritmos se vuelven más precisos y eficientes. La personalización es una de las formas en que la inteligencia artificial ha mejorado los buscadores web, utilizando información previa del usuario para ofrecer resultados más relevantes. La búsqueda por voz es otra característica que permite a los usuarios buscar información de manera más rápida y eficiente. Además, el análisis de sentimiento permite a los buscadores web ofrecer resultados más precisos y relevantes. En resumen, los buscadores web con inteligencia artificial están transformando la forma en que los usuarios encuentran información en línea, ofreciendo una búsqueda más personalizada y eficiente.",
+  },
 ]
 
 const samplePageLinks = [
   {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
+    text: "Board",
+    url: "/table/board.jsx",
+    badge: true,
+    description: "Página de reviews de apps / webs de #InteligenciaArtificial",
   },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
+  // { text: "TypeScript", url: "using-typescript" },
+  // { text: "Server Side Rendering", url: "using-ssr" },
+  // { text: "Deferred Static Generation", url: "using-dsg" },
 ]
 
 const moreLinks = [
@@ -177,6 +177,6 @@ const IndexPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="oi_ia" />
 
 export default IndexPage

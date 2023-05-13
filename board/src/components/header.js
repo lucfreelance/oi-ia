@@ -1,5 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+
+import oiIaSmallImage from "../images/oi_ia_small.png"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -20,9 +23,9 @@ const Header = ({ siteTitle }) => (
     >
       {siteTitle}
     </Link>
-    <img
-      alt="Board de Oportunidades Ilimitadas"
-      src="https://i.imgur.com/XS4YekK.jpeg"
+    <StaticImage
+      alt="Board #InteligenciaArtificial"
+      src={oiIaSmallImage}
       height={20}
       style={{ margin: 0 }}
     />
