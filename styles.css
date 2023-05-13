@@ -289,7 +289,6 @@ nav .home-bottom-item span {
 nav .menu-item {
   color: blue;
   text-decoration: none;
-  padding: 10px;
   border-radius: 20%;
   text-align: center;
   font-size: calc(0.7rem + 5px);
@@ -782,6 +781,13 @@ footer .footer-wrapper {
 }
 
 
+@media screen and (max-width: 900px) {
+  .home-bottom-item .fas.fa-home {
+    display: none;
+  }
+}
+
+
 /* media-queries */
 @media screen and (max-width: 768px) { 
   /* nav {
@@ -804,48 +810,40 @@ footer .footer-wrapper {
     margin: 5px 0;
   }
   nav .main-menu {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     background-color: #2496d8;
-    justify-content: center;
+    justify-content: start;
     text-align: center;
     align-items: center;
   } 
 
   nav .main-menu-container {
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
     align-items: center;
     background-color: none;
   }
 
   nav .main-menu li {
-    margin-left: 5px; 
-    margin-right: 5px;
+    /* margin-left: 5px; 
+    margin-right: 5px; */
   }
 
   nav .main-menu.active {
-    display: block;
-  }
-
-  nav .home-bottom-item {    
-    margin: 5px; 
-    padding: 5px;
+    /* display: block; */
   }
 
   nav .menu-item {
-    padding: 1px;   
-    margin: 1px; 
-    font-size: 10px; 
+    font-size: 12
   }
-
   nav .menu-item li {
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
   nav .menu-contenidos {
-    margin: 5px; 
-    padding: 5px;
+    /* margin: 5px; 
+    padding: 5px; */
   }
 
   nav .menu-dropdown {
