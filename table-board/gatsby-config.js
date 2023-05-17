@@ -9,19 +9,19 @@ const siteMetadata = {
   utterances: {
     repo: meta.utterances,
   },
-  postTitle: "All",
+  postTitle: "Todos",
   menuLinks: [
     {
       link: "/",
-      name: "Home",
+      name: "Inicio",
     },
     {
       link: "/about/",
-      name: "About",
+      name: "Blogs",
     },
     {
       link: meta.links.github,
-      name: "Github",
+      name: "oi_ia",
     },
   ],
 }

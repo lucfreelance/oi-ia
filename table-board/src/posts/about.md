@@ -1,6 +1,6 @@
 # Hello
 
-Welcome to my blog. My name is Ed.<br>
-I'm very interested in the web front-end development.
+Bienvenido a table-board. Un placer tenerte.<br>
+Encuentra la app / web de IA que más te guste.
 
-Visit my [Github repository](https://github.com/sungik-choi/gatsby-starter-apple).
+Visita mi [Repositorio Github](https://github.com/lucfreelance).

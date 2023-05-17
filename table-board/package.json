@@ -1,7 +1,7 @@
 {
 	"name": "table-board",
 	"version": "3.0.0",
-	"description": "Gatsby blog starter kit with beautiful and responsive design",
+	"description": "table-board de apps / webs de inteligencia artificial en Español",
 	"main": "index.js",
 	"private": true,
 	"scripts": {
@@ -67,17 +67,18 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/sungik-choi/gatsby-starter-apple.git"
+		"url": "https://github.com/lucfreelance/oi-ia.git"
 	},
 	"keywords": [
 		"gatsby",
+		"graphql",
 		"javascript",
 		"inteligencia artificial"
 	],
-	"author": "Sungik Choi <sungik.dev@gmail.com> (http://sungikchoi.com/)",
+	"author": "Soe Lucas <lucfreelance@gmail.com> (http://twitter.com/soelucas/)",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/sungik-choi/gatsby-starter-apple/issues"
+		"url": "https://github.com/lucfreelance/oi-ia/issues"
 	},
-	"homepage": "https://github.com/sungik-choi/gatsby-starter-apple#readme"
+	"homepage": "https://github.com/lucfreelance/oi-ia#readme"
 }
