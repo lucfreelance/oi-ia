@@ -114,6 +114,24 @@ export default function Home() {
 							Asistentes
 						</a>
 					</div>
+					<div className="mr-4">
+						<a
+							href="#"
+							className="text-blue-500 hover:text-blue-600"
+							onClick={() => handleCategoryClick("Editores")}
+						>
+							Editores
+						</a>
+					</div>
+					<div className="mr-4">
+						<a
+							href="#"
+							className="text-blue-500 hover:text-blue-600"
+							onClick={() => handleCategoryClick("Generadores")}
+						>
+							Generadores
+						</a>
+					</div>
 				</div>
 
 				<div className="flex flex-wrap">
