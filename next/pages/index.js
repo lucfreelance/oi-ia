@@ -2,6 +2,9 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -79,8 +82,13 @@ export default function Home() {
 			<header className="text-center py-6">
 				<Container>
 					<div className="flex items-center justify-between">
-						<div>
-							<Image src="/logo.png" alt="Logo" width={40} height={40} />
+						<div className="logo-container">
+							<Image
+								src={require("../src/logo.png")}
+								alt="Logo"
+								width={40}
+								height={40}
+							/>
 						</div>
 						<div>
 							<h1 className="text-2xl font-bold">Table-Board</h1>
@@ -155,3 +163,27 @@ export default function Home() {
 		</div>
 	);
 }
+
+// El código que has proporcionado utiliza el framework de React y la biblioteca de componentes de Bootstrap para construir la interfaz de usuario.
+
+// Aquí hay una explicación de cómo funciona el código para desplegar los resultados en los divs:
+
+// Primero, se definen los estados category y apps utilizando el hook useState de React. category se utiliza para almacenar la categoría seleccionada y apps para almacenar los datos de las aplicaciones.
+
+// La función handleCategoryClick se utiliza para manejar el evento de clic en las categorías. Al hacer clic en una categoría, se establece el estado category con el nombre de la categoría seleccionada.
+
+// La función handleAppClick se utiliza para manejar el evento de clic en una aplicación. Recibe el índice de la aplicación como argumento y utiliza ese índice para acceder a los datos de la aplicación en el array apps.
+
+// A continuación, se define el array appData que contiene los datos de las aplicaciones, incluyendo el nombre, la categoría y la descripción.
+
+// El array filteredApps se crea a partir de appData y se filtra según la categoría seleccionada. Si no hay ninguna categoría seleccionada, se muestran todas las aplicaciones.
+
+// En la parte del JSX, se utiliza la etiqueta <Container> de Bootstrap para envolver el contenido de la página. Dentro de este contenedor, se utiliza la etiqueta <div> con la clase "flex justify-center mb-4" para crear un contenedor para las opciones de categoría.
+
+// Dentro del contenedor de opciones de categoría, se utilizan las etiquetas <a> con eventos onClick para mostrar las diferentes categorías. Al hacer clic en una categoría, se llama a la función handleCategoryClick con el nombre de la categoría correspondiente.
+
+// Después, se utiliza otra etiqueta <div> con la clase "flex flex-wrap" para crear un contenedor flexible que envuelve los divs de las aplicaciones. Dentro de este contenedor, se utiliza el método map en el array filteredApps para generar un div para cada aplicación.
+
+// Cada div de aplicación contiene el nombre, la descripción y un botón para ver más detalles. Los estilos de estos divs se definen utilizando clases de Bootstrap, como "bg-gray-200 rounded-md p-4 m-2", que establece el fondo, bordes redondeados, padding y margen del div.
+
+// En resumen, el código utiliza las capacidades de React y Bootstrap para generar dinámicamente los divs de las aplicaciones y aplicarles estilos predefinidos. El resultado es una lista de aplicaciones que se muestra en la interfaz de usuario.
