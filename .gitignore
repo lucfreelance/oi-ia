@@ -157,3 +157,8 @@ _layouts/
 
 # Templates
 _templates
+
+
+# Environmental
+.env.*
+.env.local

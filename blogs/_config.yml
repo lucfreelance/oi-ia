@@ -26,10 +26,10 @@ future: true
 
 # Blogs labels
 title: Blogs de Oportunidades Ilimitadas
-excerpt: "Blogs es el feed de Oportunidades Ilimitadas con información actualizada en Inteligencia Artificial General (IAG). Nos mantenemos al frente de las últimas tendencias y desarrollos en la materia. Además te invitamos a explorar el directorio de IAs por categorías más completo en Español table-board. Si deseas contribuir, enviarnos un mensaje, incluso hacer una donación via Paypal, contáctanos WhatsApp de oi_ia"
+excerpt: "Blogs es el feed de Oportunidades Ilimitadas con información actualizada en Inteligencia Artificial General (IAG). Nos mantenemos al frente de las últimas tendencias. / Además te invitamos a explorar el directorio de IAs por categorías más completo en Español table-board. Si deseas contribuir, enviarnos un mensaje, incluso hacer una donación via Paypal, contáctanos WhatsApp de oi_ia"
 email: ilimitadasoportunidades@gmail.com
 twitter_username: o_ilimitadas
-github_username:  lucfreelance
+github_username: lucfreelance
 
 # Build settings
 theme: minima
@@ -54,7 +54,7 @@ twitter_card: "summary"
 twitter_title: "Blogs x Oportunidades Ilimitadas"
 
 # Configuración de jekyll-time-to-read
-time_to_read: 
+time_to_read:
 words_per_minute: 210 # Promedio estimado de palabras leídas por minuto
 
 # Exclude from processing
