@@ -9,8 +9,6 @@ word_count: 800
 # time_to_read:
 ---
 
-<!-- ![](https://) -->
-
 ![Mujer ajedrecista enfrentando a un bot ajedrecista en una partida candente](https://https://images.pexels.com/photos/8438952/pexels-photo-8438952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
 
 # ¿Qué es Inteligencia Artificial?
