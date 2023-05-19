@@ -14,7 +14,7 @@ word_count: 240
 # Recibe 2500 créditos con API de OpenAI
 
 ![Recibe 500 créditos con API de OpenAI](https://images.pexels.com/photos/16564261/pexels-photo-16564261/free-photo-of-telefono-inteligente-sucio-firmar-internet.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-¡Atención emprendedores! OpenAI está brindando una oportunidad única para impulsar el desarrollo de tu empresa. Han anunciado que están otorgando hasta $2,500 en créditos API, ¡sí, has escuchado bien! Esto equivale a 1,25 mil millones de tokens gpt-3.5-turbo y serán válidos por 1 año.
+¡Atención emprendedores! OpenAI está brindando una oportunidad única para impulsar el desarrollo de tu empresa. Bajo el programa Microsoft Para Startups y a través de este link han anunciado que están otorgando hasta $2,500 en créditos API, ¡sí, has escuchado bien! Esto equivale a 1,25 mil millones de tokens gpt-3.5-turbo y serán válidos por 1 año.
 
 OpenAI es una de las empresas líderes en el campo de la inteligencia artificial y ofrece una API para que desarrolladores y empresas puedan integrar la tecnología de IA en sus aplicaciones para promover su uso.
 
