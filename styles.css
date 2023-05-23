@@ -6,12 +6,29 @@
 	box-sizing: border-box;
 }
   :root {
-    font-size: 16px;
-  --white: #ffffff;
-  --black: #000000;
-  --very-light-pink: #c7c7c7;
-  --text-input-field: #f7f7f7;
-  --hospital-green: #acd9b2;
+    :root {
+      font-size: 16px;
+      --black: #000000;
+    --white: #ffffff;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+    --accent-color: #51ca49;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    }  
   --sm: 14px;
   --md: 16px;
   --lg: 18px;
@@ -28,12 +45,11 @@
   user-select: none;
   }  
   body {
-  max-width: 810px;
-  margin: 0 auto;
-  background-color: #c5e6a9;
-  color: CanvasText;
-  color-scheme: light dark;
-  border: 6px solid #51ca49;
+    max-width: 810px;
+    margin: 0 auto;
+    background-color: var(--background);
+    color: var(--text-color);
+    border: 6px solid var(--accent-color);
   }
   html, body {
     scroll-behavior: smooth;
@@ -692,9 +708,12 @@ section .premisa-arriba-icono img,
 
 /* aside */
 aside .contenedor-aside img {
-  max-width: 96%;
+  max-width: 98%;
   height: auto;
-  margin: 15px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: auto;
 }
 
 aside .contenedor-grilla {
@@ -705,33 +724,6 @@ aside .contenedor-grilla {
 
 aside .contenedor-grilla img {
   transform: scaleX(-1);
-}s
-
-aside .contenedor-texto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-aside .texto-principal {
-  font-size: 28px;
-  margin-bottom: 10px;
-  text-align: center;
-  color: #666;
-}
-
-aside .texto-secundario {
-  font-size: 18px;
-  text-align: center;
-  color: #666;
-}
-
-aside .humano-robot {
-  width: 100%;
-  height: auto;
-  margin-left: 15px;
-  margin-bottom: 15px;
 }
 
 /* footer */
