@@ -1,34 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
 * {
   font-family: 'Poppins', sans-serif;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  :root {
-    :root {
-      font-size: 16px;
-      --black: #000000;
-    --white: #ffffff;
-    --very-light-pink: #c7c7c7;
-    --text-input-field: #f7f7f7;
-    --hospital-green: #acd9b2;
-    --accent-color: #51ca49;
-    --sm: 14px;
-    --md: 16px;
-    --lg: 18px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    cursor: default;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    }  
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #acd9b2;
+  --accent-color: #51ca49;
   --sm: 14px;
   --md: 16px;
   --lg: 18px;
@@ -43,17 +27,20 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  }  
-  body {
-    max-width: 810px;
-    margin: 0 auto;
-    background-color: var(--background);
-    color: var(--text-color);
-    border: 6px solid var(--accent-color);
-  }
-  html, body {
-    scroll-behavior: smooth;
-  }
+}
+
+body {
+  max-width: 810px;
+  margin: 0 auto;
+  background-color: var(--black);
+  color: var(--white);
+  border: 6px solid var(--accent-color);
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
 
 #page-wrap {
 	position: relative;
@@ -344,7 +331,7 @@ nav .submenu li:last-child {
 }
 
 nav .submenu li:hover > a {
-  background-color: #1ad487;  
+  background-color: #b8ecb4;  
 }
 
 nav .menu-dropdown {
@@ -411,7 +398,7 @@ nav .menu-contenidos.active .menu-contenidos-icon:after {
 
 /* header */
 header .encabezado {
-  background-color: #1ad487; 
+  background-color: #b8ecb4; 
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(151, 62, 62, 0.1);
   display: flex;
@@ -445,7 +432,7 @@ header .main-title {
   font-size: 1.95rem;
   font-weight: bold;
   margin: 0;
-  background-color: #1ad487; 
+  background-color: #b8ecb4; 
 }
 
 header .subtitle {
@@ -453,7 +440,7 @@ header .subtitle {
   margin: 0;
   animation: color-change 8s infinite;
   padding-bottom: 15px;
-  background-color: #1ad487; 
+  background-color: #b8ecb4; 
 }
 
 @keyframes color-change {
@@ -704,8 +691,14 @@ section .premisa-arriba-icono img,
 }
 
 /* aside */
+aside .contenedor-aside {
+  max-width: 100%;  
+  position: relative;
+}
 aside .contenedor-aside img {
+  overflow: hidden;
   max-width: 100%;
+  margin-bottom: -10px;
 }
 
 /* footer */
