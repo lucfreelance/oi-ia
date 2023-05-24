@@ -659,10 +659,8 @@ main .image-container img {
 section .premisa-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-top: 20px;
-  margin-right: 15px;
-  margin-left: 15px;
+  gap: 15px;
+  margin: 15px;
 }
 
 section .premisa-arriba-icono img {
@@ -685,7 +683,6 @@ section .premisa-abajo-texto {
   font-weight: 500px;
   text-align: right;
   color: #ffffff;
-  margin-right: 20px;
 }
 
 section .premisa-arriba,
@@ -695,7 +692,7 @@ section .premisa-arriba,
   justify-content: center;
   align-items: center;
   background-color:#48c0ef;
-  padding: 20px;
+  padding: 15px;
   border-radius: 5px;
   color: #fff;
 }
@@ -708,22 +705,7 @@ section .premisa-arriba-icono img,
 
 /* aside */
 aside .contenedor-aside img {
-  max-width: 98%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  margin-bottom: auto;
-}
-
-aside .contenedor-grilla {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-aside .contenedor-grilla img {
-  transform: scaleX(-1);
+  max-width: 100%;
 }
 
 /* footer */
@@ -787,21 +769,13 @@ footer .footer-wrapper {
     margin: 1px;
     justify-content: flex-start;
   }
-}
 
-
-
-
-
-@media (max-width: 768px) {
   nav .main-menu li {
     margin-right: 1px; /* Ajusta el valor según tus necesidades */
     margin-bottom: 1px; /* Ajusta el valor según tus necesidades */
     padding: 1px; /* Ajusta el valor según tus necesidades */
   }
 }
-
-
 
 @media screen and (max-width: 768px) { 
   nav .menu-toggle {
@@ -879,13 +853,10 @@ footer .footer-wrapper {
   }
 
   nav .submenu li {
-    /* display: block; */
     padding: 10px;
     font-size: 0.8rem;
     border-bottom: 1px solid #fff;
   }
-
-
 
   .encabezado {
     grid-template-columns: 1fr;
