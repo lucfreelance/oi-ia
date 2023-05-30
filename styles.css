@@ -9,10 +9,10 @@
 :root {
   --black: #000000;
   --white: #ffffff;
-  --very-light-pink: #c7c7c7;
+  --very-light-pink: #ffc0cb; /* Cambiar a un tono de rosa claro */
   --text-input-field: #f7f7f7;
-  --hospital-green: #acd9b2;
-  --accent-color: #51ca49;
+  --hospital-green: #6bbf77; /* Cambiar a un verde más suave */
+  --accent-color: #ff6347; /* Cambiar a un tono de rojo brillante */
   --sm: 14px;
   --md: 16px;
   --lg: 18px;
