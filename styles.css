@@ -166,7 +166,7 @@ label {
   height: 55px;
   right: 0px;
   bottom: 0rem;
-  background-color: #51ca49;
+  background-color: #185114;
   border: none;
   border-radius: 50%;
   color: white;
@@ -224,15 +224,22 @@ button:active, a:active, input[type="submit"]:active {
 nav {
   display: flex;
   padding: 10px;
-  align-items: center;
   justify-content: center;
-  background-color: #48c0ef;
+  align-items: center;
+  background-color: #2496d8;
 }
 
 nav .menu-toggle {
   display: none;
   list-style: none;
-}  
+  background-color: #2496d8;
+}
+
+nav .main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
 
 nav .main-menu-container {
   display: flex;
@@ -240,17 +247,12 @@ nav .main-menu-container {
   align-items: center;
 }
 
-nav .main-menu {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+nav .main-menu li {
+  margin-right: 10px;
 }
 
-nav .main-menu li {
-  flex: 1 0 auto;
-  margin: 5px;
+.main-menu li:last-child {
+  margin-right: 0;
 }
 
 nav .main-menu li:first-child {
@@ -267,15 +269,13 @@ nav .main-menu li a {
   color: #292929;
   text-decoration: none;
   text-align: center;
-  font-size: 10px;
-  white-space: nowrap;
+  font-size: 15px;  
 }
 
 nav .home-bottom-item {
   background: transparent;
   cursor: pointer;
-  margin-right: 10px; 
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 nav .home-bottom-item i {
@@ -283,22 +283,18 @@ nav .home-bottom-item i {
   font-size: 1.2rem;
 }
 
-nav .home-bottom-item span {
-  margin-right: 0.5rem;
-}
-
 nav .menu-item {
-  color: blue;
   text-decoration: none;
-  border-radius: 20%;
   text-align: center;
-  font-size: calc(0.7rem + 5px);
+  font-size: 1.7rem;
   margin-top: 10px;
-  padding: 5px;
-}
-
-nav .menu-item.active {
-  background-color: #51ca49;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  background-color: #339f33;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 nav .submenu {
@@ -307,7 +303,7 @@ nav .submenu {
   top: 100%;
   left: 0;
   background-color: #339f33;
-  padding: 5px;
+  padding: 10px;
   list-style: none;
   margin-right: 10px;
 }
@@ -317,7 +313,8 @@ nav .submenu li {
   padding: 10px;
   font-size: 0.8rem;
   border-bottom: 1px solid #fff;
-}
+    margin-bottom: 5px;
+  }
 
 nav .submenu li a {
   color: #fff;
@@ -331,7 +328,7 @@ nav .submenu li:last-child {
 }
 
 nav .submenu li:hover > a {
-  background-color: #b8ecb4;  
+  background-color: #666;
 }
 
 nav .menu-dropdown {
@@ -341,6 +338,7 @@ nav .menu-dropdown {
 
 nav .menu-dropdown > a {
   width: 120px;
+  font-weight: bold;
 }
 
 nav .menu-dropdown .submenu {
@@ -348,7 +346,6 @@ nav .menu-dropdown .submenu {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #4caf50;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
@@ -359,18 +356,20 @@ nav .menu-dropdown:hover .submenu {
 }
 
 nav .menu-dropdown .submenu li {
-  margin-bottom: 5px;
+  margin-bottom: 5px;  
 }
 
 nav .menu-dropdown .submenu li a {
   padding: 5px;
+  color: #666;
+  font-weight: bold;
 }
 
 nav .menu-dropdown .submenu li a:hover {
-  background-color: #ddd;
+  background-color: #666;
 }
 
-nav .menu-contenidos {
+/* nav .menu-contenidos {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -416,7 +415,7 @@ nav .menu-contenidos.active .menu-contenidos-icon:before {
 
 nav .menu-contenidos.active .menu-contenidos-icon:after {
   transform: translateY(0) rotate(-45deg);
-}
+} */
 
 
 
@@ -453,7 +452,7 @@ ul.c li a:hover {
 
 /* header */
 header .encabezado {
-  background-color: #b8ecb4; 
+  background-color: #5db956; 
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(151, 62, 62, 0.1);
   display: flex;
@@ -461,11 +460,13 @@ header .encabezado {
   align-items: center;
   grid-template-columns: 1fr;
   max-width: 100%;
+  
 }
 
 header .encabezado-titular {
   text-align: center;
   order: 2;
+  background-color: #5db956; 
 }
 
 header .bannerpic {
@@ -475,11 +476,13 @@ header .bannerpic {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
+  background-color: #5db956; 
 }
 
 header .bannerpic img {
   width: 100%;
   max-width: 100%;
+  
 }
 
 header .main-title {
@@ -487,7 +490,7 @@ header .main-title {
   font-size: 1.95rem;
   font-weight: bold;
   margin: 0;
-  background-color: #b8ecb4; 
+  background-color: #5db956; 
 }
 
 header .subtitle {
@@ -495,7 +498,7 @@ header .subtitle {
   margin: 0;
   animation: color-change 8s infinite;
   padding-bottom: 15px;
-  background-color: #b8ecb4; 
+  background-color: #5db956; 
 }
 
 @keyframes color-change {
@@ -523,7 +526,7 @@ main td {
   width: auto;
   margin: 10px;
   padding: 10px;
-  background-color: #0794f2;
+  background-color: #2496d8;
   border-radius: 10px;
   font-size: 1.2rem;
   font-family: "Verdana";
@@ -550,7 +553,6 @@ main tfoot {
 main table {
   border-collapse: collapse;
   width: 100%;
-  /* background-color: khaki; */
 }
 
 main .table-board {
@@ -564,12 +566,7 @@ main .table-board {
   text-align: center;
   margin: 0 auto;
   min-width: 150px;
-  /* background-color: rgb(140, 140, 240); */
 }
-
-/* main .table-board table {
-  background-color: #005EA8;
-} */
 
 main .table-board:hover {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);    
@@ -674,7 +671,7 @@ main .image-container img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.8); /* Fondo semitransparente */
+  background-color: rgba(0,0,0,0.8);
   display: none;
   transition: all 0.5s ease;
 }
@@ -687,9 +684,9 @@ main .image-container img {
   max-width: 400%;
   max-height: 300px;
   height: auto;
-  display: block; /* para que el margin: auto; funcione */
-  margin: auto; /* para centrar horizontalmente */
-  text-align: center; /* para centrar verticalmente */
+  display: block;
+  margin: auto;
+  text-align: center;
   padding: 15px;
 }
 
@@ -758,127 +755,146 @@ aside .contenedor-aside img {
 
 /* footer */
 footer {
-  background-color: #9ee699;
-  color: #fff;
-  padding: 20px 0;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-footer .footer-buttons ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer .footer-buttons li {
-  display: inline-block;
-}
-
-footer .footer-buttons a {
-  color: #666;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-footer .footer-text {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-footer .footer-signature {
-  font-size: 0.9rem;
-  border-radius: 15px;
-}
-
-footer .footer-copyright {
-  font-size: 0.9rem;
-}
-
-footer .footer-text a {
-  color: #666;
-  text-decoration: underline;
+  /* background-color: #f5f5f5; */
+  text-align: center;
+  background-color: #2496d8;
 }
 
 footer .footer-wrapper {
-  margin: 5px;
+  margin: 0 auto;
+  background-color: #2496d8;  
+}
+
+/* Estilos de los botones/enlaces */
+footer .footer-links {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 10px;
+  background-color: #2496d8;
+  padding: 10px;
+}
+
+footer .footer-link {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #5db956;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+footer .footer-link:hover {
+  color: #555;
+  background-color: #2496d8;
+}
+
+footer .footer-copyright {
+  font-size: 12px;
+  color: #CCC;
+  margin-bottom: 5px;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+  text-decoration: none;
+  background-color: #2496d8;
+}
+
+footer .footer-signatures {  
+  text-align: center;
+  background-color: #2496d8;
 }
 
 
 
-@media (max-width: 768px) {
-  nav .menu-item {
-    font-size: 0.7rem;
-    padding: 1px;
-    margin: 1px;
-    justify-content: flex-start;
-  }
 
-  nav .main-menu li {
-    margin-right: 1px; /* Ajusta el valor según tus necesidades */
-    margin-bottom: 1px; /* Ajusta el valor según tus necesidades */
-    padding: 1px; /* Ajusta el valor según tus necesidades */
+/* Estilos responsive */
+@media (max-width: 550px) {
+  nav .main-menu li a {
+    padding: 5px;
+    font-size: 8px;
   }
 }
 
-@media screen and (max-width: 767px) { 
+@media (max-width: 600px) {
+  footer .footer-nav {
+    display: flex;
+    align-items: center;
+    background-color: #2496d8;
+  }
+
+  footer .footer-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: #ccc;
+  }
+
+  section .premisa-info {
+    grid-template-columns: 1fr;
+    background-color: #2496d8;
+  }
+}
+
+@media (max-width: 767px) {
   nav .menu-toggle {
     display: none;
-    background-color: transparent;
     border: none;
     cursor: pointer;
     list-style: none;
+    font-size: 18px;
+    background-color: #2496d8;
   }
+
   nav .menu-toggle:focus {
     outline: none;
+    background-color: #2496d8;
   }
+
   nav .menu-toggle span {
-    /* display: block; */
     width: 25px;
     height: 2px;
-    background-color: #333;
+    background-color: #2496d8;
     margin: 5px 0;
   }
+
+  nav .menu-item {
+    font-size: 1rem;
+  }
+
+  nav .main-menu li {
+    margin-right: 7px;
+    margin-bottom: 1px;
+    padding: 10px;
+  }
+
   nav .main-menu {
-    /* display: flex;
-    flex-wrap: wrap; */
-    background-color: #2496d8;
-    /* flex-wrap: wrap; */
-    /* justify-content: start; */
     text-align: center;
-    /* align-items: center; */
-  } 
+  }
 
   nav .main-menu-container {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  nav .main-menu li {
-    justify-content: space-between; 
-    /* margin-left: 5px; 
-    margin-right: 5px;*/
-  }
-
-  nav .main-menu.active {
-    /* display: block; */
+    margin-right: 20px;
   }
 
   nav .menu-item {
     font-size: 12;
     margin-top: 5px;
     margin-bottom: 5px;
-    /* transform: scale(0.6); */
   }
-
 
   nav .menu-dropdown {
     position: relative;
+    color:#666;
   }
 
   nav .menu-dropdown:hover .submenu {
@@ -886,16 +902,16 @@ footer .footer-wrapper {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #f2f2f2;
     padding: 10px;
     border-radius: 5px;
-    background-color: #4caf50;
+    background-color: #2496d8;
+    color:#666;
   }
-
-  nav 
 
   nav .submenu {
     margin-right: 10px;
+    background-color: #2496d8;
+    color:#666;
   }
 
   nav .submenu li {
@@ -908,51 +924,29 @@ footer .footer-wrapper {
     grid-template-columns: 1fr;
     padding: 10px;
   }
+
   .premisa2-icono {
     margin-right: 0;
     margin-bottom: 20px;
   }
+
   .premisa-info {
     grid-template-columns: 1fr;
     margin-right: 10px;
     margin-left: 10px;
   }
+
   .premisa-arriba,
   .premisa2-titular {
     flex-direction: column;
     align-items: center;
   }
+
   .contenedor-grilla {
     grid-template-columns: 1fr;
-  }
-  footer {
-    background-color: #48c0ef;
-    flex-direction: row;
-  }
-  .footer-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     background-color: #2496d8;
-    padding: 10px;
-    width: 100%;
-    margin-top: -10px;
-    margin-bottom: -10px;
-    margin-right: -10px;
-    margin-left: -10px;
-    padding-right: 0px;
   }
-  .footer-buttons {
-    margin-bottom: 20px;
-  }
-  .footer-buttons ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .footer-buttons li {
-    display: block;
-  }
+
   .bottom {
     display: flex;
     flex-wrap: wrap;
@@ -960,44 +954,11 @@ footer .footer-wrapper {
     align-items: center;
     color: #fff;
   }
-  .footer-links a {
-    font-weight: 600;
-  }
 }
 
-
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   body {
-    background-color: white;
-    color: black;
-  }
-}
-
-
-@media screen and (max-width: 600px) {
-  section .premisa-info {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  ul.c li a {
-    padding: 5px;
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 767px) {
-  nav .main-menu li a {
-    padding: 5px;
-    font-size: 8px;
-  }
-}
-
-
-@media (max-width: 550px) {
-  nav .main-menu li a {
-    padding: 5px;
-    font-size: 8px;
+    background-color: black;
+    color: white;
   }
 }

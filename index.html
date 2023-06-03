@@ -38,69 +38,48 @@
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-		<button onclick="goArriba()" href="#" id="btn-back-to-top">
-			<i class="fas fa-arrow-up"></i>
+		<button onclick="goArriba()" href="#" id="btn-back-to-top"><i class="fas fa-arrow-up"></i>
 		</button>
-		<nav>
-			<button class="menu-toggle" aria-label="Toggle menu"></button>
-			<div class="main-menu-container">
-				<ul class="c">
-					<li>
-						<a
-							href="#footer-bottom"
-							class="home-bottom-item"
-							title="Inicio parte inferior"
-						>
-							<i class="fas fa-home"></i>
-						</a>
-					</li>
-					<li class="menu-dropdown">
-						<a
-							href="#"
-							class="menu-item"
-							title="Enlaces a la table-board - Re-pulsa las categorías en la table-board principal"
-							>Asistencia</a
-						>
-						<ul class="submenu">
-							<li><a href="#td9">Asistente Dev</a></li>
-							<li><a href="#td8">Asistente Copy</a></li>
-							<li><a href="#td11">Asistente Audio</a></li>
-							<li><a href="#td5">Asistente Digital</a></li>
-						</ul>
-					</li>
-					<li class="menu-dropdown">
-						<a
-							href="#"
-							class="menu-item"
-							title="Enlaces a la table-board - Re-pulsa las categorías en la table-board principal"
-							>Generación</a
-						>
-						<ul class="submenu">
-							<li><a href="#td1">Texto a Audio</a></li>
-							<li><a href="#td12">Texto a Imagen</a></li>
-							<li><a href="#td10">Texto a Video</a></li>
-							<li><a href="#td7">Texto a Búsqueda</a></li>
-						</ul>
-					</li>
-					<li class="menu-dropdown">
-						<a
-							href="#"
-							class="menu-item"
-							title="Enlaces a la table-board - Re-pulsa las categorías en la table-board principal"
-							>Edición</a
-						>
-						<ul class="submenu">
-							<li><a href="#td3">Editor Foto</a></li>
-							<li><a href="#td4">Editor Filme</a></li>
-							<li><a href="#td6">Editor Logo</a></li>
-							<li><a href="#td2">Editor CV</a></li>
-						</ul>
-					</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</nav>
+    <nav>
+      <button class="menu-toggle" aria-label="Toggle menu">      
+      </button>
+      <div class="main-menu-container">
+        <ul class="main-menu">
+          <li>
+            <a href="#footer-bottom" class="home-bottom-item" title="Inicio parte inferior">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li class="menu-dropdown">
+            <a href="#" class="menu-item" title="Asistencia">Asistencia</a>
+            <ul class="submenu">
+              <li><a href="#td9">Asistente Dev</a></li>
+              <li><a href="#td8">Asistente Copy</a></li>
+              <li><a href="#td11">Asistente Audio</a></li>
+              <li><a href="#td5">Asistente Digital</a></li>
+            </ul>
+          </li>
+          <li class="menu-dropdown">
+            <a href="#" class="menu-item" title="Generación">Generación</a>
+            <ul class="submenu">
+              <li><a href="#td1">Texto a Audio</a></li>
+              <li><a href="#td12">Texto a Imagen</a></li>
+              <li><a href="#td10">Texto a Video</a></li>
+              <li><a href="#td7">Texto a Búsqueda</a></li>
+            </ul>
+          </li>
+          <li class="menu-dropdown">
+            <a href="#" class="menu-item" title="Edición">Edición</a>
+            <ul class="submenu">
+              <li><a href="#td3">Editor Foto</a></li>
+              <li><a href="#td4">Editor Filme</a></li>
+              <li><a href="#td6">Editor Logo</a></li>
+              <li><a href="#td2">Editor CV</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
 		<header>
 			<div class="encabezado">
 				<div class="bannerpic">
@@ -911,43 +890,42 @@
 				/>
 			</figure>
 		</aside>
-		<footer>
-			<nav id="footer-bottom">
-				<div class="footer-wrapper">
-					<div class="footer-buttons">
-						<ul>
-							<li>
-								<a href="./blogs/pagina-legal/index.html#nosotros">Acerca de</a>
-							</li>
-							<li><a href="./blogs/aclaraciones/index.html#faq" title="FAQ de Oportunidades Ilimitadas">FAQ</a></li>
-							<li><a href="./blogs/_site/feed.xml" target="_blank" rel="noopener noreferrer" title="RSS de Oportunidades Ilimitadas" 
-                >RSS</a></li>
-							<li><a href="./blogs/_site/index.html" alt="Blogs publica información recurrente sobre avances, advertencias,
-                atajos y mucho más." title="Enlace a Blogs sobre inteligencia artificial">Blogs</a></li>
-							<li>
-                <li><a href="#" alt="Board de web / apps de inteligencia artificial" title="Página detallada de aplicaciones de #InteligenciaArtificial">Board</a></li>
-                <li>
-								<a href="#table-board-top" alt="Table-Board enlista a destacadas webs y apps impulsadas con
-                #InteligenciaArtificial" title="Enlace saltador a la sección table board del home"
-									>table-board</a
-								>
-							</li>
-						</ul>
-					</div>
-					<div class="footer-sign">
-						<small><p class="footer-copyright">&copy; 2023 oi_ia</p></small>
-						<small
-							><p class="footer-signatures">
-								Desarrollado por
-								<a href="https://github.com/lucfreelance" target="_blank" rel="noopener noreferrer" 
-									>@lucfreelance</a
-								>
-							</p></small
-						>
-					</div>
-				</div>
-			</nav>
-		</footer>
-		<script src="./main.js"></script>
+    <footer>
+      <path id="footer-bottom">
+        <div class="footer-wrapper">
+          <div class="footer-buttons">
+            <ul class="footer-links">
+              <li>
+                <a href="./blogs/pagina-legal/index.html#nosotros" class="footer-link">Acerca de</a>
+              </li>
+              <li>
+                <a href="./blogs/aclaraciones/index.html#faq" class="footer-link" title="FAQ de Oportunidades Ilimitadas">FAQ</a>
+              </li>
+              <li>
+                <a href="./blogs/_site/feed.xml" class="footer-link" target="_blank" rel="noopener noreferrer" title="RSS de Oportunidades Ilimitadas">RSS</a>
+              </li>
+              <li>
+                <a href="./blogs/_site/index.html" class="footer-link" alt="Blogs publica información recurrente sobre avances, advertencias, atajos y mucho más." title="Enlace a Blogs sobre inteligencia artificial">Blogs</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link" alt="Board de web / apps de inteligencia artificial" title="Página detallada de aplicaciones de #InteligenciaArtificial">Board</a>
+              </li>
+              <li>
+                <a href="#table-board-top" class="footer-link" alt="Table-Board enlista a destacadas webs y apps impulsadas con #InteligenciaArtificial" title="Enlace saltador a la sección table board del home">table-board</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+            <div class="footer-signatures">              
+            <p class="footer-copyright">
+              &copy; 2023 oi_ia
+            </p><p class="footer-copyright">
+                Desarrollado por <a href="https://github.com/lucfreelance" target="_blank" rel="noopener noreferrer">@lucfreelance</a>
+              </p>
+            </div>
+      </path>
+    </footer>
+		<script src="./main.js">      
+    </script>
 	</body>
 </html>
