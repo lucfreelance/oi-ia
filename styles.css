@@ -162,20 +162,19 @@ label {
 
 #btn-back-to-top {
   position: fixed;
-  width: 55px;
-  height: 55px;
-  right: 0px;
-  bottom: 0rem;
-  background-color: #185114;
-  border: none;
-  border-radius: 50%;
+  right: 5px;
+  bottom: 5px;
+  background-color: #339f33;
+  border: #ccc;
   color: white;
-  font-size: 20px;
   z-index: 9999;
 }
 
 #btn-back-to-top i {
-  margin: auto;
+  width: 25px;
+  height: 25px;
+  font-size: 1.2rem;
+  margin: 5px;
 }
 
 .btn {
@@ -223,7 +222,6 @@ button:active, a:active, input[type="submit"]:active {
 /* nav */
 nav {
   display: flex;
-  padding: 5px;
   justify-content: center;
   align-items: center;
   background-color: #2496d8;
@@ -231,27 +229,52 @@ nav {
 
 nav .menu-toggle {
   display: none;
-  list-style: none;
-  background-color: #2496d8;
+}
+
+nav .menu-toggle .bar {
+  width: 3px;
+  height: 3px;
 }
 
 nav .main-menu {
-  display: flex;
-  flex-wrap: no-wrap;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 nav .main-menu-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  display: flex;
+  padding-bottom: 10px;
 }
 
 nav .main-menu li {
-  margin-right: 10px;
+position: relative;
 }
 
-.main-menu li:last-child {
+nav .main-menu li:hover > a {
+  background-color: #ddd;
+}
+
+nav .main-menu li a {
+  display: block;
+  padding: 5px;
+  color: #292929;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  width: auto;
+  border: none;
+}
+
+nav .main-menu li:hover > a {
+  background-color: #ddd;
+}
+
+nav .main-menu li:last-child {
   margin-right: 0;
 }
 
@@ -261,15 +284,6 @@ nav .main-menu li:first-child {
 
 nav .main-menu li:not(:last-child) {
   margin-right: 10px;
-}
-
-nav .main-menu li a {
-  display: inline-block;
-  padding: 10px;
-  color: #292929;
-  text-decoration: none;
-  text-align: center;
-  font-size: 15px;  
 }
 
 nav .home-bottom-item {
@@ -287,14 +301,13 @@ nav .menu-item {
   text-decoration: none;
   text-align: center;
   font-size: 1.7rem;
-  margin-top: 5px;
+  margin: 10px;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   color: #333;
   background-color: #339f33;
   justify-content: space-between;
-  gap: 5px;
 }
 
 nav .submenu {
@@ -317,18 +330,18 @@ nav .submenu li {
   }
 
 nav .submenu li a {
-  color: #fff;
-  text-decoration: none;
   display: block;
-  padding: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
 }
 
 nav .submenu li:last-child {
   margin-bottom: 0;
 }
 
-nav .submenu li:hover > a {
-  background-color: #666;
+nav .submenu li:hover a {
+  background-color: #CCC;
 }
 
 nav .menu-dropdown {
@@ -336,7 +349,7 @@ nav .menu-dropdown {
   min-width: fit-content;
 }
 
-nav .menu-dropdown > a {
+nav .menu-dropdown a {
   width: 120px;
   font-weight: bold;
 }
@@ -346,9 +359,9 @@ nav .menu-dropdown .submenu {
   position: absolute;
   top: 100%;
   left: 0;
-  padding: 5px;
-  border-radius: 5px;
-  margin-bottom: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  z-index: 1;
 }
 
 nav .menu-dropdown:hover .submenu {
@@ -366,7 +379,8 @@ nav .menu-dropdown .submenu li a {
 }
 
 nav .menu-dropdown .submenu li a:hover {
-  background-color: #666;
+  background-color: #339f33;
+  color: #CCC;
 }
 
 /* nav .menu-contenidos {
@@ -451,7 +465,11 @@ ul.c li a:hover {
 
 
 /* header */
-header .encabezado {
+
+
+
+/* prompt */
+prompt .encabezado {
   background-color: #5db956; 
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(151, 62, 62, 0.1);
@@ -463,13 +481,13 @@ header .encabezado {
   
 }
 
-header .encabezado-titular {
+prompt .encabezado-titular {
   text-align: center;
   order: 2;
   background-color: #5db956; 
 }
 
-header .bannerpic {
+prompt .bannerpic {
   order: 1;
   display: flex;
   justify-content: center;
@@ -479,13 +497,13 @@ header .bannerpic {
   background-color: #5db956; 
 }
 
-header .bannerpic img {
+prompt .bannerpic img {
   width: 100%;
   max-width: 100%;
   
 }
 
-header .main-title {
+prompt .main-title {
   padding-top: 15px;
   font-size: 1.95rem;
   font-weight: bold;
@@ -493,7 +511,7 @@ header .main-title {
   background-color: #5db956; 
 }
 
-header .subtitle {
+prompt .subtitle {
   font-size: 1.3rem;
   margin: 0;
   animation: color-change 8s infinite;
@@ -763,18 +781,33 @@ footer {
 footer .footer-wrapper {
   margin: 0 auto;
   background-color: #2496d8;  
+  flex: 1 1 auto;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
-/* Estilos de los botones/enlaces */
+.footer .footer-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+footer .footer-buttons {
+  margin-bottom: 10px;
+  padding-right: 15px;
+}
+
+
 footer .footer-links {
   list-style-type: none;
   margin: 10px;
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
   background-color: #2496d8;
-  padding: 10px;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 footer .footer-link {
@@ -790,15 +823,28 @@ footer .footer-link {
   gap: 10px;
 }
 
+footer .footer-links li {
+  margin: 0;
+  flex-wrap: wrap;
+}
+
 footer .footer-link:hover {
   color: #555;
   background-color: #2496d8;
 }
 
+footer .footer-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
 footer .footer-copyright {
   font-size: 12px;
   color: #CCC;
-  margin-bottom: 5px;
+  margin-bottom: 55px;
   display: inline-block;
   padding: 5px;
   border: 1px solid #ccc;
@@ -811,85 +857,40 @@ footer .footer-copyright {
 footer .footer-signatures {  
   text-align: center;
   background-color: #2496d8;
+  flex: 0 1 auto;
+  text-align: right;
 }
 
 
 
-
-/* Estilos responsive */
-@media (max-width: 550px) {
-  nav .main-menu li a {
-    padding: 5px;
-    font-size: 8px;
-  }
-}
-
-@media (max-width: 600px) {
-  footer .footer-nav {
-    display: flex;
-    align-items: center;
-    background-color: #2496d8;
-  }
-
-  footer .footer-link {
-    display: inline-block;
-    margin-bottom: 10px;
-    background-color: #ccc;
-  }
-
-  section .premisa-info {
-    grid-template-columns: 1fr;
-    background-color: #2496d8;
-  }
-}
 
 @media (max-width: 767px) {
-  nav .menu-toggle {
-    display: none;
-    border: none;
-    cursor: pointer;
-    list-style: none;
-    font-size: 18px;
-    background-color: #2496d8;
-  }
-
-  nav .menu-toggle:focus {
-    outline: none;
-    background-color: #2496d8;
-  }
-
-  nav .menu-toggle span {
-    width: 25px;
-    height: 2px;
-    background-color: #2496d8;
-    margin: 5px 0;
-  }
-
-  nav .menu-item {
-    font-size: 1rem;
+  /* nav .main-menu {
+    text-align: center;
   }
 
   nav .main-menu li {
     margin-right: 7px;
     margin-bottom: 1px;
     padding: 5px;
+    position: static;
   }
 
-  nav .main-menu {
-    text-align: center;
+  nav .main-menu li a {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
   }
+
+  nav .main-menu li:last-child a {
+      border-bottom: none;
+    }
+  
 
   nav .main-menu-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     margin-right: 10px;
-  }
-
-  nav .menu-item {
-    font-size: 12;
-    margin-top: 5px;
-    margin-bottom: 5px;
   }
 
   nav .menu-dropdown {
@@ -897,8 +898,12 @@ footer .footer-signatures {
     color:#666;
   }
 
+    .menu-dropdown > .submenu {
+      position: static;
+      padding: 0;
+    }
+
   nav .menu-dropdown:hover .submenu {
-    display: block;
     position: absolute;
     top: 100%;
     left: 0;
@@ -919,6 +924,10 @@ footer .footer-signatures {
     font-size: 0.8rem;
     border-bottom: 1px solid #fff;
   }
+
+  .submenu li a {
+    padding: 10px;
+  } */
 
   .encabezado {
     grid-template-columns: 1fr;
@@ -956,9 +965,43 @@ footer .footer-signatures {
   }
 }
 
+
+
+/* Estilos responsive */
+@media (max-width: 550px) {
+  nav .main-menu li a {
+    padding: 5px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  section .premisa-info {
+    grid-template-columns: 1fr;
+    background-color: #2496d8;
+  }
+  
+  footer .footer-nav {
+    display: flex;
+    align-items: center;
+    background-color: #2496d8;
+  }
+
+  footer .footer-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: #ccc;
+  }
+} */
+
+
+
+
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
     color: white;
   }
 }
+
