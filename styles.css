@@ -223,7 +223,7 @@ button:active, a:active, input[type="submit"]:active {
 /* nav */
 nav {
   display: flex;
-  padding: 10px;
+  padding: 5px;
   justify-content: center;
   align-items: center;
   background-color: #2496d8;
@@ -237,7 +237,7 @@ nav .menu-toggle {
 
 nav .main-menu {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   list-style: none;
 }
 
@@ -287,14 +287,14 @@ nav .menu-item {
   text-decoration: none;
   text-align: center;
   font-size: 1.7rem;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 5px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   color: #333;
   background-color: #339f33;
   justify-content: space-between;
-  gap: 10px;
+  gap: 5px;
 }
 
 nav .submenu {
@@ -346,7 +346,7 @@ nav .menu-dropdown .submenu {
   position: absolute;
   top: 100%;
   left: 0;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
   margin-bottom: 5px;
 }
@@ -872,7 +872,7 @@ footer .footer-signatures {
   nav .main-menu li {
     margin-right: 7px;
     margin-bottom: 1px;
-    padding: 10px;
+    padding: 5px;
   }
 
   nav .main-menu {
@@ -883,7 +883,7 @@ footer .footer-signatures {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   nav .menu-item {
