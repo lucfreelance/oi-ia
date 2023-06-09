@@ -234,6 +234,7 @@ nav {
 
 nav .menu-toggle {
   display: none;
+  height: 1px;
 }
 
 /* nav .menu-toggle .bar {
@@ -298,16 +299,27 @@ nav .main-menu li:not(:last-child) {
   margin-right: 10px;
 }
 
-nav .home-bottom-item {
+header .home-bottom-item {
   background: transparent;
   cursor: pointer;
   font-size: 1.6rem;
   list-style: none;
 }
 
-nav .home-bottom-item i {
+header .home-bottom-item i {
   color: #333;
   font-size: 1.2rem;
+  margin-right: 0px;
+  margin-top: 0px;
+  list-style: none;
+}
+
+header .fas-fa-home i {
+  color: #333;
+  font-size: 1.2rem;
+  margin-right: 0px;
+  margin-top: 0px;
+  list-style: none;
 }
 
 nav .menu-item {
@@ -320,10 +332,12 @@ nav .menu-item {
   color: #333;
   background-color: #339f33;
   justify-content: space-between;
+  list-style: none;
 }
 
 nav .menu-item p {  
   font-size: 2.1rem;
+  list-style: none;
 }
 
 nav .submenu {
@@ -442,6 +456,7 @@ prompt .encabezado {
   flex-direction: column;
   align-items: center;
   max-width: 100%;
+  margin-top: 25px;
 }
 
 prompt .encabezado-titular {
@@ -835,7 +850,9 @@ footer .footer-copyright {
   text-align: right;
 }
 
-
+footer .footer-signatures {
+  text-align: left;
+}
 
 
 @media (max-width: 767px) {
