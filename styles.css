@@ -238,43 +238,18 @@ nav .menu-toggle {
   display: none;
   height: 1px;
 }
-header .home-bottom-item {
-  background: transparent;
-  cursor: pointer;
-  list-style: none;
-}
-/* nav .menu-toggle .bar {
-  width: 3px;
-  height: 3px;
-} */
-
-/* header .home-bottom-item {
-  background: transparent;
-  cursor: pointer;
-  list-style: none;
-}
-
-header .home-bottom-item i {
-  color: #333;
-  font-size: 1.2rem;
-  margin-right: 0px;
-  margin-top: 0px;
-  list-style: none;
-}
-
-header .fas-fa-home i {
-  color: #333;
-  font-size: 1.2rem;
-  margin-right: 0px;
-  margin-top: 0px;
-  list-style: none;
-} */
 
 nav header .main-menu-container {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #1f7cc3;
+}
+
+header .home-bottom-item {
+  background: transparent;
+  cursor: pointer;
+  list-style: none;
 }
 
 header .main-menu {
@@ -301,7 +276,7 @@ header .main-menu li a {
   color: #292929;
   text-decoration: none;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   width: auto;
   border: none;
   padding: 10px;
@@ -374,7 +349,7 @@ header .submenu {
 header .submenu li {
   display: block;
   padding: 10px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   border-bottom: 1px solid #fff;
   margin-bottom: 5px;
 }
@@ -384,6 +359,7 @@ header .submenu li a {
   padding: 5px 10px;
   text-decoration: none;
   color: #333;
+  font-size: 1rem;
 }
 
 header .submenu li:last-child {
@@ -510,11 +486,10 @@ main td {
   display: inline-block;    
   text-align: center;
   width: auto;
-  margin: 10px;
-  padding: 10px;
-  background-color: #2496d8;
+  margin: 20px;
+  background-color: #339f33;
   border-radius: 10px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "Verdana";
   letter-spacing: 0.5px;
   color: var(--black);
@@ -883,8 +858,6 @@ footer .footer-signatures {
     padding: 8px;
     font-size: 0.9rem;
   }
-}
-
 
   nav .main-menu li a {
     display: block;
