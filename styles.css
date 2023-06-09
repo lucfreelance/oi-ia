@@ -238,6 +238,11 @@ nav .menu-toggle {
   display: none;
   height: 1px;
 }
+header .home-bottom-item {
+  background: transparent;
+  cursor: pointer;
+  list-style: none;
+}
 /* nav .menu-toggle .bar {
   width: 3px;
   height: 3px;
@@ -345,12 +350,14 @@ header .menu-item.custom-button {
   /* Reglas CSS para personalizar el tamaño de los botones */
   font-size: 1.2rem; /* Ajusta el tamaño de fuente según tus preferencias */
   padding: 10px; /* Ajusta el padding según tus preferencias */
+  border: 2.1px solid #333; 
 }
 
 @media screen and (max-width: 767px) {
   header .menu-item.custom-button {
     font-size: 0.9rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
     padding: 10px 20px; /* Ajusta el padding para pantallas más pequeñas */
+    border: 1.4px solid #333; 
   }
 }
 
@@ -628,7 +635,7 @@ main .instructions-list-down {
 }
 
 main .texto-terciario-down {
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   margin: 25px;
   text-align: center;
   padding-left: 2rem;
@@ -644,14 +651,14 @@ main .sub-texto-terciario-down {
 }
 
 main .instructions-list-down li {
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
   list-style: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .instructions-list-down {
-    padding-left: 1rem;
+    font-size: 1.2rem;
   }
 }
 
