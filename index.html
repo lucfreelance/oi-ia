@@ -38,11 +38,31 @@
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
+		<aside>
+			<figure class="contenedor-aside">
+				<img
+					src="https://cdn.pixabay.com/photo/2017/03/26/11/33/binary-2175285_960_720.jpg"
+					alt="Rostro de mujer mirando fíjamente el rostro de robot humanoide"
+					title="Rostro de mujer mirando fíjamente el rostro de robot humanoide"
+				/>
+			</figure>
+		</aside>
+		<prompt>
+			<div class="encabezado">
+				<div class="encabezado-titular">
+					<h1 class="main-title">Oportunidades Ilimitadas</h1>
+					<h2 class="subtitle">
+						Te da la bienvenida al mejor<br />table-board de inteligencias<br />artificiales
+						en idioma Español
+					</h2>
+				</div>
+			</div>
+		</prompt>
 		<button onclick="goArriba()" href="#" id="btn-back-to-top"><i class="fas fa-arrow-up"></i>
 		</button>
+    <button class="menu-toggle" aria-label="Toggle menu">      
+    </button>
     <header>
-      <button class="menu-toggle" aria-label="Toggle menu">      
-      </button>
       <nav class="main-menu-container">
         <ul class="main-menu">
           <li>
@@ -80,24 +100,6 @@
         </ul>
       </nav>
     </header>
-		<prompt>
-			<div class="encabezado">
-				<div class="bannerpic">
-					<img
-						src="https://cdn.pixabay.com/photo/2016/08/05/09/28/hand-1571852_960_720.jpg"
-						alt="Imagen de mano de hombre apuntando con dedo índice al indice de la mano humanoide de un robot como en el fresco La Creación de Adán por Miguel Ángel"
-						title="El banner de Oportunidades Ilimitadas."
-					/>
-				</div>
-				<div class="encabezado-titular">
-					<h1 class="main-title">Oportunidades Ilimitadas</h1>
-					<h2 class="subtitle">
-						Te da la bienvenida al mejor<br />table-board de inteligencias<br />artificiales
-						en idioma Español
-					</h2>
-				</div>
-			</div>
-		</prompt>
     <section>
       <div class="premisa-info">
         <div class="premisa-arriba tarjeta-1" onclick="intercambiarTarjetas()">
@@ -869,10 +871,12 @@
 						</tbody>
 					</table>
 					<tfoot>
+            <h3 class="h3-tfoot" style="color: #e9f6f4; text-align: center">
+              ¿Cómo usar la table-board?
+            </h3>
 						<h4 class="texto-terciario">
-							Clic o tap a los botones y pulsa las tarjetas<br />Revisa las
-							reseñas de apps que te interesen<br />Vuelve a la table-board e
-							intenta de nuevo
+							Pulsa los botones de categoría de arriba y abre los menúes<br /><br />Pulsa las tarjetas para abrir los detalles de las aplicaciones<br /><br />Revisa los
+							detalles de las aplicaciones y visitala si quieres<br /><br />Cierra para volver y vuelve si prefieres inténtalo de nuevo
 						</h4>
 					</tfoot>
 				</div>
@@ -880,16 +884,14 @@
 			<span id="saltador">
 				<div id="subcontenido"></div>
 			</span>
+      <div class="bannerpic">
+        <img
+          src="./src/imagenes/complementopic/bannerpic.jpg"
+          alt="Imagen de dedo índice humano apuntando al indice de una mano humanoide, como en el fresco La Creación de Adán de Miguel Ángel"
+          title="Banner de Oportunidades Ilimitadas."
+        />
+      </div>
 		</main>
-		<aside>
-			<figure class="contenedor-aside">
-				<img
-					src="https://cdn.pixabay.com/photo/2017/03/26/11/33/binary-2175285_960_720.jpg"
-					alt="Rostro de mujer mirando fíjamente el rostro de robot humanoide"
-					title="Rostro de mujer mirando fíjamente el rostro de robot humanoide"
-				/>
-			</figure>
-		</aside>
     <footer>
       <path id="footer-bottom">
         <div class="footer-wrapper">
@@ -915,14 +917,12 @@
               </li>
             </ul>
           </div>
-        </div>
-            <div class="footer-signatures">              
-            <p class="footer-copyright">
-              &copy; 2023 oi_ia
-            </p><p class="footer-copyright">
-                Desarrollado por <a href="https://github.com/lucfreelance" target="_blank" rel="noopener noreferrer">@lucfreelance</a>
-              </p>
-            </div>
+      </path>
+      <path>
+          <div class="footer-signatures">     <p class="footer-signatures">
+              Desarrollado por <a href="https://github.com/lucfreelance" target="_blank" rel="noopener noreferrer">@lucfreelance</a>
+            </p>
+          </div>
       </path>
     </footer>
 		<script src="./main.js">      

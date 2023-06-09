@@ -96,6 +96,11 @@ h3 {
   margin: 0;
 }
 
+.h3-tfoot {
+  margin-top: 12.5px;
+  margin-bottom: 25px;
+}
+
 .h4 {
   text-align: center;
   font-size: 0.8rem;
@@ -164,16 +169,16 @@ label {
   position: fixed;
   right: 5px;
   bottom: 5px;
-  background-color: #339f33;
+  background-color: linear-gradient(to bottom, white, black);
   border: #ccc;
   color: white;
   z-index: 9999;
 }
 
 #btn-back-to-top i {
-  width: 25px;
-  height: 25px;
-  font-size: 1.2rem;
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
   margin: 5px;
 }
 
@@ -238,9 +243,12 @@ nav .menu-toggle .bar {
 
 nav .main-menu {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  margin: 10px;
   display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2.1rem;
 }
 
 nav .main-menu-container {
@@ -249,6 +257,9 @@ nav .main-menu-container {
   align-items: center;
   display: flex;
   padding-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 2.1rem;
 }
 
 nav .main-menu li {
@@ -265,9 +276,10 @@ nav .main-menu li a {
   color: #292929;
   text-decoration: none;
   text-align: center;
-  font-size: 15px;
+  font-size: 1.8rem;
   width: auto;
   border: none;
+  padding: 10px;
 }
 
 nav .main-menu li:hover > a {
@@ -300,7 +312,6 @@ nav .home-bottom-item i {
 nav .menu-item {
   text-decoration: none;
   text-align: center;
-  font-size: 1.7rem;
   margin: 10px;
   padding: 5px;
   border: 1px solid #ccc;
@@ -308,6 +319,10 @@ nav .menu-item {
   color: #333;
   background-color: #339f33;
   justify-content: space-between;
+}
+
+nav .menu-item p {  
+  font-size: 2.1rem;
 }
 
 nav .submenu {
@@ -326,7 +341,7 @@ nav .submenu li {
   padding: 10px;
   font-size: 0.8rem;
   border-bottom: 1px solid #fff;
-    margin-bottom: 5px;
+  margin-bottom: 5px;
   }
 
 nav .submenu li a {
@@ -470,52 +485,35 @@ ul.c li a:hover {
 
 /* prompt */
 prompt .encabezado {
-  background-color: #5db956; 
+  background-color: #5db956;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(151, 62, 62, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-template-columns: 1fr;
   max-width: 100%;
-  
 }
 
 prompt .encabezado-titular {
   text-align: center;
-  order: 2;
-  background-color: #5db956; 
-}
-
-prompt .bannerpic {
-  order: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 100%;
-  background-color: #5db956; 
-}
-
-prompt .bannerpic img {
-  width: 100%;
-  max-width: 100%;
-  
+  background-color: #5db956;
+  padding: 15px;
 }
 
 prompt .main-title {
   padding-top: 15px;
-  font-size: 1.95rem;
+  padding-bottom: 15px;
+  font-size: 2.1rem;
   font-weight: bold;
   margin: 0;
   background-color: #5db956; 
 }
 
 prompt .subtitle {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 0;
   animation: color-change 8s infinite;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   background-color: #5db956; 
 }
 
@@ -682,6 +680,22 @@ main .image-container {
 main .image-container img {
   max-width: 100%;
   height: auto;
+}
+
+main .bannerpic {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #5db956; 
+}
+
+main .bannerpic img {
+  width: 100%;
+  max-width: 100%;
+  width: 100%;
+  object-fit: contain;  
 }
 
 #subcontenido {
@@ -854,10 +868,10 @@ footer .footer-copyright {
   background-color: #2496d8;
 }
 
-footer .footer-signatures {  
+footer .footer-copyright {  
   text-align: center;
   background-color: #2496d8;
-  flex: 0 1 auto;
+  /* flex: 0 1 auto; */
   text-align: right;
 }
 
@@ -865,6 +879,39 @@ footer .footer-signatures {
 
 
 @media (max-width: 767px) {
+  nav .main-menu li a {
+    display: block;
+    padding: 3px;
+    color: #292929;
+    text-decoration: none;
+        font-size: 0.7rem;
+    width: auto;
+    border: none;
+    padding: 8px;
+  }
+  /* #btn-back-to-top {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    background-color: linear-gradient(to bottom, white, black);
+    border: #ccc;
+    color: white;
+    z-index: 9999;
+    width: 10px;
+    height: 10px;
+  } */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   /* nav .main-menu {
     text-align: center;
   }
