@@ -247,7 +247,7 @@ nav header .main-menu-container {
 }
 
 header .home-bottom-item {
-  background: transparent;
+  background-color: transparent;
   cursor: pointer;
   list-style: none;
 }
@@ -323,7 +323,7 @@ header .menu-item p {
 
 header .menu-item.custom-button {
   /* Reglas CSS para personalizar el tamaño de los botones */
-  font-size: 1.2rem; /* Ajusta el tamaño de fuente según tus preferencias */
+  font-size: 1rem; /* Ajusta el tamaño de fuente según tus preferencias */
   padding: 10px; /* Ajusta el padding según tus preferencias */
   border: 2.1px solid #333; 
 }
@@ -754,7 +754,7 @@ section .premisa-arriba,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:#48c0ef;
+  background-color:#e6ae36;
   padding: 15px;
   border-radius: 5px;
   color: #fff;
