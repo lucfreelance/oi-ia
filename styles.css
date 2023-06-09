@@ -236,10 +236,10 @@ nav .menu-toggle {
   display: none;
 }
 
-nav .menu-toggle .bar {
+/* nav .menu-toggle .bar {
   width: 3px;
   height: 3px;
-}
+} */
 
 nav .main-menu {
   list-style: none;
@@ -646,6 +646,16 @@ main .bannerpic img {
   max-width: 100%;
   width: 100%;
   object-fit: contain;  
+}
+
+main .instructions-list {
+  list-style-type: decimal;
+  padding-left: 5rem;
+}
+
+main .instructions-list li {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 #subcontenido {
