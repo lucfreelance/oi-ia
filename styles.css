@@ -601,6 +601,53 @@ main .texto-terciario {
   line-height: 1.5;
 }
 
+main .instructions-list {
+  list-style-type: decimal;
+  padding-left: 5rem;
+}
+
+main .instructions-list li {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+main .instructions-list-down {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #333;
+  margin-top: 15px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+main .texto-terciario-down {
+  font-size: 2.1rem;
+  margin: 25px;
+  text-align: center;
+  padding-left: 2rem;
+  margin-bottom: 10px;
+}
+
+main .sub-texto-terciario-down {
+  font-size: 1.7rem;
+  margin: 25px;
+  text-align: center;
+  padding-left: 2rem;
+  margin-bottom: 10px;
+}
+
+main .instructions-list-down li {
+  text-align: center;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  main .instructions-list-down {
+    padding-left: 1rem;
+  }
+}
+
 main .sinopsis {
 	text-align: justify;
 	padding-top: 10px;
@@ -652,16 +699,6 @@ main .bannerpic img {
   max-width: 100%;
   width: 100%;
   object-fit: contain;  
-}
-
-main .instructions-list {
-  list-style-type: decimal;
-  padding-left: 5rem;
-}
-
-main .instructions-list li {
-  text-align: center;
-  margin-bottom: 10px;
 }
 
 #subcontenido {
