@@ -332,12 +332,26 @@ header .menu-item {
 }
 
 header .menu-item a {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  padding: 10px 20px;
 }
 
 header .menu-item p {
   font-size: 2.1rem;
   list-style: none;
+}
+
+header .menu-item.custom-button {
+  /* Reglas CSS para personalizar el tamaño de los botones */
+  font-size: 1.2rem; /* Ajusta el tamaño de fuente según tus preferencias */
+  padding: 10px; /* Ajusta el padding según tus preferencias */
+}
+
+@media screen and (max-width: 767px) {
+  header .menu-item.custom-button {
+    font-size: 0.9rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    padding: 10px 20px; /* Ajusta el padding para pantallas más pequeñas */
+  }
 }
 
 header .submenu {
