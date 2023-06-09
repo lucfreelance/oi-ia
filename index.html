@@ -63,7 +63,7 @@
     <button class="menu-toggle" aria-label="Toggle menu">      
     </button>
     <header>
-      <nav class="main-menu-container">
+      <nav class="main-menu-container horizontal-menu">
         <ul class="main-menu">
           <li class="menu-dropdown">
             <a href="#" class="menu-item" title="Asistencia" onclick="return false;">Asistencia</a>
@@ -92,14 +92,17 @@
               <li><a href="#td2">Editor CV</a></li>
             </ul>
           </li>
+          <li>
+            <a href="#footer-bottom" class="home-bottom-item" title="Inicio parte inferior">
+              <button type="button">
+                <i class="fas fa-home"></i>
+              </button>
+            </a>
+          </li>
         </ul>
-        <li>
-          <a href="#footer-bottom" class="home-bottom-item" title="Inicio parte inferior">
-            <i class="fas fa-home"></i>
-          </a>
-        </li>
       </nav>
     </header>
+    
     <section>
       <div class="premisa-info">
         <div class="premisa-arriba tarjeta-1" onclick="intercambiarTarjetas()">
@@ -907,37 +910,34 @@
       </div>
 		</main>
     <footer>
-      <path id="footer-bottom">
-        <div class="footer-wrapper">
-          <div class="footer-buttons">
-            <ul class="footer-links">
-              <li>
-                <a href="#table-board-top" class="footer-link" alt="Table-Board enlista a destacadas webs y apps impulsadas con #InteligenciaArtificial" title="Enlace saltador a la sección table board del home">table-board</a>
-              </li>
-              <li>
-                <a href="./blogs/pagina-legal/index.html#nosotros" class="footer-link">Acerca de</a>
-              </li>
-              <li>
-                <a href="./blogs/aclaraciones/index.html#faq" class="footer-link" title="FAQ de Oportunidades Ilimitadas">FAQ</a>
-              </li>
-              <li>
-                <a href="./blogs/_site/feed.xml" class="footer-link" target="_blank" rel="noopener noreferrer" title="RSS de Oportunidades Ilimitadas">RSS</a>
-              </li>
-              <li>
-                <a href="./blogs/_site/index.html" class="footer-link" alt="Blogs publica información recurrente sobre avances, advertencias, atajos y mucho más." title="Enlace a Blogs sobre inteligencia artificial">Blogs</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link" alt="Home al top" title="Oportunidades Ilimitades en #InteligenciaArtificial">Home</a>
-              </li>
-            </ul>
-          </div>
-      </path>
-      <path>
-          <p class="footer-signatures">
-              Desarrollado por <a href="https://github.com/lucfreelance" target="_blank" rel="noopener noreferrer">@lucfreelance</a>
-            </p>
-      </path>
-    </footer>
+      <div class="footer-wrapper" id="footer-bottom">
+        <div class="footer-buttons">
+          <ul class="footer-links">
+            <li>
+              <a href="#table-board-top" class="footer-link" title="Enlace saltador a la sección table board del home">table-board</a>
+            </li>
+            <li>
+              <a href="./blogs/pagina-legal/index.html#nosotros" class="footer-link">Acerca de</a>
+            </li>
+            <li>
+              <a href="./blogs/aclaraciones/index.html#faq" class="footer-link" title="FAQ de Oportunidades Ilimitadas">FAQ</a>
+            </li>
+            <li>
+              <a href="./blogs/_site/feed.xml" class="footer-link" target="_blank" rel="noopener noreferrer" title="RSS de Oportunidades Ilimitadas">RSS</a>
+            </li>
+            <li>
+              <a href="./blogs/_site/index.html" class="footer-link" title="Enlace a Blogs sobre inteligencia artificial">Blogs</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="Oportunidades Ilimitades en #InteligenciaArtificial">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-signatures">
+        Desarrollado por <a href="https://github.com/lucfreelance" target="_blank" rel="noopener noreferrer">@lucfreelance</a>
+      </p>
+    </footer>    
 		<script src="./main.js">      
     </script>
 	</body>
