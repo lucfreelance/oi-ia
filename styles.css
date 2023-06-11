@@ -465,19 +465,19 @@ prompt .subtitle {
 
 @keyframes color-change {
   0% {
-    color: #132390;
+    color: #33b8c7;
   }
   25% {
-    color: #22ffae;
+    color: #1ad490;
   }
   50% {
-    color: #671b74;
+    color: #894b94;
   }
   75% {
-    color: #4caf50;
+    color: #1e8522;
   }
   100% {
-    color: #2196f3;
+    color: #a0b8d5;
   }
 }
 

@@ -93,11 +93,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
 
-define('AUTH_KEY',         'vQGLIijB0yMfZfE4bfB0ah/PSV9mrCL3jpAQbDMgJsbY02crfGu1wvQ3ukju2JiDiSRypWiWYrhlyCZk8u+K5A==');
-define('SECURE_AUTH_KEY',  'PQ0IfM5PXEqXbOLNhKKpEtBau1rjILdkud+4PNv7Tj8oCB3iOo/jRYQ1uqhB8z/F8IBZvROBoeSSosBs6puxjw==');
-define('LOGGED_IN_KEY',    'g1RAox7ybb3dBi1A06ahlX+4VI5bFR05RFa05QvOvaiHJ9wAiq7BiqYHTkvbV3y3HPV+DjzhGS4WV/JdsbLDYg==');
-define('NONCE_KEY',        'jZSMHTGARpcg5Ff9j6QVDuPr62WiRP6XfRoEiwdDxdsaZZngVAij5TVYOBMDKHvpiw3zO8+/nH3ggRrTVgeIRQ==');
-define('AUTH_SALT',        'EFB2nE4bkOdeQdiLkq+4sJl+DyEOwFenXyn1YjUVY1fHIcb5EsRbLfwoQKsjh440R0YaaEiESVVmdsbSeqAmIw==');
-define('SECURE_AUTH_SALT', 'GQM+6Q3tVsNAonPPpxapsHBi/8bL/428EMQIDUSd32FEP60w3UYZRHMLpTrqtCD5PCy05r7sBV7iSTrNX/BWjw==');
-define('LOGGED_IN_SALT',   'w7Elv/IVE4LwqzuFGnmE6S9pWY8FL+BPlQn/ZuzOiPglzDhh3wQ3GnzOya8NF19K1Ls2Vq5nMKYQYRR8yDhj5g==');
-define('NONCE_SALT',       'MSferAGnb5HUJqzoP3rSB0lRLw5v42VsW89ujYEoRGKw1LULRm7P5N09CdrIMpCYQ2AKAaEJ4WyogyLvc/ltqQ==');
+define('AUTH_KEY',         'ujjzvKTId8HY8jgsG0hwhr1s5RMN2EbMim/L4WSb1gkKxlBp7nNz+8PEdYYKtk+iQ/K2qzJ0HAmco6sbPDTpYQ==');
+define('SECURE_AUTH_KEY',  'sjxPyaqFl/d0bacmSkzkil3Le3At6oUkwwqPXjMt0mg4vuxEPsOjND2tlfmXXV+r3d3VRULOLdpUVvSpfQeKTw==');
+define('LOGGED_IN_KEY',    'b0pObapt9AF3jM0QE7im8P9keY+BfoCVfaX1qqPR/cf7ZtUzYo/YXUiYocPbKTSm06JCO6zIUFlWZ1l6Hve0sg==');
+define('NONCE_KEY',        'eRpHqB91SXGV9isiDHslBpSkJCcj8VwJM6hfR1yfwZy/X5DOLjRyhQN0uLQzGe0h+en3gFvoYJJvTm27QnCOAQ==');
+define('AUTH_SALT',        'OvvUP2olEu7lkTfZJ314jcSwhoa6fome5XlsSwKqcNTFQhJfMz18MVkvOVtJa2tCPszr5FslDDSNTNVaNWnAag==');
+define('SECURE_AUTH_SALT', 'yT6xGMKXt4gJljX9VIdT4149fpaq1rkDw5+VgemBNlSAzeGmqUg0Eb3wAh8P39oERQ9xs9i+Q2iDX49ey3OnhA==');
+define('LOGGED_IN_SALT',   '1pvWFghdlhnKiobmcWDJ6N27b6eCeWJMiuBXID86NWIGIVD8HQaiqUFOYT7WratEAM6h+e4C4FQGx6q1KlNPpg==');
+define('NONCE_SALT',       '//l2t+o6PWUVRuxO7Dx8B3arCni3ycpnd1QWSSsJWBwXnPyFjQaoWytGu+WUZmjzu0lOin3MSjtc3/llJW6rRg==');
