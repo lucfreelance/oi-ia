@@ -111,16 +111,14 @@
           </div>
           <div>
             <p class="premisa-arriba-texto">
-              Checa actualizaciones de editores, asistentes y generadores
-              enfocados en Inteligencia Artificial.
+              Informamos sobre actualidad, tendencias y oportunidades, acercando el mundillo IA a los lectores en idioma Español.
             </p>
           </div>
         </div>
         <div class="premisa-abajo tarjeta-2" onclick="intercambiarTarjetas()">
           <div>
             <p class="premisa-abajo-texto">
-              Prueba aplicaciones en móvil y escritorio hasta encontrar las que
-              se adapten a tus gustos e intereses.
+              Esta página web fue diseñada con asistencia de inteligencias artificiales en textos, imágenes, diseño web y programación.
             </p>
           </div>
           <div class="premisa-abajo-icono">
@@ -909,13 +907,13 @@
         <div class="footer-buttons">
           <ul class="footer-links">
             <li>
-              <a href="#table-board-top" class="footer-link" title="Enlace saltador a la sección table board del home">table-board</a>
+              <a href="#table-board-top" class="footer-link" title="Enlace saltador a la sección table board del home">Tabla de contenido</a>
             </li>
             <li>
               <a href="./blogs/pagina-legal/index.html#nosotros" class="footer-link">Acerca de</a>
             </li>
             <li>
-              <a href="./blogs/aclaraciones/index.html#faq" class="footer-link" title="FAQ de Oportunidades Ilimitadas">FAQ</a>
+              <a href="./blogs/aclaraciones/index.html#faq" class="footer-link" title="Preguntas frecuentes de Oportunidades Ilimitadas">FAQ</a>
             </li>
             <li>
               <a href="./blogs/_site/feed.xml" class="footer-link" target="_blank" rel="noopener noreferrer" title="RSS de Oportunidades Ilimitadas">RSS</a>
@@ -924,7 +922,7 @@
               <a href="./blogs/_site/index.html" class="footer-link" title="Enlace a Blogs sobre inteligencia artificial">Blogs</a>
             </li>
             <li>
-              <a href="#" class="footer-link" title="Oportunidades Ilimitades en #InteligenciaArtificial">Home</a>
+              <a href="#" class="footer-link" title="Oportunidades Ilimitades en #InteligenciaArtificial">Inicio</a>
             </li>
           </ul>
         </div>
@@ -933,6 +931,41 @@
         Desarrollado por <a href="https://github.com/lucfreelance" target="_blank" rel="noopener noreferrer">@lucfreelance</a>
       </p>
     </footer>    
+    
+    <!-- Formulario de contacto -->
+    <div class="contact-form">
+      <h2>¿Tienes algo que decirnos? Contáctanos</h2>
+      <form id="myForm">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo Electrónico" required>
+        <textarea name="message" placeholder="Mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </div>
+    
+    <script>
+      // Redirigir el envío del formulario a la dirección de correo electrónico especificada
+      document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evitar el envío predeterminado del formulario
+    
+        // Obtener los datos del formulario
+        const formData = new FormData(event.target);
+        const formValues = Object.fromEntries(formData.entries());
+    
+        // Preparar el enlace de correo electrónico
+        const subject = "Nuevo mensaje del formulario de contacto";
+        const body = Object.entries(formValues)
+          .map(([key, value]) => `${key}: ${value}`)
+          .join("\n");
+    
+        const emailLink = `mailto:ilimitadasoportunidades@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+        // Redirigir al enlace de correo electrónico
+        window.location.href = emailLink;
+      });
+    </script>
+    
+       
 		<script src="./main.js">      
     </script>
 		<button onclick="goArriba()" href="#" id="btn-back-to-top"><i class="fas fa-arrow-up"></i>
