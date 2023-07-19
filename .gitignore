@@ -163,5 +163,6 @@ _templates
 .env.*
 .env.local
 
-# Board
-board*
+# General Ignores
+... oi
+board-board
