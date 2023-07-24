@@ -298,6 +298,18 @@ Luego, para servir el sitio localmente, ejecuta el siguiente comando en la raíz
 
 - http-server
 
+# Busybox (paquete WSL)
+
+En WSL 2, también puedes utilizar Busybox, un conjunto de utilidades que incluye un servidor HTTP. Si no tienes instalado Busybox, puedes hacerlo con el siguiente comando:
+
+- sudo apt update
+- sudo apt install busybox
+
+Luego, para iniciar el servidor HTTP, navega a la carpeta de tu proyecto y ejecuta el siguiente comando:
+
+- busybox httpd -p 8080
+
 # Nice catchs
 
 - https://tableboard.wordpress.com/
+- https://lucfreelance.github.io/board/
