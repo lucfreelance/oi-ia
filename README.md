@@ -292,12 +292,12 @@ software.sslmate.com/src/go-pkcs12="v0.2.0"
 
 # Nice Commands
 
--
-
 - npm install -g http-server
 
 Luego, para servir el sitio localmente, ejecuta el siguiente comando en la raíz del proyecto:
 
-http-server
+- http-server
 
--
+# Nice catchs
+
+- https://tableboard.wordpress.com/
