@@ -54,7 +54,7 @@ Hugo's fast asset pipelines include:
 
 - CSS bundling &ndash; transpilation (Sass), tree shaking, minification, source maps, SRI hashing, and PostCSS integration
 - JavaScript bundling &ndash; transpilation (TypeScript, JSX), tree shaking, minification, source maps, and SRI hashing
-- Image processing &ndash; convert, resize, crop, rotate,  adjust colors, apply filters, overlay text and images, and extract EXIF data
+- Image processing &ndash; convert, resize, crop, rotate, adjust colors, apply filters, overlay text and images, and extract EXIF data
 
 And with [Hugo Modules], you can share content, assets, data, translations, themes, templates, and configuration with other projects via public or private Git repositories.
 
@@ -287,4 +287,17 @@ gopkg.in/yaml.v2="v2.4.0"
 gopkg.in/yaml.v3="v3.0.1"
 software.sslmate.com/src/go-pkcs12="v0.2.0"
 ```
+
 </details>
+
+# Nice Commands
+
+-
+
+- npm install -g http-server
+
+Luego, para servir el sitio localmente, ejecuta el siguiente comando en la raíz del proyecto:
+
+http-server
+
+-

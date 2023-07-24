@@ -236,7 +236,7 @@ nav {
 
 nav .menu-toggle {
   display: none;
-  height: 1px;
+  height: 0.1px;
 }
 
 nav header .main-menu-container {
@@ -440,7 +440,7 @@ ul.c li a:hover {
 /* prompt */
 prompt .encabezado-titular {
   max-width: 100%;
-  margin-top: 25px;
+  margin-bottom: 6px;
   text-align: center;
   background-color: #339f33;
   padding: 15px;
