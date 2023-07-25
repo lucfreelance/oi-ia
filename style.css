@@ -225,7 +225,6 @@ button:active, a:active, input[type="submit"]:active {
 }/* Regla CSS para efecto de "feedback háptico" o "efecto háptico" */
 
 
-
 /* header *//* nav */
 nav {
   display: flex;
@@ -518,7 +517,7 @@ main table {
 
 main .table-board {
   padding: 10px;
-  background: linear-gradient(to bottom, #1f7cc3, #b8ecb4);
+  background: linear-gradient(to bottom, #1c7dc7, #b8ecb4);
   font-size: 1.5rem;
   border-collapse: collapse;
   font-family: "Verdana", sans-serif;
@@ -610,7 +609,7 @@ main .instructions-list-down {
 }
 
 main .texto-terciario-down {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   margin: 25px;
   text-align: center;
   padding-left: 2rem;
@@ -754,7 +753,7 @@ section .premisa-arriba,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:#e6ae36;
+  background-color:#a67d25;
   padding: 15px;
   border-radius: 5px;
   color: #fff;
@@ -894,7 +893,7 @@ footer .footer-signatures {
 
   .contenedor-grilla {
     grid-template-columns: 1fr;
-    background-color: #2496d8;
+    background-color: #581aa3;
   }
 
   .bottom {
@@ -941,9 +940,6 @@ footer .footer-signatures {
     color: white;
   }
 }
-
-
-
 
 
 /* Newsletter form styles */
