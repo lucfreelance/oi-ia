@@ -752,27 +752,28 @@
           </figure>    
   </aside>
 
-<div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+<div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f8f8; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
 
-  <h3 style="text-align: center; margin-bottom: 20px;">
- ¿Tienes algo que decirnos? <br /> ¡No dudes en contáctarnos!
+  <h3 style="text-align: center; margin-bottom: 20px; color: #007BFF; font-size: 24px;">
+    ¿Tienes algo que decirnos? <br /> ¡No dudes en contáctarnos!
   </h3>
 
-  <form id="myForm" style="display: grid; gap: 10px;" action="procesar_formulario.php" method="post">
+  <form id="myForm" style="display: grid; gap: 15px;">
 
-    <input type="text" name="name" placeholder="Nombre" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" required>
+    <input type="text" name="name" placeholder="Nombre" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required>
 
-    <input type="email" name="email" placeholder="Correo Electrónico" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" required>
+    <input type="email" name="email" placeholder="Correo Electrónico" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required>
 
-    <textarea name="message" placeholder="Mensaje" rows="5" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" required></textarea>
+    <textarea name="message" placeholder="Mensaje" rows="5" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required></textarea>
 
-    <button type="submit" style="width: 100%; padding: 10px; background-color: #007BFF; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+    <button type="submit" style="width: 100%; padding: 15px; background-color: #007BFF; color: #fff; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 16px;">
       Enviar Mensaje
     </button>
 
   </form>
 
 </div>
+
       
       <script>
         document.getElementById("myForm").addEventListener("submit", function(event) {
