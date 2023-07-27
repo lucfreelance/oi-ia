@@ -768,7 +768,7 @@ section .premisa-arriba,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:#1c1ca4;
+  background-color:#10105d53;
   padding: 15px;
   border-radius: 5px;
   color: #fff;
@@ -790,6 +790,26 @@ aside .contenedor-aside img {
   max-width: 100%;
   margin-bottom: -10px;
   margin-top: 5px;
+}
+
+aside .contenedor-aside-abajo {
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex; /* Utilizamos flexbox para centrar la imagen */
+  justify-content: center; /* Centramos horizontalmente */
+  align-items: center; /* Centramos verticalmente */
+  position: relative;
+}
+
+/* Estilos para la imagen dentro del contenedor */
+aside .contenedor-aside-abajo img {
+  max-width: 90%; /* Limita la altura máxima de la imagen a 400 píxeles */
+  width: auto;
+  border-radius: 10%;
+  
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* footer */

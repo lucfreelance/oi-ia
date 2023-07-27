@@ -136,7 +136,7 @@
   </aside>
   <main>
 
-            <section id="table-board-top">
+            <section id="table-board-topped">
               <div class="table-board">
                 <table
                   style="
@@ -151,6 +151,27 @@
                       Índice table-board
                     </h3>
                   </thead>
+                <tfoot>
+                  <h3 class="h3-tfoot" style="color: #e9f6f4; text-align: center">
+                    ¿Cómo usar la table-board?
+                  </h3>
+                  <h4 class="texto-terciario">
+                    <ul class="instructions-list">
+                        <li>Pulsa los botones de categorías de arriba y checa los menús</li>
+                        <li>Lee el resúmen de las tarjetas y pulsa en la que desees ver</li>
+                        <li>En Board explora los detalles de webs / apps del directorio </li>
+                        <li>Alterna entre la Pagina principal, Board y recursos externos</li>
+                    </ul>
+                </h4>
+                </tfoot>
+            <div class="bannerpic">
+              <img
+                src="https://cdn.pixabay.com/photo/2019/01/30/12/53/artificial-intelligence-3964530_1280.jpg"
+                alt="Luego de por si las dudas, anímate a probar aplicaciones de inteligencia artificial"
+                title="Tómate confianza y avanza en tus ideas con inteligencia artificial"
+              />
+            </div>
+      <section id="table-board-top">
                   <tbody>
                     <tr><td id="td1">
                         <a
@@ -698,31 +719,11 @@
                     </tr>
                   </tbody>
                 </table>
-                <tfoot>
-                  <h3 class="h3-tfoot" style="color: #e9f6f4; text-align: center">
-                    ¿Cómo usar la table-board?
-                  </h3>
-                  <h4 class="texto-terciario">
-                    <ul class="instructions-list">
-                        <li>Pulsa los botones de categorías de arriba y checa los menús</li>
-                        <li>Lee el resúmen de las tarjetas y pulsa en la que desees ver</li>
-                        <li>En Board explora los detalles de webs / apps del directorio </li>
-                        <li>Alterna entre la Pagina principal, Board y recursos externos</li>
-                    </ul>
-                </h4>
-                </tfoot>
               </div>
             </section>
             <span id="saltador">
               <div id="subcontenido"></div>
             </span>
-            <div class="bannerpic">
-              <img
-                src="https://cdn.pixabay.com/photo/2019/01/30/12/53/artificial-intelligence-3964530_1280.jpg"
-                alt="Luego de por si las dudas, anímate a probar aplicaciones de inteligencia artificial"
-                title="Tómate confianza y avanza en tus ideas con inteligencia artificial"
-              />
-            </div>
             <div>
             <h3 class="texto-terciario-down">
               ¿Quién debería probar las webs y apps de Inteligencia Artificial? Algunas sugerencias:
@@ -739,8 +740,62 @@
               Recopilamos las IAs en Español de más fácil uso para servírtelas aquí.
             </h3>
             </div>
+  </section>
   </main>
       <footer>
+  <aside>
+          <figure class="contenedor-aside-abajo"> <img
+            src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Chica computóloga con perspectiva clara del futuro"
+            title="Envía un mensaje a Oportunidades Ilimitadas"
+          />
+          </figure>    
+  </aside>
+
+<div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+
+  <h3 style="text-align: center; margin-bottom: 20px;">
+ ¿Tienes algo que decirnos? <br /> ¡No dudes en contáctarnos!
+  </h3>
+
+  <form id="myForm" style="display: grid; gap: 10px;" action="procesar_formulario.php" method="post">
+
+    <input type="text" name="name" placeholder="Nombre" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" required>
+
+    <input type="email" name="email" placeholder="Correo Electrónico" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" required>
+
+    <textarea name="message" placeholder="Mensaje" rows="5" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" required></textarea>
+
+    <button type="submit" style="width: 100%; padding: 10px; background-color: #007BFF; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+      Enviar Mensaje
+    </button>
+
+  </form>
+
+</div>
+      
+      <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Evitar el envío predeterminado del formulario
+      
+          // Obtener los datos del formulario
+          const formData = new FormData(event.target);
+          const formValues = Object.fromEntries(formData.entries());
+      
+          // Preparar el enlace de correo electrónico
+          const subject = "Nuevo mensaje del formulario de contacto";
+          const body = Object.entries(formValues)
+            .map(([key, value]) => `${key}: ${value}`)
+            .join("\n");
+      
+          const emailLink = `mailto:ilimitadasoportunidades@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+          // Redirigir al enlace de correo electrónico
+          window.location.href = emailLink;
+        });
+      </script>
+ 
+      
         <div class="footer-wrapper" id="footer-bottom">
           <div class="footer-buttons">
             <ul class="footer-links">
@@ -768,38 +823,7 @@
             </ul>
           </div>
         </div>
-      <div class="contact-form">
-        <h3>¿Tienes algo que decirnos? No dudes en contáctanos</h3>
-        <form id="myForm">
-          <input type="text" name="name" placeholder="Nombre" required>
-          <input type="email" name="email" placeholder="Correo Electrónico" required>
-          <textarea name="message" placeholder="Mensaje" rows="5" required></textarea>
-          <button type="submit">Enviar Mensaje</button>
-        </form>
-      </div>
-      
-      <script>
-        document.getElementById("myForm").addEventListener("submit", function(event) {
-          event.preventDefault(); // Evitar el envío predeterminado del formulario
-      
-          // Obtener los datos del formulario
-          const formData = new FormData(event.target);
-          const formValues = Object.fromEntries(formData.entries());
-      
-          // Preparar el enlace de correo electrónico
-          const subject = "Nuevo mensaje del formulario de contacto";
-          const body = Object.entries(formValues)
-            .map(([key, value]) => `${key}: ${value}`)
-            .join("\n");
-      
-          const emailLink = `mailto:ilimitadasoportunidades@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      
-          // Redirigir al enlace de correo electrónico
-          window.location.href = emailLink;
-        });
-      </script>
-
-      </footer>    
+      </footer>   
       <div class="newsletter-container">
       <h3>Suscríbete a nuestro lleno de inteligencia y nada artificial newsletter sobre las IAs</h3> <br /><small>Disponible pronto</small> <br /><br />
       <form action="#" method="post">
@@ -818,6 +842,7 @@
         <p style="font-size: 14px; background-color: #333; margin: 0; text-align: left;">Oportunidades ©
     </p>
   </footer>
+  
 </body>
 </html>
 
