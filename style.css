@@ -11,7 +11,7 @@
   --white: #ffffff;
   --primary-color: #007BFF;       /* Azul */
   --secondary-color: #6C757D;     /* Gris */
-  --accent-color: #04b021;        /* Rojo */
+  --accent-color: #e62d2d;        /* Rojo */
   --background-color: #F8F9FA;    /* Gris claro */
   --text-color: #333333;          /* Texto principal */
   --heading-color: #222222;       /* Color para encabezados */
@@ -737,7 +737,7 @@ section .premisa-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  margin: 15px;
+  margin: 5px;
 }
 
 section .premisa-arriba-icono img {
