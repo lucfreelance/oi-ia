@@ -46,7 +46,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-
 #page-wrap {
 	position: relative;
 	display: block;
@@ -806,8 +805,7 @@ aside .contenedor-aside-abajo {
 aside .contenedor-aside-abajo img {
   max-width: 90%; /* Limita la altura máxima de la imagen a 400 píxeles */
   width: auto;
-  border-radius: 10%;
-  
+  border-radius: 10%;  
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -976,28 +974,6 @@ footer .footer-signatures {
 }
 
 
-/* Newsletter form styles
-.newsletter-container {
-  max-width: 600px;
-  margin-top: 30px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-
-@media (max-width: 480px) {
-  .newsletter-container {
-    padding: 10px;
-  } */
-
-
-
-
 h2 {
   margin-bottom: 20px;
 }
@@ -1038,7 +1014,6 @@ button {
   button {
     width: 100%;
   }
-}
 
 /* Estilos para el footer principal */
 .main-footer {
