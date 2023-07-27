@@ -9,13 +9,17 @@
 :root {
   --black: #000000;
   --white: #ffffff;
-  --very-light-pink: #ffc0cb;
-  --text-input-field: #f7f7f7;
-  --hospital-green: #6bbf77;
-  --accent-color: #ff6347;
-  --sm: 14px;
-  --md: 16px;
-  --lg: 18px;
+  --primary-color: #007BFF;       /* Azul */
+  --secondary-color: #6C757D;     /* Gris */
+  --accent-color: #04b021;        /* Rojo */
+  --background-color: #F8F9FA;    /* Gris claro */
+  --text-color: #333333;          /* Texto principal */
+  --heading-color: #222222;       /* Color para encabezados */
+  --border-color: #CED4DA;        /* Color para bordes */
+  --button-hover-color: #E0E0E0;  /* Color al pasar el cursor sobre botones */
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -31,6 +35,7 @@
 
 body {
   max-width: 800px;
+  margin-top: 30px;
   margin: 0 auto;
   background-color: var(--black);
   color: var(--white);
@@ -206,7 +211,7 @@ label {
   border: none;
   border-radius: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}/* Estilo de los botones */
+}
 button, a, input[type="submit"] {
   background-color: #b8ecb4;
   border: none;
@@ -224,6 +229,16 @@ button:active, a:active, input[type="submit"]:active {
   background-color: #a9e42a;
 }/* Regla CSS para efecto de "feedback háptico" o "efecto háptico" */
 
+figure .rowoman img {
+  width: 100%;
+}
+
+  /* Estilo para la imagen del banner en pantallas más grandes */
+  @media (min-width: 768px) {
+    .rowoman {
+      height: 30%;
+    }
+  }
 
 /* header *//* nav */
 nav {
@@ -242,7 +257,7 @@ nav header .main-menu-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1f7cc3;
+  background-color: #aad5c4;  
 }
 
 header .home-bottom-item {
@@ -305,7 +320,7 @@ header .menu-item {
   border: 1px solid #ccc;
   border-radius: 5px;
   color: #333;
-  background-color: #339f33;
+  background-color: #cbe9cb;
   justify-content: space-between;
   list-style: none;
 }
@@ -340,7 +355,7 @@ header .submenu {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #339f33;
+  background-color: #1f7cc3;
   padding: 10px;
   list-style: none;
 }
@@ -404,7 +419,7 @@ header .menu-dropdown .submenu li a {
 }
 
 header .menu-dropdown .submenu li a:hover {
-  background-color: #339f33;
+  background-color: #1f7cc3;
   color: #CCC;
 }
 
@@ -441,7 +456,7 @@ prompt .encabezado-titular {
   max-width: 100%;
   margin-bottom: 6px;
   text-align: center;
-  background-color: #339f33;
+  background-color: #1f7cc3#339f33;
   padding: 15px;
 }
 
@@ -451,7 +466,7 @@ prompt .main-title {
   font-size: 2.2rem;
   font-weight: bold;
   margin: 0;
-  background-color: #339f33; 
+  background-color: #1f7cc3; 
 }
 
 prompt .subtitle {
@@ -459,7 +474,7 @@ prompt .subtitle {
   margin: 0;
   animation: color-change 8s infinite;
   padding-bottom: 5px;
-  background-color: #339f33; 
+  background-color: #1f7cc3; 
 }
 
 @keyframes color-change {
@@ -486,7 +501,7 @@ main td {
   text-align: center;
   width: auto;
   margin: 20px;
-  background-color: #339f33;
+  background-color: #93cd93;
   border-radius: 10px;
   font-size: 1.1rem;
   font-family: "Verdana";
@@ -753,7 +768,7 @@ section .premisa-arriba,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:#a67d25;
+  background-color:#379d48;
   padding: 15px;
   border-radius: 5px;
   color: #fff;
@@ -774,17 +789,17 @@ aside .contenedor-aside img {
   overflow: hidden;
   max-width: 100%;
   margin-bottom: -10px;
+  margin-top: 5px;
 }
 
 /* footer */
 footer {
   text-align: center;
-  background-color: #2496d8;
+  background-color: #b5ecd6;
 }
 
 footer .footer-wrapper {
   margin: 0 auto;
-  background-color: #2496d8;  
   margin-bottom: 10px;
 }
 
@@ -799,7 +814,6 @@ footer .footer-links {
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  background-color: #2496d8;
   gap: 10px;
   list-style: none;
   padding: 0;
@@ -838,7 +852,7 @@ footer .footer-links a {
 }
 
 footer .footer-signatures {
-  text-align: right;
+  text-align: left;
 }
 
 
@@ -976,7 +990,7 @@ input[type="email"] {
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #000;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -998,4 +1012,11 @@ button {
   button {
     width: 100%;
   }
+}
+
+/* Estilos para el footer principal */
+.main-footer {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center; /* Centramos el texto horizontalmente */
 }
