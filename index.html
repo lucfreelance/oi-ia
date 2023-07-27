@@ -752,29 +752,25 @@
           </figure>    
   </aside>
 
-<div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f8f8; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+  <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f8f8; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
 
-  <h3 style="text-align: center; margin-bottom: 20px; color: #007BFF; font-size: 24px;">
-    ¿Tienes algo que decirnos? <br /> ¡No dudes en contáctarnos!
-  </h3>
+    <h3 style="text-align: center; margin-bottom: 20px; color: #007BFF;   font-size: 24px;">
+      ¿Tienes algo que decirnos? <br /> ¡No dudes en contáctarnos!
+    </h3>
 
-  <form id="myForm" style="display: grid; gap: 15px;">
+    <form id="myForm" style="display: grid; gap: 15px;">
 
-    <input type="text" name="name" placeholder="Nombre" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required>
+      <input type="text" name="name" placeholder="Nombre" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required>
 
-    <input type="email" name="email" placeholder="Correo Electrónico" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required>
+      <input type="email" name="email" placeholder="Correo Electrónico" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required>
 
-    <textarea name="message" placeholder="Mensaje" rows="5" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required></textarea>
+      <textarea name="message" placeholder="Mensaje" rows="5" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required></textarea>
 
-    <button type="submit" style="width: 100%; padding: 15px; background-color: #007BFF; color: #fff; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 16px;">
-      Enviar Mensaje
-    </button>
-
-  </form>
-
-</div>
-
-      
+      <button type="submit" style="width: 100%; padding: 15px; background-color: #007BFF; color: #fff; border: none; border-radius: 10px; cursor: pointer; font-weight: normal; font-size: 16px;">
+        Enviar Mensaje
+      </button>
+    </form>
+  </div>
       <script>
         document.getElementById("myForm").addEventListener("submit", function(event) {
           event.preventDefault(); // Evitar el envío predeterminado del formulario
@@ -796,6 +792,28 @@
         });
       </script>
  
+ <br />
+
+<div class="newsletter-container" style="text-align: center; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f7f7f7; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
+  <h3 style="font-size: 24px; margin-bottom: 10px;">Suscríbete a nuestro lleno de inteligencia y nada artificial newsletter.</h3>
+  <form onsubmit="return subscribe(event)" style="margin-bottom: 20px;">
+    <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required style="width: 100%; padding: 10px; margin: 10px 0; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
+    <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;">Suscribirse</button>
+  </form>
+</div>
+<script>
+  function subscribe(event) {
+    event.preventDefault();
+    const emailInput = event.target.email;
+    const email = emailInput.value;
+    window.location.href = `mailto:ilimitadasoportunidades@gmail.com?subject=Suscripción al Newsletter oi-ia - capturador temporal&body=Por este medio, me suscribo al newsletter con el siguiente correo electrónico: ${email}.`;
+    emailInput.value = "";
+    alert("Gracias por suscribirte a nuestro newsletter. Tu correo electrónico ha sido recibido y será utilizado para enviarte nuestras novedades. ");
+    return false;
+  }
+</script>
+
+
       
         <div class="footer-wrapper" id="footer-bottom">
           <div class="footer-buttons">
@@ -824,26 +842,24 @@
             </ul>
           </div>
         </div>
-      </footer>   
-      <div class="newsletter-container">
-      <h3>Suscríbete a nuestro lleno de inteligencia y nada artificial newsletter sobre las IAs</h3> <br /><small>Disponible pronto</small> <br /><br />
-      <form action="#" method="post">
-        <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required>
-        <button type="submit">Suscribirse</button>
-      </form>
-      </div>
-      <script src="./script.js">      
-      </script>
-      <button onclick="goArriba()" href="#" id="btn-back-to-top">
+
+      </footer>  
+
+
+  <button onclick="goArriba()" href="#" id="btn-back-to-top">
     <i id="arrow-icon" class="fas fa-arrow-down"></i>
   </button>
-  <footer style="color: #f5f5f5; padding: 10px;">
+
+
+  <sign style="color: #f5f5f5; padding: 10px;">
     <p style="font-size: 14px; background-color: #333; margin: 0; text-align: left;">
       Desarrollado por <a href="https://github.com/lucfreelance/oi-ia" target="_blank" rel="noopener noreferrer" style="color: #007BFF; text-decoration: none;">@lucfreelance</a>
         <p style="font-size: 14px; background-color: #333; margin: 0; text-align: left;">Oportunidades ©
     </p>
   </footer>
   
+  <script src="./script.js">
+  </script>
 </body>
 </html>
 

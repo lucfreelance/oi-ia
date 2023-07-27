@@ -976,7 +976,7 @@ footer .footer-signatures {
 }
 
 
-/* Newsletter form styles */
+/* Newsletter form styles
 .newsletter-container {
   max-width: 600px;
   margin-top: 30px;
@@ -988,6 +988,15 @@ footer .footer-signatures {
   text-align: center;
   margin-bottom: 10px;
 }
+
+
+@media (max-width: 480px) {
+  .newsletter-container {
+    padding: 10px;
+  } */
+
+
+
 
 h2 {
   margin-bottom: 20px;
@@ -1018,10 +1027,6 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 480px) {
-  .newsletter-container {
-    padding: 10px;
-  }
 
   input[type="email"] {
     flex: none;
