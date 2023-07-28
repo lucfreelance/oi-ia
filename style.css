@@ -170,20 +170,26 @@ label {
 }
 
 #btn-back-to-top {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
   position: fixed;
-  right: 5px;
-  bottom: 5px;
-  background-color: linear-gradient(to bottom, white, black);
-  border: #ccc;
-  color: white;
-  z-index: 9999;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  line-height: 1;
+  width: 40px; /* Ajuste de ancho */
+  height: 40px; /* Ajuste de alto */
+}
+.footer .btn-up-down i {
+  font-size: 18px;
 }
 
-#btn-back-to-top i {
-  width: 20px;
-  height: 20px;
-  font-size: 1rem;
-  margin: 5px;
+#arrow-icon {
+  font-size: 14px;
 }
 
 .btn {
