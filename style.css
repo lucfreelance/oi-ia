@@ -245,8 +245,207 @@ figure .rowoman img {
     }
   }
 
-/* header *//* nav */
+
+/* header */
 nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f7cc3;
+}
+
+nav .menu-toggle {
+  display: none;
+  height: 0.1px;
+}
+
+nav header .main-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aad5c4;
+}
+
+header .main-menu {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 2.1rem;
+}
+
+header .main-menu li {
+  position: relative;
+}
+
+header .main-menu li:hover > a {
+  background-color: #ddd;
+}
+
+header .main-menu li a {
+  display: block;
+  padding: 5px;
+  color: #292929;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.6rem;
+  width: auto;
+  border: none;
+  padding: 10px;
+}
+
+header .main-menu li:hover > a {
+  background-color: #ddd;
+}
+
+header .main-menu li:last-child {
+  margin-right: 0;
+}
+
+header .main-menu li:first-child {
+  margin-left: 0;
+}
+
+header .main-menu li:not(:last-child) {
+  margin-right: 10px;
+}
+
+header .menu-item {
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  background-color: #cbe9cb;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header .menu-item a {
+  font-size: 2rem;
+  padding: 10px 20px;
+}
+
+header .menu-item p {
+  font-size: 2.1rem;
+  list-style: none;
+}
+
+header .menu-item.custom-button {
+  /* Reglas CSS para personalizar el tamaño de los botones */
+  font-size: 1rem; /* Ajusta el tamaño de fuente según tus preferencias */
+  padding: 10px; /* Ajusta el padding según tus preferencias */
+  border: 2.1px solid #333;
+}
+
+header .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1f7cc3;
+  padding: 10px;
+  list-style: none;
+}
+
+header .submenu li {
+  display: block;
+  padding: 10px;
+  font-size: 0.7rem;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 5px;
+}
+
+header .submenu li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+header .submenu li:last-child {
+  margin-bottom: 0;
+}
+
+header .submenu li:hover a {
+  background-color: #CCC;
+}
+
+header .menu-dropdown {
+  position: relative;
+  min-width: fit-content;
+}
+
+header .menu-dropdown a {
+  width: 120px;
+  font-weight: bold;
+}
+
+header .menu-dropdown .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f2f2f2;
+  padding: 10px;
+  z-index: 1;
+}
+
+header .menu-dropdown:hover .submenu {
+  display: block;
+}
+
+header .menu-dropdown .submenu li {
+  margin-bottom: 5px;
+}
+
+header .menu-dropdown .submenu li a {
+  padding: 5px;
+  color: #666;
+  font-weight: bold;
+}
+
+header .menu-dropdown .submenu li a:hover {
+  background-color: #1f7cc3;
+  color: #CCC;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+  header .menu-item.custom-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border: 1.4px solid #333;
+  }
+}
+  
+  /* Hace visible el menú desplegable en pantallas pequeñas */
+  header .menu-dropdown .submenu {
+    display: block;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header *//* nav */
+/* nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,16 +540,15 @@ header .menu-item p {
 }
 
 header .menu-item.custom-button {
-  /* Reglas CSS para personalizar el tamaño de los botones */
-  font-size: 1rem; /* Ajusta el tamaño de fuente según tus preferencias */
-  padding: 10px; /* Ajusta el padding según tus preferencias */
+  font-size: 1rem;
+  padding: 10px;
   border: 2.1px solid #333; 
 }
 
 @media screen and (max-width: 767px) {
   header .menu-item.custom-button {
     font-size: 0.9rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
-    padding: 10px 20px; /* Ajusta el padding para pantallas más pequeñas */
+    padding: 10px 20px; /* Ajusta el padding para pantallas más pequeñas 
     border: 1.4px solid #333; 
   }
 }
@@ -426,7 +624,7 @@ header .menu-dropdown .submenu li a {
 header .menu-dropdown .submenu li a:hover {
   background-color: #1f7cc3;
   color: #CCC;
-}
+} */
 
 ul.c {
   display: flex;
