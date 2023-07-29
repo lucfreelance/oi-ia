@@ -247,7 +247,7 @@ figure .rowoman img {
 
 
 /* header */
-nav {
+/* nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,9 +336,9 @@ header .menu-item p {
 }
 
 header .menu-item.custom-button {
-  /* Reglas CSS para personalizar el tamaño de los botones */
-  font-size: 1rem; /* Ajusta el tamaño de fuente según tus preferencias */
-  padding: 10px; /* Ajusta el padding según tus preferencias */
+  /* Reglas CSS para personalizar el tamaño de los botones 
+  font-size: 1rem; /* Ajusta el tamaño de fuente según tus preferencias 
+  padding: 10px; /* Ajusta el padding según tus preferencias 
   border: 2.1px solid #333;
 }
 
@@ -415,7 +415,7 @@ header .menu-dropdown .submenu li a:hover {
   color: #CCC;
 }
 
-/* Media Query para pantallas más pequeñas */
+/* Media Query para pantallas más pequeñas 
 @media screen and (max-width: 767px) {
   header .menu-item.custom-button {
     font-size: 0.9rem;
@@ -424,28 +424,20 @@ header .menu-dropdown .submenu li a:hover {
   }
 }
   
-  /* Hace visible el menú desplegable en pantallas pequeñas */
+  /* Hace visible el menú desplegable en pantallas pequeñas 
   header .menu-dropdown .submenu {
     display: block;
     position: static;
     background-color: transparent;
     padding: 0;
-  }
+  } */
 
 
 
 
 
-
-
-
-
-
-
-
-
-/* header *//* nav */
-/* nav {
+header
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -547,8 +539,8 @@ header .menu-item.custom-button {
 
 @media screen and (max-width: 767px) {
   header .menu-item.custom-button {
-    font-size: 0.9rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
-    padding: 10px 20px; /* Ajusta el padding para pantallas más pequeñas 
+    font-size: 0.9rem;
+    padding: 10px 20px;
     border: 1.4px solid #333; 
   }
 }
@@ -624,7 +616,7 @@ header .menu-dropdown .submenu li a {
 header .menu-dropdown .submenu li a:hover {
   background-color: #1f7cc3;
   color: #CCC;
-} */
+}
 
 ul.c {
   display: flex;
@@ -653,8 +645,6 @@ ul.c li a:hover {
   background-color: #ddd;
 }
 
-
-/* prompt */
 prompt .encabezado-titular {
   max-width: 100%;
   margin-bottom: 6px;
@@ -698,7 +688,6 @@ prompt .subtitle {
   }
 }
 
-/* main */
 main td {
   display: inline-block;    
   text-align: center;
@@ -897,7 +886,7 @@ main .image-container img {
   align-items: center;
   box-sizing: border-box;
   background-color: #5db956; 
-  max-height: 90vh; /* Ajusta la altura máxima al 95% del alto de la ventana */
+  max-height: 90vh;
 }
 
  .bannerpic img {
@@ -913,7 +902,7 @@ main .bannerpic {
   align-items: center;
   box-sizing: border-box;
   background-color: #5db956; 
-  max-height: 95vh; /* Ajusta la altura máxima al 95% del alto de la ventana */
+  max-height: 95vh;
 }
 
 main .bannerpic img {
