@@ -9,14 +9,14 @@
 :root {
   --black: #000000;
   --white: #ffffff;
-  --primary-color: #007BFF;       /* Azul */
-  --secondary-color: #6C757D;     /* Gris */
-  --accent-color: #e62d2d;        /* Rojo */
-  --background-color: #F8F9FA;    /* Gris claro */
-  --text-color: #333333;          /* Texto principal */
-  --heading-color: #222222;       /* Color para encabezados */
-  --border-color: #CED4DA;        /* Color para bordes */
-  --button-hover-color: #E0E0E0;  /* Color al pasar el cursor sobre botones */
+  --primary-color: #007BFF;
+  --secondary-color: #6C757D;
+  --accent-color: #e62d2d;
+  --background-color: #F8F9FA;
+  --text-color: #333333;
+  --heading-color: #222222;
+  --border-color: #CED4DA;
+  --button-hover-color: #E0E0E0;
   --font-size-sm: 14px;
   --font-size-md: 16px;
   --font-size-lg: 18px;
@@ -192,8 +192,6 @@ label {
   font-size: 14px;
 }
 
-
-
 prompt .encabezado-titular {
   max-width: 100%;
   margin-bottom: 6px;
@@ -289,10 +287,211 @@ figure .rowoman img {
       height: 30%;
     }
   }
+  
 
-/# Header
-header
-nav {
+/* Estilos para los logotipos destacados */
+header .logo-destacado {
+  display: block;
+  margin: 0 auto;
+  max-height: 6rem;
+  max-width: 100%;
+  object-fit: contain;
+  padding-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+}
+
+header .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+header .logo-container img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Estilos para los títulos */
+header .cuarenta-up-px,
+header .cuarenta-px {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Estilos para el texto terciario */
+header .texto-terciario,
+header .instructions-list-down,
+header .texto-terciario-down,
+header .sub-texto-terciario-down {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+/* Estilos para las listas de instrucciones */
+header .instructions-list,
+header .instructions-list-down {
+  padding-left: 5rem;
+}
+
+header .instructions-list li,
+header .instructions-list-down li {
+  text-align: center;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+/* Estilos para las imágenes destacadas */
+header .imagen-destacada,
+header .contenedor-aside-abajo img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  margin: 10px auto;
+}
+
+/* Estilos para el contenedor de imágenes */
+header .image-container,
+aside .contenedor-aside {
+  max-width: 100%;
+}
+
+header .image-container img,
+aside .contenedor-aside img {
+  max-width: 100%;
+}
+
+/* Estilos para el banner */
+header .bannerpic {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #5db956; 
+  max-height: 90vh;
+}
+
+header .bannerpic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Estilos para el fondo del banner */
+header .bannerpic {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #5db956; 
+  max-height: 95vh;
+}
+
+header .bannerpic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  
+}
+
+/* Estilos para el subcontenido */
+#subcontenido {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+  transition: all 0.5s ease;
+}
+
+#subcontenido.mostrar {
+  display: block;
+}
+
+#subcontenido .imagen-destacada {
+  max-width: 400%;
+  max-height: 300px;
+  height: auto;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+#subcontenido .cerrar-btn:hover {
+  background-color: #d54b3c;
+}
+
+/* Estilos para la sección */
+section .premisa-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 5px;
+}
+
+section .premisa-arriba,
+section .premisa-abajo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#10105d53;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+section .premisa-arriba-icono img,
+section .premisa-abajo-icono img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+section .premisa-arriba-texto,
+section .premisa-abajo-texto {
+  font-size: 1.2rem;
+  font-weight: 500px;
+  color: #ffffff;
+}
+
+/* Estilos para el aside */
+aside .contenedor-aside {
+  position: relative;
+}
+
+aside .contenedor-aside img {
+  overflow: hidden;
+  max-width: 100%;
+  margin-bottom: -10px;
+  margin-top: 5px;
+}
+
+aside .contenedor-aside-abajo {
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex; /* Utilizamos flexbox para centrar la imagen */
+  justify-content: center; /* Centramos horizontalmente */
+  align-items: center; /* Centramos verticalmente */
+  position: relative;
+}
+
+/* Estilos para la imagen dentro del contenedor */
+aside .contenedor-aside-abajo img {
+  max-width: 90%;
+  border-radius: 10%;  
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el menú */
+header nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -311,12 +510,7 @@ nav header .main-menu-container {
   background-color: #aad5c4;  
 }
 
-header .home-bottom-item {
-  background-color: transparent;
-  cursor: pointer;
-  list-style: none;
-}
-
+/* Estilos para los elementos del menú */
 header .main-menu {
   list-style: none;
   padding: 10px;
@@ -329,6 +523,7 @@ header .main-menu {
 
 header .main-menu li {
   position: relative;
+  margin-right: 10px;
 }
 
 header .main-menu li:hover > a {
@@ -351,28 +546,18 @@ header .main-menu li:hover > a {
   background-color: #ddd;
 }
 
-header .main-menu li:last-child {
-  margin-right: 0;
-}
-
+header .main-menu li:last-child,
 header .main-menu li:first-child {
-  margin-left: 0;
+  margin: 0;
 }
 
-header .main-menu li:not(:last-child) {
-  margin-right: 10px;
-}
-
-header .menu-item {
+header .menu-item,
+header .menu-item.custom-button {
   text-decoration: none;
   text-align: center;
   margin: 10px;
   padding: 5px;
-  border: 1px solid #ccc;
   border-radius: 5px;
-  color: #333;
-  background-color: #cbe9cb;
-  justify-content: space-between;
   list-style: none;
 }
 
@@ -383,13 +568,6 @@ header .menu-item a {
 
 header .menu-item p {
   font-size: 2.1rem;
-  list-style: none;
-}
-
-header .menu-item.custom-button {
-  font-size: 1rem;
-  padding: 10px;
-  border: 2.1px solid #333; 
 }
 
 @media screen and (max-width: 767px) {
@@ -400,6 +578,7 @@ header .menu-item.custom-button {
   }
 }
 
+/* Estilos para el menú desplegable */
 header .submenu {
   display: none;
   position: absolute;
@@ -473,6 +652,7 @@ header .menu-dropdown .submenu li a:hover {
   color: #CCC;
 }
 
+/* Estilos para la lista c */
 ul.c {
   display: flex;
   justify-content: space-between;
@@ -500,7 +680,8 @@ ul.c li a:hover {
   background-color: #ddd;
 }
 
-main td {
+/* Estilos para las celdas de la tabla */
+header td {
   display: inline-block;    
   text-align: center;
   width: auto;
@@ -515,26 +696,29 @@ main td {
   transition: all 0.4s ease;
 }
 
-main th {
-  background-color: #ddefdb;
-}
-
-main th, td {
+header th,
+header th, td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
 }
 
-main tfoot {
+header th {
+  background-color: #ddefdb;
+}
+
+header tfoot {
   background-color: #f2f2f2;
   font-size: 16px;
 }
+
 main table {
   border-collapse: collapse;
   width: 100%;
 }
 
-main .table-board {
+
+footer .table-board {
   padding: 10px;
   background: linear-gradient(to bottom, #1c7dc7, #b8ecb4);
   font-size: 1.5rem;
@@ -547,287 +731,24 @@ main .table-board {
   min-width: 150px;
 }
 
-main .table-board:hover {
+footer .table-board:hover {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);    
   color: #666;
 }
 
-main .table-board td {
+footer .table-board td {
   border-radius: 5px;
   transition: all 0.4s ease;
   padding: 5px;
 }
 
-main .table-board td:hover {
+footer .table-board td:hover {
   background-color: #005EA8;
     color: #ccc;
 }
 
-main .table-board th, .table-board td, .table-board tr {
+footer .table-board th, .table-board td, .table-board tr {
   text-align: center;
-}
-
-main .logo-destacado {
-  display: block;
-  margin: 0 auto;
-  max-height: 6rem;
-  max-width: 100%;
-  object-fit: contain;
-  padding-bottom: 10px;
-  float: left;
-  margin-right: 10px;
-}
-
-main .logo-container {
-  display: flex;
-  align-items: center;
-}
-
-main .logo-container img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-
-main .cuarenta-up-px {
-  padding-top: 20px; 
-  text-align: center;
-}
-
-main .cuarenta-px {
-  padding-bottom: 20px; 
-  text-align: center;
-}
-
-main .texto-terciario {
-  font-size: 1.1rem;
-  text-align: center;
-  color: #333;
-  margin-top: 15px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5;
-}
-
-main .instructions-list {
-  list-style-type: decimal;
-  padding-left: 5rem;
-}
-
-main .instructions-list li {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-main .instructions-list-down {
-  font-size: 1.1rem;
-  text-align: center;
-  color: #333;
-  margin-top: 15px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5;
-}
-
-main .texto-terciario-down {
-  margin: 20px;
-  text-align: center;
-  padding-left: 1rem;
-  margin-bottom: 10px;
-}
-
-main .sub-texto-terciario-down {
-  font-size: 1.7rem;
-  margin: 20px;
-  text-align: center;
-  padding-left: 1rem;
-  margin-bottom: 10px;
-}
-
-main .instructions-list-down li {
-  text-align: left;
-  margin-bottom: 10px;
-  list-style: none;
-}
-
-@media (max-width: 767px) {
-  main .instructions-list-down {
-    font-size: 1.2rem;
-  }
-}
-
-main .sinopsis {
-	text-align: justify;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-  color: #ccd7e1;
-}
-
-main .imagen-destacada {
-  max-width: 100%;
-  height: auto;
-  max-height: 300px;
-  margin: 10px auto;
-  align-self: start;
-  margin-top: 15px;
-  padding-top: 20px;
-}
-
-main .image-container {                                                                                                          
-  max-height: 400px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-  text-align: center;
-}
-
-main .image-container img {
-  max-width: 100%;
-  height: auto;
-}
-
- .bannerpic {
-  order: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  background-color: #5db956; 
-  max-height: 90vh;
-}
-
- .bannerpic img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;  
-}
-
-main .bannerpic {
-  order: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  background-color: #5db956; 
-  max-height: 95vh;
-}
-
-main .bannerpic img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;  
-}
-
-#subcontenido {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.8);
-  display: none;
-  transition: all 0.5s ease;
-}
-
-#subcontenido.mostrar {
-  display: block;
-}
-
-#subcontenido .imagen-destacada {
-  max-width: 400%;
-  max-height: 300px;
-  height: auto;
-  display: block;
-  margin: auto;
-  text-align: center;
-  padding: 15px;
-}
-
-#subcontenido .cerrar-btn:hover {
-  background-color: #d54b3c;
-}
-
-/* section */
-section .premisa-info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin: 5px;
-}
-
-section .premisa-arriba-icono img {
-  justify-self: end;
-}
-
-section .premisa-abajo-icono img {
-  align-self: flex-end;
-}
-
-section .premisa-arriba-texto {
-  font-size: 1.2rem;
-  font-weight: 500px;
-  text-align: left;
-  color: #ffffff;
-}
-
-section .premisa-abajo-texto {
-  font-size: 1.2rem;
-  font-weight: 500px;
-  text-align: right;
-  color: #ffffff;
-}
-
-section .premisa-arriba,
-.premisa-abajo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color:#10105d53;
-  padding: 15px;
-  border-radius: 5px;
-  color: #fff;
-}
-
-section .premisa-arriba-icono img,
-.premisa-abajo-icono img {
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-/* aside */
-aside .contenedor-aside {
-  max-width: 100%;  
-  position: relative;
-}
-aside .contenedor-aside img {
-  overflow: hidden;
-  max-width: 100%;
-  margin-bottom: -10px;
-  margin-top: 5px;
-}
-
-aside .contenedor-aside-abajo {
-  max-width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex; /* Utilizamos flexbox para centrar la imagen */
-  justify-content: center; /* Centramos horizontalmente */
-  align-items: center; /* Centramos verticalmente */
-  position: relative;
-}
-
-/* Estilos para la imagen dentro del contenedor */
-aside .contenedor-aside-abajo img {
-  max-width: 90%; /* Limita la altura máxima de la imagen a 400 píxeles */
-  width: auto;
-  border-radius: 10%;  
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 /* footer */
