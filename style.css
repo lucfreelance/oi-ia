@@ -827,18 +827,17 @@ main .instructions-list-down {
 }
 
 main .texto-terciario-down {
-  font-size: 1.7rem;
-  margin: 25px;
+  margin: 20px;
   text-align: center;
-  padding-left: 2rem;
+  padding-left: 1rem;
   margin-bottom: 10px;
 }
 
 main .sub-texto-terciario-down {
   font-size: 1.7rem;
-  margin: 25px;
+  margin: 20px;
   text-align: center;
-  padding-left: 2rem;
+  padding-left: 1rem;
   margin-bottom: 10px;
 }
 
@@ -891,6 +890,22 @@ main .image-container img {
   height: auto;
 }
 
+ .bannerpic {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #5db956; 
+  max-height: 90vh; /* Ajusta la altura máxima al 95% del alto de la ventana */
+}
+
+ .bannerpic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  
+}
+
 main .bannerpic {
   order: 1;
   display: flex;
@@ -898,12 +913,12 @@ main .bannerpic {
   align-items: center;
   box-sizing: border-box;
   background-color: #5db956; 
+  max-height: 95vh; /* Ajusta la altura máxima al 95% del alto de la ventana */
 }
 
 main .bannerpic img {
   width: 100%;
-  max-width: 100%;
-  width: 100%;
+  height: 100%;
   object-fit: contain;  
 }
 
