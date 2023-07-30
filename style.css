@@ -181,8 +181,8 @@ label {
   right: 20px;
   z-index: 999;
   line-height: 1;
-  width: 40px; /* Ajuste de ancho */
-  height: 40px; /* Ajuste de alto */
+  width: 40px;
+  height: 40px;
 }
 .footer .btn-up-down i {
   font-size: 18px;
@@ -235,23 +235,6 @@ prompt .subtitle {
   }
 }
 
-.btn {
-  display: inline-block;
-  padding: 12px 32px;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #1ab7a9;
-  border-radius: 4px;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background-color: #12918b;
-}
-
 .button {
   background-color: var(--primary-color);
   color: #a5f0ed;
@@ -281,13 +264,48 @@ figure .rowoman img {
   width: 100%;
 }
 
-  /* Estilo para la imagen del banner en pantallas más grandes */
   @media (min-width: 768px) {
     .rowoman {
       height: 30%;
     }
-  }
+  }  
+
+
   
+
+/* Estilos para el banner */
+header .bannerpic {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #5db956; 
+  max-height: 90vh;
+}
+
+header .bannerpic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Estilos para el fondo del banner */
+header .bannerpic {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #5db956; 
+  max-height: 95vh;
+}
+
+header .bannerpic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  
+}
 
 /* Estilos para los logotipos destacados */
 header .logo-destacado {
@@ -325,7 +343,6 @@ header .instructions-list-down,
 header .texto-terciario-down,
 header .sub-texto-terciario-down {
   text-align: center;
-  font-size: 1.1rem;
   color: #333;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
@@ -344,58 +361,54 @@ header .instructions-list-down li {
   list-style: none;
 }
 
-/* Estilos para las imágenes destacadas */
-header .imagen-destacada,
-header .contenedor-aside-abajo img {
+
+
+
+
+aside .contenedor-aside {
+  position: relative;
   max-width: 100%;
-  height: auto;
-  max-height: 300px;
-  margin: 10px auto;
 }
 
-/* Estilos para el contenedor de imágenes */
-header .image-container,
+aside .contenedor-aside img {
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+
+aside .contenedor-aside-abajo img {
+  max-width: 90%;
+  border-radius: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+aside .image-container,
 aside .contenedor-aside {
   max-width: 100%;
 }
 
-header .image-container img,
+aside .image-container img,
 aside .contenedor-aside img {
   max-width: 100%;
 }
 
-/* Estilos para el banner */
-header .bannerpic {
-  order: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  background-color: #5db956; 
-  max-height: 90vh;
+aside .imagen-destacada,
+aside .contenedor-aside-abajo img {
+  height: auto;
+  max-height: 400px;
+  margin: 10px auto;
 }
 
-header .bannerpic img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-/* Estilos para el fondo del banner */
-header .bannerpic {
-  order: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  background-color: #5db956; 
-  max-height: 95vh;
-}
-
-header .bannerpic img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;  
+aside .contenedor-aside-abajo {
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex; /* Utilizamos flexbox para centrar la imagen */
+  justify-content: center; /* Centramos horizontalmente */
+  align-items: center; /* Centramos verticalmente */
+  position: relative;
 }
 
 /* Estilos para el subcontenido */
@@ -460,55 +473,9 @@ section .premisa-abajo-texto {
   color: #ffffff;
 }
 
-/* Estilos para el aside */
-aside .contenedor-aside {
-  position: relative;
-}
 
-aside .contenedor-aside img {
-  overflow: hidden;
-  max-width: 100%;
-  margin-bottom: -10px;
-  margin-top: 5px;
-}
 
-aside .contenedor-aside-abajo {
-  max-width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex; /* Utilizamos flexbox para centrar la imagen */
-  justify-content: center; /* Centramos horizontalmente */
-  align-items: center; /* Centramos verticalmente */
-  position: relative;
-}
 
-/* Estilos para la imagen dentro del contenedor */
-aside .contenedor-aside-abajo img {
-  max-width: 90%;
-  border-radius: 10%;  
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* Estilos para el menú */
-header nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1f7cc3;
-}
-
-nav .menu-toggle {
-  display: none;
-  height: 0.1px;
-}
-
-nav header .main-menu-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #aad5c4;  
-}
 
 /* Estilos para los elementos del menú */
 header .main-menu {
@@ -519,6 +486,13 @@ header .main-menu {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 2.1rem;
+}
+
+header .main-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aad5c4;  
 }
 
 header .main-menu li {
@@ -652,33 +626,6 @@ header .menu-dropdown .submenu li a:hover {
   color: #CCC;
 }
 
-/* Estilos para la lista c */
-ul.c {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
-
-ul.c li {
-  margin-right: 10px;
-}
-
-ul.c li:last-child {
-  margin-right: 0;
-}
-
-ul.c li a {
-  text-decoration: none;
-  color: #333;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-ul.c li a:hover {
-  background-color: #ddd;
-}
 
 /* Estilos para las celdas de la tabla */
 header td {
@@ -712,13 +659,13 @@ header tfoot {
   font-size: 16px;
 }
 
-main table {
+header table {
   border-collapse: collapse;
   width: 100%;
 }
 
 
-footer .table-board {
+header .table-board {
   padding: 10px;
   background: linear-gradient(to bottom, #1c7dc7, #b8ecb4);
   font-size: 1.5rem;
@@ -731,25 +678,63 @@ footer .table-board {
   min-width: 150px;
 }
 
-footer .table-board:hover {
+header .table-board:hover {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);    
   color: #666;
 }
 
-footer .table-board td {
+header .table-board td {
   border-radius: 5px;
   transition: all 0.4s ease;
   padding: 5px;
 }
 
-footer .table-board td:hover {
+header .table-board td:hover {
   background-color: #005EA8;
     color: #ccc;
 }
 
-footer .table-board th, .table-board td, .table-board tr {
+header .table-board th, .table-board td, .table-board tr {
   text-align: center;
 }
+
+
+
+nav .menu-toggle {
+  display: none;
+  height: 0.1px;
+}
+
+
+/* Estilos para la lista c */
+ul.c {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+ul.c li {
+  margin-right: 10px;
+}
+
+ul.c li:last-child {
+  margin-right: 0;
+}
+
+ul.c li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+ul.c li a:hover {
+  background-color: #ddd;
+}
+
+
 
 /* footer */
 footer {
@@ -816,108 +801,7 @@ footer .footer-signatures {
 
 
 
-@media (max-width: 767px) {
-  footer .footer-wrapper {
-    padding: 10px;
-  }
 
-  footer  .footer-links {
-    justify-content: center;
-  }
-
-  footer   .footer-link {
-    margin: 5px;
-    padding: 8px;
-    font-size: 0.9rem;
-  }
-
-  nav .main-menu li a {
-    display: block;
-    padding: 3px;
-    color: #292929;
-    text-decoration: none;
-        font-size: 0.7rem;
-    width: auto;
-    border: none;
-    padding: 8px;
-  }  
-
-  .encabezado.titular {
-    grid-template-columns: 1fr;
-    padding: 10px;
-  }
-
-  .premisa2-icono {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .premisa-info {
-    grid-template-columns: 1fr;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  .premisa-arriba,
-  .premisa2-titular {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contenedor-grilla {
-    grid-template-columns: 1fr;
-    background-color: #581aa3;
-  }
-
-  .bottom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-  }
-}
-
-
-/* Estilos responsive */
-@media (max-width: 550px) {
-  nav .main-menu li a {
-    padding: 5px;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  section .premisa-info {
-    grid-template-columns: 1fr;
-    background-color: #2496d8;
-  }
-  
-  footer .footer-nav {
-    display: flex;
-    align-items: center;
-    background-color: #2496d8;
-  }
-
-  footer .footer-link {
-    display: inline-block;
-    margin-bottom: 10px;
-    background-color: #ccc;
-  }
-} */
-
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-    color: white;
-  }
-}
-
-
-h2 {
-  margin-bottom: 20px;
-}
 
 form {
   display: flex;
@@ -956,9 +840,89 @@ button {
     width: 100%;
   }
 
-/* Estilos para el footer principal */
-.main-footer {
-  background-color: #f5f5f5;
-  padding: 10px;
-  text-align: center; /* Centramos el texto horizontalmente */
+
+
+@media (max-width: 767px) {
+  footer .footer-wrapper {
+    padding: 10px;
+  }
+
+  footer  .footer-links {
+    justify-content: center;
+  }
+
+  footer   .footer-link {
+    margin: 5px;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .premisa2-icono {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .premisa-info {
+    grid-template-columns: 1fr;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .premisa-arriba,
+  .premisa2-titular {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-grilla {
+    grid-template-columns: 1fr;
+    background-color: #581aa3;
+  }
+
+  .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+}
+
+
+@media (max-width: 600px) {
+  section .premisa-info {
+    grid-template-columns: 1fr;
+    background-color: #2496d8;
+  }
+  
+  footer .footer-nav {
+    display: flex;
+    align-items: center;
+    background-color: #2496d8;
+  }
+
+  footer .footer-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: #ccc;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+
+
+
+
+@media (max-width: 550px) {
+  nav .main-menu li a {
+    padding: 5px;
+    font-size: 1rem;
+  }
 }
