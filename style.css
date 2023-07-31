@@ -242,7 +242,7 @@ button:active, a:active, input[type="submit"]:active {
   background-color: #a9e42a;
 }/* Regla CSS para efecto de "feedback háptico" o "efecto háptico" */
 
-figure .rowoman img {
+header .rowoman img {
   width: 100%;
 }
 
@@ -397,38 +397,10 @@ aside .contenedor-aside img {
   margin-bottom: -10px;
 }
 
-aside .contenedor-aside-abajo img {
-  max-width: 90%;
-  border-radius: 10%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-aside .image-container,
-aside .contenedor-aside {
-  max-width: 100%;
-}
-
-aside .image-container img,
-aside .contenedor-aside img {
-  max-width: 100%;
-}
-
-aside .imagen-destacada,
-aside .contenedor-aside-abajo img {
+main .imagen-destacada {
   height: auto;
   max-height: 400px;
   margin: 10px auto;
-}
-
-aside .contenedor-aside-abajo {
-  max-width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
 #subcontenido {
@@ -583,9 +555,24 @@ footer .footer-links a {
   background-color: #fff;
 }
 
-footer .footer-signatures {
-  text-align: left;
+footer .contenedor-aside-abajo {
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
+
+footer .contenedor-aside-abajo img {
+  max-width: 90%;
+  border-radius: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
 
 form {
   display: flex;
