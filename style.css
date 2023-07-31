@@ -175,68 +175,11 @@ label {
 }
 
 /* header */
-main table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-header .table-board {
-  padding: 10px;
-  background: linear-gradient(to bottom, #1c7dc7, #b8ecb4);
-  font-size: 1.5rem;
-  border-collapse: collapse;
-  font-family: "Verdana", sans-serif;
-  letter-spacing: 0.5px;
-  color: var(--black);
-  text-align: center;
-  margin: 0 auto;
-  min-width: 150px;
-}
-
-header .table-board:hover {
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);    
-  color: #666;
-}
-
-header .table-board td {
-  border-radius: 5px;
-  transition: all 0.4s ease;
-  padding: 5px;
-}
-
-header .table-board td:hover {
-  background-color: #005EA8;
-  color: #ccc;
-}
-
-header .table-board th,
-header .table-board td,
-header .table-board tr {
-  text-align: center;
-}
-
-header th {
-  background-color: #ddefdb;
-}
-
-header th,
-header th,
-header th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-header tfoot {
-  background-color: #f2f2f2;
-  font-size: 16px;
-}
-
-# prompt
 header .encabezado-titular {
   max-width: 100%;
   margin-bottom: 6px;
   text-align: center;
-  background-color: #b8ecb4;
+  background-color: #2496d8;
   padding: 15px;
 }
 
@@ -247,7 +190,7 @@ header .main-title {
   font-weight: bold;
   margin: 0;
   text-align: center;
-  background-color: #b8ecb4; 
+  background-color: #2496d8; 
 }
 
 header .subtitle {
@@ -255,7 +198,7 @@ header .subtitle {
   margin: 0;
   animation: color-change 8s infinite;
   padding-bottom: 5px;
-  background-color: #b8ecb4; 
+  background-color: #2496d8; 
 }
 
 @keyframes color-change {
@@ -275,6 +218,65 @@ header .subtitle {
     color: #a0b8d5;
   }
 }
+
+
+main table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+main .table-board {
+  padding: 10px;
+  background: linear-gradient(to bottom, #1c7dc7, #b8ecb4);
+  font-size: 1.5rem;
+  border-collapse: collapse;
+  font-family: "Verdana", sans-serif;
+  letter-spacing: 0.5px;
+  color: var(--black);
+  text-align: center;
+  margin: 0 auto;
+  min-width: 150px;
+}
+
+main .table-board:hover {
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);    
+  color: #666;
+}
+
+main .table-board td {
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  padding: 5px;
+}
+
+main .table-board td:hover {
+  background-color: #005EA8;
+  color: #ccc;
+}
+
+main .table-board th,
+main .table-board td,
+main .table-board tr {
+  text-align: center;
+}
+
+main th {
+  background-color: #ddefdb;
+}
+
+main th,
+main th,
+main th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+main tfoot {
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+# prompt
 
 .button {
   background-color: var(--primary-color);
@@ -303,10 +305,7 @@ button:active, a:active, input[type="submit"]:active {
 
 header .rowoman img {
   width: 100%;
-}
-
-/* header */
-  
+}  
 
 /* main */
 main .logo-destacado {
@@ -574,7 +573,6 @@ footer .contenedor-aside-abajo img {
 }
 
 
-
 form {
   display: flex;
   flex-wrap: wrap;
@@ -585,6 +583,9 @@ form {
 
 input[type="email"] {
   flex: 1;
+  flex: none;
+  width: 100%;
+  margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -598,19 +599,8 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-input[type="email"] {
-  flex: none;
-  width: 100%;
-  margin-right: 0;
-  margin-bottom: 10px;
-}
-
-button {
   width: 100%;
 }
-
   
 
 @media (min-width: 768px) {
@@ -632,11 +622,11 @@ button {
     padding: 10px;
   }
 
-  footer  .footer-links {
+  footer .footer-links {
     justify-content: center;
   }
 
-  footer   .footer-link {
+  footer .footer-link {
     margin: 5px;
     padding: 8px;
     font-size: 0.9rem;
@@ -659,10 +649,10 @@ button {
     align-items: center;
   }
 
-  .contenedor-grilla {
+  /* .contenedor-grilla {
     grid-template-columns: 1fr;
     background-color: #581aa3;
-  }
+  } */
 
   .bottom {
     display: flex;
@@ -676,13 +666,7 @@ button {
 @media (max-width: 600px) {
   main .premisa-info {
     grid-template-columns: 1fr;
-    background-color: #2496d8;
-  }
-  
-  footer .footer-nav {
-    display: flex;
-    align-items: center;
-    background-color: #2496d8;
+    /* background-color: #2496d8; */
   }
 
   footer .footer-link {
