@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+/* Resetear estilos y aplicar la fuente Poppins */
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -6,44 +8,46 @@
   box-sizing: border-box;
 }
 
+/* Definir variables de colores */
 :root {
-  --black: #000000;
-  --white: #ffffff;
-  --primary-color: #007BFF;
-  --secondary-color: #6C757D;
-  --accent-color: #e62d2d;
-  --background-color: #F8F9FA;
-  --text-color: #333333;
-  --heading-color: #222222;
-  --border-color: #CED4DA;
-  --button-hover-color: #E0E0E0;
-  --font-size-sm: 14px;
-  --font-size-md: 16px;
-  --font-size-lg: 18px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
+  --black: #333;
+  --white: #fff;
+  --primary: #007BFF; /* Azul */
+  --secondary: #6C757D; /* Gris */
+  --accent: #e62d2d; /* Rojo */
+  --background: #F8F9FA; /* Gris claro */
+  --text: #333333;
+  --heading: #222222;
+  --border: #CED4DA;
+  --hover: #E0E0E0;
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 18px;
   box-sizing: border-box;
   cursor: default;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
   user-select: none;
 }
 
+/* Estilos para el cuerpo del sitio */
 body {
+  margin: 0 auto; 
+  color: var(--text);
+  font-size: var(--font-md);
   max-width: 800px;
-  margin-top: 30px;
-  margin: 0 auto;
-  background-color: var(--black);
-  color: var(--white);
-  border: 6px solid var(--accent-color);
+  background-color: var(--background); /* Cambiar el color de fondo a gris claro */
+  padding: 20px; /* Agregar un espaciado al contenido */
+  border: 2px solid var(--accent); /* Añadir borde rojo al sitio */
 }
 
+/* Estilos adicionales */
 html, body {
   scroll-behavior: smooth;
+}
+
+/* Agregar estilos para el acento */
+.accent {
+  color: var(--accent);
+  border-color: var(--accent); /* Si deseas aplicar el color a algún elemento específico */
 }
 
 #page-wrap {
@@ -80,7 +84,7 @@ a {
 
 .h1 {
   text-align: center;
-  /* color: #5dbd5b; */
+  color: #5dbd5b;
   text-shadow: 1px 1px  #fff(0, 0, 0, 1);
   margin: 40px 0 20px;
   display: inline-block;
@@ -242,15 +246,11 @@ figure .rowoman img {
   width: 100%;
 }
 
-  @media (min-width: 768px) {
-    .rowoman {
-      height: 30%;
-    }
-  }  
+/* header */
   
 
-/* Estilos para el banner */
-header .logo-destacado {
+/* main */
+main .logo-destacado {
   display: block;
   margin: 0 auto;
   max-height: 6rem;
@@ -261,80 +261,41 @@ header .logo-destacado {
   margin-right: 10px;
 }
 
-header .logo-container img {
+main .logo-container img {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
 
-header .cuarenta-up-px,
-header .cuarenta-px {
+main .cuarenta-up-px,
+main .cuarenta-px {
   text-align: center;
   padding: 20px 0;
 }
 
-header .texto-terciario,
-header .instructions-list-down,
-header .instructions-list {
+main .texto-terciario,
+main .instructions-list-down,
+main .instructions-list {
   text-align: center;
   color: #333;
   font-family: "Open Sans", sans-serif;
-  line-height: 1.2;
+  line-height: 1.1;
+  
 }
 
-header .instructions-list, header .instructions-list-down {
+main .instructions-list, main .instructions-list-down {
   padding-left: 1rem;
 }
 
-header .instructions-list li,
-header .instructions-list-down li {
+main .instructions-list li,
+main .instructions-list-down li {
   text-align: center;
   margin-bottom: 10px;
   list-style: none;
+  text-align: left;
 }
 
-header .main-menu {
-  list-style: none;
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 2.1rem;
-}
 
-header .main-menu-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #aad5c4;  
-}
-
-header .main-menu li {
-  position: relative;
-  margin-right: 10px;
-}
-
-header .main-menu li:hover > a {
-  background-color: #ddd;
-}
-
-header .main-menu li a {
-  display: block;
-  padding: 5px;
-  color: #292929;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.6rem;
-  width: auto;
-  border: none;
-  padding: 10px;
-}
-
-header .main-menu li:last-child,
-header .main-menu li:first-child {
-  margin: 0;
-}
 
 header table {
   border-collapse: collapse;
@@ -393,9 +354,18 @@ header tfoot {
 }
 
 /* main */
-main .texto-terciario-down,
-main .sub-texto-terciario-down,
+main .texto-terciario-down {
+text-align: center;
+color: #333;
+font-family: "Open Sans", sans-serif;
+line-height: 1.5;
+}
 
+main .sub-texto-terciario-down {
+color: #333;
+font-family: "Open Sans", sans-serif;
+line-height: 1.5;
+}
 
 main .bannerpic {
   order: 1;
@@ -535,6 +505,7 @@ ul.c {
 
 ul.c li {
   margin-right: 10px;
+  list-style: none;
 }
 
 ul.c li:last-child {
@@ -641,18 +612,24 @@ button {
   cursor: pointer;
 }
 
-  input[type="email"] {
-    flex: none;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
+input[type="email"] {
+  flex: none;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
 
-  button {
-    width: 100%;
-  }
+button {
+  width: 100%;
+}
 
   
+
+@media (min-width: 768px) {
+  .rowoman {
+    height: 30%;
+  }
+}  
 
 @media screen and (max-width: 767px) {
   header .menu-item.custom-button {
@@ -740,432 +717,3 @@ button {
     font-size: 1rem;
   }
 }
-
-
-
-
-
-
-
-
-/* header .menu-item,
-header .menu-item.custom-button {
-  text-decoration: none;
-  text-align: center;
-  margin: 10px;
-  padding: 5px;
-  border-radius: 5px;
-  list-style: none;
-}
-
-header .menu-item a {
-  font-size: 2rem;
-  padding: 10px 20px;
-}
-
-header .menu-item p {
-  font-size: 2.1rem;
-}
-
-header .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #1f7cc3;
-  padding: 10px;
-  list-style: none;
-}
-
-header .submenu li {
-  display: block;
-  padding: 10px;
-  font-size: 0.7rem;
-  border-bottom: 1px solid #fff;
-  margin-bottom: 5px;
-}
-
-header .submenu li a {
-  display: block;
-  padding: 5px 10px;
-  text-decoration: none;
-  color: #333;
-  font-size: 1rem;
-}
-
-header .submenu li:last-child {
-  margin-bottom: 0;
-}
-
-header .submenu li:hover a {
-  background-color: #CCC;
-}
-
-header .menu-dropdown {
-  position: relative;
-  min-width: fit-content;
-}
-
-header .menu-dropdown a {
-  width: 120px;
-  font-weight: bold;
-}
-
-header .menu-dropdown .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #f2f2f2;
-  padding: 10px;
-  z-index: 1;
-}
-
-header .menu-dropdown:hover .submenu {
-  display: block;
-}
-
-header .menu-dropdown .submenu li {
-  margin-bottom: 5px;
-}
-
-header .menu-dropdown .submenu li a {
-  padding: 5px;
-  color: #666;
-  font-weight: bold;
-}
-
-header .menu-dropdown .submenu li a:hover {
-  background-color: #1f7cc3;
-  color: #CCC; 
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* borrables */
-/* .footer .btn-up-down i {
-  font-size: 18px;
-}
-
-span {
-	max-width: 1000px;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-	justify-content: space-between;
-}
-
-span i {
-  font-size: 60px;
-  display: inline-block;
-  margin: 0 10px; 
-}
-
-
-#confirmation-message {
-  margin-top: 10px;
-} 
-
-header .bannerpic {
-  order: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  background-color: #5db956; 
-  max-height: 90vh;
-}
-
-header .bannerpic img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-header .bannerpic {
-  order: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  background-color: #5db956; 
-  max-height: 95vh;
-}
-
-header .bannerpic img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;  
-}
-
-header .logo-destacado {
-  display: block;
-  margin: 0 auto;
-  max-height: 6rem;
-  max-width: 100%;
-  object-fit: contain;
-  padding-bottom: 10px;
-  float: left;
-  margin-right: 10px;
-}
-
-header .logo-container {
-  display: flex;
-  align-items: center;
-}
-
-header .logo-container img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-
-header .cuarenta-up-px,
-header .cuarenta-px {
-  text-align: center;
-  padding: 20px 0;
-}
-
-header .texto-terciario,
-header .instructions-list-down,
-header .texto-terciario-down,
-header .sub-texto-terciario-down {
-  text-align: center;
-  color: #333;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5;
-}
-
-header .instructions-list,
-header .instructions-list-down {
-  padding-left: 5rem;
-}
-
-header .instructions-list li,
-header .instructions-list-down li {
-  text-align: center;
-  margin-bottom: 10px;
-  list-style: none;
-}
-
-header .main-menu {
-  list-style: none;
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 2.1rem;
-}
-
-header .main-menu-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #aad5c4;  
-}
-
-header .main-menu li {
-  position: relative;
-  margin-right: 10px;
-}
-
-header .main-menu li:hover > a {
-  background-color: #ddd;
-}
-
-header .main-menu li a {
-  display: block;
-  padding: 5px;
-  color: #292929;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.6rem;
-  width: auto;
-  border: none;
-  padding: 10px;
-}
-
-header .main-menu li:hover > a {
-  background-color: #ddd;
-}
-
-header .main-menu li:last-child,
-header .main-menu li:first-child {
-  margin: 0;
-}
-
-header .menu-item,
-header .menu-item.custom-button {
-  text-decoration: none;
-  text-align: center;
-  margin: 10px;
-  padding: 5px;
-  border-radius: 5px;
-  list-style: none;
-}
-
-header .menu-item a {
-  font-size: 2rem;
-  padding: 10px 20px;
-}
-
-header .menu-item p {
-  font-size: 2.1rem;
-}
-
- header .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #1f7cc3;
-  padding: 10px;
-  list-style: none;
-}
-
-header .submenu li {
-  display: block;
-  padding: 10px;
-  font-size: 0.7rem;
-  border-bottom: 1px solid #fff;
-  margin-bottom: 5px;
-}
-
-header .submenu li a {
-  display: block;
-  padding: 5px 10px;
-  text-decoration: none;
-  color: #333;
-  font-size: 1rem;
-}
-
-header .submenu li:last-child {
-  margin-bottom: 0;
-}
-
-header .submenu li:hover a {
-  background-color: #CCC;
-}
-
-header .menu-dropdown {
-  position: relative;
-  min-width: fit-content;
-}
-
-header .menu-dropdown a {
-  width: 120px;
-  font-weight: bold;
-}
-
-header .menu-dropdown .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #f2f2f2;
-  padding: 10px;
-  z-index: 1;
-}
-
-header .menu-dropdown:hover .submenu {
-  display: block;
-}
-
-header .menu-dropdown .submenu li {
-  margin-bottom: 5px;
-}
-
-header .menu-dropdown .submenu li a {
-  padding: 5px;
-  color: #666;
-  font-weight: bold;
-}
-
-header .menu-dropdown .submenu li a:hover {
-  background-color: #1f7cc3;
-  color: #CCC;
-}
-
-header td {
-  display: inline-block;    
-  text-align: center;
-  width: auto;
-  margin: 20px;
-  background-color: #93cd93;
-  border-radius: 10px;
-  font-size: 1.1rem;
-  font-family: "Verdana";
-  letter-spacing: 0.5px;
-  color: var(--black);
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-  transition: all 0.4s ease;
-}
-
-header th,
-header th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-header th {
-  background-color: #ddefdb;
-}
-
-header tfoot {
-  background-color: #f2f2f2;
-  font-size: 16px;
-}
-
-header table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-
-header .table-board {
-  padding: 10px;
-  background: linear-gradient(to bottom, #1c7dc7, #b8ecb4);
-  font-size: 1.5rem;
-  border-collapse: collapse;
-  font-family: "Verdana", sans-serif;
-  letter-spacing: 0.5px;
-  color: var(--black);
-  text-align: center;
-  margin: 0 auto;
-  min-width: 150px;
-}
-
-header .table-board:hover {
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);    
-  color: #666;
-}
-
-header .table-board td {
-  border-radius: 5px;
-  transition: all 0.4s ease;
-  padding: 5px;
-}
-
-header .table-board td:hover {
-  background-color: #005EA8;
-    color: #ccc;
-}
-
-header .table-board th, .table-board td, .table-board tr {
-  text-align: center;
-} */

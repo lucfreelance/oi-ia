@@ -37,7 +37,8 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <aside>
+  <header>   
+    <aside>
     <figure class="contenedor-aside" style="display: flex; align-items: center; justify-content: center;">
     <img class = "rowoman"
       src="https://cdn.pixabay.com/photo/2017/03/26/11/33/binary-2175285_960_720.jpg"
@@ -46,15 +47,16 @@
       style="height: 420px; width: 90%;"
     />
     </figure>
-  </aside>        
-<prompt>
-    <div class="encabezado-titular">
-      <h1 class="main-title">Oportunidades Ilimitadas</h1>
-      <h2 class="subtitle">
-        Da la bienvenida al mejor tablce-board<br />de inteligencias artificiales en Español
-      </h2>
-    </div>
-</prompt>
+    </aside>    
+    <prompt>
+      <div class="encabezado-titular">
+        <h1 class="main-title">Oportunidades Ilimitadas</h1>
+        <h2 class="subtitle">
+          Da la bienvenida al mejor table-board<br />de inteligencias artificiales en Español
+        </h2>
+      </div>
+    </prompt>
+  </header>
   <main>
                 <section id="table-board-topped">
               <div class="table-board">
@@ -68,7 +70,7 @@
                 >
                   <thead> 
                   <h2 class="texto-terciario-down">
-              ¿Quién debería probar éstas webs y apps? <br /> Algunas sugerencias:
+              ¿Usa estas webs y apps si te identificas con:
             </h2> <br />
             <h4 class="sub-texto-terciario-down">
               <ul class="instructions-list-down">
@@ -678,7 +680,6 @@
             </h5>
                 </tfoot>
     </section>
-    </header>
 
         <aside>
           <button class="menu-toggle" aria-label="Toggle menu">      
@@ -737,46 +738,47 @@
       </aside>
   <footer>
 
-      <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f8f8; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <div style="margin-top: 20px; ">  
+        <div style="max-width: 600px; margin: 0 auto; padding: 20px; margin-top: 20px;  background-color: #f8f8f8; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); ">
 
-        <h3 style="text-align: center; margin-bottom: 20px; color: #007BFF;   font-size: 24px;">
-          ¿Tienes algo que decirnos? <br /> ¡No dudes en contáctarnos! 
-        </h3>
+          <h3 style="text-align: center; margin-bottom: 20px; color: #007BFF; font-size: 24px; ">
+            ¿Tienes algo que decirnos? <br /> ¡No dudes en contáctarnos! 
+          </h3>
 
-        <form id="myForm" style="display: grid; gap: 15px;">
+          <form id="myForm" style="display: grid; gap: 15px;">
 
-          <input type="text" name="name" placeholder="Nombre" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required>
+            <input type="text" name="name" placeholder="Nombre" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required>
 
-          <input type="email" name="email" placeholder="Correo Electrónico" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required>
 
-          <textarea name="message" placeholder="Mensaje" rows="5" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required></textarea>
+            <textarea name="message" placeholder="Mensaje" rows="5" style="width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 10px;" required></textarea>
 
-          <button type="submit" style="width: 100%; padding: 15px; background-color: #007BFF; color: #fff; border: none; border-radius: 10px; cursor: pointer; font-weight: normal; font-size: 16px;">
-            Enviar Mensaje
-          </button>
-        </form>
-      </div>
-          <script>
-            document.getElementById("myForm").addEventListener("submit", function(event) {
-              event.preventDefault(); // Evitar el envío predeterminado del formulario
-          
-              // Obtener los datos del formulario
-              const formData = new FormData(event.target);
-              const formValues = Object.fromEntries(formData.entries());
-          
-              // Preparar el enlace de correo electrónico
-              const subject = "Nuevo mensaje del formulario de contacto";
-              const body = Object.entries(formValues)
-                .map(([key, value]) => `${key}: ${value}`)
-                .join("\n");
-          
-              const emailLink = `mailto:ilimitadasoportunidades@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-          
-              // Redirigir al enlace de correo electrónico
-              window.location.href = emailLink;
-            });
-          </script>
-    
+            <button type="submit" style="width: 100%; padding: 15px; background-color: #007BFF; color: #fff; border: none; border-radius: 10px; cursor: pointer; font-weight: normal; font-size: 16px;">
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+            <script>
+              document.getElementById("myForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Evitar el envío predeterminado del formulario
+            
+                // Obtener los datos del formulario
+                const formData = new FormData(event.target);
+                const formValues = Object.fromEntries(formData.entries());
+            
+                // Preparar el enlace de correo electrónico
+                const subject = "Nuevo mensaje del formulario de contacto";
+                const body = Object.entries(formValues)
+                  .map(([key, value]) => `${key}: ${value}`)
+                  .join("\n");
+            
+                const emailLink = `mailto:ilimitadasoportunidades@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+                // Redirigir al enlace de correo electrónico
+                window.location.href = emailLink;
+              });
+            </script>
+    </div>   
     <br />
 
       <div class="newsletter-container" style="text-align: center; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f7f7f7; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
@@ -841,7 +843,6 @@
                 </ul>
               </div>
             </div>
-
 
    </footer>  
 
