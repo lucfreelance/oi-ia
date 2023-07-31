@@ -178,7 +178,7 @@ prompt .encabezado-titular {
   max-width: 100%;
   margin-bottom: 6px;
   text-align: center;
-  background-color: #1f7cc3#339f33;
+  background-color: #b8ecb4;
   padding: 15px;
 }
 
@@ -188,7 +188,7 @@ prompt .main-title {
   font-size: 2.2rem;
   font-weight: bold;
   margin: 0;
-  background-color: #1f7cc3; 
+  background-color: #b8ecb4; 
 }
 
 prompt .subtitle {
@@ -196,7 +196,7 @@ prompt .subtitle {
   margin: 0;
   animation: color-change 8s infinite;
   padding-bottom: 5px;
-  background-color: #1f7cc3; 
+  background-color: #b8ecb4; 
 }
 
 @keyframes color-change {
@@ -431,15 +431,15 @@ main .imagen-destacada {
   background-color: #d54b3c;
 }
 
-section .premisa-info {
+main .premisa-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   margin: 5px;
 }
 
-section .premisa-arriba,
-section .premisa-abajo {
+main .premisa-arriba,
+main .premisa-abajo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -450,14 +450,14 @@ section .premisa-abajo {
   color: #fff;
 }
 
-section .premisa-arriba-icono img,
-section .premisa-abajo-icono img {
+main .premisa-arriba-icono img,
+main .premisa-abajo-icono img {
   border-radius: 50%;
   margin-right: 10px;
 }
 
-section .premisa-arriba-texto,
-section .premisa-abajo-texto {
+main .premisa-arriba-texto,
+main .premisa-abajo-texto {
   font-size: 1.2rem;
   font-weight: 500px;
   color: #ffffff;
@@ -673,7 +673,7 @@ button {
 }
 
 @media (max-width: 600px) {
-  section .premisa-info {
+  main .premisa-info {
     grid-template-columns: 1fr;
     background-color: #2496d8;
   }
