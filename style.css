@@ -33,7 +33,7 @@ body {
   margin: 0 auto; 
   color: var(--text);
   font-size: var(--font-md);
-  max-width: 800px;
+  max-width: 900px;
   background-color: var(--background); /* Cambiar el color de fondo a gris claro */
   padding: 20px; /* Agregar un espaciado al contenido */
   border: 2px solid var(--accent); /* Añadir borde rojo al sitio */
