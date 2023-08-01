@@ -174,7 +174,7 @@ header .encabezado-titular {
   max-width: 100%;
   margin-bottom: 6px;
   text-align: center;
-  background-color: #39bc90;
+  background-color: #b8ecb4;
   padding: 15px;
 }
 
@@ -185,7 +185,7 @@ header .main-title {
   font-weight: bold;
   margin: 0;
   text-align: center;
-  background-color: #39bc90; 
+  background-color: #b8ecb4; 
 }
 
 header .subtitle {
@@ -193,7 +193,7 @@ header .subtitle {
   margin: 0;
   animation: color-change 8s infinite;
   padding-bottom: 5px;
-  background-color: #39bc90; 
+  background-color: #b8ecb4; 
 }
 
 header .rowoman img {
