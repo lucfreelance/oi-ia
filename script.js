@@ -110,15 +110,6 @@ buttons.forEach((button) => {
   button.addEventListener("click", hideNewsletter);
 });
 
-// restaurar la posición de desplazamiento al volver atrás
-window.addEventListener("load", () => {
-  const scrollPosition = JSON.parse(sessionStorage.getItem("scrollPosition"));
-  if (scrollPosition) {
-    window.scrollTo(scrollPosition.x, scrollPosition.y);
-    sessionStorage.removeItem("scrollPosition");
-  }
-});
-
 //
 const saltadorLinks = document.querySelectorAll(".saltador-link");
 
