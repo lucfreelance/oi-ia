@@ -201,6 +201,10 @@ header .subtitle {
   background-color: #2496d8; 
 }
 
+header .rowoman img {
+  width: 100%;
+}  
+
 @keyframes color-change {
   0% {
     color: #33b8c7;
@@ -219,13 +223,19 @@ header .subtitle {
   }
 }
 
-
-main table {
-  border-collapse: collapse;
-  width: 100%;
+/* aside */
+aside .instructions-list-down {
+  text-align: center;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.1;  
 }
 
-main .table-board {
+aside .instructions-list-down {
+  padding-left: 1rem;
+}
+
+aside .table-board {
   padding: 10px;
   background: linear-gradient(to bottom, #1c7dc7, #b8ecb4);
   font-size: 1.5rem;
@@ -238,81 +248,105 @@ main .table-board {
   min-width: 150px;
 }
 
-main .table-board:hover {
+aside .table-board:hover {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);    
   color: #666;
 }
 
-main .table-board td {
+aside .table-board td {
   border-radius: 5px;
   transition: all 0.4s ease;
   padding: 5px;
 }
 
-main .table-board td:hover {
+aside .table-board td:hover {
   background-color: #005EA8;
   color: #ccc;
 }
 
-main .table-board th,
-main .table-board td,
-main .table-board tr {
+aside .table-board th,
+aside .table-board td,
+aside .table-board tr {
   text-align: center;
 }
 
-main th {
-  background-color: #ddefdb;
-}
-
-main th,
-main th,
-main th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-main tfoot {
-  background-color: #f2f2f2;
-  font-size: 16px;
-}
-
-# prompt
-
-.button {
+button,
+.button,
+a,
+input[type="submit"] {
   background-color: var(--primary-color);
   color: #a5f0ed;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-button, a, input[type="submit"] {
-  background-color: #b8ecb4;
-  border: none;
-  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
   transition: background-color 0.3s ease;
 }
-.button:hover {
-  background-color: var(--secondary-color);
-  cursor: pointer;
-}
-button:hover, a:hover, input[type="submit"]:hover {
-  background-color: #f0e5a5;
-}
-button:active, a:active, input[type="submit"]:active {
-  background-color: #a9e42a;
-}/* Regla CSS para efecto de "feedback háptico" o "efecto háptico" */
 
-header .rowoman img {
-  width: 100%;
-}  
+/* Estilos para botones en el estado normal */
+button:not(:hover):not(:active),
+a:not(:hover):not(:active),
+input[type="submit"]:not(:hover):not(:active) {
+  background-color: #b8ecb4;
+}
+
+/* Estilos para botones en el estado hover */
+button:hover,
+a:hover,
+input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Estilos para botones en el estado active */
+button:active,
+a:active,
+input[type="submit"]:active {
+  background-color: #a9e42a;
+}
 
 /* main */
+main .instructions-list li {
+  text-align: center;
+  margin-bottom: 10px;
+  list-style: none;
+  text-align: left;
+}
+
+main .contenedor-aside {
+  position: relative;
+  max-width: 100%;
+}
+
+main .contenedor-aside img {
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+
+
+main .bannerpic {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #5db956; 
+  max-height: 90vh;
+}
+
+main .bannerpic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 main .logo-destacado {
   display: block;
   margin: 0 auto;
-  max-height: 6rem;
-  max-width: 100%;
+  max-width: 8rem;
   object-fit: contain;
   padding-bottom: 10px;
   float: left;
@@ -331,29 +365,13 @@ main .cuarenta-px {
   padding: 20px 0;
 }
 
-main .texto-terciario,
-main .instructions-list-down,
-main .instructions-list {
-  text-align: center;
-  color: #333;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.1;
-  
+
+main table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-main .instructions-list, main .instructions-list-down {
-  padding-left: 1rem;
-}
 
-main .instructions-list li,
-main .instructions-list-down li {
-  text-align: center;
-  margin-bottom: 10px;
-  list-style: none;
-  text-align: left;
-}
-
-/* main */
 main .texto-terciario-down {
 text-align: center;
 color: #333;
@@ -367,70 +385,11 @@ font-family: "Open Sans", sans-serif;
 line-height: 1.5;
 }
 
-main .bannerpic {
-  order: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  background-color: #5db956; 
-  max-height: 90vh;
-}
-
-main .bannerpic img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-
-/* aside */
-aside .contenedor-aside {
-  position: relative;
-  max-width: 100%;
-}
-
-aside .contenedor-aside img {
-  overflow: hidden;
-  max-width: 100%;
-  margin-top: 5px;
-  margin-bottom: -10px;
-}
-
 main .imagen-destacada {
   height: auto;
   max-height: 400px;
   margin: 10px auto;
 }
-
-#subcontenido {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.8);
-  display: none;
-  transition: all 0.5s ease;
-}
-
-#subcontenido.mostrar {
-  display: block;
-}
-
-#subcontenido .imagen-destacada {
-  max-width: 400%;
-  max-height: 300px;
-  height: auto;
-  display: block;
-  margin: auto;
-  text-align: center;
-  padding: 15px;
-}
-
-#subcontenido .cerrar-btn:hover {
-  background-color: #d54b3c;
-}
-
 main .premisa-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -463,10 +422,35 @@ main .premisa-abajo-texto {
   color: #ffffff;
 }
 
-nav .menu-toggle {
+#subcontenido {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
   display: none;
-  height: 0.1px;
+  transition: all 0.5s ease;
 }
+
+#subcontenido.mostrar {
+  display: block;
+}
+
+#subcontenido .imagen-destacada {
+  max-width: 400%;
+  max-height: 300px;
+  height: auto;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+#subcontenido .cerrar-btn:hover {
+  background-color: #d54b3c;
+}
+
+/* */
 
 ul.c {
   display: flex;
@@ -494,6 +478,61 @@ ul.c li a {
 
 ul.c li a:hover {
   background-color: #ddd;
+}
+
+/* section */
+section .instructions-list {
+  text-align: center;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.1;  
+}
+
+section .instructions-list {
+  padding-left: 1rem;
+}
+
+section .instructions-list-down li {
+  text-align: center;
+  margin-bottom: 10px;
+  list-style: none;
+  text-align: left;
+}
+
+section tfoot {
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+section .texto-terciario {
+  text-align: center;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.1;
+  
+}
+section .instructions-list {
+  text-align: center;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.1;  
+}
+
+section .contenedor-aside-abajo {
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+section .contenedor-aside-abajo img {
+  max-width: 90%;
+  border-radius: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* footer */
@@ -555,23 +594,10 @@ footer .footer-links a {
   background-color: #fff;
 }
 
-footer .contenedor-aside-abajo {
-  max-width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+footer .menu-toggle {
+  display: none;
+  height: 0.1px;
 }
-
-footer .contenedor-aside-abajo img {
-  max-width: 90%;
-  border-radius: 10%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 
 form {
   display: flex;
@@ -590,16 +616,6 @@ input[type="email"] {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-right: 10px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #000;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
 }
   
 
@@ -632,27 +648,22 @@ button {
     font-size: 0.9rem;
   }
 
-  .premisa2-icono {
+  main  .premisa2-icono {
     margin-right: 0;
     margin-bottom: 20px;
   }
 
-  .premisa-info {
+  main .premisa-info {
     grid-template-columns: 1fr;
     margin-right: 10px;
     margin-left: 10px;
   }
 
-  .premisa-arriba,
+  main .premisa-arriba,
   .premisa2-titular {
     flex-direction: column;
     align-items: center;
   }
-
-  /* .contenedor-grilla {
-    grid-template-columns: 1fr;
-    background-color: #581aa3;
-  } */
 
   .bottom {
     display: flex;
