@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
 
-/* Resetear estilos y aplicar la fuente Poppins */
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -8,7 +7,6 @@
   box-sizing: border-box;
 }
 
-/* Definir variables de colores */
 :root {
   --black: #333;
   --white: #fff;
@@ -28,7 +26,6 @@
   user-select: none;
 }
 
-/* Estilos para el cuerpo del sitio */
 body {
   margin: 0 auto; 
   color: var(--text);
@@ -39,12 +36,10 @@ body {
   border: 2px solid var(--accent); /* Añadir borde rojo al sitio */
 }
 
-/* Estilos adicionales */
 html, body {
   scroll-behavior: smooth;
 }
 
-/* Agregar estilos para el acento */
 .accent {
   color: var(--accent);
   border-color: var(--accent); /* Si deseas aplicar el color a algún elemento específico */
@@ -179,7 +174,7 @@ header .encabezado-titular {
   max-width: 100%;
   margin-bottom: 6px;
   text-align: center;
-  background-color: #2496d8;
+  background-color: #39bc90;
   padding: 15px;
 }
 
@@ -190,7 +185,7 @@ header .main-title {
   font-weight: bold;
   margin: 0;
   text-align: center;
-  background-color: #2496d8; 
+  background-color: #39bc90; 
 }
 
 header .subtitle {
@@ -198,7 +193,7 @@ header .subtitle {
   margin: 0;
   animation: color-change 8s infinite;
   padding-bottom: 5px;
-  background-color: #2496d8; 
+  background-color: #39bc90; 
 }
 
 header .rowoman img {
@@ -285,21 +280,18 @@ input[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
-/* Estilos para botones en el estado normal */
 button:not(:hover):not(:active),
 a:not(:hover):not(:active),
 input[type="submit"]:not(:hover):not(:active) {
   background-color: #b8ecb4;
 }
 
-/* Estilos para botones en el estado hover */
 button:hover,
 a:hover,
 input[type="submit"]:hover {
   background-color: var(--secondary-color);
 }
 
-/* Estilos para botones en el estado active */
 button:active,
 a:active,
 input[type="submit"]:active {
@@ -451,7 +443,6 @@ main .premisa-abajo-texto {
 }
 
 /* */
-
 ul.c {
   display: flex;
   justify-content: space-between;
@@ -535,6 +526,17 @@ section .contenedor-aside-abajo img {
   margin-bottom: 20px;
 }
 
+input[type="email"] {
+  flex: 1;
+  flex: none;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
 /* footer */
 footer {
   text-align: center;
@@ -605,17 +607,6 @@ form {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-}
-
-input[type="email"] {
-  flex: 1;
-  flex: none;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
 }
   
 
