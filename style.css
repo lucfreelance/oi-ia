@@ -30,7 +30,7 @@ body {
   margin: 0 auto;
   color: var(--text);
   font-size: var(--font-md);
-  max-width: 900px;
+  max-width: 835px;
   background-color: var(--background);
   padding: 20px;
   border: 2px solid var(--accent);
@@ -114,22 +114,6 @@ label {
   display: none;
 }
 
-#btn-back-to-top {
-  background-color: #007bff;
-  color: #fff;
-  padding: 5px;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  line-height: 1;
-  width: 40px;
-  height: 40px;
-}
-
 #arrow-icon {
   font-size: 14px;
 }
@@ -191,26 +175,27 @@ header .rowoman img {
 }
 
 /* main */
-main .instructions-list li {
-  text-align: center;
-  margin-bottom: 10px;
-  list-style: none;
-  text-align: left;
-}
-
-main .instructions-list-down {
+main .instructions-list {
   text-align: center;
   color: #333;
-  font-family: "Open Sans", sans-serif;
   line-height: 1.1;
   padding-left: 1rem;
 }
 
-main .instructions-list-down li {
+main .instructions-list li {
   text-align: center;
+  list-style: none;
+  text-align: left;
   margin-bottom: 10px;
   list-style: none;
   text-align: left;
+}
+
+main .texto-terciario {
+  text-align: center;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.1;
 }
 
 main .table-board {
@@ -268,56 +253,10 @@ main table {
   width: 100%;
 }
 
-main .texto-terciario-down {
-  text-align: center;
-  color: #333;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5;
-}
-
-main .sub-texto-terciario-down {
-  color: #333;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5;
-}
-
 main .imagen-destacada {
   height: auto;
   max-height: 400px;
   margin: 10px auto;
-}
-
-main .premisa-info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin: 5px;
-}
-
-main .premisa-arriba,
-main .premisa-abajo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #11234d50;
-  padding: 15px;
-  border-radius: 5px;
-  color: #fff;
-}
-
-main .premisa-arriba-texto,
-main .premisa-abajo-texto {
-  font-size: 1.2rem;
-  font-weight: 500px;
-  color: #ffffff;
-}
-
-main .instructions-list {
-  text-align: center;
-  color: #333;
-  line-height: 1.1;
-  padding-left: 1rem;
 }
 
 #subcontenido {
@@ -349,17 +288,6 @@ main .instructions-list {
 }
 
 /* section */
-section .newsletter-container {
-  background: #11234d50;
-}
-
-section .texto-terciario {
-  text-align: center;
-  color: #333;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.1;
-}
-
 section .contenedor-aside-abajo {
   max-width: 100%;
   margin-top: 20px;
@@ -376,6 +304,39 @@ section .contenedor-aside-abajo img {
   border-radius: 10%;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+section .premisa-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 5px;
+}
+
+section .premisa-arriba,
+section .premisa-abajo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #11234d50;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+section .premisa-arriba-texto {
+  font-size: 1.2rem;
+  font-weight: 500px;
+  color: #ffffff;
+  text-align: right;
+}
+
+section .premisa-abajo-texto {
+  font-size: 1.2rem;
+  font-weight: 500px;
+  color: #ffffff;
+  text-align: left;
 }
 
 button:not(:hover):not(:active),
@@ -396,6 +357,17 @@ input[type="submit"]:active {
   background-color: #5296e3;
 }
 
+input[type="email"] {
+  flex: 1;
+  flex: none;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
 button,
 .button,
 a,
@@ -409,17 +381,6 @@ input[type="submit"] {
   cursor: pointer;
   width: 100%;
   transition: background-color 0.3s ease;
-}
-
-input[type="email"] {
-  flex: 1;
-  flex: none;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
 }
 
 /* footer */
@@ -438,18 +399,6 @@ footer .footer-buttons {
   padding-right: 15px;
 }
 
-footer .footer-links {
-  list-style-type: none;
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  list-style: none;
-  padding: 0;
-  flex-wrap: wrap;
-}
-
 footer .footer-link {
   text-decoration: none;
   font-weight: bold;
@@ -463,14 +412,26 @@ footer .footer-link {
   gap: 10px;
 }
 
-footer .footer-links li {
-  margin: 0;
-  flex-wrap: wrap;
-}
-
 footer .footer-link:hover {
   color: #555;
   background-color: #9780c3;
+}
+
+footer .footer-links {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+footer .footer-links li {
+  margin: 0;
+  flex-wrap: wrap;
 }
 
 footer .footer-links a {
@@ -481,17 +442,33 @@ footer .footer-links a {
   background-color: #fff;
 }
 
-footer .menu-toggle {
-  display: none;
-  height: 0.1px;
-}
-
 form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+}
+
+footer .menu-toggle {
+  display: none;
+  height: 0.1px;
+}
+
+#btn-back-to-top {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px;
+  border: 3px solid rgb(3, 112, 3); /* Se corrige la propiedad border */
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  right: 15px;
+  z-index: 999;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
 }
 
 /*  */
@@ -501,52 +478,38 @@ form {
   }
 }
 
-@media screen and (max-width: 767px) {
-  header .menu-item.custom-button {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-    border: 1.4px solid #333;
-  }
-}
-
 @media (max-width: 767px) {
+  section .premisa2-icono {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  section .premisa-info {
+    grid-template-columns: 1fr;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  section .premisa-arriba,
+  .premisa2-titular {
+    flex-direction: column;
+    align-items: center;
+  }
   footer .footer-wrapper {
     padding: 10px;
   }
-
   footer .footer-links {
     justify-content: center;
   }
-
   footer .footer-link {
     margin: 5px;
     padding: 8px;
     font-size: 0.9rem;
   }
-
-  main .premisa2-icono {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  main .premisa-info {
-    grid-template-columns: 1fr;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  main .premisa-arriba,
-  .premisa2-titular {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 @media (max-width: 600px) {
-  main .premisa-info {
+  section .premisa-info {
     grid-template-columns: 1fr;
   }
-
   footer .footer-link {
     display: inline-block;
     margin-bottom: 10px;
@@ -558,12 +521,5 @@ form {
   body {
     background-color: black;
     color: white;
-  }
-}
-
-@media (max-width: 550px) {
-  nav .main-menu li a {
-    padding: 5px;
-    font-size: 1rem;
   }
 }
