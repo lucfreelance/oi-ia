@@ -209,6 +209,7 @@ main .table-board {
   text-align: center;
   margin: 0 auto;
   min-width: 150px;
+  table-layout: auto;
 }
 
 main .bannerpic {
@@ -249,7 +250,40 @@ main .cuarenta-px {
 }
 
 main table {
-  border-collapse: collapse;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  table-layout: fixed;
+}
+
+main td {
+  padding: 5px; /* Espaciado interno reducido para hacer los botones más compactos */
+  word-break: break-word;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+main td a {
+  display: inline-block; /* Cambiamos a 'block' para que los botones se muestren uno al lado del otro */
+  margin-bottom: 5px; /* Espaciado vertical entre los botones */
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+main td a:hover {
+  background-color: #0056b3; /* Cambiamos el color de fondo cuando se hace hover */
+}
+
+main td a:active {
+  background-color: #002a59; /* Cambiamos el color de fondo cuando se hace clic */
+}
+
+main .subenlace {
+  display: block;
   width: 100%;
 }
 
