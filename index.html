@@ -749,7 +749,6 @@
       <label><input type="radio" name="pregunta1" value="Nada"> Nada</label>
       <button type="button" onclick="nextQuestion()" style="padding: 10px 20px; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;">Siguiente</button>
     </div>
-
     <div id="question2" style="display: none;">
       <p style="color: #fff; margin-bottom: 10px;">2. ¿Le gustaría saber más sobre Inteligencia Artificial?</p>
       <label><input type="radio" name="pregunta2" value="Sí, Soy ultrafan"> Sí! Soy ultra fanático</label>
@@ -758,7 +757,6 @@
       <label><input type="radio" name="pregunta2" value="No gracias, paso"> No gracias, paso</label>
       <button type="button" onclick="nextQuestion()" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;">Siguiente</button>
     </div>
-
     <div id="question3" style="display: none;">
       <p style="color: #fff; margin-bottom: 10px;">3. ¿Cuánto pagaría por un curso o aplicación de IA?</p>
       <label><input type="radio" name="pregunta3" value="Soy entusiasta de pagar por cosas IA"> Soy entusiasta de pagar por cosas IA</label>
@@ -766,103 +764,73 @@
       <label><input type="radio" name="pregunta3" value="No más que un café gourmet"> No más que un café gourmet</label>
       <label><input type="radio" name="pregunta3" value="Ni un duro, prefiero todo gratis"> Ni un duro, prefiero todo gratis</label>
       <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;">Enviar Encuesta</button>
-      <button type="button" onclick="restartSurvey()" style="display: none; padding: 10px 20px; background-color: #007bff; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;" id="finishButton">Terminar</button>
     </div>
+    <button type="button" onclick="restartSurvey()" style="display: none; padding: 10px 20px; background-color: #ff0000; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;" id="finishButton">Terminar</button>
   </form>
-
   <div id="resultados" style="color: #fff; font-size: 16px; margin-top: 20px;"></div>
-
   <script>
     let currentQuestion = 1;
     const surveyResults = [];
     const nextButton = document.querySelector("#question1 button");
     const finishButton = document.getElementById("finishButton");
-
     function nextQuestion() {
       const currentForm = document.getElementById(`question${currentQuestion}`);
       const radios = currentForm.querySelectorAll('input[type="radio"]');
       let selected = false;
-
-      radios.forEach(radio => {
-        if (radio.checked) {
-          selected = true;
-        }
-      });
-
+      radios.forEach(radio => { if (radio.checked) { selected = true; } });
       if (selected) {
         currentForm.style.display = 'none';
         currentQuestion++;
         const nextForm = document.getElementById(`question${currentQuestion}`);
-        if (nextForm) {
-          nextForm.style.display = 'block';
-        } else {
-          showResults();
-        }
-      } else {
-        alert("Por favor, seleccione una opción antes de continuar.");
-      }
+        if (nextForm) { nextForm.style.display = 'block'; } else { showResults(); }
+      } else { alert("Por favor, seleccione una opción antes de continuar."); }
     }
-
     function showResults() {
       const resultadosDiv = document.getElementById("resultados");
-      let resultHTML = "<h4>Resultados de la Encuesta:</h4><table style='border-collapse: collapse; width: 100%;'>";
+      let resultHTML = "<h3>Resultados de la Encuesta:</h3><table style='border-collapse: collapse; width: 100%;'>";
       resultHTML += "<tr><th style='background-color: #007bff; color: #fff; padding: 10px;'>Pregunta</th><th style='background-color: #007bff; color: #fff; padding: 10px;'>Respuesta</th></tr>";
-
       surveyResults.forEach((value, index) => {
         resultHTML += `<tr><td style='border: 1px solid #ccc; padding: 10px;'>Pregunta ${index + 1}</td><td style='border: 1px solid #ccc; padding: 10px;'>${value}</td></tr>`;
       });
-
       resultHTML += "</table>";
       resultadosDiv.innerHTML = resultHTML;
-
-      // Mostrar botón "Terminar" y ocultar botón "Siguiente"
-      nextButton.style.display = 'none';
-      finishButton.style.display = 'block';
+      finishButton.style.display = 'block'; nextButton.style.display = 'none';
     }
-
     function restartSurvey() {
-      // Reiniciar la encuesta y volver a la primera pregunta
-      document.querySelectorAll('[id^="question"]').forEach((question) => {
-        question.style.display = 'none';
-      });
-      document.getElementById('question1').style.display = 'block';
-
-      // Reiniciar el progreso de la encuesta y los resultados
       currentQuestion = 1;
+      const questions = document.querySelectorAll(".survey-container > form > div");
+      questions.forEach((question, index) => { question.style.display = index === 0 ? "block" : "none"; });
       surveyResults.length = 0;
-
-      // Ocultar los resultados
       document.getElementById("resultados").innerHTML = "";
-
-      // Mostrar botón "Siguiente" y ocultar botón "Terminar"
-      nextButton.style.display = 'block';
-      finishButton.style.display = 'none';
+      nextButton.style.display = 'block'; finishButton.style.display = 'none';
     }
-
     function submitSurvey(event) {
       event.preventDefault();
       const form = event.target;
       const formData = new FormData(form);
-
       let selected = false;
-      formData.forEach((value, key) => {
-        if (value !== "") {
-          selected = true;
-          surveyResults.push(value);
-        }
-      });
-
-      if (!selected) {
-        alert("Por favor, responda todas las preguntas antes de enviar la encuesta.");
-        return false;
+      formData.forEach((value, key) => { if (value !== "") { selected = true; surveyResults.push(value); } });
+      if (!selected) { alert("Por favor, responda todas las preguntas antes de enviar la encuesta."); return false; }
+      if (currentQuestion === 3) { showResults(); } else { nextQuestion(); }
+      if (currentQuestion === 3) {
+        const mailtoLink = generateMailtoLink();
+        window.open(mailtoLink, "_blank");
       }
-
-      nextQuestion();
       return false;
+    }
+    function generateMailtoLink() {
+      const resultadosDiv = document.getElementById("resultados");
+      let resultHTML = "<h3>Resultados de la Encuesta:</h3><table style='border-collapse: collapse; width: 100%;'>";
+      resultHTML += "<tr><th style='background-color: #007bff; color: #fff; padding: 10px;'>Pregunta</th><th style='background-color: #007bff; color: #fff; padding: 10px;'>Respuesta</th></tr>";
+      surveyResults.forEach((value, index) => {
+        resultHTML += `<tr><td style='border: 1px solid #ccc; padding: 10px;'>Pregunta ${index + 1}</td><td style='border: 1px solid #ccc; padding: 10px;'>${value}</td></tr>`;
+      });
+      resultHTML += "</table>";
+      const mailtoLink = `mailto:ilimitadasoportunidades@gmail.com?subject=Resultados de la Encuesta sobre IA&body=${encodeURIComponent(resultHTML)}`;
+      return mailtoLink;
     }
   </script>
 </div>
-
 
 
   </section>
