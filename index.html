@@ -719,109 +719,151 @@
         </div>
       </div>
 
-      <div class="newsletter-container" style="text-align: center;  max-width: 600px; margin: 0 auto; padding: 20px; background-color: #277543; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">      
-          <h3 style="font-size: 23px; margin-bottom: 10px;">Suscríbete a nuestro lleno<br><br>de inteligencia y nada<br><br>artificial newsletter sobre IA.</h3><br />
-          <form onsubmit="return subscribe(event)" style="margin-bottom: 15px;">
-            <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required style="padding: 10px; margin: 20px 0; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
-            <button type="submit" style="padding: 10px 20px; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;">Suscribirse</button>
-          </form>
-        <script>
-          function subscribe(event) {
-            event.preventDefault();
-            const emailInput = event.target.email;
-            const email = emailInput.value;
-            window.location.href = `mailto:ilimitadasoportunidades@gmail.com?subject=Suscripción al Newsletter oi-ia - capturador temporal&body=Por este medio, me suscribo al newsletter de Oportunidades Ilimitadas en Inteligencia Artificial, con el siguiente correo electrónico: ${email}.`;
-            emailInput.value = "";
-            alert("Gracias por suscribirte a nuestro newsletter. Tu correo electrónico ha sido recibido y será utilizado para enviarte nuestras novedades. ");
-            return false;
-          }
-        </script>
-      </div>
+      <div class="newsletter-container" style="text-align: center; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #277543; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <h3 style="font-size: 23px; margin-bottom: 10px; color: #fff;">Suscríbete a nuestro lleno<br><br>de inteligencia y nada<br><br>artificial newsletter sobre IA.</h3><br />
+      <form onsubmit="return subscribe(event)" style="margin-bottom: 15px;">
+        <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required style="padding: 10px; margin: 20px 0; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
+        <button type="submit" style="padding: 10px 20px; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;">Suscribirse</button>
+      </form><br /><br />
+      <script>
+    function subscribe(event) {
+      event.preventDefault();
+      const emailInput = event.target.email;
+      const email = emailInput.value;
+      window.location.href = `mailto:ilimitadasoportunidades@gmail.com?subject=Suscripción al Newsletter oi-ia - capturador temporal&body=Por este medio, me suscribo al newsletter de Oportunidades Ilimitadas en Inteligencia Artificial, con el siguiente correo electrónico: ${email}.`;
+      emailInput.value = "";
+      alert("Gracias por suscribirte a nuestro newsletter. Tu correo electrónico ha sido recibido y será utilizado para enviarte nuestras novedades.");
+      return false;
+    }
+   </script>
+    </div>
 
-  <div class="survey-container" style="text-align: left; max-width: 400px; margin: 0 auto; padding: 20px; background-color: #277543; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-    <!-- El formulario -->
-    <h3 style="font-size: 20px; margin-bottom: 10px; color: #fff;">Por favor llena esta mini encuesta sobre Inteligencia Artificial:</h3>
-    <form onsubmit="return submitSurvey(event)">
-      <div id="question1">
-        <!-- Pregunta 1 -->
-        <p style="color: #fff; margin-bottom: 10px;">1. ¿Qué tanto conoces sobre Inteligencia Artificial?</p>
-        <label><input type="radio" name="pregunta1" value="Mucho"> Mucho</label>
-        <label><input type="radio" name="pregunta1" value="Algo"> Algo</label>
-        <label><input type="radio" name="pregunta1" value="Poco"> Poco</label>
-        <label><input type="radio" name="pregunta1" value="Nada"> Nada</label>
-        <button type="button" onclick="nextQuestion()" style="padding: 10px 20px; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;">Siguiente</button>
-      </div>
+    <div class="survey-container" style="text-align: left; max-width: 400px; margin: 0 auto; padding: 20px; background-color: #277543; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <h3 style="font-size: 20px; margin-bottom: 10px; color: #fff;">Por favor llena esta mini encuesta sobre Inteligencia Artificial:</h3>
+  <form onsubmit="return submitSurvey(event)">
+    <div id="question1">
+      <p style="color: #fff; margin-bottom: 10px;">1. ¿Qué tanto conoces sobre Inteligencia Artificial?</p>
+      <label><input type="radio" name="pregunta1" value="Mucho"> Mucho</label>
+      <label><input type="radio" name="pregunta1" value="Algo"> Algo</label>
+      <label><input type="radio" name="pregunta1" value="Poco"> Poco</label>
+      <label><input type="radio" name="pregunta1" value="Nada"> Nada</label>
+      <button type="button" onclick="nextQuestion()" style="padding: 10px 20px; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;">Siguiente</button>
+    </div>
 
-      <div id="question2" style="display: none;">
-        <!-- Pregunta 2 -->
-        <p style="color: #fff; margin-bottom: 10px;">2. ¿Le gustaría saber más sobre Inteligencia Artificial?</p>
-        <label><input type="radio" name="pregunta2" value="Sí, Soy ultrafan"> Sí, Soy ultrafan</label>
-        <label><input type="radio" name="pregunta2" value="Sí, preciso empiezo a interesarme"> Sí, preciso empiezo a interesarme</label>
-        <label><input type="radio" name="pregunta2" value="No lo descarto"> No lo descarto</label>
-        <label><input type="radio" name="pregunta2" value="No gracias, paso"> No gracias, paso</label>
-        <button type="button" onclick="nextQuestion()" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;">Siguiente</button>
-      </div>
+    <div id="question2" style="display: none;">
+      <p style="color: #fff; margin-bottom: 10px;">2. ¿Le gustaría saber más sobre Inteligencia Artificial?</p>
+      <label><input type="radio" name="pregunta2" value="Sí, Soy ultrafan"> Sí! Soy ultra fanático</label>
+      <label><input type="radio" name="pregunta2" value="Sí, preciso empiezo a interesarme"> Sí, empiezo a interesarme</label>
+      <label><input type="radio" name="pregunta2" value="No lo descarto"> No lo descarto</label>
+      <label><input type="radio" name="pregunta2" value="No gracias, paso"> No gracias, paso</label>
+      <button type="button" onclick="nextQuestion()" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;">Siguiente</button>
+    </div>
 
-      <div id="question3" style="display: none;">
-        <!-- Pregunta 3 -->
-        <p style="color: #fff; margin-bottom: 10px;">3. ¿Cuánto pagaría por una curso o aplicación de IA?</p>
-        <label><input type="radio" name="pregunta3" value="Soy total entusiasta de comprar cosas IA"> Soy entusiasta de pagar por cosas IA</label>
-        <label><input type="radio" name="pregunta3" value="Con el producto correcto, veremos"> Con el producto correcto, me arriesgo</label>
-        <label><input type="radio" name="pregunta3" value="No más que un café gourmet"> No más que un café gourmet</label>
-        <label><input type="radio" name="pregunta3" value="Ni un duro, quisiera todo gratis"> Ni un duro, prefiero todo gratis</label>
-        <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;">Enviar Encuesta</button>
-      </div>
-    </form>
+    <div id="question3" style="display: none;">
+      <p style="color: #fff; margin-bottom: 10px;">3. ¿Cuánto pagaría por un curso o aplicación de IA?</p>
+      <label><input type="radio" name="pregunta3" value="Soy entusiasta de pagar por cosas IA"> Soy entusiasta de pagar por cosas IA</label>
+      <label><input type="radio" name="pregunta3" value="Con el producto correcto, me arriesgo"> Con el producto correcto, me arriesgo</label>
+      <label><input type="radio" name="pregunta3" value="No más que un café gourmet"> No más que un café gourmet</label>
+      <label><input type="radio" name="pregunta3" value="Ni un duro, prefiero todo gratis"> Ni un duro, prefiero todo gratis</label>
+      <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;">Enviar Encuesta</button>
+      <button type="button" onclick="restartSurvey()" style="display: none; padding: 10px 20px; background-color: #007bff; color: #fff; border: none; cursor: pointer; font-size: 16px; border-radius: 4px;" id="finishButton">Terminar</button>
+    </div>
+  </form>
 
-    <!-- El contenedor para mostrar los resultados -->
-    <div id="resultados" style="color: #fff; font-size: 16px; margin-top: 20px;"></div>
+  <div id="resultados" style="color: #fff; font-size: 16px; margin-top: 20px;"></div>
 
-    <script>
-      let currentQuestion = 1;
+  <script>
+    let currentQuestion = 1;
+    const surveyResults = [];
+    const nextButton = document.querySelector("#question1 button");
+    const finishButton = document.getElementById("finishButton");
 
-      function nextQuestion() {
-        const currentForm = document.getElementById(`question${currentQuestion}`);
-        const radios = currentForm.querySelectorAll('input[type="radio"]');
-        let selected = false;
+    function nextQuestion() {
+      const currentForm = document.getElementById(`question${currentQuestion}`);
+      const radios = currentForm.querySelectorAll('input[type="radio"]');
+      let selected = false;
 
-        radios.forEach(radio => {
-          if (radio.checked) {
-            selected = true;
-          }
-        });
+      radios.forEach(radio => {
+        if (radio.checked) {
+          selected = true;
+        }
+      });
 
-        if (selected) {
-          currentForm.style.display = 'none';
-          currentQuestion++;
-          const nextForm = document.getElementById(`question${currentQuestion}`);
+      if (selected) {
+        currentForm.style.display = 'none';
+        currentQuestion++;
+        const nextForm = document.getElementById(`question${currentQuestion}`);
+        if (nextForm) {
           nextForm.style.display = 'block';
         } else {
-          alert("Por favor, seleccione una opción antes de continuar.");
+          showResults();
         }
+      } else {
+        alert("Por favor, seleccione una opción antes de continuar.");
       }
+    }
 
-      function submitSurvey(event) {
-        event.preventDefault();
-        const form = event.target;
-        const formData = new FormData(form);
-        let result = "Resultado de la Encuesta: ";
-        formData.forEach((value, key) => {
-          result += `${value}, `;
-        });
-        result = result.slice(0, -2); // Eliminar la última coma y espacio
+    function showResults() {
+      const resultadosDiv = document.getElementById("resultados");
+      let resultHTML = "<h4>Resultados de la Encuesta:</h4><table style='border-collapse: collapse; width: 100%;'>";
+      resultHTML += "<tr><th style='background-color: #007bff; color: #fff; padding: 10px;'>Pregunta</th><th style='background-color: #007bff; color: #fff; padding: 10px;'>Respuesta</th></tr>";
 
-        // Mostrar los resultados en el div con id "resultados"
-        const resultadosDiv = document.getElementById("resultados");
-        resultadosDiv.textContent = result;
+      surveyResults.forEach((value, index) => {
+        resultHTML += `<tr><td style='border: 1px solid #ccc; padding: 10px;'>Pregunta ${index + 1}</td><td style='border: 1px solid #ccc; padding: 10px;'>${value}</td></tr>`;
+      });
 
-        form.reset();
-        currentQuestion = 1; // Reiniciar el progreso de la encuesta
-        document.getElementById('question3').style.display = 'none';
-        document.getElementById('question1').style.display = 'block';
+      resultHTML += "</table>";
+      resultadosDiv.innerHTML = resultHTML;
+
+      // Mostrar botón "Terminar" y ocultar botón "Siguiente"
+      nextButton.style.display = 'none';
+      finishButton.style.display = 'block';
+    }
+
+    function restartSurvey() {
+      // Reiniciar la encuesta y volver a la primera pregunta
+      document.querySelectorAll('[id^="question"]').forEach((question) => {
+        question.style.display = 'none';
+      });
+      document.getElementById('question1').style.display = 'block';
+
+      // Reiniciar el progreso de la encuesta y los resultados
+      currentQuestion = 1;
+      surveyResults.length = 0;
+
+      // Ocultar los resultados
+      document.getElementById("resultados").innerHTML = "";
+
+      // Mostrar botón "Siguiente" y ocultar botón "Terminar"
+      nextButton.style.display = 'block';
+      finishButton.style.display = 'none';
+    }
+
+    function submitSurvey(event) {
+      event.preventDefault();
+      const form = event.target;
+      const formData = new FormData(form);
+
+      let selected = false;
+      formData.forEach((value, key) => {
+        if (value !== "") {
+          selected = true;
+          surveyResults.push(value);
+        }
+      });
+
+      if (!selected) {
+        alert("Por favor, responda todas las preguntas antes de enviar la encuesta.");
         return false;
       }
-    </script>
-  </div>
+
+      nextQuestion();
+      return false;
+    }
+  </script>
+</div>
+
+
 
   </section>
   <footer>     
