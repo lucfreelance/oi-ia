@@ -161,6 +161,8 @@ _templates
 .env.local
 
 # Board Board
+board-board*
+board-board
 tmp
 *.rdb
 .env
