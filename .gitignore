@@ -137,7 +137,7 @@ _draft
 draft*
 
 # Fonts, Sources, Backup
-board-board
+# board-board
 
 # _site
 .sass-cache
@@ -159,3 +159,16 @@ _templates
 # Environmental
 .env.*
 .env.local
+
+# Board Board
+tmp
+*.rdb
+.env
+.sass-cache
+.DS_Store
+_site
+.jekyll-cache
+.git
+.vscode
+.obsidian
+_draft
